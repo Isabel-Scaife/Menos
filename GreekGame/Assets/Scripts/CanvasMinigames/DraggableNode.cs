@@ -9,7 +9,7 @@ public class DraggableNode : MonoBehaviour, IDragHandler
     [SerializeField]
     private bool immovable;
     private RectTransform rectTransform;
-    private List<VineEdge> connectedEdges = new List<VineEdge>();
+    private List<VineEdge> connectedEdges;
 
     // gets components
     void Awake()
