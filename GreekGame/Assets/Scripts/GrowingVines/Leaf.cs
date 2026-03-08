@@ -7,6 +7,8 @@ public class Leaf : MonoBehaviour
     private Vector3 startingScale;
     [SerializeField]
     private Vector3 endingScale;
+    private Vector3 currentScale;
+
     [SerializeField]
     private float growthSpeed;
 
@@ -16,12 +18,13 @@ public class Leaf : MonoBehaviour
     private float growNextThreshold;
 
     private bool growingNext = false;
+    [SerializeField]
+    private bool firstLeaf = false;
 
     private SpriteRenderer sprite;
     private Collider2D objCollider;
 
 
-    private Vector3 currentScale;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -46,6 +49,14 @@ public class Leaf : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Increases size of leaf gradually, 
+    /// once certain threshold hit return true
+    /// </summary>
+    /// <returns>
+    /// true when larger than threshold for first time
+    /// false otherwise
+    /// </returns>
     public bool Grow()
     {
         float rate = Time.fixedDeltaTime * growthSpeed; 
@@ -73,6 +84,25 @@ public class Leaf : MonoBehaviour
         objCollider.enabled = true;
     }
 
+    /// <summary>
+    /// Resets leaf values 
+    /// </summary>
+    public void TurnOff()
+    {
+        growingNext = false;
+
+        if(!firstLeaf)
+        {
+            // trun off visuals and collider
+            sprite.enabled = false;
+            objCollider.enabled = false;
+
+            // reset size 
+            currentScale = startingScale;
+            transform.localScale = currentScale;
+
+        }
+    }
 
 
 }
