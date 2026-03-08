@@ -7,23 +7,26 @@ public class Leaf : MonoBehaviour
     private Vector3 startingScale;
     [SerializeField]
     private Vector3 endingScale;
-
     [SerializeField]
     private float growthSpeed;
 
     [SerializeField]
     private float maxThreshold;
-
     [SerializeField]
     private float growNextThreshold;
 
     private bool growingNext = false;
+
+    private SpriteRenderer sprite;
+    private Collider2D objCollider;
 
 
     private Vector3 currentScale;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
+        objCollider = GetComponent<Collider2D>();
         currentScale = transform.localScale;
     }
 
@@ -59,6 +62,15 @@ public class Leaf : MonoBehaviour
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// Enables render and collider 
+    /// </summary>
+    public void TurnOn()
+    {
+        sprite.enabled = true;
+        objCollider.enabled = true;
     }
 
 

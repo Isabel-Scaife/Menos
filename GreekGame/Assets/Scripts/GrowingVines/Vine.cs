@@ -19,14 +19,17 @@ public class Vine : MonoBehaviour
             leaves[i] = transform.GetChild(i).GetComponent<Leaf>();
         }
     }
-
-
     private void FixedUpdate()
     {
         // if current leaf is proper size start growing next leaf
         if (currentLeaf < size && leaves[currentLeaf].Grow())
         {
             currentLeaf++;
+
+            if(currentLeaf + 1 < size)
+            {
+                leaves[currentLeaf].TurnOn();
+            }
         }
     }
 }
