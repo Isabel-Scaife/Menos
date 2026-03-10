@@ -128,7 +128,22 @@ public class RayCasting : MonoBehaviour
         // pickup up tool if clicked 
         if (tool == null)
         {
-            PickUpTool(worldPos);
+            if(PickUpTool(worldPos))
+            {
+                return;
+            }
+
+            RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, -1, 0f);
+            
+            if(hit.collider != null && hit.collider.CompareTag("Button"))
+            {
+                // current does not work like an actual button 
+                VasePackage.Instance.ResetImage();
+            }
+            else if (hit.collider == null)
+            {
+                Debug.Log("Nothing hit");
+            }
         }
     }
 

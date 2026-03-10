@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 
 public class VasePackage : MonoBehaviour
 {
@@ -9,18 +8,18 @@ public class VasePackage : MonoBehaviour
 
     private int amtToWin;
     private int pointsCorrect;   // +1 for correct, -1 for incorrect 
-
     [SerializeField, Range(0, 270)]
     private int correctSpaces;
 
     [SerializeField]
     private Collider2D incorrectArea;
-
     private bool inLoseZone = false;
 
-    private Color currectColor = Color.white;
+    private Color currentColor = Color.white;
+    private List<GameObject> shapesPlaced;
 
     public static VasePackage Instance { get; private set; }
+    public Color CurrentColor { get => currentColor; set => currentColor=value; }
 
     private void Awake()
     {
@@ -34,10 +33,14 @@ public class VasePackage : MonoBehaviour
         }
 
         amtToWin = (int)(correctSpaces * completeThreshold * .01);
+
+        shapesPlaced = new List<GameObject>();
     }
 
     public void CheckCollidersHit(Collider2D shapeCollider)
     {
+        shapesPlaced.Add(shapeCollider.gameObject);
+
         // 1. check if player already lost 
         if(!inLoseZone)
         {
@@ -60,7 +63,7 @@ public class VasePackage : MonoBehaviour
                     Debug.Log("correct point hit");
 
                     pointsCorrect += collider.GetComponent<CorrectPoint>().
-                        PaintPoint(currectColor);
+                        PaintPoint(currentColor);
                 }
             }
 
@@ -77,10 +80,18 @@ public class VasePackage : MonoBehaviour
         }
     }
 
-    private void ResetImage()
+    public void ResetImage()
     {
-        /// 1. remove placed shapes
-        /// 2. reset count  
+        // 1. remove placed shapes
+        int shapeCount = shapesPlaced.Count;
+
+        for(int i = 8; i < shapeCount; i++)
+        {
+            Destroy(shapesPlaced[i]);
+        }
+        shapesPlaced.RemoveRange(8, shapeCount - 8);
+
+        // 2. reset count  
         pointsCorrect = 0;
     }
 }

@@ -1,10 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ShapeStamps : Tool
 {
     [SerializeField]
-    private GameObject shapePrefab;  
+    private GameObject shapePrefab;
+
+    [SerializeField]
+    private LayerMask vaseLayer;
 
     [SerializeField]
     private Color currentColor; // change color of prefeb when placed 
@@ -26,24 +30,38 @@ public class ShapeStamps : Tool
     /// </summary>
     public override void Use() 
     {
-        /// TO DO:
-        /// 1. check if on pot 
-        /// 2. if on pot duplicate current shape to scene where user clicked
+        // 1. check if on pot
         Vector3 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        Instantiate(shapePrefab, worldPos, Quaternion.identity);
-        ///         - (later) make sure object is correct coloe 
-        /// 3. if on color change color 
-        /// since object was placed in scene should auto call trigger 
+        RaycastHit2D hit; 
+        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, vaseLayer, 0f);
+        Collider2D collider = hit.collider;
 
+        if (collider != null)
+        {
+            // 2. add current shape to scene where clicked 
+            Instantiate(shapePrefab, worldPos, Quaternion.identity);
+        }
 
+        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, -1, 1.1f);
+        collider = hit.collider;
+
+        if (collider != null && collider.CompareTag("NewColor"))
+        {
+            // 3. change color of sprite shape and in manager
+            currentColor = collider.GetComponent<SpriteRenderer>().color;
+
+            gameObject.GetComponent<SpriteRenderer>().color = currentColor;
+            VasePackage.Instance.CurrentColor = currentColor;
+        }
     }
 
-    /// <summary>
-    /// Resets any trackers for using if action complete or cancellted 
-    /// </summary>
-    public override void ResetUse() 
-    { 
+    public override void SelectTool()
+    {
+        // 1. set color to picked up shapes color 
+        VasePackage.Instance.CurrentColor = currentColor;
 
+        // 2. call base select tool 
+        base.SelectTool();
     }
 
     /// <summary>

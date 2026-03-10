@@ -39,7 +39,7 @@ public class Tool : MonoBehaviour
     /// <summary>
     /// Updates the current tool in package manager
     /// </summary>
-    public void SelectTool() 
+    public virtual void SelectTool() 
     {
         Debug.Log("Pickuped Up tool");
         isFollowing = true;

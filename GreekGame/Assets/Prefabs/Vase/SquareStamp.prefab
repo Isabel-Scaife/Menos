@@ -149,4 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseDown: 0
   shapePrefab: {fileID: 0}
+  vaseLayer:
+    serializedVersion: 2
+    m_Bits: 8192
   currentColor: {r: 0, g: 0, b: 0, a: 0}

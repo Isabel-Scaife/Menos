@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 26048699}
   - component: {fileID: 26048700}
   - component: {fileID: 26048701}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 100193595}
   - component: {fileID: 100193596}
   - component: {fileID: 100193597}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -293,9 +293,10 @@ GameObject:
   m_Component:
   - component: {fileID: 253907352}
   - component: {fileID: 253907351}
+  - component: {fileID: 253907353}
   m_Layer: 0
   m_Name: Reset
-  m_TagString: Untagged
+  m_TagString: Button
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,12 +365,58 @@ Transform:
   m_GameObject: {fileID: 253907350}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.25, y: -4.11, z: 0}
+  m_LocalPosition: {x: -7.25, y: -4.11, z: 1}
   m_LocalScale: {x: 2.2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &253907353
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253907350}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &259307790
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +428,7 @@ GameObject:
   - component: {fileID: 259307791}
   - component: {fileID: 259307792}
   - component: {fileID: 259307793}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -463,7 +510,7 @@ GameObject:
   - component: {fileID: 301765340}
   - component: {fileID: 301765341}
   - component: {fileID: 301765342}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -545,7 +592,7 @@ GameObject:
   - component: {fileID: 338675227}
   - component: {fileID: 338675228}
   - component: {fileID: 338675229}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -627,7 +674,7 @@ GameObject:
   - component: {fileID: 362071613}
   - component: {fileID: 362071614}
   - component: {fileID: 362071615}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -885,7 +932,7 @@ GameObject:
   - component: {fileID: 463140268}
   - component: {fileID: 463140269}
   - component: {fileID: 463140270}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -967,7 +1014,7 @@ GameObject:
   - component: {fileID: 473505922}
   - component: {fileID: 473505923}
   - component: {fileID: 473505924}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1049,7 +1096,7 @@ GameObject:
   - component: {fileID: 483547254}
   - component: {fileID: 483547255}
   - component: {fileID: 483547256}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1131,7 +1178,7 @@ GameObject:
   - component: {fileID: 552328364}
   - component: {fileID: 552328365}
   - component: {fileID: 552328366}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1211,9 +1258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603173151}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CorrectZone
-  m_TagString: Untagged
+  m_TagString: Vase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1311,7 +1358,7 @@ Transform:
   - {fileID: 430507978}
   - {fileID: 822626586}
   - {fileID: 1384816746}
-  - {fileID: 1055893882}
+  - {fileID: 1503560612}
   - {fileID: 1951139002}
   - {fileID: 1795725486}
   - {fileID: 744816769}
@@ -1328,7 +1375,7 @@ GameObject:
   - component: {fileID: 631437223}
   - component: {fileID: 631437224}
   - component: {fileID: 631437225}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1426,8 +1473,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.62699986, y: -1.082, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.2499998}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1497,7 +1544,7 @@ GameObject:
   - component: {fileID: 636416871}
   - component: {fileID: 636416872}
   - component: {fileID: 636416873}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1579,7 +1626,7 @@ GameObject:
   - component: {fileID: 711531758}
   - component: {fileID: 711531759}
   - component: {fileID: 711531760}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1661,7 +1708,7 @@ GameObject:
   - component: {fileID: 737786994}
   - component: {fileID: 737786995}
   - component: {fileID: 737786996}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1748,7 +1795,7 @@ GameObject:
   - component: {fileID: 773140185}
   - component: {fileID: 773140186}
   - component: {fileID: 773140187}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1830,9 +1877,9 @@ GameObject:
   - component: {fileID: 787681646}
   - component: {fileID: 787681645}
   - component: {fileID: 787681647}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Vase_0
-  m_TagString: Untagged
+  m_TagString: Vase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1941,7 +1988,7 @@ GameObject:
   - component: {fileID: 827667566}
   - component: {fileID: 827667567}
   - component: {fileID: 827667568}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2023,7 +2070,7 @@ GameObject:
   - component: {fileID: 831313090}
   - component: {fileID: 831313091}
   - component: {fileID: 831313092}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2104,7 +2151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855088207}
   - component: {fileID: 855088208}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: IncorrectZone
   m_TagString: IncorrectZone
   m_Icon: {fileID: 0}
@@ -2156,7 +2203,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -2201,7 +2248,7 @@ GameObject:
   - component: {fileID: 910442025}
   - component: {fileID: 910442026}
   - component: {fileID: 910442027}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2283,7 +2330,7 @@ GameObject:
   - component: {fileID: 922087031}
   - component: {fileID: 922087032}
   - component: {fileID: 922087033}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2365,7 +2412,7 @@ GameObject:
   - component: {fileID: 938875712}
   - component: {fileID: 938875713}
   - component: {fileID: 938875714}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2461,7 +2508,7 @@ Transform:
   m_GameObject: {fileID: 952869658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21623726, z: -1}
+  m_LocalPosition: {x: 0, y: 0.21623726, z: -0.1}
   m_LocalScale: {x: 0.21290329, y: 0.18968181, z: 0.2501188}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2500,8 +2547,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.63199997, y: -1.082, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.2499998}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2560,11 +2607,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &1055893882 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-  m_PrefabInstance: {fileID: 7658783062167056693}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065121115
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,7 +2618,7 @@ GameObject:
   - component: {fileID: 1065121116}
   - component: {fileID: 1065121117}
   - component: {fileID: 1065121118}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2658,7 +2700,7 @@ GameObject:
   - component: {fileID: 1078720947}
   - component: {fileID: 1078720948}
   - component: {fileID: 1078720949}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2740,7 +2782,7 @@ GameObject:
   - component: {fileID: 1080853963}
   - component: {fileID: 1080853964}
   - component: {fileID: 1080853965}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2977,7 +3019,7 @@ GameObject:
   - component: {fileID: 1112099573}
   - component: {fileID: 1112099574}
   - component: {fileID: 1112099575}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3059,7 +3101,7 @@ GameObject:
   - component: {fileID: 1196646019}
   - component: {fileID: 1196646020}
   - component: {fileID: 1196646021}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3141,7 +3183,7 @@ GameObject:
   - component: {fileID: 1233553441}
   - component: {fileID: 1233553442}
   - component: {fileID: 1233553443}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3223,7 +3265,7 @@ GameObject:
   - component: {fileID: 1266575177}
   - component: {fileID: 1266575178}
   - component: {fileID: 1266575179}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3305,7 +3347,7 @@ GameObject:
   - component: {fileID: 1280746236}
   - component: {fileID: 1280746237}
   - component: {fileID: 1280746238}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3387,7 +3429,7 @@ GameObject:
   - component: {fileID: 1291439583}
   - component: {fileID: 1291439584}
   - component: {fileID: 1291439585}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3469,7 +3511,7 @@ GameObject:
   - component: {fileID: 1299643155}
   - component: {fileID: 1299643156}
   - component: {fileID: 1299643157}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3551,7 +3593,7 @@ GameObject:
   - component: {fileID: 1342822126}
   - component: {fileID: 1342822127}
   - component: {fileID: 1342822128}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3633,7 +3675,7 @@ GameObject:
   - component: {fileID: 1354617732}
   - component: {fileID: 1354617733}
   - component: {fileID: 1354617734}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3715,7 +3757,7 @@ GameObject:
   - component: {fileID: 1382993066}
   - component: {fileID: 1382993067}
   - component: {fileID: 1382993068}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3801,9 +3843,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1385896187}
   - component: {fileID: 1385896188}
+  - component: {fileID: 1385896189}
   m_Layer: 0
   m_Name: Color (1)
-  m_TagString: Untagged
+  m_TagString: NewColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3817,7 +3860,7 @@ Transform:
   m_GameObject: {fileID: 1385896186}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.1}
   m_LocalScale: {x: -0.20202021, y: -0.5278716, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3878,6 +3921,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1385896189
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385896186}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1433111019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,7 +3978,7 @@ GameObject:
   - component: {fileID: 1433111020}
   - component: {fileID: 1433111021}
   - component: {fileID: 1433111022}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3970,9 +4059,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1456668359}
   - component: {fileID: 1456668360}
+  - component: {fileID: 1456668361}
   m_Layer: 0
   m_Name: Color (2)
-  m_TagString: Untagged
+  m_TagString: NewColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3986,7 +4076,7 @@ Transform:
   m_GameObject: {fileID: 1456668358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0, z: 1}
+  m_LocalPosition: {x: -0.3, y: 0, z: 0.1}
   m_LocalScale: {x: -0.20202021, y: -0.5278716, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4047,6 +4137,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1456668361
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456668358}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1476540406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4058,7 +4194,7 @@ GameObject:
   - component: {fileID: 1476540407}
   - component: {fileID: 1476540408}
   - component: {fileID: 1476540409}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4129,6 +4265,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1503560612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+  m_PrefabInstance: {fileID: 7106447730656889933}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1515102615 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7140549563125255566, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
@@ -4145,7 +4286,7 @@ GameObject:
   - component: {fileID: 1519875413}
   - component: {fileID: 1519875414}
   - component: {fileID: 1519875415}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4297,7 +4438,7 @@ Transform:
   m_GameObject: {fileID: 1564519202}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8, y: -0.26, z: 0}
+  m_LocalPosition: {x: -5.8, y: -0.26, z: 1.04}
   m_LocalScale: {x: 4.696968, y: 5.271987, z: 3.9981}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4315,7 +4456,7 @@ GameObject:
   - component: {fileID: 1590468161}
   - component: {fileID: 1590468162}
   - component: {fileID: 1590468163}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4397,7 +4538,7 @@ GameObject:
   - component: {fileID: 1683117146}
   - component: {fileID: 1683117147}
   - component: {fileID: 1683117148}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4495,8 +4636,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.7249999, y: -1.2459999, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.2499998}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4566,7 +4707,7 @@ GameObject:
   - component: {fileID: 1784163055}
   - component: {fileID: 1784163056}
   - component: {fileID: 1784163057}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4647,9 +4788,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1788149238}
   - component: {fileID: 1788149239}
+  - component: {fileID: 1788149240}
   m_Layer: 0
   m_Name: Color
-  m_TagString: Untagged
+  m_TagString: NewColor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4663,7 +4805,7 @@ Transform:
   m_GameObject: {fileID: 1788149237}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0, z: 1}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0.1}
   m_LocalScale: {x: -0.20202021, y: -0.5278716, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4724,6 +4866,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1788149240
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788149237}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &1795725486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 171862695449728331, guid: 95ff93b190745544391edb528e3a61db, type: 3}
@@ -4756,8 +4944,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.7220001, y: -1.2459999, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.2499998}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4827,7 +5015,7 @@ GameObject:
   - component: {fileID: 1838673962}
   - component: {fileID: 1838673963}
   - component: {fileID: 1838673964}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4925,8 +5113,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.97999996, z: 0}
-  m_LocalScale: {x: 1.2500001, y: 1.25, z: 1.2499999}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.2500001, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4996,7 +5184,7 @@ GameObject:
   - component: {fileID: 1886562157}
   - component: {fileID: 1886562158}
   - component: {fileID: 1886562159}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5078,7 +5266,7 @@ GameObject:
   - component: {fileID: 1919298011}
   - component: {fileID: 1919298012}
   - component: {fileID: 1919298013}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5160,7 +5348,7 @@ GameObject:
   - component: {fileID: 1927746516}
   - component: {fileID: 1927746517}
   - component: {fileID: 1927746518}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5317,7 +5505,7 @@ Transform:
   m_GameObject: {fileID: 1965023963}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.91, y: -3.41, z: 0}
+  m_LocalPosition: {x: 5.91, y: -3.41, z: 1.5}
   m_LocalScale: {x: -4.95, y: -1.8944, z: -2.56}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5337,7 +5525,7 @@ GameObject:
   - component: {fileID: 1997943893}
   - component: {fileID: 1997943894}
   - component: {fileID: 1997943895}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5435,8 +5623,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 1.25, z: 1.2499998}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 952869659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5505,9 +5693,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2142612555}
   - component: {fileID: 2142612556}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: PaintZone
-  m_TagString: Untagged
+  m_TagString: Vase
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5644,6 +5832,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 7159896751646529039, guid: 95ff93b190745544391edb528e3a61db, type: 3}
+    - target: {fileID: 7927656464096718583, guid: 95ff93b190745544391edb528e3a61db, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5702,6 +5894,10 @@ PrefabInstance:
       value: PointColliders
       objectReference: {fileID: 0}
     - target: {fileID: 2409290733607635462, guid: 367e7c009d86e1b41b8b6c282e44dcdf, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2409290733607635462, guid: 367e7c009d86e1b41b8b6c282e44dcdf, type: 3}
       propertyPath: m_TagString
       value: CorrectZone
       objectReference: {fileID: 0}
@@ -5731,6 +5927,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+    - target: {fileID: 6671947764883383713, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 7931834190024989786, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7999997
@@ -5828,6 +6028,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 7933842295608472178, guid: bab9375a1628de6418a82acad4f25aef, type: 3}
+    - target: {fileID: 3892994005614406001, guid: bab9375a1628de6418a82acad4f25aef, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 6936688906433809546, guid: bab9375a1628de6418a82acad4f25aef, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -5853,6 +6057,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 6319294155117688381, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
+    - target: {fileID: 3301373321434403706, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 5613161288169032444, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -5922,6 +6130,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 4513869672493075285, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
+    - target: {fileID: 8531949252014200650, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 9047030589851899771, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7999997
@@ -6023,6 +6235,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 3584260169762175557, guid: deff042b38379e745ab2651974c28964, type: 3}
+    - target: {fileID: 8478124136989035206, guid: deff042b38379e745ab2651974c28964, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6040,6 +6256,10 @@ PrefabInstance:
       propertyPath: shapePrefab
       value: 
       objectReference: {fileID: 3233839619635645629, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
+    - target: {fileID: 2916953292832091781, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
+      propertyPath: vaseLayer.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 3233839619635645629, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
       propertyPath: m_Name
       value: trapazoidStamp
@@ -6089,7 +6309,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
---- !u!1001 &7658783062167056693
+--- !u!1001 &7106447730656889933
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6097,54 +6317,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 625466928}
     m_Modifications:
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1436233381323373239, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792702803831092195, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+    - target: {fileID: 4833751688162757193, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 5387360180365784285, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+    - target: {fileID: 5387360180365784285, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
       propertyPath: m_Name
       value: DiamondStamp
       objectReference: {fileID: 0}
-    - target: {fileID: 5725966804086425306, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
-      propertyPath: shapePrefab
-      value: 
-      objectReference: {fileID: 1792702803831092195, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694717499199332611, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
