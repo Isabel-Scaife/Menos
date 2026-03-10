@@ -12,7 +12,6 @@ public class Tool : MonoBehaviour
 
     protected RaycastHit2D hit;
 
-    // Update is called once per frame
     protected virtual void Update()
     {
         if(isFollowing)

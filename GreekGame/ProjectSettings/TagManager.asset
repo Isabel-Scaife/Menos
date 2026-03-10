@@ -8,6 +8,8 @@ TagManager:
   - Door
   - NPC
   - Seal
+  - CorrectZone
+  - IncorrectZone
   layers:
   - Default
   - TransparentFX
