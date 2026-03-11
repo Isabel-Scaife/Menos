@@ -1,16 +1,23 @@
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Letter : MonoBehaviour
 {
-
+    // fields
     [SerializeField]
     private float letterDragDist = 80f;
     [SerializeField]
     protected float currentDragDist = 0;
     [SerializeField]
     private bool dragging = false;
+
+    // UI related fields
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private GameObject initialLetterUI;
+    [SerializeField]
+    private GameObject scrollingLetterUI;
 
     public bool Dragging
     {
@@ -34,15 +41,20 @@ public class Letter : MonoBehaviour
             // letter hit, drag out letter  
             if (hit.collider != null)
             {
+                // debug message
                 Debug.Log(hit.collider.gameObject.name);
+
                 // update change in mouse y  
                 currentDragDist += Mouse.current.delta.ReadValue().y;
 
                 // drag enough to pull out 
                 if (currentDragDist >= letterDragDist)
                 {
-                    Vector3 pos = new Vector3(0, 0, 0);
-                    transform.position = pos;
+                    // show canvas and hide letter sprite
+                    // maybe replace this with an animation later
+                    spriteRenderer.enabled = false;
+                    initialLetterUI.SetActive(true);
+
                     // visuals
                     //      letter in front with read/or not option
                     //
@@ -54,7 +66,6 @@ public class Letter : MonoBehaviour
 
                     // reset drag
                     currentDragDist = 0;
-
                 }
             }
         }
@@ -65,6 +76,22 @@ public class Letter : MonoBehaviour
         dragging = true;
     }
 
-    // open canvas with letter overlay
+    // what happens when player chooses to read letter
+    public void OnOpen()
+    {
 
+    }
+
+    // what happens when player chooses not to read letter
+    public void OnDecline()
+    {
+
+    }
+
+    // what happens when player finishes reading
+    public void OnClose()
+    {
+        scrollingLetterUI.SetActive(false);
+        spriteRenderer.enabled = true;
+    }
 }

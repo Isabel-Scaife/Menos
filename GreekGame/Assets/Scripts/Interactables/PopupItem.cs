@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// Item that, when interacted with, shows a popup on a UI canvas
+/// </summary>
 public class PopupItem : Interactable
 {
     // fields
