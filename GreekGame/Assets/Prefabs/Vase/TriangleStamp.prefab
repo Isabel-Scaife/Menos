@@ -156,4 +156,4 @@ MonoBehaviour:
   vaseLayer:
     serializedVersion: 2
     m_Bits: 8192
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
+  currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}

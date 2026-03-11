@@ -39,7 +39,8 @@ public class ShapeStamps : Tool
         if (collider != null)
         {
             // 2. add current shape to scene where clicked 
-            Instantiate(shapePrefab, worldPos, Quaternion.identity);
+            GameObject newObj = Instantiate(shapePrefab, worldPos, Quaternion.identity);
+            newObj.GetComponent<SpriteRenderer>().color = currentColor;
         }
 
         hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, -1, 1.1f);

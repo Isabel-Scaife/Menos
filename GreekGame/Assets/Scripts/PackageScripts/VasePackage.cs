@@ -60,10 +60,10 @@ public class VasePackage : MonoBehaviour
                 else if (collider.CompareTag("CorrectZone"))
                 {
                     // 4. correct point collider hit, update correct count
-                    Debug.Log("correct point hit");
-
                     pointsCorrect += collider.GetComponent<CorrectPoint>().
                         PaintPoint(currentColor);
+
+                    Debug.Log("Amt Correct: " + pointsCorrect);
                 }
             }
 
