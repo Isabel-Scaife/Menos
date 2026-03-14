@@ -55,15 +55,6 @@ public class Letter : MonoBehaviour
                     spriteRenderer.enabled = false;
                     initialLetterUI.SetActive(true);
 
-                    // visuals
-                    //      letter in front with read/or not option
-                    //
-                    //      read unflods letters for user
-                    //      scroll through letter
-                    //      closes when user clicks close option       
-                    //
-                    //      skip noting happens and letter minigame continues
-
                     // reset drag
                     currentDragDist = 0;
                 }
@@ -76,20 +67,28 @@ public class Letter : MonoBehaviour
         dragging = true;
     }
 
-    // what happens when player chooses to read letter
-    public void OnOpen()
+    /// <summary>
+    /// switches to scrollable letter
+    /// </summary>
+    public void OpenLetter()
     {
-
+        initialLetterUI.SetActive(false);
+        scrollingLetterUI.SetActive(true);
     }
 
-    // what happens when player chooses not to read letter
-    public void OnDecline()
+    /// <summary>
+    /// goes back to minigame without showing scrollable letter UI
+    /// </summary>
+    public void SkipReading()
     {
-
+        initialLetterUI.SetActive(false);
+        spriteRenderer.enabled = true;
     }
 
-    // what happens when player finishes reading
-    public void OnClose()
+    /// <summary>
+    /// hides letter UI and goes back to minigame
+    /// </summary>
+    public void CloseLetter()
     {
         scrollingLetterUI.SetActive(false);
         spriteRenderer.enabled = true;
