@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 387f0be596090604ca9ceb604b92d9da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2653083982473145928
+    second: SprTempCloseButton_0
+  - first:
+      213: 6684121429490360514
+    second: SprTempCloseButton_1
+  - first:
+      213: 7232087444266391149
+    second: SprTempCloseButton_2
+  - first:
+      213: 6434128262416678590
+    second: SprTempCloseButton_3
+  - first:
+      213: 1841864115318259534
+    second: SprTempCloseButton_4
+  - first:
+      213: -5091894697224676383
+    second: SprTempCloseButton_5
+  - first:
+      213: -3257561214006994454
+    second: SprTempCloseButton_6
+  - first:
+      213: 7503628725427343783
+    second: SprTempCloseButton_7
+  - first:
+      213: -7154673633418203690
+    second: SprTempCloseButton_8
+  - first:
+      213: 5966560342024001874
+    second: SprTempCloseButton_9
+  - first:
+      213: 8184690132444095863
+    second: SprTempCloseButton_10
+  - first:
+      213: 6038066982185970666
+    second: SprTempCloseButton_11
+  - first:
+      213: 2685343389552802437
+    second: SprTempCloseButton_12
+  - first:
+      213: -7389395308651861118
+    second: SprTempCloseButton_13
+  - first:
+      213: -3581206417476259164
+    second: SprTempCloseButton_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SprTempCloseButton_0
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68
+        width: 22
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e279e43d5a1d420800000000000000
+      internalID: 2653083982473145928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 81
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c06950b605c2cc50800000000000000
+      internalID: 6684121429490360514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 76
+        width: 29
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d669f0c96398d5460800000000000000
+      internalID: 7232087444266391149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 77
+        width: 20
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebeb5a0b09d9a4950800000000000000
+      internalID: 6434128262416678590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_4
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 114
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f751e77ad9f8910800000000000000
+      internalID: 1841864115318259534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 76
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb5a3a30c4f559b0800000000000000
+      internalID: -5091894697224676383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 75
+        width: 45
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9d50dc551dac2d0800000000000000
+      internalID: -3257561214006994454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 71
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a19381e19e322860800000000000000
+      internalID: 7503628725427343783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_8
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 69
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd214ccc3e75bc90800000000000000
+      internalID: -7154673633418203690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_9
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 74
+        width: 32
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2591645d40b7dc250800000000000000
+      internalID: 5966560342024001874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_10
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 72
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775a9f4af4cd59170800000000000000
+      internalID: 8184690132444095863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_11
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 71
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeba533ede58bc350800000000000000
+      internalID: 6038066982185970666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_12
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 72
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58afc32d591444520800000000000000
+      internalID: 2685343389552802437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_13
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 64
+        width: 25
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b2ed21e18937990800000000000000
+      internalID: -7389395308651861118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SprTempCloseButton_14
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 68
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a27af2ccbffc4ec0800000000000000
+      internalID: -3581206417476259164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SprTempCloseButton_0: 2653083982473145928
+      SprTempCloseButton_1: 6684121429490360514
+      SprTempCloseButton_10: 8184690132444095863
+      SprTempCloseButton_11: 6038066982185970666
+      SprTempCloseButton_12: 2685343389552802437
+      SprTempCloseButton_13: -7389395308651861118
+      SprTempCloseButton_14: -3581206417476259164
+      SprTempCloseButton_2: 7232087444266391149
+      SprTempCloseButton_3: 6434128262416678590
+      SprTempCloseButton_4: 1841864115318259534
+      SprTempCloseButton_5: -5091894697224676383
+      SprTempCloseButton_6: -3257561214006994454
+      SprTempCloseButton_7: 7503628725427343783
+      SprTempCloseButton_8: -7154673633418203690
+      SprTempCloseButton_9: 5966560342024001874
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
