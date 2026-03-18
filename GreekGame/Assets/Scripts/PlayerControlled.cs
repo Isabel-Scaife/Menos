@@ -76,7 +76,7 @@ public class PlayerControlled : MonoBehaviour
     /// </summary>
     public void PauseInputControls()
     {
-        if (birdInput.inputIsActive)
+        if (birdInput != null && birdInput.inputIsActive)
         {
             birdControlledLast = true;
             birdInput.enabled = false;
