@@ -1,16 +1,23 @@
-using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Letter : MonoBehaviour
 {
-
+    // fields
     [SerializeField]
     private float letterDragDist = 80f;
     [SerializeField]
     protected float currentDragDist = 0;
     [SerializeField]
     private bool dragging = false;
+
+    // UI related fields
+    [SerializeField]
+    private SpriteRenderer spriteRenderer;
+    [SerializeField]
+    private GameObject initialLetterUI;
+    [SerializeField]
+    private GameObject scrollingLetterUI;
 
     public bool Dragging
     {
@@ -34,27 +41,22 @@ public class Letter : MonoBehaviour
             // letter hit, drag out letter  
             if (hit.collider != null)
             {
+                // debug message
                 Debug.Log(hit.collider.gameObject.name);
+
                 // update change in mouse y  
                 currentDragDist += Mouse.current.delta.ReadValue().y;
 
                 // drag enough to pull out 
                 if (currentDragDist >= letterDragDist)
                 {
-                    Vector3 pos = new Vector3(0, 0, 0);
-                    transform.position = pos;
-                    // visuals
-                    //      letter in front with read/or not option
-                    //
-                    //      read unflods letters for user
-                    //      scroll through letter
-                    //      closes when user clicks close option       
-                    //
-                    //      skip noting happens and letter minigame continues
+                    // show canvas and hide letter sprite
+                    // maybe replace this with an animation later
+                    spriteRenderer.enabled = false;
+                    initialLetterUI.SetActive(true);
 
                     // reset drag
                     currentDragDist = 0;
-
                 }
             }
         }
@@ -65,6 +67,30 @@ public class Letter : MonoBehaviour
         dragging = true;
     }
 
-    // open canvas with letter overlay
+    /// <summary>
+    /// switches to scrollable letter
+    /// </summary>
+    public void OpenLetter()
+    {
+        initialLetterUI.SetActive(false);
+        scrollingLetterUI.SetActive(true);
+    }
 
+    /// <summary>
+    /// goes back to minigame without showing scrollable letter UI
+    /// </summary>
+    public void SkipReading()
+    {
+        initialLetterUI.SetActive(false);
+        spriteRenderer.enabled = true;
+    }
+
+    /// <summary>
+    /// hides letter UI and goes back to minigame
+    /// </summary>
+    public void CloseLetter()
+    {
+        scrollingLetterUI.SetActive(false);
+        spriteRenderer.enabled = true;
+    }
 }

@@ -10,7 +10,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     // singleton
-    public static DialogueManager Instance;
+    public static DialogueManager Instance { get; private set; }
 
     // fields
     private DialogueSO currentDialogue;

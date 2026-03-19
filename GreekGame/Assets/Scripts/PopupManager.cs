@@ -1,51 +1,58 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
+/// <summary>
+/// Manager for simple UI popops where the only interaction is closing
+/// </summary>
 public class PopupManager : MonoBehaviour
 {
     // singleton
-    public static PopupManager Instance;
+    public static PopupManager Instance { get; private set; }
 
     // fields
     [SerializeField]
     private GameObject panel;
     [SerializeField]
     private Image image;
-    [SerializeField]
-    private PlayerInput popupInput;
-    [SerializeField]
-    private PlayerControlled player;
+    private PlayerControlled interactingPlayer;
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Debug.Log("Destroyed duplicate PopupManager object");
+            Destroy(this.gameObject);
+            return;
+        }
+        //DontDestroyOnLoad(this.gameObject);   // if popup canvas should persist across scenes
         Instance = this;
     }
 
     /// <summary>
-    /// switches input controls and sprite then shows
+    /// disables player movement, switches sprite, and shows
     /// </summary>
     /// <param name="sprite">new sprite to show</param>
-    public void ShowPopup(Sprite sprite)
+    /// <param name="player">player who interacted with the item that 
+    /// caused the popup to show</param>
+    public void ShowPopup(Sprite sprite, PlayerControlled player)
     {
-        player.PauseInputControls();
+        interactingPlayer = player;
+        interactingPlayer.PauseInputControls();
         image.sprite = sprite;
         image.SetNativeSize();
-        popupInput.enabled = true;
         panel.SetActive(true);
     }
 
     /// <summary>
-    /// hides image on canvas and switches input control back to player
+    /// hides image reenables player movement
     /// </summary>
-    /// <param name="context">input callback context</param>
-    public void HidePopup(InputAction.CallbackContext context)
+    public void HidePopup()
     {
-        if (context.started)
+        panel.SetActive(false);
+        if (interactingPlayer != null)
         {
-            popupInput.enabled = false;
-            panel.SetActive(false);
-            player.ResumeInputControls();
+            interactingPlayer.ResumeInputControls();
+            interactingPlayer = null;
         }
     }
 }
