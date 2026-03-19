@@ -38,9 +38,15 @@ public class ShapeStamps : Tool
 
         if (collider != null)
         {
+            worldPos.z = 1f;
             // 2. add current shape to scene where clicked 
             GameObject newObj = Instantiate(shapePrefab, worldPos, Quaternion.identity);
-            newObj.GetComponent<SpriteRenderer>().color = currentColor;
+
+            // 3. match color and proper layer
+            SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
+            sprite.color = currentColor;
+            sprite.sortingOrder = VasePackage.Instance.SortOrder;
+            VasePackage.Instance.SortOrder++;
         }
 
         hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, -1, 1.1f);
@@ -48,7 +54,7 @@ public class ShapeStamps : Tool
 
         if (collider != null && collider.CompareTag("NewColor"))
         {
-            // 3. change color of sprite shape and in manager
+            // 4. change color of sprite shape and in manager
             currentColor = collider.GetComponent<SpriteRenderer>().color;
 
             gameObject.GetComponent<SpriteRenderer>().color = currentColor;

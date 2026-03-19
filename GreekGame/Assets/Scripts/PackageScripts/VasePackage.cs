@@ -19,6 +19,8 @@ public class VasePackage : MonoBehaviour
     private List<GameObject> shapesPlaced;
 
     public static VasePackage Instance { get; private set; }
+    public int SortOrder {  get; set; }
+
     public Color CurrentColor { get => currentColor; set => currentColor=value; }
 
     private void Awake()
@@ -93,5 +95,8 @@ public class VasePackage : MonoBehaviour
 
         // 2. reset count  
         pointsCorrect = 0;
+
+        // 3. reset sort layer count
+        SortOrder = 0;
     }
 }
