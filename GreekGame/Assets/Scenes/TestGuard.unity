@@ -2383,6 +2383,7 @@ GameObject:
   - component: {fileID: 1380803026}
   - component: {fileID: 1380803029}
   - component: {fileID: 1380803028}
+  - component: {fileID: 1380803030}
   m_Layer: 0
   m_Name: TestGuard
   m_TagString: Untagged
@@ -2537,6 +2538,28 @@ MonoBehaviour:
   player: {fileID: 111991560}
   human: {fileID: 2110783448}
   bird: {fileID: 111991560}
+--- !u!95 &1380803030
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380803025}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5efd2b774ba7ee94c9f39229bafc6678, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1414956275
 GameObject:
   m_ObjectHideFlags: 0
