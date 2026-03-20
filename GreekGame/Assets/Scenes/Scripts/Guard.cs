@@ -9,6 +9,7 @@ using UnityEngine;
 public class Guard : MonoBehaviour
 {
     //---CHANGE THESE FROM GUARD TO GUARD----
+    //guard travels between these two positions. 
 
     //position one
     private float min = 0f;
@@ -20,18 +21,31 @@ public class Guard : MonoBehaviour
     public bool playerDetectable = true;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
+    private SpriteRenderer coneRenderer;
 
     // movement components
     [SerializeField]
     protected int speed = 5;
     protected Vector2 position;
 
+    //vision cone
+    [SerializeField]
+    private Object visionCone;
+
+    //player and bird references
+    [SerializeField]
+    private PlayerControlled player;
+    [SerializeField]
+    private Player human;
+    [SerializeField]
+    private Bird bird;
+
     //GUARD TO DO:
 
     //HIGH PRIORITY-- Vision --  DONE
-    //HIGH PRIORITY-- Bird Trigger
+    //HIGH PRIORITY-- Bird Trigger-- DONE
     //MED PRIORITY-- Respawn
-    //MED PRIORITY-- Hide Box
+    //MED PRIORITY-- Hide Box-- Half done
     //LOW PRIORITY-- Walk Cycles -- Halfway done-- need to make these more modular
 
     // run on start
@@ -40,6 +54,11 @@ public class Guard : MonoBehaviour
         // Get the SpriteRenderer component attached to this GameObject
         //we have this for debug purposes so it can change color
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        //get the sprite rendered attached to the vision cone
+        coneRenderer = visionCone.GetComponent<SpriteRenderer>();
+        coneRenderer.enabled = true;
+
 
         //figures out where the object is
         position = gameObject.transform.position;
@@ -51,22 +70,41 @@ public class Guard : MonoBehaviour
 
     void Update()
     {
+        //moves guard back and forth
         transform.position =
-            new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.x);
+            new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min,
+            transform.position.y,
+            transform.position.x);
+
+        VisionCheck(player);
     }
 
     /// <summary>
+    /// checks if player should be able to see vision
+    /// </summary>
+    /// <param name="player"></param>
+    private void VisionCheck(PlayerControlled player)
+    {
+        //detects whether player can see vision cone or not
+        //this only thinks the player is a birddd
+        if (player is Bird)
+        {
+            coneRenderer.enabled = true;
+        }
+        else if (player is Player)
+        {
+            coneRenderer.enabled = false;
+        }
+    }
+    /// <summary>
     /// When player enters vision cone
     /// </summary>
-    /// <param name="collision"></param>
+    /// <param name="collision"><
+    /// /param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerDetectable)
-        {
-            spriteRenderer.color = Color.red;
-        }
-        //for debug purposes changes it to red if player detected
-
+        spriteRenderer.color = Color.red;
+        //run respawn/fail state code here
     }
 
     /// <summary>
