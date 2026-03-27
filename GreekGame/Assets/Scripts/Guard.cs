@@ -36,9 +36,9 @@ public class Guard : MonoBehaviour
     [SerializeField]
     private PlayerControlled player;
     [SerializeField]
-    private Player human;
+    private Player Player;
     [SerializeField]
-    private Bird bird;
+    private Bird Bird;
 
     //ping pong...
     //needed for guard walking later on
@@ -53,7 +53,7 @@ public class Guard : MonoBehaviour
     //HIGH PRIORITY-- Vision --  DONE
     //HIGH PRIORITY-- Bird Trigger-- DONE
     //MED PRIORITY-- Respawn
-    //MED PRIORITY-- Hide Box-- Half done
+    //MED PRIORITY-- Hide Box-- DONE + FIXED
     //LOW PRIORITY-- Walk Cycles -- Halfway done-- need to make these more modular
 
     // run on start
@@ -129,8 +129,11 @@ public class Guard : MonoBehaviour
     /// /param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        ;spriteRenderer.color = Color.red;
-        //run respawn/fail state code here
+        if (playerDetectable) //makes sure player isn't hiding
+        {
+            spriteRenderer.color = Color.red;
+            //run respawn/fail state code here
+        }
     }
 
     /// <summary>

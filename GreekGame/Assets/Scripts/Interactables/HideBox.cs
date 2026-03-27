@@ -51,7 +51,7 @@ public class HideBox : Interactable
         if (!canInteract) return;
 
         //if player isn't currently hiding
-        if (guard.playerDetectable == true)
+        if (guard.playerDetectable == true && player is Player)
         {
             //probably put a crouching sprite in here somewhere...?
             spriteRenderer.color = Color.red;
