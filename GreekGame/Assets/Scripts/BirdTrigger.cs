@@ -10,8 +10,6 @@ public class BirdTrigger : MonoBehaviour
 {
 
     // fields
-    [SerializeField] //what does serialize feed do....
-    bool playerDetected = false;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
@@ -36,7 +34,7 @@ public class BirdTrigger : MonoBehaviour
         //for debug purposes changes it to red if player detected
         spriteRenderer.color = Color.red;
 
-        //theoretically changes into a bird, but this doesn't quite work
+        //swaps the controlling object
         player.SwapControlledObject();
     }
     
