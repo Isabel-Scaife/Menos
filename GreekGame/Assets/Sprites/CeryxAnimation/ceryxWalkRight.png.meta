@@ -1,10 +1,37 @@
 fileFormatVersion: 2
-guid: aef0685892f366847b0faa28fd5bb309
+guid: b2360c9a49dc5d446a0b74a2d00701c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8134295357148833876
-    second: Right_Walk_0
+      213: 1382471719664012380
+    second: ceryxWalkRight_0
+  - first:
+      213: 702695003216016314
+    second: ceryxWalkRight_1
+  - first:
+      213: 6370486851504887340
+    second: ceryxWalkRight_2
+  - first:
+      213: 5520588171787170797
+    second: ceryxWalkRight_3
+  - first:
+      213: -6077697967007258769
+    second: ceryxWalkRight_4
+  - first:
+      213: -6125674993533060629
+    second: ceryxWalkRight_5
+  - first:
+      213: -7168894291341005186
+    second: ceryxWalkRight_6
+  - first:
+      213: 7004133332156959346
+    second: ceryxWalkRight_7
+  - first:
+      213: 5172561067148242939
+    second: ceryxWalkRight_8
+  - first:
+      213: 1913471810911940088
+    second: ceryxWalkRight_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -87,25 +114,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -113,13 +127,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Right_Walk_0
+      name: ceryxWalkRight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 177
-        height: 382
+        x: 65
+        y: 909
+        width: 165
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,206 +142,206 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca7d803587d2d1f80800000000000000
-      internalID: -8134295357148833876
+      spriteID: c5cc89254b68f2310800000000000000
+      internalID: 1382471719664012380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_1
+      name: ceryxWalkRight_1
       rect:
         serializedVersion: 2
-        x: 177
-        y: 0
-        width: 177
-        height: 382
+        x: 358
+        y: 912
+        width: 158
+        height: 362
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9202d8ed2010cf5408681bc2050042b6
-      internalID: 1354581887
+      spriteID: ab3f124e16970c900800000000000000
+      internalID: 702695003216016314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_2
+      name: ceryxWalkRight_2
       rect:
         serializedVersion: 2
-        x: 354
-        y: 0
-        width: 177
-        height: 382
+        x: 656
+        y: 913
+        width: 149
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 19f8ce097190726408b127a97b51e56f
-      internalID: -335546003
+      spriteID: c26de360a04886850800000000000000
+      internalID: 6370486851504887340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_3
+      name: ceryxWalkRight_3
       rect:
         serializedVersion: 2
-        x: 531
-        y: 0
-        width: 177
-        height: 382
+        x: 954
+        y: 912
+        width: 151
+        height: 362
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: eebf12630f088a5409a77fe05dce5e21
-      internalID: -2078090509
+      spriteID: de3f89261b11d9c40800000000000000
+      internalID: 5520588171787170797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_4
+      name: ceryxWalkRight_4
       rect:
         serializedVersion: 2
-        x: 708
-        y: 0
-        width: 177
-        height: 382
+        x: 84
+        y: 475
+        width: 155
+        height: 363
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5d06c690b2d4892458f57db0ee858733
-      internalID: -589902299
+      spriteID: f672b6866eda7aba0800000000000000
+      internalID: -6077697967007258769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_5
+      name: ceryxWalkRight_5
       rect:
         serializedVersion: 2
-        x: 885
-        y: 0
-        width: 177
-        height: 382
+        x: 362
+        y: 474
+        width: 162
+        height: 364
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 10660cccbe1dabd4cb72be88de89c3a4
-      internalID: -1529728633
+      spriteID: be9f7f07c0b3dfaa0800000000000000
+      internalID: -6125674993533060629
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_6
+      name: ceryxWalkRight_6
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 0
-        width: 177
-        height: 382
+        x: 622
+        y: 473
+        width: 188
+        height: 365
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b6c1dd1142d78b84284c121e20a92ca6
-      internalID: -357311637
+      spriteID: e7e2b4cdf98f28c90800000000000000
+      internalID: -7168894291341005186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_7
+      name: ceryxWalkRight_7
       rect:
         serializedVersion: 2
-        x: 1239
-        y: 0
-        width: 177
-        height: 382
+        x: 939
+        y: 474
+        width: 166
+        height: 363
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: debe0b57d1cb33e488fe6d3179f74ced
-      internalID: 86441227
+      spriteID: 27a40b6f72ea33160800000000000000
+      internalID: 7004133332156959346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_8
+      name: ceryxWalkRight_8
       rect:
         serializedVersion: 2
-        x: 1416
-        y: 0
-        width: 177
-        height: 382
+        x: 79
+        y: 40
+        width: 156
+        height: 362
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d44462dc728a23f4bbbe6b728df9aef8
-      internalID: -677378895
+      spriteID: bffe26a92e0a8c740800000000000000
+      internalID: 5172561067148242939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Right_Walk_9
+      name: ceryxWalkRight_9
       rect:
         serializedVersion: 2
-        x: 1593
-        y: 0
-        width: 177
-        height: 382
+        x: 362
+        y: 40
+        width: 158
+        height: 361
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1e10a0d7840ab09459aa45f580f250b5
-      internalID: 6788844
+      spriteID: 8fd212959740e8a10800000000000000
+      internalID: 1913471810911940088
       vertices: []
       indices: 
       edges: []
@@ -336,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0da14563f08b5e244861fd8e857bffb2
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -346,16 +360,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Right_Walk_0: -8134295357148833876
-      Right_Walk_1: 1354581887
-      Right_Walk_2: -335546003
-      Right_Walk_3: -2078090509
-      Right_Walk_4: -589902299
-      Right_Walk_5: -1529728633
-      Right_Walk_6: -357311637
-      Right_Walk_7: 86441227
-      Right_Walk_8: -677378895
-      Right_Walk_9: 6788844
+      ceryxWalkRight_0: 1382471719664012380
+      ceryxWalkRight_1: 702695003216016314
+      ceryxWalkRight_2: 6370486851504887340
+      ceryxWalkRight_3: 5520588171787170797
+      ceryxWalkRight_4: -6077697967007258769
+      ceryxWalkRight_5: -6125674993533060629
+      ceryxWalkRight_6: -7168894291341005186
+      ceryxWalkRight_7: 7004133332156959346
+      ceryxWalkRight_8: 5172561067148242939
+      ceryxWalkRight_9: 1913471810911940088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
