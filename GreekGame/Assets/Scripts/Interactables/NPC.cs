@@ -11,7 +11,6 @@ public class NPC : Interactable
     protected List<DialogueSO> dialogues;
 
     // for connecting NPCs to dialogue, storing save data and states, etc.
-    // might not be needed
     // [SerializeField] protected string npcID;     // might need in the future
 
     /// <summary>
@@ -29,7 +28,7 @@ public class NPC : Interactable
         canInteract = false;
         if (dialogues != null && dialogues.Count > 0)
         {
-            DialogueManager.Instance.BeginDialogue(dialogues[0]);
+            DialogueManager.Instance.BeginDialogue(dialogues[0], player);
         }
     }
 }

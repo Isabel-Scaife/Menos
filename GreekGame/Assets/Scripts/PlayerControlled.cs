@@ -97,6 +97,23 @@ public class PlayerControlled : MonoBehaviour
         else playerInput.enabled = true;
     }
 
+    /// <summary>
+    /// switches between movement/interaction input and input for advancing dialogue
+    /// </summary>
+    /// <param name="toDialogue">true if switching to input for advancing dialogue, 
+    /// false if switching back to player movement</param>
+    public void SwitchActionMaps(bool toDialogue)
+    {
+        // gets correct input component and map to switch to
+        PlayerInput currInput = playerInput;
+        if (birdInput.inputIsActive) currInput = birdInput;
+        string targetMap = "Player";
+        if (toDialogue) targetMap = "Dialogue";
+
+        // switches current input to target map
+        currInput.SwitchCurrentActionMap(targetMap);
+    }
+
     public void Move(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();
