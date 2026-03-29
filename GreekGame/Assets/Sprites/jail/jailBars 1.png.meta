@@ -1,55 +1,10 @@
 fileFormatVersion: 2
-guid: f41ec06624ab17d4ab866d3802442dcc
+guid: 43ff1d3fa2444c849b41a95f6661084f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -211451390074536312
-    second: ceryxIdle_0
-  - first:
-      213: 22907589116867278
-    second: ceryxIdle_1
-  - first:
-      213: 7123472050119202364
-    second: ceryxIdle_2
-  - first:
-      213: -3831006461053118280
-    second: ceryxIdle_3
-  - first:
-      213: 6543700142889358908
-    second: ceryxIdle_4
-  - first:
-      213: -4899343133722021001
-    second: ceryxIdle_5
-  - first:
-      213: -7157457356181534181
-    second: ceryxIdle_6
-  - first:
-      213: 7579039713497040392
-    second: ceryxIdle_7
-  - first:
-      213: 3363781020102263491
-    second: ceryxIdle_8
-  - first:
-      213: 2767322952699937739
-    second: ceryxIdle_9
-  - first:
-      213: -4291823026985756658
-    second: ceryxIdle_10
-  - first:
-      213: 3638801258360802635
-    second: ceryxIdle_11
-  - first:
-      213: -857668094691782399
-    second: ceryxIdle_12
-  - first:
-      213: 2401245065382769778
-    second: ceryxIdle_13
-  - first:
-      213: -6087677385227294589
-    second: ceryxIdle_14
-  - first:
-      213: -3448465480400606338
-    second: ceryxIdle_15
+      213: -1433737197372277587
+    second: jailBars 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -145,353 +100,405 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ceryxIdle_0
+      name: jailBars 1_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 1167
-        width: 192
-        height: 363
+        x: 0
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 88e385fb416c01df0800000000000000
-      internalID: -211451390074536312
+      spriteID: dac7c518d975a1ce0800000000000000
+      internalID: -1433737197372277587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_1
+      name: jailBars 1_1
       rect:
         serializedVersion: 2
-        x: 311
-        y: 1167
-        width: 192
-        height: 362
+        x: 50
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: ec2b8f7b452615000800000000000000
-      internalID: 22907589116867278
+      spriteID: 6431e5c90fc0194429314a1568fe2841
+      internalID: 1870202082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_2
+      name: jailBars 1_2
       rect:
         serializedVersion: 2
-        x: 608
-        y: 1167
-        width: 192
-        height: 363
+        x: 100
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: c3657ca7618abd260800000000000000
-      internalID: 7123472050119202364
+      spriteID: b895e1330b703c549a2b46a973a271a3
+      internalID: -559933339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_3
+      name: jailBars 1_3
       rect:
         serializedVersion: 2
-        x: 905
-        y: 1167
-        width: 192
-        height: 363
+        x: 150
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b8d3b4dbe785dac0800000000000000
-      internalID: -3831006461053118280
+      spriteID: 167aec605ad8c6b42a9c49789fff4f01
+      internalID: 1053768443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_4
+      name: jailBars 1_4
       rect:
         serializedVersion: 2
-        x: 14
-        y: 782
-        width: 191
-        height: 363
+        x: 200
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: c36d7952c94efca50800000000000000
-      internalID: 6543700142889358908
+      spriteID: 1272b7b7b704273478474505ad724401
+      internalID: 1413076063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_5
+      name: jailBars 1_5
       rect:
         serializedVersion: 2
-        x: 311
-        y: 782
-        width: 190
-        height: 363
+        x: 250
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 773ffb1b069020cb0800000000000000
-      internalID: -4899343133722021001
+      spriteID: e8214dab6c3d2c541a15e4c91603e58b
+      internalID: -642575172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_6
+      name: jailBars 1_6
       rect:
         serializedVersion: 2
-        x: 608
-        y: 782
-        width: 190
-        height: 363
+        x: 300
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: 3, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: 3, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: b1a0bc5d47a9bac90800000000000000
-      internalID: -7157457356181534181
+      spriteID: 96abe6480c661bc47b64e719c8bdeb33
+      internalID: 389295458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_7
+      name: jailBars 1_7
       rect:
         serializedVersion: 2
-        x: 905
-        y: 782
-        width: 190
-        height: 364
+        x: 350
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 806c195c6782e2960800000000000000
-      internalID: 7579039713497040392
+      spriteID: 972926b1fafa3c14d9b1a86fa220acdf
+      internalID: -685264839
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_8
+      name: jailBars 1_8
       rect:
         serializedVersion: 2
-        x: 14
-        y: 397
-        width: 190
-        height: 363
+        x: 400
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 3c28565040d8eae20800000000000000
-      internalID: 3363781020102263491
+      spriteID: 8a804d499f5a41e4d921fb50f593197c
+      internalID: 2023018367
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_9
+      name: jailBars 1_9
       rect:
         serializedVersion: 2
-        x: 311
-        y: 397
-        width: 190
-        height: 364
+        x: 450
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: bc307764091876620800000000000000
-      internalID: 2767322952699937739
+      spriteID: 9d3ba2acd31b27348a5f7beef701817f
+      internalID: 457751119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_10
+      name: jailBars 1_10
       rect:
         serializedVersion: 2
-        x: 608
-        y: 397
-        width: 190
-        height: 364
+        x: 500
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: e081cad22b16074c0800000000000000
-      internalID: -4291823026985756658
+      spriteID: 6af78993e706c5c4196cde344a72d3ba
+      internalID: -1966878359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_11
+      name: jailBars 1_11
       rect:
         serializedVersion: 2
-        x: 905
-        y: 397
-        width: 190
-        height: 364
+        x: 550
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: b4d07dc177e9f7230800000000000000
-      internalID: 3638801258360802635
+      spriteID: 58a5b582ce6ef6848bff6605aba74533
+      internalID: -752833529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_12
+      name: jailBars 1_12
       rect:
         serializedVersion: 2
-        x: 14
-        y: 12
-        width: 190
-        height: 364
+        x: 600
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 101d5b87963f814f0800000000000000
-      internalID: -857668094691782399
+      spriteID: 0430ee1b9abadf243b8c4a1894bbd30f
+      internalID: -977333785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_13
+      name: jailBars 1_13
       rect:
         serializedVersion: 2
-        x: 311
-        y: 12
-        width: 191
-        height: 364
+        x: 650
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 274bcc42aafe25120800000000000000
-      internalID: 2401245065382769778
+      spriteID: a84a53d74e16187478f8389b82bff4ad
+      internalID: -573198147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_14
+      name: jailBars 1_14
       rect:
         serializedVersion: 2
-        x: 608
-        y: 12
-        width: 192
-        height: 364
+        x: 700
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: 388295a0ca9348ba0800000000000000
-      internalID: -6087677385227294589
+      spriteID: c1c2d8558efe1dd49b224030deb7aaee
+      internalID: 1378732484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxIdle_15
+      name: jailBars 1_15
       rect:
         serializedVersion: 2
-        x: 905
-        y: 12
-        width: 192
-        height: 362
+        x: 750
+        y: 0
+        width: 50
+        height: 550
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -25, y: -243}
+        - {x: 25, y: -243}
+        - {x: 25, y: -225}
+        - {x: -25, y: -225}
+      tessellationDetail: 0
       bones: []
-      spriteID: e7b66849ae69420d0800000000000000
-      internalID: -3448465480400606338
+      spriteID: 8f3c23f475466a34fb99569a3c033fa6
+      internalID: 1377554511
       vertices: []
       indices: 
       edges: []
@@ -500,7 +507,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e9f19bb9fcc557f4fa2c25bdf48f9d22
+    spriteID: ece2f17a481793b459208d5eb66cd96c
     internalID: 0
     vertices: []
     indices: 
@@ -510,24 +517,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":550.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ceryxIdle_0: -211451390074536312
-      ceryxIdle_1: 22907589116867278
-      ceryxIdle_10: -4291823026985756658
-      ceryxIdle_11: 3638801258360802635
-      ceryxIdle_12: -857668094691782399
-      ceryxIdle_13: 2401245065382769778
-      ceryxIdle_14: -6087677385227294589
-      ceryxIdle_15: -3448465480400606338
-      ceryxIdle_2: 7123472050119202364
-      ceryxIdle_3: -3831006461053118280
-      ceryxIdle_4: 6543700142889358908
-      ceryxIdle_5: -4899343133722021001
-      ceryxIdle_6: -7157457356181534181
-      ceryxIdle_7: 7579039713497040392
-      ceryxIdle_8: 3363781020102263491
-      ceryxIdle_9: 2767322952699937739
+      jailBars 1_0: -1433737197372277587
+      jailBars 1_1: 1870202082
+      jailBars 1_10: -1966878359
+      jailBars 1_11: -752833529
+      jailBars 1_12: -977333785
+      jailBars 1_13: -573198147
+      jailBars 1_14: 1378732484
+      jailBars 1_15: 1377554511
+      jailBars 1_2: -559933339
+      jailBars 1_3: 1053768443
+      jailBars 1_4: 1413076063
+      jailBars 1_5: -642575172
+      jailBars 1_6: 389295458
+      jailBars 1_7: -685264839
+      jailBars 1_8: 2023018367
+      jailBars 1_9: 457751119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
