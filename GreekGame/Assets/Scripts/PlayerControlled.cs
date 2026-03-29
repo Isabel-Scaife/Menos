@@ -5,6 +5,7 @@ public class PlayerControlled : MonoBehaviour
 {
     // components
     protected Rigidbody2D rb;
+    protected Animator animator;
 
     // interactions 
     [SerializeField]
@@ -30,6 +31,8 @@ public class PlayerControlled : MonoBehaviour
     {
         // gets components
         rb = GetComponent<Rigidbody2D>();
+
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -117,6 +120,20 @@ public class PlayerControlled : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();
+
+        // play walk animation
+        animator.SetFloat("horizontal", Mathf.Abs(direction.x));
+        animator.SetFloat("vertical", Mathf.Abs(direction.y));
+
+        // flip walk 
+        if(direction.x > 0 && transform.localScale.x < 0 || 
+            direction.x < 0 && transform.localScale.x > 0)
+        {
+            transform.localScale = new Vector3(
+                transform.localScale.x*-1, 
+                transform.localScale.y, 
+                transform.localScale.z);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
