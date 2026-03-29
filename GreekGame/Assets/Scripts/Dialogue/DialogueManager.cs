@@ -20,11 +20,6 @@ public class DialogueManager : MonoBehaviour
     private float scrollTimer;
     private Queue<char> scrollTextRemaining;
     private bool wantsToAdvance;
-
-    // player intput stuff
-    [SerializeField]
-    private PlayerInput dialogueInput;
-    [SerializeField]
     private PlayerControlled player;
 
     // display text stuff
@@ -55,6 +50,7 @@ public class DialogueManager : MonoBehaviour
         scrollTimer = 0.0f;
         scrollTextRemaining = new Queue<char>();
         chosen = null;
+        choicesShowing = false;
     }
 
     private void Update()
@@ -95,10 +91,9 @@ public class DialogueManager : MonoBehaviour
             {
                 // close dialogue and switch input controls back to player
                 DialogueIsHappening = false;
-                dialogueInput.enabled = false;
-                player.ResumeInputControls();
                 dialogueBox.SetActive(false);
                 dialogueTMP.text = "";
+                player.SwitchActionMaps(false);
             }
             else
             {
@@ -111,20 +106,22 @@ public class DialogueManager : MonoBehaviour
         // displays next piece of dialogue based on option chosen
         else if (chosen != null)
         {
-            // TODO: do something with choice's outcome object
-            
-            // sets next dialogue node
-            currentNode = nodes[chosen.nextNodeID];
-            chosen = null;
+            // TODO: do something with choice's outcome object, e.g. log something in journal
+            if (chosen.outcome != null)
+            {
 
-            // hides choice boxes before displaying next piece
+            }
+            
+            // hides choice boxes then displays next piece
             choicesShowing = false;
-            int len = choiceBoxes.Count;
+            int len = currentNode.choices.Count;
             for (int i = 0; i < len; i++)
             {
-                choiceTMPs[i].text = "";
                 choiceBoxes[i].SetActive(false);
+                choiceTMPs[i].text = "";
             }
+            currentNode = nodes[chosen.nextNodeID];
+            chosen = null;
             DisplayDialogue();
         }
     }
@@ -133,10 +130,14 @@ public class DialogueManager : MonoBehaviour
     /// Shows dialogue
     /// </summary>
     /// <param name="dialogue">all dialogue info for the interaction that should play</param>
-    public void BeginDialogue(DialogueSO dialogue)
+    public void BeginDialogue(DialogueSO dialogue, PlayerControlled _player)
     {      
         // quits if no dialogue was given
         if (dialogue == null) return;
+
+        // switches player input to be able to advance dialogue and not move
+        player = _player;
+        player.SwitchActionMaps(true);
         
         // gets all dialogue for the interaction
         currentDialogue = dialogue;
@@ -173,14 +174,15 @@ public class DialogueManager : MonoBehaviour
             textIsScrolling = true;
         }
         else
-        {
+        {            
             // shows the current node's choices
             int len = currentNode.choices.Count;
             for (int i = 0; i < len; i++)
             {
-                choiceBoxes[i].SetActive(true);
                 choiceTMPs[i].text = currentNode.choices[i].text;
+                choiceBoxes[i].SetActive(true);                
             }
+            choicesShowing = true;
         }
     }
 
@@ -190,10 +192,19 @@ public class DialogueManager : MonoBehaviour
         if (context.started) wantsToAdvance = true;
     }
 
-    // advances based on option chosen
-    public void Choose(DialogueChoice dc)
+    // advances based on option chosen (index is 0 for bottom button, 1 for next up, etc.)
+    public void Choose(int index)
     {
-        // TODO: call this with input controls
-        if (choicesShowing) chosen = dc;
+        // unnecessary check since this is only called by button press if implemented correctly
+        /*
+        // exit and log error message if invalid index given
+        if (index < 0 || !choicesShowing || index >= currentNode.choices.Count)
+        {
+            Debug.Log("invalid index given for choice, or no choices exist");
+            return;
+        }
+        */
+
+        chosen = currentNode.choices[index];
     }
 }
