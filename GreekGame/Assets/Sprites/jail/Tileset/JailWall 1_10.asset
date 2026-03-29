@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: JailWall 1_10
   m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
-  m_Sprite: {fileID: -326583173, guid: 66688f407972359478a3b49c786f83dc, type: 3}
+  m_Sprite: {fileID: -1791203101, guid: 5596b0a0da9beb6419f55704a695ce98, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
