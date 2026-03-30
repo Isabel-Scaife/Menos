@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa1824f5dba1a884e9b33f0271a6a74d
+guid: 9ef83ccc08ba1884996f1e0771037c11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5668792389218546234
-    second: jailFloor_0
+      213: 4633173553845808614
+    second: jailFloor 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jailFloor_0
+      name: jailFloor 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,14 +115,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a323fc8b4a89bae40800000000000000
-      internalID: 5668792389218546234
+      spriteID: 6eda6b3bcc65c4040800000000000000
+      internalID: 4633173553845808614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailFloor_1
+      name: jailFloor 1_1
       rect:
         serializedVersion: 2
         x: 50
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55ef15d1742e3c34787d14f4af01a185
-      internalID: 1155225151
+      spriteID: ff6017a080cdd074cb86d2c86392b2c2
+      internalID: 511018641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailFloor_2
+      name: jailFloor 1_2
       rect:
         serializedVersion: 2
         x: 0
@@ -159,14 +159,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c397146ec7a244b8c3837471a9aeff
-      internalID: -779521601
+      spriteID: b40f23538a6adb94f832fec22d238b9c
+      internalID: 898231542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailFloor_3
+      name: jailFloor 1_3
       rect:
         serializedVersion: 2
         x: 50
@@ -181,8 +181,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09b8ce0d51b0bbd498433790c55d06d0
-      internalID: -628195404
+      spriteID: f2f276ba8320a83458b2ededea13fb37
+      internalID: -2146844932
       vertices: []
       indices: 
       edges: []
@@ -191,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 938a28df051a7364191894d2d9cab4fb
+    spriteID: db47860fc1e64e140bc828f05f7c5d08
     internalID: 0
     vertices: []
     indices: 
@@ -203,10 +203,10 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":50.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      jailFloor_0: 5668792389218546234
-      jailFloor_1: 1155225151
-      jailFloor_2: -779521601
-      jailFloor_3: -628195404
+      jailFloor 1_0: 4633173553845808614
+      jailFloor 1_1: 511018641
+      jailFloor 1_2: 898231542
+      jailFloor 1_3: -2146844932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
