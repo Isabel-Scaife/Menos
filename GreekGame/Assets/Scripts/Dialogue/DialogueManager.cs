@@ -43,7 +43,17 @@ public class DialogueManager : MonoBehaviour
     // functions
     private void Awake()
     {
+        // destroy duplicate instance if one of this singleton already exists
+        if (Instance != null && Instance != this)
+        {
+            Debug.Log("Destroyed duplicate PopupManager object");
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(this.gameObject);
         Instance = this;
+
+        // reset fields to defaults
         textIsScrolling = false;
         wantsToAdvance = false;
         DialogueIsHappening = false;
