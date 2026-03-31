@@ -14,8 +14,9 @@ public class Door : Interactable
         else
         {
             // open door
-            transform.rotation = Quaternion.Euler(0, 0, -90);
-
+            transform.rotation = Quaternion.Euler(0, 90, 0);
+            canInteract = false;
+            GetComponentInChildren<Collider2D>().enabled = false;
         }
     }
 

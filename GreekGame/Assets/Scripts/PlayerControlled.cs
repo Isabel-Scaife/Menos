@@ -22,16 +22,12 @@ public class PlayerControlled : MonoBehaviour
     [SerializeField]
     private PlayerInput playerInput;
     [SerializeField]
-    private PlayerInput birdInput;
-
-    // storing what should be given control after cutscenes
-    private bool birdControlledLast;
+    private bool controlBird = false;
 
     private void Awake()
     {
         // gets components
         rb = GetComponent<Rigidbody2D>();
-
         animator = GetComponent<Animator>();
     }
 
@@ -39,8 +35,15 @@ public class PlayerControlled : MonoBehaviour
     {
         // update player's position
         velocity = direction * speed;
-        position = (Vector2)transform.position + velocity * Time.fixedDeltaTime;
-        rb.MovePosition(position);
+
+        // determine whethere move player or bird
+        if(!controlBird)
+        {
+            //position = (Vector2)birdTransform.position + velocity * Time.fixedDeltaTime;
+            //birdRb.MovePosition(position);
+            position = (Vector2)transform.position + velocity * Time.fixedDeltaTime;
+            rb.MovePosition(position);
+        }
 
     }
 
@@ -60,18 +63,7 @@ public class PlayerControlled : MonoBehaviour
 
     public void SwapControlledObject()
     {
-        // turn bird controls on 
-        if(playerInput.inputIsActive)
-        {
-            playerInput.enabled = false;
-            birdInput.enabled = true;
-        }
-        // turn player contorls on
-        else
-        {
-            birdInput.enabled = false;
-            playerInput.enabled = true;
-        }
+        controlBird = !controlBird; 
     }
 
     /// <summary>
@@ -79,16 +71,7 @@ public class PlayerControlled : MonoBehaviour
     /// </summary>
     public void PauseInputControls()
     {
-        if (birdInput != null && birdInput.inputIsActive)
-        {
-            birdControlledLast = true;
-            birdInput.enabled = false;
-        }
-        else
-        {
-            birdControlledLast = false;
-            playerInput.enabled = false;
-        }
+        playerInput.enabled = false;
     }
 
     /// <summary>
@@ -96,8 +79,7 @@ public class PlayerControlled : MonoBehaviour
     /// </summary>
     public void ResumeInputControls()
     {
-        if (birdControlledLast) birdInput.enabled = true;
-        else playerInput.enabled = true;
+        playerInput.enabled = true;
     }
 
     /// <summary>
@@ -108,13 +90,11 @@ public class PlayerControlled : MonoBehaviour
     public void SwitchActionMaps(bool toDialogue)
     {
         // gets correct input component and map to switch to
-        PlayerInput currInput = playerInput;
-        if (birdInput.inputIsActive) currInput = birdInput;
         string targetMap = "Player";
         if (toDialogue) targetMap = "Dialogue";
 
         // switches current input to target map
-        currInput.SwitchCurrentActionMap(targetMap);
+        playerInput.SwitchCurrentActionMap(targetMap);
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -134,11 +114,11 @@ public class PlayerControlled : MonoBehaviour
                 transform.localScale.y, 
                 transform.localScale.z);
         }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("running");
         // get reference to intertactable in rage
         interactObject = collision.gameObject.GetComponent<Interactable>();
     }
