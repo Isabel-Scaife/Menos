@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SigilDoor : Interactable
 {
@@ -10,6 +11,10 @@ public class SigilDoor : Interactable
     // true represents the corresponding sigil being on, false represents it being off
     [SerializeField]
     private bool[] pattern;
+
+    // name of scene to jump to when door is interacted with while unlocked
+    [SerializeField]
+    private string nextScene;
     
     public override void Interact(PlayerControlled player)
     {
@@ -20,8 +25,9 @@ public class SigilDoor : Interactable
             return;
         }
 
-        // TODO: allow the player to open the door and remove debug log
-        Debug.Log("The door is unlocked!");
+        // jump to new scene
+        SceneManager.LoadScene(nextScene);
+        //Debug.Log("The door is unlocked!");
     }
 
     /// <summary>
