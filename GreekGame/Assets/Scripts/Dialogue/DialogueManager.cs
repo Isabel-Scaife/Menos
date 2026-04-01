@@ -24,6 +24,8 @@ public class DialogueManager : MonoBehaviour
 
     // display text stuff
     [SerializeField]
+    private TextMeshProUGUI speakerTMP;
+    [SerializeField]
     private TextMeshProUGUI dialogueTMP;
     [SerializeField]
     private GameObject dialogueBox;
@@ -43,7 +45,17 @@ public class DialogueManager : MonoBehaviour
     // functions
     private void Awake()
     {
+        // destroy duplicate instance if one of this singleton already exists
+        if (Instance != null && Instance != this)
+        {
+            Debug.Log("Destroyed duplicate PopupManager object");
+            Destroy(this.gameObject);
+            return;
+        }
+        DontDestroyOnLoad(this.gameObject);
         Instance = this;
+
+        // reset fields to defaults
         textIsScrolling = false;
         wantsToAdvance = false;
         DialogueIsHappening = false;
@@ -161,6 +173,13 @@ public class DialogueManager : MonoBehaviour
         wantsToAdvance = false;
         if (currentNode.choices == null || currentNode.choices.Count < 1)
         {
+            // shows current speaker's name and/or new sprites if this info should be updated
+            if (currentNode.updateSpeakerInfo)
+            {
+                speakerTMP.text = currentNode.speaker;
+                // TODO: update sprites, probably using string fields of node as dictionary keys
+            }
+
             // setup for showing current node's text character by character
             dialogueTMP.text = "";
             scrollTextRemaining.Clear();

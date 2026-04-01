@@ -19,13 +19,13 @@ public class NPC : Interactable
     /// <param name="player">player interacting with this NPC</param>
     public override void Interact(PlayerControlled player)
     {
-        // can be overridden if states determine which dialogue should play
+        // can be overridden if states determine which conversation should happen
 
         // exits early if no interaction is allowed at this time
         if (!canInteract) return;
 
         // shows dialogue
-        canInteract = false;
+        canInteract = false;    // base class only responds to the first intaction
         if (dialogues != null && dialogues.Count > 0)
         {
             DialogueManager.Instance.BeginDialogue(dialogues[0], player);

@@ -17,7 +17,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PhysicalCollider
   - Water
   - UI
   - Tool
@@ -28,10 +28,10 @@ TagManager:
   - Player
   - Item
   - Vase
-  - 
-  - 
-  - 
-  - 
+  - Interactable
+  - PlayerPush
+  - BlockBird
+  - FlyOver
   - 
   - 
   - 
