@@ -1,0 +1,4498 @@
+fileFormatVersion: 2
+guid: ba1bf83c4190bd246bc554b7fd72e14e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5374923451042035215
+    second: wine glass_0
+  - first:
+      213: 7563872480580449082
+    second: wine glass_1
+  - first:
+      213: 13668898125381404
+    second: wine glass_2
+  - first:
+      213: 453399515169039039
+    second: wine glass_3
+  - first:
+      213: -6229742388982667088
+    second: wine glass_4
+  - first:
+      213: -1413559465932206394
+    second: wine glass_5
+  - first:
+      213: 4743996896064452968
+    second: wine glass_6
+  - first:
+      213: 2518327571584582312
+    second: wine glass_7
+  - first:
+      213: -2535986217880141662
+    second: wine glass_8
+  - first:
+      213: 4022974933054646736
+    second: wine glass_9
+  - first:
+      213: -6801350990485118679
+    second: wine glass_10
+  - first:
+      213: -4346850853268605494
+    second: wine glass_11
+  - first:
+      213: -6647571117529920283
+    second: wine glass_12
+  - first:
+      213: 3281600711652916239
+    second: wine glass_13
+  - first:
+      213: 1693301142994639324
+    second: wine glass_14
+  - first:
+      213: 7540473202259658021
+    second: wine glass_15
+  - first:
+      213: -5893245322976823199
+    second: wine glass_16
+  - first:
+      213: 7458995416770312248
+    second: wine glass_17
+  - first:
+      213: -3005503156258508143
+    second: wine glass_18
+  - first:
+      213: -3242063547904133995
+    second: wine glass_19
+  - first:
+      213: 6212870004264414853
+    second: wine glass_20
+  - first:
+      213: 301435249371190153
+    second: wine glass_21
+  - first:
+      213: -3727671438244461626
+    second: wine glass_22
+  - first:
+      213: 1817611040950882658
+    second: wine glass_23
+  - first:
+      213: 8151816651602751592
+    second: wine glass_24
+  - first:
+      213: 8905983229080304472
+    second: wine glass_25
+  - first:
+      213: 5576929190970953598
+    second: wine glass_26
+  - first:
+      213: -402589283105027555
+    second: wine glass_27
+  - first:
+      213: -7598547143006298735
+    second: wine glass_28
+  - first:
+      213: 5710967441240242830
+    second: wine glass_29
+  - first:
+      213: 1576187553903451381
+    second: wine glass_30
+  - first:
+      213: 2300622048940982760
+    second: wine glass_31
+  - first:
+      213: 3474101253369444666
+    second: wine glass_32
+  - first:
+      213: 6202824741322887518
+    second: wine glass_33
+  - first:
+      213: -3822932476467019667
+    second: wine glass_34
+  - first:
+      213: 7462893504653217825
+    second: wine glass_35
+  - first:
+      213: 8010408058418611658
+    second: wine glass_36
+  - first:
+      213: -7799933532404035361
+    second: wine glass_37
+  - first:
+      213: -353224664962512199
+    second: wine glass_38
+  - first:
+      213: -2616271353646597088
+    second: wine glass_39
+  - first:
+      213: 1606228844080977154
+    second: wine glass_40
+  - first:
+      213: 8367885062483255059
+    second: wine glass_41
+  - first:
+      213: 4995551148595501136
+    second: wine glass_42
+  - first:
+      213: 3459229357189862463
+    second: wine glass_43
+  - first:
+      213: 140158537918068518
+    second: wine glass_44
+  - first:
+      213: 4954391682054680359
+    second: wine glass_45
+  - first:
+      213: 4140394839397710669
+    second: wine glass_46
+  - first:
+      213: 6652477266000228388
+    second: wine glass_47
+  - first:
+      213: 885190800638854627
+    second: wine glass_48
+  - first:
+      213: -1032900176134379617
+    second: wine glass_49
+  - first:
+      213: -8089887347735593077
+    second: wine glass_50
+  - first:
+      213: -2936766283026812647
+    second: wine glass_51
+  - first:
+      213: 7319257468448394735
+    second: wine glass_52
+  - first:
+      213: -4377882748737389058
+    second: wine glass_53
+  - first:
+      213: 2055112999791372508
+    second: wine glass_54
+  - first:
+      213: -6223599034151582313
+    second: wine glass_55
+  - first:
+      213: -5842159255926373863
+    second: wine glass_56
+  - first:
+      213: -3096489695587641394
+    second: wine glass_57
+  - first:
+      213: 3044464152944411876
+    second: wine glass_58
+  - first:
+      213: -395339925004025580
+    second: wine glass_59
+  - first:
+      213: -4894180083770785051
+    second: wine glass_60
+  - first:
+      213: -3188773848454750870
+    second: wine glass_61
+  - first:
+      213: 1997950756180924020
+    second: wine glass_62
+  - first:
+      213: -510841350604857485
+    second: wine glass_63
+  - first:
+      213: -6121277752917332128
+    second: wine glass_64
+  - first:
+      213: 7564825574200564445
+    second: wine glass_65
+  - first:
+      213: 1467658093384988196
+    second: wine glass_66
+  - first:
+      213: -4120621106267012304
+    second: wine glass_67
+  - first:
+      213: 2453972947997108088
+    second: wine glass_68
+  - first:
+      213: 423917042520498686
+    second: wine glass_69
+  - first:
+      213: -5505493516466243178
+    second: wine glass_70
+  - first:
+      213: -5541372476179224338
+    second: wine glass_71
+  - first:
+      213: 6832783239157336221
+    second: wine glass_72
+  - first:
+      213: -8645423509139992492
+    second: wine glass_73
+  - first:
+      213: -2470494373537821542
+    second: wine glass_74
+  - first:
+      213: -2525466330860836270
+    second: wine glass_75
+  - first:
+      213: 7526089331600371496
+    second: wine glass_76
+  - first:
+      213: 3859853826699887514
+    second: wine glass_77
+  - first:
+      213: -2422934577885958024
+    second: wine glass_78
+  - first:
+      213: 4030604215891837471
+    second: wine glass_79
+  - first:
+      213: 3414526738508118756
+    second: wine glass_80
+  - first:
+      213: 435106154698434726
+    second: wine glass_81
+  - first:
+      213: -7413043312579063033
+    second: wine glass_82
+  - first:
+      213: -4858528521155657449
+    second: wine glass_83
+  - first:
+      213: 8606384131208083471
+    second: wine glass_84
+  - first:
+      213: -3264441104046817481
+    second: wine glass_85
+  - first:
+      213: 8712659423530287191
+    second: wine glass_86
+  - first:
+      213: -8141403655376728121
+    second: wine glass_87
+  - first:
+      213: -7843565492434434834
+    second: wine glass_88
+  - first:
+      213: 5493743019698957860
+    second: wine glass_89
+  - first:
+      213: 3462557796041060598
+    second: wine glass_90
+  - first:
+      213: -3055641093718927133
+    second: wine glass_91
+  - first:
+      213: 4789280482638546450
+    second: wine glass_92
+  - first:
+      213: 3426856806679370195
+    second: wine glass_93
+  - first:
+      213: -8482014635905465360
+    second: wine glass_94
+  - first:
+      213: -153251653423994235
+    second: wine glass_95
+  - first:
+      213: -8154716803028499542
+    second: wine glass_96
+  - first:
+      213: 3860346735141346292
+    second: wine glass_97
+  - first:
+      213: 872613897931158298
+    second: wine glass_98
+  - first:
+      213: 4062981225609577393
+    second: wine glass_99
+  - first:
+      213: 8915808601229732488
+    second: wine glass_100
+  - first:
+      213: 8554084848836986869
+    second: wine glass_101
+  - first:
+      213: 7578177980655744397
+    second: wine glass_102
+  - first:
+      213: 5492190166826308786
+    second: wine glass_103
+  - first:
+      213: 4756325938028948901
+    second: wine glass_104
+  - first:
+      213: -139586735887774699
+    second: wine glass_105
+  - first:
+      213: -873862888242535300
+    second: wine glass_106
+  - first:
+      213: -5296892281437068236
+    second: wine glass_107
+  - first:
+      213: 1767165609168614934
+    second: wine glass_108
+  - first:
+      213: -5860633109204372474
+    second: wine glass_109
+  - first:
+      213: 1953151900759146865
+    second: wine glass_110
+  - first:
+      213: -4975392091151890777
+    second: wine glass_111
+  - first:
+      213: 8627198459053626394
+    second: wine glass_112
+  - first:
+      213: -1960378966528824105
+    second: wine glass_113
+  - first:
+      213: -5984572366824590873
+    second: wine glass_114
+  - first:
+      213: -8698926417567440950
+    second: wine glass_115
+  - first:
+      213: 2360625464077591399
+    second: wine glass_116
+  - first:
+      213: -8061023776024911353
+    second: wine glass_117
+  - first:
+      213: -3945399821072269863
+    second: wine glass_118
+  - first:
+      213: 5077346475871434089
+    second: wine glass_119
+  - first:
+      213: 1571504388755704513
+    second: wine glass_120
+  - first:
+      213: -310669556371334175
+    second: wine glass_121
+  - first:
+      213: -3423252433864809483
+    second: wine glass_122
+  - first:
+      213: 3062588349421923743
+    second: wine glass_123
+  - first:
+      213: 6302925887583155501
+    second: wine glass_124
+  - first:
+      213: -2937701436433552828
+    second: wine glass_125
+  - first:
+      213: 8370608293448964282
+    second: wine glass_126
+  - first:
+      213: 5110561427768821353
+    second: wine glass_127
+  - first:
+      213: 9092564304206923696
+    second: wine glass_128
+  - first:
+      213: -1756943498629551705
+    second: wine glass_129
+  - first:
+      213: 7916939938103904268
+    second: wine glass_130
+  - first:
+      213: -6373562368316435350
+    second: wine glass_131
+  - first:
+      213: 3949006004167424266
+    second: wine glass_132
+  - first:
+      213: 2760640499356516953
+    second: wine glass_133
+  - first:
+      213: -2058524386571910345
+    second: wine glass_134
+  - first:
+      213: 8021410028214375144
+    second: wine glass_135
+  - first:
+      213: -1443694864325022304
+    second: wine glass_136
+  - first:
+      213: 2781916049668414153
+    second: wine glass_137
+  - first:
+      213: -515591334939710073
+    second: wine glass_138
+  - first:
+      213: -7191350676592739719
+    second: wine glass_139
+  - first:
+      213: -3403327478273153279
+    second: wine glass_140
+  - first:
+      213: 6877560983476485068
+    second: wine glass_141
+  - first:
+      213: 9147690584722309310
+    second: wine glass_142
+  - first:
+      213: -237759402696655269
+    second: wine glass_143
+  - first:
+      213: -6921746052174618807
+    second: wine glass_144
+  - first:
+      213: -5399897574481374815
+    second: wine glass_145
+  - first:
+      213: 1741286854961565470
+    second: wine glass_146
+  - first:
+      213: -7102319524144295469
+    second: wine glass_147
+  - first:
+      213: -745056671374361856
+    second: wine glass_148
+  - first:
+      213: -4886635050105357277
+    second: wine glass_149
+  - first:
+      213: -8647952229508225672
+    second: wine glass_150
+  - first:
+      213: 6407707376223774009
+    second: wine glass_151
+  - first:
+      213: -2364306638473351275
+    second: wine glass_152
+  - first:
+      213: 3148988232477846754
+    second: wine glass_153
+  - first:
+      213: 757847766080101499
+    second: wine glass_154
+  - first:
+      213: 958714395362496011
+    second: wine glass_155
+  - first:
+      213: -535660722922060640
+    second: wine glass_156
+  - first:
+      213: -5173068782610326256
+    second: wine glass_157
+  - first:
+      213: 1964605374288757827
+    second: wine glass_158
+  - first:
+      213: 2126891806840701766
+    second: wine glass_159
+  - first:
+      213: -5579303737799179227
+    second: wine glass_160
+  - first:
+      213: 6061260385031256899
+    second: wine glass_161
+  - first:
+      213: 1298631163737556498
+    second: wine glass_162
+  - first:
+      213: 1807790127372492801
+    second: wine glass_163
+  - first:
+      213: 4722275465496147150
+    second: wine glass_164
+  - first:
+      213: 2501141746517141223
+    second: wine glass_165
+  - first:
+      213: 9027674654941198038
+    second: wine glass_166
+  - first:
+      213: -4408992006670459274
+    second: wine glass_167
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wine glass_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2871
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f909bd499f6865b0800000000000000
+      internalID: -5374923451042035215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2990
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a33b95b22f548f860800000000000000
+      internalID: 7563872480580449082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 3015
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ffb395acf803000800000000000000
+      internalID: 13668898125381404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 135
+        width: 1182
+        height: 2983
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb22cf2f47cca4600800000000000000
+      internalID: 453399515169039039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_4
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2871
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8ae76cd428b89a0800000000000000
+      internalID: -6229742388982667088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_5
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 2990
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce4834b727026ce0800000000000000
+      internalID: -1413559465932206394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_6
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 3015
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8693a7dca0016d140800000000000000
+      internalID: 4743996896064452968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_7
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 3022
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a20f5c6595e2f220800000000000000
+      internalID: 2518327571584582312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_8
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 2933
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a0c7f798fd5eccd0800000000000000
+      internalID: -2535986217880141662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_9
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2970
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9e501136a74d730800000000000000
+      internalID: 4022974933054646736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_10
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 2933
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921226b2f4fbc91a0800000000000000
+      internalID: -6801350990485118679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_11
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2970
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac53257fd22eca3c0800000000000000
+      internalID: -4346850853268605494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_12
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2872
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec8b78f9451fb3a0800000000000000
+      internalID: -6647571117529920283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_13
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2872
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cbdb8e5769a8d20800000000000000
+      internalID: 3281600711652916239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_14
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2787
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd955f50b60df7710800000000000000
+      internalID: 1693301142994639324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_15
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2539
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5250a032d6425a860800000000000000
+      internalID: 7540473202259658021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_16
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 2787
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 168fbbd3a9cf63ea0800000000000000
+      internalID: -5893245322976823199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_17
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 2539
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8387cd5efcca38760800000000000000
+      internalID: 7458995416770312248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_18
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2711
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19275ef9dce4a46d0800000000000000
+      internalID: -3005503156258508143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2735
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5947eef5160e103d0800000000000000
+      internalID: -3242063547904133995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_20
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2711
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e2cd70a5c883650800000000000000
+      internalID: 6212870004264414853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_21
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2735
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9831d8123c9ee2400800000000000000
+      internalID: 301435249371190153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_22
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2653
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3c114b396a44cc0800000000000000
+      internalID: -3727671438244461626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_23
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2690
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26194b39c93793910800000000000000
+      internalID: 1817611040950882658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_24
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 2653
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86075e0fd02112170800000000000000
+      internalID: 8151816651602751592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_25
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 2690
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bfae89f88689b70800000000000000
+      internalID: 8905983229080304472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2593
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f84552d8b356d40800000000000000
+      internalID: 5576929190970953598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2624
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a45261e27b96af0800000000000000
+      internalID: -402589283105027555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_28
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 2593
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ddc0cd1a98c8690800000000000000
+      internalID: -7598547143006298735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_29
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 2624
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a32fa31ae614f40800000000000000
+      internalID: 5710967441240242830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_30
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 2594
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc9ec1ba3ebfd510800000000000000
+      internalID: 1576187553903451381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_31
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2270
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e10f8570937def10800000000000000
+      internalID: 2300622048940982760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_32
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2389
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3933d0feac763030800000000000000
+      internalID: 3474101253369444666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_33
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2414
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e511e8efc3cd41650800000000000000
+      internalID: 6202824741322887518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_34
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2270
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6001ebda2732fac0800000000000000
+      internalID: -3822932476467019667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_35
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 2389
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120dc653a16819760800000000000000
+      internalID: 7462893504653217825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_36
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 2414
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5c7fb20bfaa2f60800000000000000
+      internalID: 8010408058418611658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_37
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2421
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd0566137c111c390800000000000000
+      internalID: -7799933532404035361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_38
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 2332
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bac007e908191bf0800000000000000
+      internalID: -353224664962512199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_39
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2369
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02c3dd1c01321bbd0800000000000000
+      internalID: -2616271353646597088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_40
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 2332
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205de6f9f987a4610800000000000000
+      internalID: 1606228844080977154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_41
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2369
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f9c9e1123b02470800000000000000
+      internalID: 8367885062483255059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_42
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 2271
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05854555d43c35540800000000000000
+      internalID: 4995551148595501136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_43
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2302
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3497e7c5c6a10030800000000000000
+      internalID: 3459229357189862463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_44
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 2271
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62738d89271f1f100800000000000000
+      internalID: 140158537918068518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_45
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2302
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fe40f3cf881c440800000000000000
+      internalID: 4954391682054680359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_46
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 2186
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b39207b23a57930800000000000000
+      internalID: 4140394839397710669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_47
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1938
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4203e4cb3d8525c50800000000000000
+      internalID: 6652477266000228388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_48
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 2186
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5c58ed754d84c00800000000000000
+      internalID: 885190800638854627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_49
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1938
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97621923c66aa1f0800000000000000
+      internalID: -1032900176134379617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_50
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 2110
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ffa4db152fabf80800000000000000
+      internalID: -8089887347735593077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_51
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2135
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911b7df00a28e37d0800000000000000
+      internalID: -2936766283026812647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_52
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 2110
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedcd7273e9339560800000000000000
+      internalID: 7319257468448394735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_53
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 2135
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd7235c5d2ae33c0800000000000000
+      internalID: -4377882748737389058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_54
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2052
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd82ad5826a358c10800000000000000
+      internalID: 2055112999791372508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_55
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2090
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7954ee807a551a9a0800000000000000
+      internalID: -6223599034151582313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_56
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 2052
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9128f3d1c1b7ceea0800000000000000
+      internalID: -5842159255926373863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_57
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 2090
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec757db170f0705d0800000000000000
+      internalID: -3096489695587641394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_58
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1992
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e489af440c104a20800000000000000
+      internalID: 3044464152944411876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_59
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2023
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4110b9cce68738af0800000000000000
+      internalID: -395339925004025580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_60
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1992
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e20d00f421641cb0800000000000000
+      internalID: -4894180083770785051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_61
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 2023
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d9cc564133fb3d0800000000000000
+      internalID: -3188773848454750870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_62
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 1993
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47613ec80a52abb10800000000000000
+      internalID: 1997950756180924020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_63
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1669
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fdd988f7029e8f0800000000000000
+      internalID: -510841350604857485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_64
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1788
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f6cddc05adc0ba0800000000000000
+      internalID: -6121277752917332128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_65
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1813
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddad30297c8abf860800000000000000
+      internalID: 7564825574200564445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_66
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1669
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42670fb824b2e5410800000000000000
+      internalID: 1467658093384988196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_67
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1788
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0334af29fec90d6c0800000000000000
+      internalID: -4120621106267012304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_68
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 1813
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87729cdf4634e0220800000000000000
+      internalID: 2453972947997108088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_69
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1820
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef12baddd4e02e500800000000000000
+      internalID: 423917042520498686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_70
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1731
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69930dde0de8893b0800000000000000
+      internalID: -5505493516466243178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_71
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1768
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8e535a7171913b0800000000000000
+      internalID: -5541372476179224338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_72
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 1731
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d984735872ce2de50800000000000000
+      internalID: 6832783239157336221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_73
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1768
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45056e4bf19450880800000000000000
+      internalID: -8645423509139992492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_74
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1670
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c4dadd47a07bdd0800000000000000
+      internalID: -2470494373537821542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_75
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 1670
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25aa4d8a0cdb3fcd0800000000000000
+      internalID: -2525466330860836270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_76
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1585
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82fa5e54f5a027860800000000000000
+      internalID: 7526089331600371496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_77
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1337
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a930161ea94f09530800000000000000
+      internalID: 3859853826699887514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_78
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 1585
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870b813b6d1006ed0800000000000000
+      internalID: -2422934577885958024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_79
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 1337
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f12cc66ed259fe730800000000000000
+      internalID: 4030604215891837471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_80
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1509
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ea79dc4af5d26f20800000000000000
+      internalID: 3414526738508118756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_81
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1533
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8e26e0ebec90600800000000000000
+      internalID: 435106154698434726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_82
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1509
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703d32912649f1990800000000000000
+      internalID: -7413043312579063033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_83
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 1533
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711c9653d0a039cb0800000000000000
+      internalID: -4858528521155657449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_84
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1451
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f08773dc4c4007770800000000000000
+      internalID: 8606384131208083471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_85
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1488
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ffa139c1062b2d0800000000000000
+      internalID: -3264441104046817481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_86
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 1451
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7508b74859599e870800000000000000
+      internalID: 8712659423530287191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_87
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1488
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf043ca28ce30f80800000000000000
+      internalID: -8141403655376728121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_88
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1391
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee40feaddbe062390800000000000000
+      internalID: -7843565492434434834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_89
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1422
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e20785b22bd3c40800000000000000
+      internalID: 5493743019698957860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_90
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1391
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f0794758f97d0030800000000000000
+      internalID: 3462557796041060598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_91
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 1422
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e81ccf5d9e2895d0800000000000000
+      internalID: -3055641093718927133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_92
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 1392
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216c1696931f67240800000000000000
+      internalID: 4789280482638546450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_93
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1068
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d9d0420c14ae8f20800000000000000
+      internalID: 3426856806679370195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_94
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1187
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3c037d0a4d94a80800000000000000
+      internalID: -8482014635905465360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_95
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1212
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58aeb64ee6a8fddf0800000000000000
+      internalID: -153251653423994235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_96
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 1068
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3c39fe540a4de80800000000000000
+      internalID: -8154716803028499542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_97
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1187
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb50f117e4b29530800000000000000
+      internalID: 3860346735141346292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_98
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 1212
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13714487b52c1c00800000000000000
+      internalID: 872613897931158298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_99
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 1219
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b34a89e5eb926830800000000000000
+      internalID: 4062981225609577393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_100
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 1130
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88aaba15fa05bbb70800000000000000
+      internalID: 8915808601229732488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_101
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1167
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7ca7939d636b670800000000000000
+      internalID: 8554084848836986869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_102
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1130
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d853ca5f8b81b2960800000000000000
+      internalID: 7578177980655744397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_103
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 1167
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4539c9bdd283c40800000000000000
+      internalID: 5492190166826308786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_104
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1069
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad21349d3dd10240800000000000000
+      internalID: 4756325938028948901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_105
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1100
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c8d007a96101ef0800000000000000
+      internalID: -139586735887774699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_106
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1069
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7428e3455a6fd3f0800000000000000
+      internalID: -873862888242535300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_107
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1100
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4346f6fb888ad76b0800000000000000
+      internalID: -5296892281437068236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_108
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 984
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61638c932cb368810800000000000000
+      internalID: 1767165609168614934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_109
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 736
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604faf6fc39daaea0800000000000000
+      internalID: -5860633109204372474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_110
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 984
+        width: 74
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171c0253e4dfa1b10800000000000000
+      internalID: 1953151900759146865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_111
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 736
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a68a9cf04bd3fab0800000000000000
+      internalID: -4975392091151890777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_112
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 908
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1450b62a47f9b770800000000000000
+      internalID: 8627198459053626394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_113
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 933
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dce6ea67b55bc4e0800000000000000
+      internalID: -1960378966528824105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_114
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 908
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e13dc6d32782fca0800000000000000
+      internalID: -5984572366824590873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_115
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 933
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acf91a91384374780800000000000000
+      internalID: -8698926417567440950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_116
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 850
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763261a3a50a2c020800000000000000
+      internalID: 2360625464077591399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_117
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 888
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 702ae08b59d712090800000000000000
+      internalID: -8061023776024911353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_118
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 850
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddf81034cf1f39c0800000000000000
+      internalID: -3945399821072269863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_119
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 888
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965f5e708bb567640800000000000000
+      internalID: 5077346475871434089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_120
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 790
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ca40c65aea1fc510800000000000000
+      internalID: 1571504388755704513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_121
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 821
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb55f93fa740bbf0800000000000000
+      internalID: -310669556371334175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_122
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 790
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f32ffe6c0a2e70d0800000000000000
+      internalID: -3423252433864809483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_123
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 821
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d2b84a0ef708a20800000000000000
+      internalID: 3062588349421923743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_124
+      rect:
+        serializedVersion: 2
+        x: 2472
+        y: 791
+        width: 28
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25f10f43bd787750800000000000000
+      internalID: 6302925887583155501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_125
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 467
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a2931bb103b37d0800000000000000
+      internalID: -2937701436433552828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_126
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 586
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab8d6fcb4ef5a2470800000000000000
+      internalID: 8370608293448964282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_127
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 611
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96649f8aa8c5ce640800000000000000
+      internalID: 5110561427768821353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_128
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 467
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b786a96f074f2e70800000000000000
+      internalID: 9092564304206923696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_129
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 586
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9e0c952351e97e0800000000000000
+      internalID: -1756943498629551705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_130
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 611
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0849ce8dee9edd60800000000000000
+      internalID: 7916939938103904268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_131
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 618
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6493ba6bce8c87a0800000000000000
+      internalID: -6373562368316435350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_132
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 529
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09b84eb900bdc630800000000000000
+      internalID: 3949006004167424266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_133
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 566
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952c3bc58e3cf4620800000000000000
+      internalID: 2760640499356516953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_134
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 529
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73307e81af6ae63e0800000000000000
+      internalID: -2058524386571910345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_135
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 566
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e25971ebe5c15f60800000000000000
+      internalID: 8021410028214375144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_136
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 468
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ade9df7b27f6fbe0800000000000000
+      internalID: -1443694864325022304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_137
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 468
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca917f68e95b9620800000000000000
+      internalID: 2781916049668414153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_138
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 383
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d26af996048d8f0800000000000000
+      internalID: -515591334939710073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_139
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 135
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97abc6a39a0333c90800000000000000
+      internalID: -7191350676592739719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_140
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 383
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107e33ba0b3f4c0d0800000000000000
+      internalID: -3403327478273153279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_141
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 135
+        width: 255
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccbb33d8641027f50800000000000000
+      internalID: 6877560983476485068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_142
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 307
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb00f89ce1023fe70800000000000000
+      internalID: 9147690584722309310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_143
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 331
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5eb14c351f43bcf0800000000000000
+      internalID: -237759402696655269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_144
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 307
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f5ba673a401ff90800000000000000
+      internalID: -6921746052174618807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_145
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 331
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a15b8114c5bf05b0800000000000000
+      internalID: -5399897574481374815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_146
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 249
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f8a0a3b2b4a2810800000000000000
+      internalID: 1741286854961565470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_147
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 286
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1de02c50e7f6d90800000000000000
+      internalID: -7102319524144295469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_148
+      rect:
+        serializedVersion: 2
+        x: 1928
+        y: 249
+        width: 52
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b3235a7e609a5f0800000000000000
+      internalID: -745056671374361856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_149
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 286
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c3f7bff4f2f2cb0800000000000000
+      internalID: -4886635050105357277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_150
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 189
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8756d9d144d4cf780800000000000000
+      internalID: -8647952229508225672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_151
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 220
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 935e770c8efbce850800000000000000
+      internalID: 6407707376223774009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_152
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 189
+        width: 42
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59fa2b193ab403fd0800000000000000
+      internalID: -2364306638473351275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_153
+      rect:
+        serializedVersion: 2
+        x: 1903
+        y: 220
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec2ab60d1473bb20800000000000000
+      internalID: 3148988232477846754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_154
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 190
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c170b278a648a00800000000000000
+      internalID: 757847766080101499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_155
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 120
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e82a0c9a90e4d00800000000000000
+      internalID: 958714395362496011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_156
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a40a1a1963f098f0800000000000000
+      internalID: -535660722922060640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_157
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 10
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d59dda9519538b0800000000000000
+      internalID: -5173068782610326256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_158
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 120
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3440e42dd2ea34b10800000000000000
+      internalID: 1964605374288757827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_159
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 0
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 643cd6e54dc348d10800000000000000
+      internalID: 2126891806840701766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_160
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 10
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52488769fc45292b0800000000000000
+      internalID: -5579303737799179227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_161
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 120
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b7fecc43ced1450800000000000000
+      internalID: 6061260385031256899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_162
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 0
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21644d8b92aa50210800000000000000
+      internalID: 1298631163737556498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_163
+      rect:
+        serializedVersion: 2
+        x: 1686
+        y: 10
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100ee72fa8f861910800000000000000
+      internalID: 1807790127372492801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_164
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 0
+        width: 120
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4b0742484e88140800000000000000
+      internalID: 4722275465496147150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_165
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 0
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6ed06ba27d5b220800000000000000
+      internalID: 2501141746517141223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_166
+      rect:
+        serializedVersion: 2
+        x: 2287
+        y: 10
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6319b944eb84d70800000000000000
+      internalID: 9027674654941198038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wine glass_167
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 17
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67eded8312d10d2c0800000000000000
+      internalID: -4408992006670459274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wine glass_0: -5374923451042035215
+      wine glass_1: 7563872480580449082
+      wine glass_10: -6801350990485118679
+      wine glass_100: 8915808601229732488
+      wine glass_101: 8554084848836986869
+      wine glass_102: 7578177980655744397
+      wine glass_103: 5492190166826308786
+      wine glass_104: 4756325938028948901
+      wine glass_105: -139586735887774699
+      wine glass_106: -873862888242535300
+      wine glass_107: -5296892281437068236
+      wine glass_108: 1767165609168614934
+      wine glass_109: -5860633109204372474
+      wine glass_11: -4346850853268605494
+      wine glass_110: 1953151900759146865
+      wine glass_111: -4975392091151890777
+      wine glass_112: 8627198459053626394
+      wine glass_113: -1960378966528824105
+      wine glass_114: -5984572366824590873
+      wine glass_115: -8698926417567440950
+      wine glass_116: 2360625464077591399
+      wine glass_117: -8061023776024911353
+      wine glass_118: -3945399821072269863
+      wine glass_119: 5077346475871434089
+      wine glass_12: -6647571117529920283
+      wine glass_120: 1571504388755704513
+      wine glass_121: -310669556371334175
+      wine glass_122: -3423252433864809483
+      wine glass_123: 3062588349421923743
+      wine glass_124: 6302925887583155501
+      wine glass_125: -2937701436433552828
+      wine glass_126: 8370608293448964282
+      wine glass_127: 5110561427768821353
+      wine glass_128: 9092564304206923696
+      wine glass_129: -1756943498629551705
+      wine glass_13: 3281600711652916239
+      wine glass_130: 7916939938103904268
+      wine glass_131: -6373562368316435350
+      wine glass_132: 3949006004167424266
+      wine glass_133: 2760640499356516953
+      wine glass_134: -2058524386571910345
+      wine glass_135: 8021410028214375144
+      wine glass_136: -1443694864325022304
+      wine glass_137: 2781916049668414153
+      wine glass_138: -515591334939710073
+      wine glass_139: -7191350676592739719
+      wine glass_14: 1693301142994639324
+      wine glass_140: -3403327478273153279
+      wine glass_141: 6877560983476485068
+      wine glass_142: 9147690584722309310
+      wine glass_143: -237759402696655269
+      wine glass_144: -6921746052174618807
+      wine glass_145: -5399897574481374815
+      wine glass_146: 1741286854961565470
+      wine glass_147: -7102319524144295469
+      wine glass_148: -745056671374361856
+      wine glass_149: -4886635050105357277
+      wine glass_15: 7540473202259658021
+      wine glass_150: -8647952229508225672
+      wine glass_151: 6407707376223774009
+      wine glass_152: -2364306638473351275
+      wine glass_153: 3148988232477846754
+      wine glass_154: 757847766080101499
+      wine glass_155: 958714395362496011
+      wine glass_156: -535660722922060640
+      wine glass_157: -5173068782610326256
+      wine glass_158: 1964605374288757827
+      wine glass_159: 2126891806840701766
+      wine glass_16: -5893245322976823199
+      wine glass_160: -5579303737799179227
+      wine glass_161: 6061260385031256899
+      wine glass_162: 1298631163737556498
+      wine glass_163: 1807790127372492801
+      wine glass_164: 4722275465496147150
+      wine glass_165: 2501141746517141223
+      wine glass_166: 9027674654941198038
+      wine glass_167: -4408992006670459274
+      wine glass_17: 7458995416770312248
+      wine glass_18: -3005503156258508143
+      wine glass_19: -3242063547904133995
+      wine glass_2: 13668898125381404
+      wine glass_20: 6212870004264414853
+      wine glass_21: 301435249371190153
+      wine glass_22: -3727671438244461626
+      wine glass_23: 1817611040950882658
+      wine glass_24: 8151816651602751592
+      wine glass_25: 8905983229080304472
+      wine glass_26: 5576929190970953598
+      wine glass_27: -402589283105027555
+      wine glass_28: -7598547143006298735
+      wine glass_29: 5710967441240242830
+      wine glass_3: 453399515169039039
+      wine glass_30: 1576187553903451381
+      wine glass_31: 2300622048940982760
+      wine glass_32: 3474101253369444666
+      wine glass_33: 6202824741322887518
+      wine glass_34: -3822932476467019667
+      wine glass_35: 7462893504653217825
+      wine glass_36: 8010408058418611658
+      wine glass_37: -7799933532404035361
+      wine glass_38: -353224664962512199
+      wine glass_39: -2616271353646597088
+      wine glass_4: -6229742388982667088
+      wine glass_40: 1606228844080977154
+      wine glass_41: 8367885062483255059
+      wine glass_42: 4995551148595501136
+      wine glass_43: 3459229357189862463
+      wine glass_44: 140158537918068518
+      wine glass_45: 4954391682054680359
+      wine glass_46: 4140394839397710669
+      wine glass_47: 6652477266000228388
+      wine glass_48: 885190800638854627
+      wine glass_49: -1032900176134379617
+      wine glass_5: -1413559465932206394
+      wine glass_50: -8089887347735593077
+      wine glass_51: -2936766283026812647
+      wine glass_52: 7319257468448394735
+      wine glass_53: -4377882748737389058
+      wine glass_54: 2055112999791372508
+      wine glass_55: -6223599034151582313
+      wine glass_56: -5842159255926373863
+      wine glass_57: -3096489695587641394
+      wine glass_58: 3044464152944411876
+      wine glass_59: -395339925004025580
+      wine glass_6: 4743996896064452968
+      wine glass_60: -4894180083770785051
+      wine glass_61: -3188773848454750870
+      wine glass_62: 1997950756180924020
+      wine glass_63: -510841350604857485
+      wine glass_64: -6121277752917332128
+      wine glass_65: 7564825574200564445
+      wine glass_66: 1467658093384988196
+      wine glass_67: -4120621106267012304
+      wine glass_68: 2453972947997108088
+      wine glass_69: 423917042520498686
+      wine glass_7: 2518327571584582312
+      wine glass_70: -5505493516466243178
+      wine glass_71: -5541372476179224338
+      wine glass_72: 6832783239157336221
+      wine glass_73: -8645423509139992492
+      wine glass_74: -2470494373537821542
+      wine glass_75: -2525466330860836270
+      wine glass_76: 7526089331600371496
+      wine glass_77: 3859853826699887514
+      wine glass_78: -2422934577885958024
+      wine glass_79: 4030604215891837471
+      wine glass_8: -2535986217880141662
+      wine glass_80: 3414526738508118756
+      wine glass_81: 435106154698434726
+      wine glass_82: -7413043312579063033
+      wine glass_83: -4858528521155657449
+      wine glass_84: 8606384131208083471
+      wine glass_85: -3264441104046817481
+      wine glass_86: 8712659423530287191
+      wine glass_87: -8141403655376728121
+      wine glass_88: -7843565492434434834
+      wine glass_89: 5493743019698957860
+      wine glass_9: 4022974933054646736
+      wine glass_90: 3462557796041060598
+      wine glass_91: -3055641093718927133
+      wine glass_92: 4789280482638546450
+      wine glass_93: 3426856806679370195
+      wine glass_94: -8482014635905465360
+      wine glass_95: -153251653423994235
+      wine glass_96: -8154716803028499542
+      wine glass_97: 3860346735141346292
+      wine glass_98: 872613897931158298
+      wine glass_99: 4062981225609577393
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
