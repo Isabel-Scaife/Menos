@@ -12,7 +12,7 @@ public class Bird : PlayerControlled
     private float seekWeight;
     [SerializeField]
     private GameObject seekTarget;
-    private Vector2 seekForce, totalForce;
+    private Vector2 totalForce;
 
     [SerializeField]
     private float catchUpRadius;
@@ -87,6 +87,7 @@ public class Bird : PlayerControlled
         }
         else
         {
+            Debug.Log("move bird");
             base.FixedUpdate();
         }
     }
@@ -114,7 +115,7 @@ public class Bird : PlayerControlled
         {
             totalForce += Seek(targetPos, speed);
         }
-        else if(distance >= matchSpeed)
+        else if(distance >= matchSpeedRadius)
         {
             totalForce += Seek(targetPos, matchSpeed);
         }
