@@ -16,7 +16,7 @@ public class HideBox : Interactable
     //player is in view cone
 
 
-    void Start()
+    void Awake()
     {
         // Get the SpriteRenderer component attached to this GameObject
         //we have this for debug purposes so it can change color
