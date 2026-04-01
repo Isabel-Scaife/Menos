@@ -6,6 +6,22 @@ public class Bird : PlayerControlled
     [SerializeField]
     private GameObject heldObject = null;
 
+    private Vector2 acceleration, steeringForce;
+
+    [SerializeField]
+    private float seekWeight;
+    [SerializeField]
+    private GameObject seekTarget;
+    private Vector2 seekForce, totalForce;
+
+    [SerializeField]
+    private float catchUpRadius;
+    [SerializeField] 
+    private float matchSpeedRadius;
+
+    [SerializeField]
+    private float matchSpeed;
+
     public void Drop()
     {
         // remove item from bird
@@ -51,5 +67,58 @@ public class Bird : PlayerControlled
         return false;
     }
 
+    protected override void FixedUpdate()
+    {
+        // bird automoved if not controlled
+        if(controlBird)
+        {
+            // determine acceleration
+            acceleration = Vector2.zero;
+            steeringForce = CalcSteering();
+            acceleration += steeringForce;
 
+            // update velocity 
+            velocity += acceleration * Time.fixedDeltaTime;
+            velocity = Vector2.ClampMagnitude(velocity, speed);
+
+            // update position
+            Vector2 nextPos = (Vector2) transform.position + velocity * Time.fixedDeltaTime;
+            rb.MovePosition(nextPos);
+        }
+        else
+        {
+            base.FixedUpdate();
+        }
+    }
+
+    // methods that help determine bird movement when not controlled
+
+
+    public Vector2 Seek(Vector2 targetPos, float currentSpeed)
+    {
+        Vector2 desiredVelocity = targetPos - (Vector2)transform.position;
+        desiredVelocity = desiredVelocity.normalized * currentSpeed;
+
+        return desiredVelocity - velocity;
+    }
+
+    private Vector2 CalcSteering()
+    {
+        totalForce = Vector2.zero;
+
+        // check distance from target 
+        Vector2 targetPos = seekTarget.transform.position;
+        float distance = Vector2.Distance(targetPos, transform.position);
+
+        if(distance >= catchUpRadius)
+        {
+            totalForce += Seek(targetPos, speed);
+        }
+        else if(distance >= matchSpeed)
+        {
+            totalForce += Seek(targetPos, matchSpeed);
+        }
+
+        return totalForce;
+    }
 }

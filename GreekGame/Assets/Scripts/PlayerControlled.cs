@@ -32,7 +32,7 @@ public class PlayerControlled : MonoBehaviour
     [SerializeField]
     private PlayerInput playerInput;
     [SerializeField]
-    private bool controlBird = false;
+    protected bool controlBird = false;
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class PlayerControlled : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // update player's position
         velocity = direction * speed;
@@ -49,8 +49,6 @@ public class PlayerControlled : MonoBehaviour
         // determine whethere move player or bird
         if(!controlBird)
         {
-            //position = (Vector2)birdTransform.position + velocity * Time.fixedDeltaTime;
-            //birdRb.MovePosition(position);
             position = (Vector2)transform.position + velocity * Time.fixedDeltaTime;
             rb.MovePosition(position);
         }
@@ -111,7 +109,7 @@ public class PlayerControlled : MonoBehaviour
     {
         direction = context.ReadValue<Vector2>();
 
-        if( direction != Vector2.zero )
+        if( direction != Vector2.zero && !controlBird)
         {
             if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.normalized.y))
             {
@@ -121,7 +119,7 @@ public class PlayerControlled : MonoBehaviour
                 }
                 else
                 {
-                    faceDirection= MoveDirections.Left;
+                    faceDirection= MoveDirections.Right;
                 }
             }
             else
@@ -132,7 +130,7 @@ public class PlayerControlled : MonoBehaviour
                 }
                 else
                 {
-                    faceDirection = MoveDirections.Backward;
+                    faceDirection = MoveDirections.Forward;
                 }
             }
         }
@@ -140,11 +138,9 @@ public class PlayerControlled : MonoBehaviour
         {
             faceDirection = MoveDirections.None;
         }
-        Debug.Log(faceDirection.ToString());
-        Debug.Log(direction.ToString());
 
-            // play walk animation
-            animator.SetInteger("direction", (int)faceDirection);
+        // play correct facing animation
+        animator.SetInteger("direction", (int)faceDirection);
 
         // flip walk 
         if(direction.x > 0 && transform.localScale.x < 0 || 
