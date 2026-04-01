@@ -1,11 +1,21 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum MoveDirections
+{ 
+    Forward, 
+    Backward,
+    Right,
+    Left,
+    None
+}
+
 public class PlayerControlled : MonoBehaviour
 {
     // components
     protected Rigidbody2D rb;
     protected Animator animator;
+    protected MoveDirections faceDirection = MoveDirections.Forward;
 
     // interactions 
     [SerializeField]
@@ -101,9 +111,40 @@ public class PlayerControlled : MonoBehaviour
     {
         direction = context.ReadValue<Vector2>();
 
-        // play walk animation
-        animator.SetFloat("horizontal", Mathf.Abs(direction.x));
-        animator.SetFloat("vertical", Mathf.Abs(direction.y));
+        if( direction != Vector2.zero )
+        {
+            if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.normalized.y))
+            {
+                if (direction.x >= 0)
+                {
+                    faceDirection = MoveDirections.Right;
+                }
+                else
+                {
+                    faceDirection= MoveDirections.Left;
+                }
+            }
+            else
+            {
+                if (direction.y <= 0)
+                {
+                    faceDirection = MoveDirections.Forward;
+                }
+                else
+                {
+                    faceDirection = MoveDirections.Backward;
+                }
+            }
+        }
+        else
+        {
+            faceDirection = MoveDirections.None;
+        }
+        Debug.Log(faceDirection.ToString());
+        Debug.Log(direction.ToString());
+
+            // play walk animation
+            animator.SetInteger("direction", (int)faceDirection);
 
         // flip walk 
         if(direction.x > 0 && transform.localScale.x < 0 || 
