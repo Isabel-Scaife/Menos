@@ -24,6 +24,8 @@ public class DialogueManager : MonoBehaviour
 
     // display text stuff
     [SerializeField]
+    private TextMeshProUGUI speakerTMP;
+    [SerializeField]
     private TextMeshProUGUI dialogueTMP;
     [SerializeField]
     private GameObject dialogueBox;
@@ -171,6 +173,9 @@ public class DialogueManager : MonoBehaviour
         wantsToAdvance = false;
         if (currentNode.choices == null || currentNode.choices.Count < 1)
         {
+            // show current speaker's name
+            speakerTMP.text = currentNode.speaker;
+            
             // setup for showing current node's text character by character
             dialogueTMP.text = "";
             scrollTextRemaining.Clear();

@@ -11,7 +11,8 @@ public class DialogueNode
     public string id;
     public string nextNodeID;
 
-    // either has text or choices, not both
+    // either has text and speaker's name OR choices, not both
     [TextArea(3, 6)] public string text;
+    public string speaker;
     public List<DialogueChoice> choices;
 }
