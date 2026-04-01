@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f256202313ce1bc45a99ad57abd359a2, type: 3}
+  m_Name: WineGlass
+  m_EditorClassIdentifier: 
+  entryID: E004
+  entryName: Wineglass
+  description: The only empty wineglass at the Dionysus temple.
+  icon: {fileID: 453399515169039039, guid: ba1bf83c4190bd246bc554b7fd72e14e, type: 3}
+  possibleRelations: []
