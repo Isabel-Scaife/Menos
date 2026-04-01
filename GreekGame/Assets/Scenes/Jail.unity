@@ -2076,7 +2076,7 @@ Transform:
   m_GameObject: {fileID: 544052447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.896398, y: -0.17503023, z: 0}
+  m_LocalPosition: {x: 9.876959, y: -0.17679024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32549,7 +32549,7 @@ Transform:
   m_GameObject: {fileID: 1809860753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.83, y: -29.8, z: 0}
+  m_LocalPosition: {x: -24.5, y: -29.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33106,10 +33106,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034383011}
-  - component: {fileID: 2034383013}
   - component: {fileID: 2034383012}
+  - component: {fileID: 2034383013}
   m_Layer: 17
-  m_Name: Chair (2)
+  m_Name: DeskChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33124,8 +33124,8 @@ Transform:
   m_GameObject: {fileID: 2034383010}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.5, y: -9, z: 0}
-  m_LocalScale: {x: 2, y: 4, z: 1}
+  m_LocalPosition: {x: 13, y: -9, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809860754}
@@ -33168,13 +33168,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.75, y: 2.5}
+    newSize: {x: 1.75, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2}
   m_EdgeRadius: 0
 --- !u!212 &2034383013
 SpriteRenderer:
@@ -33225,16 +33225,16 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.2830189, g: 0.1347423, b: 0.027589845, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 4a759e406a443ba4b94c04ae9fc2cc20, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.75, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!4 &2076872103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
