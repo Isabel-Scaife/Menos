@@ -18,27 +18,31 @@ MonoBehaviour:
     id: hi
     nextNodeID: first two choices
     text: Hello, I am a test NPC
-    speaker: Test NPC
     choices: []
+    updateSpeakerInfo: 1
+    speaker: Test NPC
   - isEndpoint: 0
     id: first two choices
     nextNodeID: 
     text: 
-    speaker: 
     choices:
     - text: first choice
       nextNodeID: choice1 result
     - text: second choice
       nextNodeID: choice2 result
+    updateSpeakerInfo: 0
+    speaker: 
   - isEndpoint: 1
     id: choice1 result
     nextNodeID: 
     text: You selected the first choice
-    speaker: Test NPC
     choices: []
+    updateSpeakerInfo: 0
+    speaker: Test NPC
   - isEndpoint: 1
     id: choice2 result
     nextNodeID: 
     text: You selected the second choice
-    speaker: Test NPC
     choices: []
+    updateSpeakerInfo: 0
+    speaker: Test NPC

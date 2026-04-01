@@ -173,9 +173,13 @@ public class DialogueManager : MonoBehaviour
         wantsToAdvance = false;
         if (currentNode.choices == null || currentNode.choices.Count < 1)
         {
-            // show current speaker's name
-            speakerTMP.text = currentNode.speaker;
-            
+            // shows current speaker's name and/or new sprites if this info should be updated
+            if (currentNode.updateSpeakerInfo)
+            {
+                speakerTMP.text = currentNode.speaker;
+                // TODO: update sprites, probably using string fields of node as dictionary keys
+            }
+
             // setup for showing current node's text character by character
             dialogueTMP.text = "";
             scrollTextRemaining.Clear();
