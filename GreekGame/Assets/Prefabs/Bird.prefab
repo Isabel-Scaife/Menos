@@ -109,7 +109,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactObject: {fileID: 0}
-  speed: 5
+  speed: 8
   playerInput: {fileID: 0}
   controlBird: 1
   heldObject: {fileID: 0}
@@ -316,7 +316,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 110591
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

@@ -11,14 +11,20 @@ public class PushableObject : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-
+        PlayerControlled playerControlled = collision.gameObject.GetComponent<PlayerControlled>();
+        if (playerControlled != null)
+        {
+            if (playerControlled is Bird)
+            {
+                rb.bodyType = RigidbodyType2D.Static;
+            }
+            else
+            {
+                rb.bodyType= RigidbodyType2D.Dynamic;
+            }
+        }
     }
 }
