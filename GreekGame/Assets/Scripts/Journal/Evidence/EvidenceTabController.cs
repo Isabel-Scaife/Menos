@@ -19,7 +19,7 @@ public class EvidenceTabController : MonoBehaviour
     public delegate void UpdateTag();
 
     public int itemsPerPage = 20;
-    private int currentPage = 0;
+    public int currentPage = 0;
 
     private void Awake()
     {

@@ -15,8 +15,8 @@ public class RelationshipsTabController : MonoBehaviour
     public GameObject relationsGridPanel;
 
     public int relationPerPage = 20;
-    private int currentPage = 0;
-    
+    public int currentPage = 0;
+
     // Communicates to the evidence popup whether this relationship was discovered
     public static event displayButtonInR Discovered;
     public delegate void displayButtonInR();
