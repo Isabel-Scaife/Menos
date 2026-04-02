@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 
 public class JournalManager : MonoBehaviour
 {
     // A public static instance of itself to give access to functions of journal manager
     public static JournalManager Instance;
+    public Canvas journalMain;
 
     // State of the Journal. This will be used to change the action map from other things to journal map
     // If journal gameobject is active, this should be tagged as 'InUse'
@@ -35,6 +37,11 @@ public class JournalManager : MonoBehaviour
     [SerializeField]
     private int currentIndex;
     public int CurrentSection { get { return currentIndex; } }
+
+    // Event used to open journal. Invokes the event and sets journal canvas active
+    public static event Setup Open;
+    public delegate void Setup();
+
 
     // Store Child Canvases
     [SerializeField]
@@ -79,6 +86,9 @@ public class JournalManager : MonoBehaviour
 
         ProgressR += UpdateIndex_R;
         ProgressR += UpdateSection;
+
+        // Subscribe to journal open event
+        Open += OpenJournal;
     }
 
     // Update is called once per frame
@@ -90,14 +100,22 @@ public class JournalManager : MonoBehaviour
    
     private void OnEnable()
     {
+        // After Journal Instance has been set active and open journal was triggered, this runs
+
+        // First section to see is notes
         ClickNotesButton();
+
+        // Change the action map to Journal
     }
 
     // This can later be called when it is integrated within the main overlay screen
     // Just simply disable the journal UI
     private void OnDisable()
     {
-        
+        // Set other components back to active ( Shoud be events setup in other components )
+
+
+        // Change the used action map back to player
     }
 
     // Used to change journal section by button press or controller trigger
@@ -396,5 +414,38 @@ public class JournalManager : MonoBehaviour
     }
 
 
-    // Resetting pages when closing journal
+    // Open and Close Journal
+    // Open Journal
+    public void OpenJournal()
+    {
+        // Set Journal Canvas active.(Actually that is done outside the journal ->
+        //                            Player would have openjournal and it would set canvas active and then invoke Open event)
+        // Could invoke other events to set other componenets temporary inactive
+
+       
+
+    }
+
+    public void InvokeOpen()
+    {
+        Open?.Invoke();
+    }
+
+
+    // Resetting pages when closing journal 
+    public void CloseJournal()
+    {
+        // If evidence & relationship popup are both not active, close journal
+        if(!EvidencePopup.Instance.gameObject.activeSelf && !RelationshipsPopup.Instance.gameObject.activeSelf)
+        {
+            // Reset pages of sections
+            EvidenceTabController.Instance.currentPage = 0;
+            RelationshipsTabController.Instance.currentPage = 0;
+
+            // Set the canvas inactive
+            Instance.gameObject.SetActive(false);
+        }
+
+        // Rest of closing logic in on disable
+    }
 }
