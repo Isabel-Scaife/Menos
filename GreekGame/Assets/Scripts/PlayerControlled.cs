@@ -105,6 +105,12 @@ public class PlayerControlled : MonoBehaviour
         playerInput.SwitchCurrentActionMap(targetMap);
     }
 
+    // advance dialogue on input
+    public void AdvanceDialogue(InputAction.CallbackContext context)
+    {
+        if (DialogueManager.Instance != null) DialogueManager.Instance.Advance();
+    }
+
     public void Move(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();

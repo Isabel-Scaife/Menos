@@ -48,12 +48,12 @@ public class DialogueManager : MonoBehaviour
         // destroy duplicate instance if one of this singleton already exists
         if (Instance != null && Instance != this)
         {
-            Debug.Log("Destroyed duplicate PopupManager object");
+            Debug.Log("Destroyed duplicate DialogueManager object");
             Destroy(this.gameObject);
             return;
         }
-        DontDestroyOnLoad(this.gameObject);
         Instance = this;
+        DontDestroyOnLoad(this.gameObject);
 
         // reset fields to defaults
         textIsScrolling = false;
@@ -205,10 +205,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    // advances dialogue upon player input
-    public void Advance(InputAction.CallbackContext context)
+    // sets dialogue to advance on next update
+    public void Advance()
     {
-        if (context.started) wantsToAdvance = true;
+        wantsToAdvance = true;
     }
 
     // advances based on option chosen (index is 0 for bottom button, 1 for next up, etc.)

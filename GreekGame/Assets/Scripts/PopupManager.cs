@@ -25,8 +25,8 @@ public class PopupManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
-        DontDestroyOnLoad(this.gameObject);
         Instance = this;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     /// <summary>
