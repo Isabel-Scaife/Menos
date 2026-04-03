@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 /// <summary>
 /// Shows dialogue in UI, manages dialgoue choices (branching logic), etc.
@@ -39,6 +39,12 @@ public class DialogueManager : MonoBehaviour
     private List<GameObject> choiceBoxes;
     private bool choicesShowing;
     private DialogueChoice chosen;
+
+    // talking sprites
+    [SerializeField]
+    private Image speakerLeft;
+    [SerializeField]
+    private Image speakerRight;
 
     public bool DialogueIsHappening { get; private set; }
 
@@ -176,8 +182,25 @@ public class DialogueManager : MonoBehaviour
             // shows current speaker's name and/or new sprites if this info should be updated
             if (currentNode.updateSpeakerInfo)
             {
-                speakerTMP.text = currentNode.speaker;
-                // TODO: update sprites, probably using string fields of node as dictionary keys
+                speakerTMP.text = currentNode.speakerName;
+                if (currentNode.leftSprite == null)
+                {
+                    speakerLeft.enabled = false;
+                }
+                else
+                {
+                    speakerLeft.sprite = currentNode.leftSprite;
+                    speakerLeft.enabled = true;
+                }
+                if (currentNode.rightSprite == null)
+                {
+                    speakerRight.enabled = false;
+                }
+                else
+                {
+                    speakerRight.sprite = currentNode.rightSprite;
+                    speakerRight.enabled = true;
+                }
             }
 
             // setup for showing current node's text character by character

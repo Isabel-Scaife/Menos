@@ -20,14 +20,18 @@ MonoBehaviour:
     text: "Prince Ceryx\u2014you are not to leave the Desmoterion until your trial."
     choices: []
     updateSpeakerInfo: 1
-    speaker: Guard
+    speakerName: Guard
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
   - isEndpoint: 0
     id: 1
     nextNodeID: choices0
     text: Do not try to escape.
     choices: []
     updateSpeakerInfo: 0
-    speaker: 
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}
   - isEndpoint: 0
     id: choices0
     nextNodeID: 
@@ -38,25 +42,33 @@ MonoBehaviour:
     - text: Please! I am innocent.
       nextNodeID: forHendekaToDecide
     updateSpeakerInfo: 0
-    speaker: 
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}
   - isEndpoint: 0
     id: accusation0
     nextNodeID: accusation1
     text: You are accused of the murder of Lady Aglaurus and Lady Herse by poisoning.
     choices: []
     updateSpeakerInfo: 0
-    speaker: 
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}
   - isEndpoint: 1
     id: accusation1
     nextNodeID: 
     text: You must answer for your crime, and we will ensure it.
     choices: []
     updateSpeakerInfo: 0
-    speaker: 
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}
   - isEndpoint: 1
     id: forHendekaToDecide
     nextNodeID: 
     text: That is for Hendeka to decide.
     choices: []
     updateSpeakerInfo: 0
-    speaker: 
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}

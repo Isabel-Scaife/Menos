@@ -18,6 +18,7 @@ public class DialogueNode
 
     // if true, speaker name and/or sprites will be changed
     public bool updateSpeakerInfo;
-    public string speaker;
-    // TODO: left and right sprite info, maybe using string keys for a dictionary in manager
+    public string speakerName;
+    public Sprite leftSprite;
+    public Sprite rightSprite;
 }
