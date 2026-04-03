@@ -34140,6 +34140,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boulder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6165533831373529649, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -1.2661006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165533831373529649, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 0.32866728
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165533831373529649, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 1.1851813
+      objectReference: {fileID: 0}
+    - target: {fileID: 6165533831373529649, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 0.30530506
+      objectReference: {fileID: 0}
     - target: {fileID: 6741135821548590275, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 0

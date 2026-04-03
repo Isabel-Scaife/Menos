@@ -38,4 +38,9 @@ public class CorrectPoint : MonoBehaviour
         //    for first time with incorrect color 
         return 0;
     }
+
+    public void ResetPoint()
+    {
+        isPainted = false;
+    }
 }

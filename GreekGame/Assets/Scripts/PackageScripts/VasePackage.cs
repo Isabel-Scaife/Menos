@@ -16,6 +16,8 @@ public class VasePackage : MonoBehaviour
     private Collider2D incorrectArea;
     private bool inLoseZone = false;
 
+    private List<CorrectPoint> correctPointsHit;
+
     private Color currentColor = Color.white;
     private List<GameObject> shapesPlaced;
 
@@ -38,6 +40,7 @@ public class VasePackage : MonoBehaviour
         amtToWin = (int)(correctSpaces * completeThreshold * .01);
 
         shapesPlaced = new List<GameObject>();
+        correctPointsHit = new List<CorrectPoint>();
     }
 
     public void CheckCollidersHit(Collider2D shapeCollider)
@@ -63,8 +66,16 @@ public class VasePackage : MonoBehaviour
                 else if (collider.CompareTag("CorrectZone"))
                 {
                     // 4. correct point collider hit, update correct count
-                    pointsCorrect += collider.GetComponent<CorrectPoint>().
-                        PaintPoint(currentColor);
+
+                    CorrectPoint point = collider.GetComponent<CorrectPoint>();
+                    int paintValue = point.PaintPoint(currentColor);
+
+                    if(paintValue == 1)
+                    {
+                        correctPointsHit.Add(point);
+                    }
+
+                    pointsCorrect += paintValue;
 
                     Debug.Log("Amt Correct: " + pointsCorrect);
                 }
@@ -82,6 +93,10 @@ public class VasePackage : MonoBehaviour
                 SceneManager.LoadScene("Vineyard");
             }
         }
+        else
+        {
+            Debug.Log("Losing");
+        }
     }
 
     public void ResetImage()
@@ -95,10 +110,17 @@ public class VasePackage : MonoBehaviour
         }
         shapesPlaced.RemoveRange(8, shapeCount - 8);
 
-        // 2. reset count  
-        pointsCorrect = 0;
+        // 2. reset points
+        for(int i = 0; i < correctPointsHit.Count; i++)
+        {
+            correctPointsHit[i].ResetPoint();
+        }
 
-        // 3. reset sort layer count
+        // 3. reset count  
+        pointsCorrect = 0;
+        inLoseZone = false;
+
+        // 4. reset sort layer count
         SortOrder = 0;
     }
 }
