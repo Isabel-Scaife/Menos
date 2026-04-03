@@ -139,6 +139,16 @@ public class PlayerControlled : MonoBehaviour
                     faceDirection = MoveDirections.Forward;
                 }
             }
+
+            // flip walk 
+            if (direction.x > 0 && transform.localScale.x < 0 ||
+                direction.x < 0 && transform.localScale.x > 0)
+            {
+                transform.localScale = new Vector3(
+                    transform.localScale.x*-1,
+                    transform.localScale.y,
+                    transform.localScale.z);
+            }
         }
         else
         {
@@ -147,17 +157,6 @@ public class PlayerControlled : MonoBehaviour
 
         // play correct facing animation
         animator.SetInteger("direction", (int)faceDirection);
-
-        // flip walk 
-        if(direction.x > 0 && transform.localScale.x < 0 || 
-            direction.x < 0 && transform.localScale.x > 0)
-        {
-            transform.localScale = new Vector3(
-                transform.localScale.x*-1, 
-                transform.localScale.y, 
-                transform.localScale.z);
-        }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: d79460728dca3de418f0bf4f13aa20a0
+guid: e79f522e1d4ea1e43a74f18aaf020366
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1368723019266838090
-    second: ceryxWalkFront_0
+      213: -3205641570955625744
+    second: ceryxWalkFront 1_0
   - first:
-      213: 6061213600428217464
-    second: ceryxWalkFront_1
+      213: -1484164569979446167
+    second: ceryxWalkFront 1_1
   - first:
-      213: 7773983617644612895
-    second: ceryxWalkFront_2
+      213: 1085776625905036119
+    second: ceryxWalkFront 1_2
   - first:
-      213: -4399955588243727745
-    second: ceryxWalkFront_3
+      213: 5620076591628054857
+    second: ceryxWalkFront 1_3
   - first:
-      213: 5470545438099207432
-    second: ceryxWalkFront_4
+      213: -9054721272615938
+    second: ceryxWalkFront 1_4
   - first:
-      213: -4019032125761984340
-    second: ceryxWalkFront_5
+      213: 3736302388090171639
+    second: ceryxWalkFront 1_5
   - first:
-      213: -1077722973478421362
-    second: ceryxWalkFront_6
+      213: -6202467721089604877
+    second: ceryxWalkFront 1_6
   - first:
-      213: -4316971069281876141
-    second: ceryxWalkFront_7
+      213: -9120229266143896213
+    second: ceryxWalkFront 1_7
   - first:
-      213: 947744422408865747
-    second: ceryxWalkFront_8
+      213: 4887785589697951002
+    second: ceryxWalkFront 1_8
   - first:
-      213: -6628693589252327118
-    second: ceryxWalkFront_9
+      213: -2397069981717211662
+    second: ceryxWalkFront 1_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,7 +127,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ceryxWalkFront_0
+      name: ceryxWalkFront 1_0
       rect:
         serializedVersion: 2
         x: 42
@@ -142,14 +142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b133b07aa1510de0800000000000000
-      internalID: -1368723019266838090
+      spriteID: 0faf6f5b9f54383d0800000000000000
+      internalID: -3205641570955625744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_1
+      name: ceryxWalkFront 1_1
       rect:
         serializedVersion: 2
         x: 377
@@ -164,62 +164,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8745a49e7a1cd1450800000000000000
-      internalID: 6061213600428217464
+      spriteID: 96c9722ef20376be0800000000000000
+      internalID: -1484164569979446167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_2
+      name: ceryxWalkFront 1_2
       rect:
         serializedVersion: 2
-        x: 713
-        y: 979
-        width: 191
-        height: 352
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1dc96379ecb2eb60800000000000000
-      internalID: 7773983617644612895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ceryxWalkFront_3
-      rect:
-        serializedVersion: 2
-        x: 1048
-        y: 977
-        width: 177
-        height: 355
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7adc3754b730f2c0800000000000000
-      internalID: -4399955588243727745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ceryxWalkFront_4
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 505
+        x: 712
+        y: 960
         width: 190
         height: 371
       alignment: 7
@@ -230,18 +186,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 805798d77184beb40800000000000000
-      internalID: 5470545438099207432
+      spriteID: 75bed7ca614711f00800000000000000
+      internalID: 1085776625905036119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_5
+      name: ceryxWalkFront 1_3
       rect:
         serializedVersion: 2
-        x: 377
-        y: 514
+        x: 1047
+        y: 969
         width: 183
         height: 362
       alignment: 7
@@ -252,14 +208,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca8e21b43978938c0800000000000000
-      internalID: -4019032125761984340
+      spriteID: 9417a7632e58efd40800000000000000
+      internalID: 5620076591628054857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_6
+      name: ceryxWalkFront 1_4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 524
+        width: 191
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb610b67c4dfdff0800000000000000
+      internalID: -9054721272615938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceryxWalkFront 1_5
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 522
+        width: 177
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0fe87e9330ad330800000000000000
+      internalID: 3736302388090171639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ceryxWalkFront 1_6
       rect:
         serializedVersion: 2
         x: 712
@@ -274,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e8c7a876aa82b01f0800000000000000
-      internalID: -1077722973478421362
+      spriteID: 3f2a0a148786ce9a0800000000000000
+      internalID: -6202467721089604877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_7
+      name: ceryxWalkFront 1_7
       rect:
         serializedVersion: 2
         x: 1046
@@ -296,14 +296,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 357c0dd4fa90714c0800000000000000
-      internalID: -4316971069281876141
+      spriteID: b6d1f51bdcf6e6180800000000000000
+      internalID: -9120229266143896213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_8
+      name: ceryxWalkFront 1_8
       rect:
         serializedVersion: 2
         x: 43
@@ -318,14 +318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d7c983e780172d00800000000000000
-      internalID: 947744422408865747
+      spriteID: a153834e817e4d340800000000000000
+      internalID: 4887785589697951002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ceryxWalkFront_9
+      name: ceryxWalkFront 1_9
       rect:
         serializedVersion: 2
         x: 377
@@ -340,8 +340,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 239b4b70d462204a0800000000000000
-      internalID: -6628693589252327118
+      spriteID: 2f55ef54d85ebbed0800000000000000
+      internalID: -2397069981717211662
       vertices: []
       indices: 
       edges: []
@@ -350,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a72b1a1cec499064fbf4e9298ddc8f03
+    spriteID: 45a8b75d458f43d428eacac69f1ff66e
     internalID: 0
     vertices: []
     indices: 
@@ -362,16 +362,16 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      ceryxWalkFront_0: -1368723019266838090
-      ceryxWalkFront_1: 6061213600428217464
-      ceryxWalkFront_2: 7773983617644612895
-      ceryxWalkFront_3: -4399955588243727745
-      ceryxWalkFront_4: 5470545438099207432
-      ceryxWalkFront_5: -4019032125761984340
-      ceryxWalkFront_6: -1077722973478421362
-      ceryxWalkFront_7: -4316971069281876141
-      ceryxWalkFront_8: 947744422408865747
-      ceryxWalkFront_9: -6628693589252327118
+      ceryxWalkFront 1_0: -3205641570955625744
+      ceryxWalkFront 1_1: -1484164569979446167
+      ceryxWalkFront 1_2: 1085776625905036119
+      ceryxWalkFront 1_3: 5620076591628054857
+      ceryxWalkFront 1_4: -9054721272615938
+      ceryxWalkFront 1_5: 3736302388090171639
+      ceryxWalkFront 1_6: -6202467721089604877
+      ceryxWalkFront 1_7: -9120229266143896213
+      ceryxWalkFront 1_8: 4887785589697951002
+      ceryxWalkFront 1_9: -2397069981717211662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

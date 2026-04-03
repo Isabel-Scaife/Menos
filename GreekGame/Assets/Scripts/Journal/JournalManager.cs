@@ -21,7 +21,6 @@ public class JournalManager : MonoBehaviour
     private HashSet<EvidenceData> discoveredEvidence = new HashSet<EvidenceData>();
     private HashSet<RelationshipsData> unlockedRelations = new HashSet<RelationshipsData>();
 
-
     // Going to be used for section changes and button position reset
     public delegate void ChangeSection();
     public static event ChangeSection ProgressR;
@@ -41,7 +40,6 @@ public class JournalManager : MonoBehaviour
     // Event used to open journal. Invokes the event and sets journal canvas active
     public static event Setup Open;
     public delegate void Setup();
-
 
     // Store Child Canvases
     [SerializeField]
@@ -71,6 +69,7 @@ public class JournalManager : MonoBehaviour
     [SerializeField]
     private Button b_settings;
 
+    public PlayerInput playerInput;   // Need to switch back to player map
    
     private void Awake()
     {
@@ -106,6 +105,8 @@ public class JournalManager : MonoBehaviour
         ClickNotesButton();
 
         // Change the action map to Journal
+        playerInput.SwitchCurrentActionMap("Journal/UI");
+
     }
 
     // This can later be called when it is integrated within the main overlay screen
@@ -116,6 +117,7 @@ public class JournalManager : MonoBehaviour
 
 
         // Change the used action map back to player
+        playerInput.SwitchCurrentActionMap("Player");
     }
 
     // Used to change journal section by button press or controller trigger
