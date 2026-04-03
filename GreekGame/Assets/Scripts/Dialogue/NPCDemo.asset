@@ -18,34 +18,17 @@ MonoBehaviour:
     id: 0
     nextNodeID: 1
     text: 'Hey, can you deliver this package to the house at the end of the left
-      path. '
+      path? '
     choices: []
     updateSpeakerInfo: 1
     speakerName: Jeneferald
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 0
+  - isEndpoint: 1
     id: 1
     nextNodeID: 
     text: 'Make sure you add the correct stamp as listed on the order sheet. '
     choices: []
-    updateSpeakerInfo: 0
-    speakerName: Jeneferald
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 1
-    id: choices0
-    nextNodeID: 
-    text: ' '
-    choices:
-    - text: Got it!
-      nextNodeID: 
-      outcome:
-        ignoreThis: 0
-    - text: Okay.
-      nextNodeID: 
-      outcome:
-        ignoreThis: 0
     updateSpeakerInfo: 0
     speakerName: Jeneferald
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
