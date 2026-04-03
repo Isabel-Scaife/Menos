@@ -2330,7 +2330,7 @@ GameObject:
   - component: {fileID: 584041018}
   - component: {fileID: 584041020}
   - component: {fileID: 584041021}
-  m_Layer: 12
+  m_Layer: 17
   m_Name: Keys
   m_TagString: Untagged
   m_Icon: {fileID: 0}
