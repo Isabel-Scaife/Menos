@@ -1172,6 +1172,15 @@
                     "processors": "",
                     "interactions": "Press",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "ClosePopup",
+                    "type": "Button",
+                    "id": "5f2c27ee-8d17-46fe-ad5d-6fbdc0504c93",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -1282,6 +1291,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "PageProgressR",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a996611-ba3d-48ad-a5c2-d55b881dbd6d",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClosePopup",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e86862f1-6a62-4e3f-8a92-ebab50631554",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClosePopup",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

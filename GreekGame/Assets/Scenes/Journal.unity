@@ -1204,7 +1204,23 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_ActionId
+      value: 5f2c27ee-8d17-46fe-ad5d-6fbdc0504c93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_ActionName
+      value: 'Journal/UI/ClosePopup[/Keyboard/tab]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
@@ -1212,9 +1228,17 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2122547441}
+      objectReference: {fileID: 1800018401}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1224,12 +1248,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1800018401}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2122547441}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1346343795}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitEvidencePopup
+      value: CloseJournal
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -1240,8 +1280,16 @@ PrefabInstance:
       value: CloseJournal
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitEvidencePopup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ExitRelationshipsPopup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EvidencePopup, Assembly-CSharp
+      value: JournalManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -1250,6 +1298,14 @@ PrefabInstance:
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: JournalManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EvidencePopup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RelationshipsPopup, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1261,6 +1317,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: m_ActionEvents.Array.data[12].m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4361732595231890450, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: m_ActionEvents.Array.data[28].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4407854444200972557, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
