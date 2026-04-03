@@ -51,6 +51,7 @@ public class DialogueManager : MonoBehaviour
     // functions
     private void Awake()
     {
+        /*
         // destroy duplicate instance if one of this singleton already exists
         if (Instance != null && Instance != this)
         {
@@ -58,8 +59,11 @@ public class DialogueManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
+        */
+
         Instance = this;
-        DontDestroyOnLoad(this.gameObject);
+
+        //DontDestroyOnLoad(this.gameObject);
 
         // reset fields to defaults
         textIsScrolling = false;
