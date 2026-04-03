@@ -32,18 +32,22 @@ public class Bird : PlayerControlled
 
     public override void Interact(InputAction.CallbackContext context)
     {
-        if(context.performed)
+        if (!controlBird)
         {
-            // only interact if not holding item and in range
-            if (heldObject == null && interactObject != null)
+
+            if (context.performed)
             {
-                base.Interact(context);
-                //heldObject = interactObject.gameObject;
-            }
-            // drop item that is held 
-            else if (heldObject != null)
-            {
-                Drop();
+                // only interact if not holding item and in range
+                if (heldObject == null && interactObject != null)
+                {
+                    base.Interact(context);
+                    //heldObject = interactObject.gameObject;
+                }
+                // drop item that is held 
+                else if (heldObject != null)
+                {
+                    Drop();
+                }
             }
         }
     }
@@ -120,4 +124,5 @@ public class Bird : PlayerControlled
 
         return totalForce;
     }
+
 }

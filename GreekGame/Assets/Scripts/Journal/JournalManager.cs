@@ -92,6 +92,7 @@ public class JournalManager : MonoBehaviour
         // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
         Open += OpenJournal;
 
+        if(SceneManager.GetActiveScene().name != "Journal") 
         journalPanel.gameObject.SetActive(false);
     }
 
