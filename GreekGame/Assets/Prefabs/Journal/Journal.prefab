@@ -22032,9 +22032,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d35b425aacd2bc428c9da1b89358678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  journalMain: {fileID: 8282598283574813081}
   journalPanel: {fileID: 7253730018661796632}
   currentIndex: 0
+  escapeHandledThisFrame: 0
   c_notes: {fileID: 4047269713446144160}
   c_evidence: {fileID: 604802635100206061}
   c_e_popup: {fileID: 7220694266886229405}
@@ -22147,30 +22147,6 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/SectionProgressR[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2667538426696326163}
-        m_TargetAssemblyTypeName: EvidencePopup, Assembly-CSharp
-        m_MethodName: ExitEvidencePopup
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2656836547474195589}
-        m_TargetAssemblyTypeName: RelationshipsPopup, Assembly-CSharp
-        m_MethodName: ExitRelationshipsPopup
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7347896258108444171}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: CloseJournal

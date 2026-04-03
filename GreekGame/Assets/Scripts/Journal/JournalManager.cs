@@ -9,8 +9,9 @@ public class JournalManager : MonoBehaviour
 {
     // A public static instance of itself to give access to functions of journal manager
     public static JournalManager Instance;
-    public Canvas journalMain;
+    // public Canvas journalMain;              // Instance.gameObject
 
+    // Parent of all the things Journal canvas contains
     public Image journalPanel;
 
     // State of the Journal. This will be used to change the action map from other things to journal map
@@ -40,9 +41,12 @@ public class JournalManager : MonoBehaviour
     private int currentIndex;
     public int CurrentSection { get { return currentIndex; } }
 
+    // NOT NEEDED
     // Event used to open journal. Invokes the event and sets journal canvas active
     public static event Setup Open;
     public delegate void Setup();
+
+    public bool escapeHandledThisFrame = false; 
 
     // Store Child Canvases
     [SerializeField]
@@ -99,7 +103,8 @@ public class JournalManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Reset escape performed every frame
+        escapeHandledThisFrame = false;
     }
 
    
@@ -109,8 +114,8 @@ public class JournalManager : MonoBehaviour
         // First section to see is notes
         ClickNotesButton();
 
-        // Change the action map to Journal
-        playerInput.SwitchCurrentActionMap("Journal/UI");
+        // Change the action map to Journal (Not needed because Journal is in a SEPARATE scene)
+        // playerInput.SwitchCurrentActionMap("Journal/UI");
 
         InUse = true;
     }
@@ -121,7 +126,8 @@ public class JournalManager : MonoBehaviour
     {
         // Set other components back to active ( Shoud be events setup in other components )
         // Change the used action map back to player
-        playerInput.SwitchCurrentActionMap("Player");
+        // (Not needed because Journal is in a SEPARATE scene)
+        // playerInput.SwitchCurrentActionMap("Player");
 
         InUse = false;
     }
@@ -396,6 +402,7 @@ public class JournalManager : MonoBehaviour
     }
 
 
+    // This entire part might not be even needed
     // Evidence
     public bool IsDiscovered(EvidenceData evidence)
     {
@@ -438,11 +445,9 @@ public class JournalManager : MonoBehaviour
     // Open Journal
     public void OpenJournal()
     {
-        
-
     }
 
-    // MIGHT NOT BE NEEDED
+    // NOT NEEDED FOR NOW - UNLESS JOURNAL WILL BE IN THE SAME SCENE WITH OTHER THINGS
     public void InvokeOpen()
     {
         Open?.Invoke();
@@ -452,15 +457,19 @@ public class JournalManager : MonoBehaviour
     // Resetting pages when closing journal 
     public void CloseJournal()
     {
+        // Not needed because we are just gonna change back to the previous scene
         // If evidence &relationship popup are both not active, close journal
-        if (!EvidencePopup.open && !RelationshipsPopup.open && InUse)
-        {
-            // Reset pages of sections
-            EvidenceTabController.Instance.currentPage = 0;
-            RelationshipsTabController.Instance.currentPage = 0;
+        //if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
+        //{
+        //    // Reset pages of sections
+        //    EvidenceTabController.Instance.currentPage = 0;
+        //    RelationshipsTabController.Instance.currentPage = 0;
 
-            // Set the canvas inactive
-            journalPanel.gameObject.SetActive(false);
-        }
+        //    // Set the canvas inactive
+        //    journalPanel.gameObject.SetActive(false);
+        //}
+            
+        // Move to previous scene
+        SceneHistory.Instance.GoBack();
     }
 }
