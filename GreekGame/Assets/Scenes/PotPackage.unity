@@ -915,6 +915,38 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bec97168-5221-4275-b10e-c33d30cd6bbc
+    m_ActionName: 'Player/JournalOpen[/Keyboard/j]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b73e6832-7619-4bb6-8f3a-90bbe1bc9809
+    m_ActionName: Player/JournalExit
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6b0ebbce-df98-4fa1-add3-f176c083cff9
+    m_ActionName: 'Dialogue/AdvanceDialogue[/Keyboard/numpad0,/Keyboard/e,/Keyboard/enter,/Keyboard/space,/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 24e7f96d-3197-4536-aa05-65bd18bdd513
+    m_ActionName: 'Journal/UI/SectionProgressL[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e9da2c17-cf35-49ad-b48d-cb77361889a8
+    m_ActionName: 'Journal/UI/SectionProgressR[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8af2568e-fd88-44ca-9ff8-a57bc5eda803
+    m_ActionName: 'Journal/UI/Exit[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0d2ff486-6551-4322-9990-b0d2356f8c9f
+    m_ActionName: 'Journal/UI/PageProgressL[/Keyboard/a]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2251f674-3fb1-4265-b989-a7151f91d8c5
+    m_ActionName: 'Journal/UI/PageProgressR[/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -6575,11 +6607,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2625189223164636479, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.45
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2625189223164636479, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.45
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2625189223164636479, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: m_LocalScale.z
