@@ -2073,7 +2073,7 @@ Transform:
   m_GameObject: {fileID: 544052447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4813375, y: 0.14206982, z: 0}
+  m_LocalPosition: {x: 2.472291, y: 0.1420598, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33571,6 +33571,10 @@ PrefabInstance:
       value: Guard (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -35504,6 +35508,10 @@ PrefabInstance:
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_Name
       value: Guard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_StaticEditorFlags
