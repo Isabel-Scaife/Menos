@@ -3,7 +3,6 @@ using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Shows dialogue in UI, manages dialgoue choices (branching logic), etc.
@@ -126,14 +125,9 @@ public class DialogueManager : MonoBehaviour
         else if (chosen != null)
         {
             // TODO: do something with choice's outcome object, e.g. log something in journal
-            if (chosen.outcome != null && chosen.outcome.ignoreThis)
+            if (chosen.outcome != null)
             {
-                // TODO: get rid of this after demo
-                DialogueIsHappening = false;
-                dialoguePanel.SetActive(false);
-                dialogueTMP.text = "";
-                SceneManager.LoadScene("PotPackage");
-                Destroy(this.gameObject);
+
             }
             
             // hides choice boxes then displays next piece
