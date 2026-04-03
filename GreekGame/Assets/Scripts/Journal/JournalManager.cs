@@ -91,6 +91,8 @@ public class JournalManager : MonoBehaviour
 
         // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
         Open += OpenJournal;
+
+        journalPanel.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -440,10 +442,10 @@ public class JournalManager : MonoBehaviour
     {
         // Set Journal Canvas active (Actually that is done outside the journal ->
         //                            Player would have openjournal and it would set canvas active and then invoke Open event)
-        // journalPanel.gameObject.SetActive(true);
+        journalPanel.gameObject.SetActive(true);
 
         // Could invoke other events to set other componenets temporary inactive, such as player's input manager
-        SceneManager.LoadScene(3); // Temporary
+        // SceneManager.LoadScene(3); // Temporary
 
     }
 
@@ -457,18 +459,18 @@ public class JournalManager : MonoBehaviour
     // Resetting pages when closing journal 
     public void CloseJournal()
     {
-        // If evidence & relationship popup are both not active, close journal
-        //if(!EvidencePopup.Instance.gameObject.activeSelf && !RelationshipsPopup.Instance.gameObject.activeSelf)
-        //{
-        //    // Reset pages of sections
-        //    EvidenceTabController.Instance.currentPage = 0;
-        //    RelationshipsTabController.Instance.currentPage = 0;
+        // If evidence &relationship popup are both not active, close journal
+        if (!EvidencePopup.open && !RelationshipsPopup.open && InUse)
+        {
+            // Reset pages of sections
+            EvidenceTabController.Instance.currentPage = 0;
+            RelationshipsTabController.Instance.currentPage = 0;
 
-        //    // Set the canvas inactive
-        //    journalPanel.gameObject.SetActive(false);
-        //}
+            // Set the canvas inactive
+            journalPanel.gameObject.SetActive(false);
+        }
 
         // Rest of closing logic in on disable
-        SceneManager.LoadScene(2);
+        // SceneManager.LoadScene(2);
     }
 }

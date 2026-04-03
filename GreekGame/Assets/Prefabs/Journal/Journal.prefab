@@ -22147,18 +22147,6 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/SectionProgressR[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7347896258108444171}
-        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
-        m_MethodName: CloseJournal
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 2667538426696326163}
         m_TargetAssemblyTypeName: EvidencePopup, Assembly-CSharp
         m_MethodName: ExitEvidencePopup
@@ -22174,6 +22162,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2656836547474195589}
         m_TargetAssemblyTypeName: RelationshipsPopup, Assembly-CSharp
         m_MethodName: ExitRelationshipsPopup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7347896258108444171}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: CloseJournal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22289,6 +22289,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: bec97168-5221-4275-b10e-c33d30cd6bbc
     m_ActionName: 'Player/Journal[/Keyboard/j]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b73e6832-7619-4bb6-8f3a-90bbe1bc9809
+    m_ActionName: Player/JournalExit
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Journal/UI
