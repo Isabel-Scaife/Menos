@@ -106,7 +106,6 @@ public class JournalManager : MonoBehaviour
     private void OnEnable()
     {
         // After Journal Instance has been set active and open journal was triggered, this runs
-
         // First section to see is notes
         ClickNotesButton();
 
@@ -121,8 +120,6 @@ public class JournalManager : MonoBehaviour
     private void OnDisable()
     {
         // Set other components back to active ( Shoud be events setup in other components )
-
-
         // Change the used action map back to player
         playerInput.SwitchCurrentActionMap("Player");
 
@@ -441,12 +438,7 @@ public class JournalManager : MonoBehaviour
     // Open Journal
     public void OpenJournal()
     {
-        // Set Journal Canvas active (Actually that is done outside the journal ->
-        //                            Player would have openjournal and it would set canvas active and then invoke Open event)
-        journalPanel.gameObject.SetActive(true);
-
-        // Could invoke other events to set other componenets temporary inactive, such as player's input manager
-        // SceneManager.LoadScene(3); // Temporary
+        
 
     }
 
@@ -470,8 +462,5 @@ public class JournalManager : MonoBehaviour
             // Set the canvas inactive
             journalPanel.gameObject.SetActive(false);
         }
-
-        // Rest of closing logic in on disable
-        // SceneManager.LoadScene(2);
     }
 }
