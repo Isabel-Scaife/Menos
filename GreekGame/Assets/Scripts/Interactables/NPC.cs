@@ -28,7 +28,8 @@ public class NPC : Interactable
         canInteract = false;    // base class only responds to the first intaction
         if (dialogues != null && dialogues.Count > 0)
         {
-            DialogueManager.Instance.BeginDialogue(dialogues[0], player);
+            if (DialogueManager.Instance == null) Debug.Log("No DialogueManager in scene");
+            else DialogueManager.Instance.BeginDialogue(dialogues[0], player);
         }
     }
 }

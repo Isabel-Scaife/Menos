@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI dialogueTMP;
     [SerializeField]
-    private GameObject dialogueBox;
+    private GameObject dialoguePanel;
     [SerializeField]
     private float textDelay;    // seconds before showing the next char
 
@@ -109,7 +109,7 @@ public class DialogueManager : MonoBehaviour
             {
                 // close dialogue and switch input controls back to player
                 DialogueIsHappening = false;
-                dialogueBox.SetActive(false);
+                dialoguePanel.SetActive(false);
                 dialogueTMP.text = "";
                 player.SwitchActionMaps(false);
             }
@@ -163,7 +163,7 @@ public class DialogueManager : MonoBehaviour
         currentNode = nodes[currentDialogue.startingNodeID];
 
         // displays dialogue in UI
-        dialogueBox.SetActive(true);
+        dialoguePanel.SetActive(true);
         DisplayDialogue();
         DialogueIsHappening = true;
     }

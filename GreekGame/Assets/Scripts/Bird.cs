@@ -32,7 +32,7 @@ public class Bird : PlayerControlled
 
     public override void Interact(InputAction.CallbackContext context)
     {
-        if(context.started)
+        if(context.performed)
         {
             // only interact if not holding item and in range
             if (heldObject == null && interactObject != null)
@@ -46,7 +46,6 @@ public class Bird : PlayerControlled
                 Drop();
             }
         }
-
     }
 
     /// <summary>
@@ -93,7 +92,6 @@ public class Bird : PlayerControlled
     }
 
     // methods that help determine bird movement when not controlled
-
 
     public Vector2 Seek(Vector2 targetPos, float currentSpeed)
     {
