@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VasePackage : MonoBehaviour
 {
@@ -78,6 +79,7 @@ public class VasePackage : MonoBehaviour
                 ///             - sealed shut
                 ///             - close scene 
                 ///         - else nothhing happens
+                SceneManager.LoadScene("Vineyard");
             }
         }
     }
