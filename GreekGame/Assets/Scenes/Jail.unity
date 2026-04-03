@@ -3875,7 +3875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897898583}
   - component: {fileID: 897898582}
-  m_Layer: 14
+  m_Layer: 0
   m_Name: JailBarHoleCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
