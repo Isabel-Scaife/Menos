@@ -7,5 +7,5 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueOutcome
 {
-    
+    public bool ignoreThis;    // TODO: get rid of this
 }
