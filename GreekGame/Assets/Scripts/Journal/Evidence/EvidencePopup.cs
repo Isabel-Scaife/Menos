@@ -50,7 +50,7 @@ public class EvidencePopup : MonoBehaviour
         itemImg.sprite = evidence.icon;
 
         open = true;
-
+        
         gameObject.SetActive(true); // Ensure visibility
     }
 
@@ -58,8 +58,9 @@ public class EvidencePopup : MonoBehaviour
     {
         if (open)
         {
-            JournalManager.Instance.CloseEvidencePopup();
             open = false;
+            JournalManager.Instance.escapeHandledThisFrame = true;
+            JournalManager.Instance.CloseEvidencePopup();
         }
     }
 

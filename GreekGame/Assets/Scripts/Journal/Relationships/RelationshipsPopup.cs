@@ -36,8 +36,9 @@ public class RelationshipsPopup : MonoBehaviour
     {
         if(open)
         {
-            JournalManager.Instance.CloseRelationshipsPopup();
             open = false;
+            JournalManager.Instance.escapeHandledThisFrame = true;
+            JournalManager.Instance.CloseRelationshipsPopup();
         }
     }
 }

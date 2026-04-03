@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
+// Used to track previous scenes. Irrelevant to the build setting index. 
 public class SceneHistory : MonoBehaviour
 {
     public static SceneHistory Instance;
@@ -51,5 +52,12 @@ public class SceneHistory : MonoBehaviour
         {
             Debug.Log("No previous scene to go back to.");
         }
+    }
+
+    // Open journal could be move somewhere else, but
+    // for the player to be able to move to the journal scene back and forth, this should be needed (I think.)
+    public void OpenJournalUI()
+    {
+        SceneManager.LoadScene("Journal");
     }
 }
