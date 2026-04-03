@@ -58,7 +58,7 @@ public class PlayerControlled : MonoBehaviour
     public virtual void Interact(InputAction.CallbackContext context)
     {
         // interact with item if something is within range
-        if (context.started)
+        if (context.performed)
         {
             // interacts with current interactable
             if (interactObject != null)
@@ -108,7 +108,10 @@ public class PlayerControlled : MonoBehaviour
     // advance dialogue on input
     public void AdvanceDialogue(InputAction.CallbackContext context)
     {
-        if (DialogueManager.Instance != null) DialogueManager.Instance.Advance();
+        if (context.performed && DialogueManager.Instance != null)
+        {
+            DialogueManager.Instance.Advance();
+        }
     }
 
     public void Move(InputAction.CallbackContext context)
