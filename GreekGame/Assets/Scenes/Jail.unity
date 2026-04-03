@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 151836692}
   - component: {fileID: 151836691}
   - component: {fileID: 151836690}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: OldChairFaceLeft (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 162139899}
   - component: {fileID: 162139898}
   - component: {fileID: 162139897}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2564875351192376764, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_Size.x
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 235801620}
   - component: {fileID: 235801619}
   - component: {fileID: 235801618}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 286432061}
   - component: {fileID: 286432060}
   - component: {fileID: 286432059}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,6 +1232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestSigil
       objectReference: {fileID: 0}
+    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_SortingOrder
       value: -1
@@ -1447,7 +1451,7 @@ GameObject:
   - component: {fileID: 454873254}
   - component: {fileID: 454873253}
   - component: {fileID: 454873252}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2091,7 +2095,7 @@ GameObject:
   - component: {fileID: 554090298}
   - component: {fileID: 554090297}
   - component: {fileID: 554090296}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2479,7 +2483,7 @@ GameObject:
   - component: {fileID: 608943687}
   - component: {fileID: 608943686}
   - component: {fileID: 608943685}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2634,7 +2638,7 @@ GameObject:
   - component: {fileID: 631508377}
   - component: {fileID: 631508379}
   - component: {fileID: 631508378}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2776,7 @@ GameObject:
   - component: {fileID: 642494792}
   - component: {fileID: 642494791}
   - component: {fileID: 642494790}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: OldChairFaceLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2910,7 +2914,7 @@ GameObject:
   - component: {fileID: 645632223}
   - component: {fileID: 645632225}
   - component: {fileID: 645632224}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: MaybeAnotherBookshelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3048,7 +3052,7 @@ GameObject:
   - component: {fileID: 647193677}
   - component: {fileID: 647193679}
   - component: {fileID: 647193678}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Table (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3875,7 +3879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897898583}
   - component: {fileID: 897898582}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: JailBarHoleCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3898,7 +3902,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 260095
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3954,6 +3958,10 @@ PrefabInstance:
     - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_Name
       value: Boulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6741135821548590275, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -4108,7 +4116,7 @@ GameObject:
   - component: {fileID: 1131859903}
   - component: {fileID: 1131859902}
   - component: {fileID: 1131859901}
-  m_Layer: 3
+  m_Layer: 16
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6730,66 +6738,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 5, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 143
-      m_TileSpriteIndex: 153
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 33
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
-  - first: {x: 6, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 144
-      m_TileSpriteIndex: 152
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 32
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
-  - first: {x: 7, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 143
-      m_TileSpriteIndex: 153
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 33
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
-  - first: {x: 8, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 144
-      m_TileSpriteIndex: 152
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 32
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
-  - first: {x: 9, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 143
-      m_TileSpriteIndex: 153
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 33
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
-  - first: {x: 10, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 144
-      m_TileSpriteIndex: 152
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 32
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741827
   - first: {x: 11, y: -11, z: 0}
     second:
       serializedVersion: 2
@@ -9408,9 +9356,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 09ddb9240c6b3954e88ad738772bffb1, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 156f09a8e22d99e46a576c1943165bda, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {fileID: 718995412}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {fileID: 406668318}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: c67385500dff021419a16f9db01d0d51, type: 2}
@@ -9773,9 +9721,9 @@ Tilemap:
     m_Data: {fileID: 756919516}
   - m_RefCount: 2
     m_Data: {fileID: 848154908}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {fileID: 479304429}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {fileID: 1702461720}
   - m_RefCount: 1
     m_Data: {fileID: 1701097783, guid: c62ad2a7ba43e2f4bb0db670ff154743, type: 3}
@@ -9816,7 +9764,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 5150274352344045439, guid: c62ad2a7ba43e2f4bb0db670ff154743, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 486
+  - m_RefCount: 480
     m_Data:
       e00: 1
       e01: 0
@@ -9899,9 +9847,9 @@ Tilemap:
     m_Data: {r: 0.83132654, g: 0.55475837, b: 0.597614, a: 1}
   - m_RefCount: 2
     m_Data: {r: 0.8231595, g: 0.43846172, b: 0.4617129, a: 1}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {r: 0.73547566, g: 0.48114163, b: 0.5418634, a: 1}
-  - m_RefCount: 13
+  - m_RefCount: 10
     m_Data: {r: 0.7996266, g: 0.5325731, b: 0.5454698, a: 1}
   - m_RefCount: 1
     m_Data: {r: 0.8139519, g: 0.32863832, b: 0.3652242, a: 1}
@@ -9942,6 +9890,10 @@ PrefabInstance:
     - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_Name
       value: Boulder (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6741135821548590275, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -10247,6 +10199,10 @@ PrefabInstance:
     - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_Name
       value: Boulder (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Layer
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 6741135821548590275, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -32915,7 +32871,7 @@ GameObject:
   - component: {fileID: 1526007323}
   - component: {fileID: 1526007322}
   - component: {fileID: 1526007321}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33073,7 +33029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2759855332466748765, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 110591
+      value: 98304
       objectReference: {fileID: 0}
     - target: {fileID: 3088400556621615001, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_Name
@@ -33572,7 +33528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33791,7 +33747,7 @@ GameObject:
   - component: {fileID: 1668395314}
   - component: {fileID: 1668395316}
   - component: {fileID: 1668395315}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Table (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34140,6 +34096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boulder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
+      propertyPath: m_Layer
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6165533831373529649, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
       value: -1.2661006
@@ -34217,7 +34177,7 @@ GameObject:
   - component: {fileID: 1750239706}
   - component: {fileID: 1750239705}
   - component: {fileID: 1750239704}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34372,7 +34332,7 @@ GameObject:
   - component: {fileID: 1759054907}
   - component: {fileID: 1759054909}
   - component: {fileID: 1759054908}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Table (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34510,7 +34470,7 @@ GameObject:
   - component: {fileID: 1801639453}
   - component: {fileID: 1801639452}
   - component: {fileID: 1801639451}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: OldChairFaceLeft (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34646,7 +34606,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1809860754}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: furniture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34713,7 +34673,7 @@ GameObject:
   - component: {fileID: 1833681790}
   - component: {fileID: 1833681789}
   - component: {fileID: 1833681788}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: OldChairFaceLeft (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34979,7 +34939,7 @@ GameObject:
   - component: {fileID: 1885832086}
   - component: {fileID: 1885832088}
   - component: {fileID: 1885832087}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Table (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35172,7 +35132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7329037784009185052, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 241663
+      value: 81920
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35190,7 +35150,7 @@ GameObject:
   - component: {fileID: 1902031282}
   - component: {fileID: 1902031281}
   - component: {fileID: 1902031280}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: OldChairFaceLeft (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35328,7 +35288,7 @@ GameObject:
   - component: {fileID: 1911519358}
   - component: {fileID: 1911519360}
   - component: {fileID: 1911519359}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: Bookshelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35527,7 +35487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_Layer
-      value: 14
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3371999557057773491, guid: 9064977be6acd9c4795696b19c94451f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -35638,7 +35598,7 @@ GameObject:
   - component: {fileID: 2092529276}
   - component: {fileID: 2092529275}
   - component: {fileID: 2092529274}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: TestSigil (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

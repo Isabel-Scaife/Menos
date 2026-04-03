@@ -287,6 +287,22 @@ MonoBehaviour:
     m_ActionId: 2251f674-3fb1-4265-b989-a7151f91d8c5
     m_ActionName: 'Journal/UI/PageProgressR[/Keyboard/d]'
   - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: OpenJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bec97168-5221-4275-b10e-c33d30cd6bbc
+    m_ActionName: 'Player/Journal[/Keyboard/j]'
+  - m_PersistentCalls:
       m_Calls: []
     m_ActionId: c95b2375-e6d9-4b88-9c4c-c5e76515df4b
     m_ActionName: 'UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
@@ -301,11 +317,11 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 32b35790-4ed0-4e9a-aa41-69ac6d629449
-    m_ActionName: 'UI/Point[/Mouse/position,/Pen/position]'
+    m_ActionName: 'UI/Point[/Mouse/position]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 3c7022bf-7922-4f7c-a998-c437916075ad
-    m_ActionName: 'UI/Click[/Mouse/leftButton,/Pen/tip]'
+    m_ActionName: 'UI/Click[/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 44b200b1-1557-4083-816c-b22cbdf77ddf
@@ -326,6 +342,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: CloseJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b73e6832-7619-4bb6-8f3a-90bbe1bc9809
+    m_ActionName: Player/JournalExit
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -534,7 +566,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 110591
+    m_Bits: 81920
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -552,7 +584,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.045475543, y: 1.599326}
+  m_Offset: {x: 0.045475543, y: 1.457923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -562,5 +594,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3349377, y: 3.5640857}
+  m_Size: {x: 1.3349377, y: 3.1933553}
   m_EdgeRadius: 0

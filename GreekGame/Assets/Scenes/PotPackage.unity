@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 26048699}
   - component: {fileID: 26048700}
   - component: {fileID: 26048701}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 100193595}
   - component: {fileID: 100193596}
   - component: {fileID: 100193597}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 259307791}
   - component: {fileID: 259307792}
   - component: {fileID: 259307793}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 301765340}
   - component: {fileID: 301765341}
   - component: {fileID: 301765342}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 338675227}
   - component: {fileID: 338675228}
   - component: {fileID: 338675229}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 362071613}
   - component: {fileID: 362071614}
   - component: {fileID: 362071615}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -830,7 +830,7 @@ GameObject:
   - component: {fileID: 463140268}
   - component: {fileID: 463140269}
   - component: {fileID: 463140270}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -912,7 +912,7 @@ GameObject:
   - component: {fileID: 473505922}
   - component: {fileID: 473505923}
   - component: {fileID: 473505924}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -994,7 +994,7 @@ GameObject:
   - component: {fileID: 483547254}
   - component: {fileID: 483547255}
   - component: {fileID: 483547256}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 552328364}
   - component: {fileID: 552328365}
   - component: {fileID: 552328366}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1156,7 +1156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 603173151}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: CorrectZone
   m_TagString: Vase
   m_Icon: {fileID: 0}
@@ -1273,7 +1273,7 @@ GameObject:
   - component: {fileID: 631437223}
   - component: {fileID: 631437224}
   - component: {fileID: 631437225}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 636416871}
   - component: {fileID: 636416872}
   - component: {fileID: 636416873}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1528,7 +1528,7 @@ GameObject:
   - component: {fileID: 711531758}
   - component: {fileID: 711531759}
   - component: {fileID: 711531760}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1685,7 +1685,7 @@ GameObject:
   - component: {fileID: 737786994}
   - component: {fileID: 737786995}
   - component: {fileID: 737786996}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1772,7 +1772,7 @@ GameObject:
   - component: {fileID: 773140185}
   - component: {fileID: 773140186}
   - component: {fileID: 773140187}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -1854,7 +1854,7 @@ GameObject:
   - component: {fileID: 787681646}
   - component: {fileID: 787681645}
   - component: {fileID: 787681647}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: Vase_0
   m_TagString: Vase
   m_Icon: {fileID: 0}
@@ -1969,7 +1969,7 @@ GameObject:
   - component: {fileID: 827667566}
   - component: {fileID: 827667567}
   - component: {fileID: 827667568}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2051,7 +2051,7 @@ GameObject:
   - component: {fileID: 831313090}
   - component: {fileID: 831313091}
   - component: {fileID: 831313092}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2132,7 +2132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855088207}
   - component: {fileID: 855088208}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: IncorrectZone
   m_TagString: IncorrectZone
   m_Icon: {fileID: 0}
@@ -2229,7 +2229,7 @@ GameObject:
   - component: {fileID: 910442025}
   - component: {fileID: 910442026}
   - component: {fileID: 910442027}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2311,7 +2311,7 @@ GameObject:
   - component: {fileID: 922087031}
   - component: {fileID: 922087032}
   - component: {fileID: 922087033}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2393,7 +2393,7 @@ GameObject:
   - component: {fileID: 938875712}
   - component: {fileID: 938875713}
   - component: {fileID: 938875714}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2603,7 +2603,7 @@ GameObject:
   - component: {fileID: 1065121116}
   - component: {fileID: 1065121117}
   - component: {fileID: 1065121118}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2685,7 +2685,7 @@ GameObject:
   - component: {fileID: 1078720947}
   - component: {fileID: 1078720948}
   - component: {fileID: 1078720949}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -2767,7 +2767,7 @@ GameObject:
   - component: {fileID: 1080853963}
   - component: {fileID: 1080853964}
   - component: {fileID: 1080853965}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3004,7 +3004,7 @@ GameObject:
   - component: {fileID: 1112099573}
   - component: {fileID: 1112099574}
   - component: {fileID: 1112099575}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3086,7 +3086,7 @@ GameObject:
   - component: {fileID: 1196646019}
   - component: {fileID: 1196646020}
   - component: {fileID: 1196646021}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3168,7 +3168,7 @@ GameObject:
   - component: {fileID: 1233553441}
   - component: {fileID: 1233553442}
   - component: {fileID: 1233553443}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3250,7 +3250,7 @@ GameObject:
   - component: {fileID: 1266575177}
   - component: {fileID: 1266575178}
   - component: {fileID: 1266575179}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3332,7 +3332,7 @@ GameObject:
   - component: {fileID: 1280746236}
   - component: {fileID: 1280746237}
   - component: {fileID: 1280746238}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3414,7 +3414,7 @@ GameObject:
   - component: {fileID: 1291439583}
   - component: {fileID: 1291439584}
   - component: {fileID: 1291439585}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3496,7 +3496,7 @@ GameObject:
   - component: {fileID: 1299643155}
   - component: {fileID: 1299643156}
   - component: {fileID: 1299643157}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3657,7 +3657,7 @@ GameObject:
   - component: {fileID: 1342822126}
   - component: {fileID: 1342822127}
   - component: {fileID: 1342822128}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3739,7 +3739,7 @@ GameObject:
   - component: {fileID: 1354617732}
   - component: {fileID: 1354617733}
   - component: {fileID: 1354617734}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -3821,7 +3821,7 @@ GameObject:
   - component: {fileID: 1382993066}
   - component: {fileID: 1382993067}
   - component: {fileID: 1382993068}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4046,7 +4046,7 @@ GameObject:
   - component: {fileID: 1433111020}
   - component: {fileID: 1433111021}
   - component: {fileID: 1433111022}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4399,7 +4399,7 @@ GameObject:
   - component: {fileID: 1476540407}
   - component: {fileID: 1476540408}
   - component: {fileID: 1476540409}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4486,7 +4486,7 @@ GameObject:
   - component: {fileID: 1519875413}
   - component: {fileID: 1519875414}
   - component: {fileID: 1519875415}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4660,7 +4660,7 @@ GameObject:
   - component: {fileID: 1590468161}
   - component: {fileID: 1590468162}
   - component: {fileID: 1590468163}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4822,7 +4822,7 @@ GameObject:
   - component: {fileID: 1683117146}
   - component: {fileID: 1683117147}
   - component: {fileID: 1683117148}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -4995,7 +4995,7 @@ GameObject:
   - component: {fileID: 1784163055}
   - component: {fileID: 1784163056}
   - component: {fileID: 1784163057}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5311,7 +5311,7 @@ GameObject:
   - component: {fileID: 1838673962}
   - component: {fileID: 1838673963}
   - component: {fileID: 1838673964}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5621,7 +5621,7 @@ GameObject:
   - component: {fileID: 1886562157}
   - component: {fileID: 1886562158}
   - component: {fileID: 1886562159}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5703,7 +5703,7 @@ GameObject:
   - component: {fileID: 1919298011}
   - component: {fileID: 1919298012}
   - component: {fileID: 1919298013}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -5785,7 +5785,7 @@ GameObject:
   - component: {fileID: 1927746516}
   - component: {fileID: 1927746517}
   - component: {fileID: 1927746518}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -6070,7 +6070,7 @@ GameObject:
   - component: {fileID: 1997943893}
   - component: {fileID: 1997943894}
   - component: {fileID: 1997943895}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PointColliders
   m_TagString: CorrectZone
   m_Icon: {fileID: 0}
@@ -6242,7 +6242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142612555}
   - component: {fileID: 2142612556}
-  m_Layer: 13
+  m_Layer: 8
   m_Name: PaintZone
   m_TagString: Vase
   m_Icon: {fileID: 0}
@@ -6545,7 +6545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2409290733607635462, guid: 367e7c009d86e1b41b8b6c282e44dcdf, type: 3}
       propertyPath: m_Layer
-      value: 13
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2409290733607635462, guid: 367e7c009d86e1b41b8b6c282e44dcdf, type: 3}
       propertyPath: m_TagString

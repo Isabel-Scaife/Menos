@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 44557774}
   - component: {fileID: 44557773}
   - component: {fileID: 44557772}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 50761102}
   - component: {fileID: 50761101}
   - component: {fileID: 50761100}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 55042611}
   - component: {fileID: 55042610}
   - component: {fileID: 55042609}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -654,7 +654,7 @@ GameObject:
   - component: {fileID: 502344865}
   - component: {fileID: 502344864}
   - component: {fileID: 502344863}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 526334462}
   - component: {fileID: 526334461}
   - component: {fileID: 526334460}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12619,7 +12619,7 @@ GameObject:
   - component: {fileID: 671650965}
   - component: {fileID: 671650964}
   - component: {fileID: 671650963}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12767,7 +12767,7 @@ GameObject:
   - component: {fileID: 932084184}
   - component: {fileID: 932084183}
   - component: {fileID: 932084182}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13102,7 +13102,7 @@ GameObject:
   - component: {fileID: 1006848912}
   - component: {fileID: 1006848911}
   - component: {fileID: 1006848910}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: Vine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13219,7 +13219,7 @@ GameObject:
   - component: {fileID: 1046822982}
   - component: {fileID: 1046822981}
   - component: {fileID: 1046822980}
-  m_Layer: 3
+  m_Layer: 14
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13257,7 +13257,7 @@ TilemapCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -139111,7 +139111,7 @@ GameObject:
   - component: {fileID: 1047780924}
   - component: {fileID: 1047780923}
   - component: {fileID: 1047780922}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139429,7 +139429,7 @@ GameObject:
   - component: {fileID: 1132913790}
   - component: {fileID: 1132913789}
   - component: {fileID: 1132913788}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139577,7 +139577,7 @@ GameObject:
   - component: {fileID: 1134262814}
   - component: {fileID: 1134262813}
   - component: {fileID: 1134262812}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139725,7 +139725,7 @@ GameObject:
   - component: {fileID: 1159343730}
   - component: {fileID: 1159343729}
   - component: {fileID: 1159343728}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139878,7 +139878,7 @@ GameObject:
   - component: {fileID: 1223435630}
   - component: {fileID: 1223435629}
   - component: {fileID: 1223435628}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140165,7 +140165,7 @@ GameObject:
   - component: {fileID: 1339749186}
   - component: {fileID: 1339749185}
   - component: {fileID: 1339749184}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140313,7 +140313,7 @@ GameObject:
   - component: {fileID: 1366227049}
   - component: {fileID: 1366227048}
   - component: {fileID: 1366227047}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140598,7 +140598,7 @@ GameObject:
   - component: {fileID: 1521149998}
   - component: {fileID: 1521150001}
   - component: {fileID: 1521150000}
-  m_Layer: 14
+  m_Layer: 9
   m_Name: NPC_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140752,7 +140752,7 @@ GameObject:
   - component: {fileID: 1532734368}
   - component: {fileID: 1532734367}
   - component: {fileID: 1532734366}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140900,7 +140900,7 @@ GameObject:
   - component: {fileID: 1572955631}
   - component: {fileID: 1572955630}
   - component: {fileID: 1572955629}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141048,7 +141048,7 @@ GameObject:
   - component: {fileID: 1598993256}
   - component: {fileID: 1598993255}
   - component: {fileID: 1598993254}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141196,7 +141196,7 @@ GameObject:
   - component: {fileID: 1675544429}
   - component: {fileID: 1675544428}
   - component: {fileID: 1675544431}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: Vase_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141348,7 +141348,7 @@ GameObject:
   - component: {fileID: 1691848437}
   - component: {fileID: 1691848440}
   - component: {fileID: 1691848439}
-  m_Layer: 14
+  m_Layer: 9
   m_Name: NPC_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141501,7 +141501,7 @@ GameObject:
   - component: {fileID: 1740787954}
   - component: {fileID: 1740787953}
   - component: {fileID: 1740787952}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141649,7 +141649,7 @@ GameObject:
   - component: {fileID: 1777350648}
   - component: {fileID: 1777350651}
   - component: {fileID: 1777350650}
-  m_Layer: 14
+  m_Layer: 9
   m_Name: NPC_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141803,7 +141803,7 @@ GameObject:
   - component: {fileID: 1793612604}
   - component: {fileID: 1793612603}
   - component: {fileID: 1793612602}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141985,7 +141985,7 @@ GameObject:
   - component: {fileID: 1852261655}
   - component: {fileID: 1852261654}
   - component: {fileID: 1852261653}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142138,34 +142138,6 @@ PrefabInstance:
       value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_ActionId
-      value: 2e76318b-71a8-46bf-8d8a-cceccc40787f
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[10].m_ActionId
-      value: 6b0ebbce-df98-4fa1-add3-f176c083cff9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: 24e7f96d-3197-4536-aa05-65bd18bdd513
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionId
-      value: e9da2c17-cf35-49ad-b48d-cb77361889a8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: 8af2568e-fd88-44ca-9ff8-a57bc5eda803
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
-      value: 0d2ff486-6551-4322-9990-b0d2356f8c9f
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_ActionId
-      value: 2251f674-3fb1-4265-b989-a7151f91d8c5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_ActionId
       value: bec97168-5221-4275-b10e-c33d30cd6bbc
       objectReference: {fileID: 0}
@@ -142212,34 +142184,6 @@ PrefabInstance:
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[27].m_ActionId
       value: b73e6832-7619-4bb6-8f3a-90bbe1bc9809
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_ActionName
-      value: 'Player/Switch[/Keyboard/q]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[10].m_ActionName
-      value: 'Dialogue/AdvanceDialogue[/Keyboard/numpad0,/Keyboard/e,/Keyboard/enter,/Keyboard/space,/Mouse/leftButton]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: 'Journal/UI/SectionProgressL[/Keyboard/q]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionName
-      value: 'Journal/UI/SectionProgressR[/Keyboard/e]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'Journal/UI/Exit[/Keyboard/escape]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
-      value: 'Journal/UI/PageProgressL[/Keyboard/a]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[15].m_ActionName
-      value: 'Journal/UI/PageProgressR[/Keyboard/d]'
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_ActionName
@@ -142290,23 +142234,11 @@ PrefabInstance:
       value: Player/JournalExit
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[27].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
@@ -142326,29 +142258,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1299935200}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1854854078}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1299935200}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[27].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -142356,14 +142268,6 @@ PrefabInstance:
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[27].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SwapControlledObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SwapControlledObject
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -142374,14 +142278,6 @@ PrefabInstance:
       value: CloseJournal
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerControlled, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Bird, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: JournalManager, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -142390,28 +142286,12 @@ PrefabInstance:
       value: JournalManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_ActionEvents.Array.data[9].m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ActionEvents.Array.data[27].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.x
@@ -142461,22 +142341,15 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 1.457923
       objectReference: {fileID: 0}
+    - target: {fileID: 7329037784009185052, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
---- !u!114 &1854854078 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-  m_PrefabInstance: {fileID: 1854854077}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1173945611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6863623e9436c4e45ba4f0a7b2c07769, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1854854082 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3994419836054217319, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
@@ -142663,21 +142536,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2759855332466748765, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 32768
+      objectReference: {fileID: 0}
     - target: {fileID: 3088400556621615001, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_Name
       value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 4041687733897775365, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
-      value: 137224
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4041687733897775365, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4041687733897775365, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.2
+    - target: {fileID: 4276304353283791328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5763421282529453951, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_SortingOrder
@@ -142764,7 +142637,7 @@ GameObject:
   - component: {fileID: 1998032618}
   - component: {fileID: 1998032617}
   - component: {fileID: 1998032616}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142912,7 +142785,7 @@ GameObject:
   - component: {fileID: 2002190898}
   - component: {fileID: 2002190897}
   - component: {fileID: 2002190896}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143060,7 +142933,7 @@ GameObject:
   - component: {fileID: 2022132605}
   - component: {fileID: 2022132604}
   - component: {fileID: 2022132603}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143208,7 +143081,7 @@ GameObject:
   - component: {fileID: 2146185411}
   - component: {fileID: 2146185410}
   - component: {fileID: 2146185409}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Leaf (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

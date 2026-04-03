@@ -38,6 +38,7 @@ public class ShapeStamps : Tool
 
         if (collider != null)
         {
+            Debug.Log("somthign hit");
             worldPos.z = 1f;
             // 2. add current shape to scene where clicked 
             GameObject newObj = Instantiate(shapePrefab, worldPos, Quaternion.identity);
