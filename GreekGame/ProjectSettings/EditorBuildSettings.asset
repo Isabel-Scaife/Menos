@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Vineyard.unity
     guid: 7ee55ed7152f9fe4fb39e0688eadd010
   - enabled: 1
-    path: Assets/Scenes/Journal.unity
-    guid: 7c43ff38919cf7444ba98105a8d72e6f
-  - enabled: 1
     path: Assets/Scenes/PotPackage.unity
     guid: 47f51919443abed42b94cf83e6617d94
   m_configObjects:
