@@ -80,16 +80,48 @@ public class JournalManager : MonoBehaviour
    
     private void Awake()
     {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
+
+        // Reset all canvas/button references here
+        ResetReferences();
+    }
+
+    // ** Setup, Temporary Fix... Journal needs so much reworking :(
+    private void ResetReferences()
+    {
+        // Re-assign all Canvas and Button references, especially if they're in the new scene
+        c_notes = GameObject.Find("Canvas_Notes")?.GetComponent<Canvas>();
+        c_evidence = GameObject.Find("Canvas_Evidence")?.GetComponent<Canvas>();
+        c_e_popup = GameObject.Find("Canvas_Evidence_Popup")?.GetComponent<Canvas>();
+        c_relationships = GameObject.Find("Canvas_Relationships")?.GetComponent<Canvas>();
+        c_r_popup = GameObject.Find("Canvas_Relationships_Popup")?.GetComponent<Canvas>();
+        c_maps = GameObject.Find("Canvas_Maps")?.GetComponent<Canvas>();
+        c_settings = GameObject.Find("Canvas_Settings")?.GetComponent<Canvas>();
+
+        b_notes = GameObject.Find("Button_Notes")?.GetComponent<Button>();
+        b_evidence = GameObject.Find("Button_Evidence")?.GetComponent<Button>();
+        b_relationships = GameObject.Find("Button_Relationships")?.GetComponent<Button>();
+        b_maps = GameObject.Find("Button_Maps")?.GetComponent<Button>();
+        b_settings = GameObject.Find("Button_Settings")?.GetComponent<Button>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Subscribe to button or controller triggered events
+        // Subscribe to button or controller triggered events (Also Unsubscribe to previous methods)
+        ProgressL -= UpdateIndex_L;
+        ProgressL -= UpdateSection;
         ProgressL += UpdateIndex_L;
         ProgressL += UpdateSection;
 
+        ProgressR -= UpdateIndex_R;
+        ProgressR -= UpdateSection;
         ProgressR += UpdateIndex_R;
         ProgressR += UpdateSection;
 
@@ -98,6 +130,8 @@ public class JournalManager : MonoBehaviour
 
         if(SceneManager.GetActiveScene().name != "Journal") 
         journalPanel.gameObject.SetActive(false);
+
+        playerInput.SwitchCurrentActionMap("Journal/UI");
     }
 
     // Update is called once per frame
@@ -110,6 +144,18 @@ public class JournalManager : MonoBehaviour
    
     private void OnEnable()
     {
+        playerInput.SwitchCurrentActionMap("Journal/UI");
+
+        ProgressL += UpdateIndex_L;
+        ProgressL += UpdateSection;
+
+        ProgressR += UpdateIndex_R;
+        ProgressR += UpdateSection;
+
+        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
+        Open += OpenJournal;
+
+
         // After Journal Instance has been set active and open journal was triggered, this runs
         // First section to see is notes
         ClickNotesButton();
@@ -128,6 +174,16 @@ public class JournalManager : MonoBehaviour
         // Change the used action map back to player
         // (Not needed because Journal is in a SEPARATE scene)
         // playerInput.SwitchCurrentActionMap("Player");
+
+        // Unsubscribe to events
+        ProgressL -= UpdateIndex_L;
+        ProgressL -= UpdateSection;
+
+        ProgressR -= UpdateIndex_R;
+        ProgressR -= UpdateSection;
+
+        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
+        Open -= OpenJournal;
 
         InUse = false;
     }
@@ -468,7 +524,10 @@ public class JournalManager : MonoBehaviour
         //    // Set the canvas inactive
         //    journalPanel.gameObject.SetActive(false);
         //}
-            
+
+        // Change the input action map
+        playerInput.SwitchCurrentActionMap("Player");
+
         // Move to previous scene
         SceneHistory.Instance.GoBack();
     }

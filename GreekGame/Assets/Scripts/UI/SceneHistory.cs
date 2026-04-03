@@ -35,17 +35,20 @@ public class SceneHistory : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (sceneStack.Count == 0 || sceneStack.Peek() != scene.name)
+        {
             sceneStack.Push(scene.name);
+            Debug.Log(scene.name);
+        }
     }
 
     public void GoBack()
     {
         if (sceneStack.Count > 1)
         {
-            // Remove current scene
-            sceneStack.Pop();
             // Load previous scene
             string previousScene = sceneStack.Peek();
+            // Remove current scene
+            sceneStack.Pop();
             SceneManager.LoadScene(previousScene);
         }
         else

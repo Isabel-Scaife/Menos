@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public enum MoveDirections
 { 
@@ -171,6 +172,11 @@ public class PlayerControlled : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         interactObject = null;
+    }
+
+    public void OpenJournalUI()
+    {
+        SceneManager.LoadScene("Journal");
     }
 }
 
