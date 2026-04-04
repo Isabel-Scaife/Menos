@@ -1,9 +1,13 @@
+using System.IO;
 using UnityEngine;
 
 public class Key : Interactable
 {
     [SerializeField]
     private Door door;
+
+    [SerializeField]
+    public EvidenceData key;
 
     public override void Interact(PlayerControlled player)
     {
@@ -21,6 +25,13 @@ public class Key : Interactable
         else if (player is Player && transform.parent == null)
         {
             Debug.Log("player picks up key");
+
+            key.discovered = true;
+            string keyJSON = JsonUtility.ToJson(key);
+            File.WriteAllText(Application.persistentDataPath + "/saveData.json", keyJSON);
+
+            Debug.Log("Key Discovered: " + key.discovered);
+
             Destroy(this.gameObject);
         }
     }

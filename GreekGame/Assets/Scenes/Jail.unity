@@ -2471,6 +2471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canInteract: 1
   door: {fileID: 162139898}
+  key: {fileID: 11400000, guid: 56d4027438b7286498e885508d85c225, type: 2}
 --- !u!1 &608943683
 GameObject:
   m_ObjectHideFlags: 0
