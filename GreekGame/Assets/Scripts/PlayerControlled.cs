@@ -35,6 +35,8 @@ public class PlayerControlled : MonoBehaviour
     [SerializeField]
     protected bool controlBird = false;
 
+    public Vector2 Direction { get { return direction; } }
+
     private void Awake()
     {
         // gets components
