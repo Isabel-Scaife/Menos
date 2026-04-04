@@ -4,6 +4,7 @@ using UnityEngine;
 public class RelationshipsData : JournalEntries
 {
     // If needed, additional information we want to add to relationship will be added here
+    public bool discovered = false;
 
     public override void OpenPopup()
     {

@@ -9,9 +9,7 @@ public class EvidenceData : JournalEntries
 
     public List<RelationshipsData> possibleRelations;       // If we want more suspects this list makes it scalable.
                                                             // However, having more suspects.. need to fix the evidence popup button options as well
-
-    //[Range(0, 19)]
-    //[System.NonSerialized] public int buttonNum;
+    public bool discovered = false;
 
     public override void OpenPopup()
     {
@@ -24,7 +22,6 @@ public class EvidenceData : JournalEntries
     {
         possibleRelations = new List<RelationshipsData>();
     }
-
 
     // Need reset method (Currently manually gonna reset the things, reminder for Amy)
 }

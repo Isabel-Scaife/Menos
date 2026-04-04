@@ -18,7 +18,10 @@ public class JournalManager : MonoBehaviour
     // If journal gameobject is active, this should be tagged as 'InUse'
     public static bool InUse;
 
-    // ** THIS SHOULD BE SAVED...!!!
+    public EvidenceDatabase eDatabase;
+    public RelationshipsDatabase rDatabase;
+
+    // ** THIS SHOULD NOT BE SAVED. CHECK DISCOVERED STATE OF OBJECTS!!!
     // ** DATA CAN HAVE ITS STATUS SAVED AND
     //    EVERYTIME GAME LOADS DISCOVERED THINGS CAN BE POPPED BACK IN
     // Check whether evidence | relationships | map are discovered
@@ -95,6 +98,7 @@ public class JournalManager : MonoBehaviour
     // ** Setup, Temporary Fix... Journal needs so much reworking :(
     private void ResetReferences()
     {
+
         // Re-assign all Canvas and Button references, especially if they're in the new scene
         c_notes = GameObject.Find("Canvas_Notes")?.GetComponent<Canvas>();
         c_evidence = GameObject.Find("Canvas_Evidence")?.GetComponent<Canvas>();
@@ -132,6 +136,8 @@ public class JournalManager : MonoBehaviour
         journalPanel.gameObject.SetActive(false);
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
+
+        DiscoveredEvidence();
     }
 
     // Update is called once per frame
@@ -480,6 +486,18 @@ public class JournalManager : MonoBehaviour
         }
     }
 
+    // Retrieve Saved Evidence 
+    public void DiscoveredEvidence()
+    {
+        for (int i = 0; i < eDatabase.Evidences.Length; i++)
+        {
+            if (eDatabase.Evidences[i].discovered)
+            {
+                JournalManager.Instance.UnlockEvidence(eDatabase.Evidences[i]);
+            }
+        }
+    }
+
 
     // Relationships
     public void UnlockRelation(RelationshipsData relationship)
@@ -531,4 +549,5 @@ public class JournalManager : MonoBehaviour
         // Move to previous scene
         SceneHistory.Instance.GoBack();
     }
+
 }

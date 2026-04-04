@@ -93,10 +93,6 @@ public class VasePackage : MonoBehaviour
                 SceneManager.LoadScene("Vineyard");
             }
         }
-        else
-        {
-            Debug.Log("Losing");
-        }
     }
 
     public void ResetImage()

@@ -1888,6 +1888,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7347896258108444171, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: eDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 15136844d576e474994cb023c82c70cb, type: 2}
+    - target: {fileID: 7347896258108444171, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
+      propertyPath: rDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b403df20fa7db241b2c6fc7f181f296, type: 2}
+    - target: {fileID: 7347896258108444171, guid: 84e929976f6b2d948ad0178b13408cdd, type: 3}
       propertyPath: journalPanel
       value: 
       objectReference: {fileID: 1524557880}
