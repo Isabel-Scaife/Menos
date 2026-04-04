@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1709409797765568351}
   - component: {fileID: 3818671990946820883}
   - component: {fileID: 4701789603063443229}
+  - component: {fileID: 4436565439913516976}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -154,6 +155,18 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Bird, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PushableObject, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
@@ -450,6 +463,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4436565439913516976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3399567360816744471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 718f5b857c770c44db8604431917a694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ApplyForce
+  forceMagnitude: 100
+  pushableObjectLayer:
+    serializedVersion: 2
+    m_Bits: 524288
+  playerControlled: {fileID: 507889756683833511}
 --- !u!1 &5846149247591714256
 GameObject:
   m_ObjectHideFlags: 0

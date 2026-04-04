@@ -33,7 +33,7 @@ TagManager:
   - BothCollision
   - BothInteractable
   - Vase
-  - 
+  - PushableObject
   - 
   - 
   - 
