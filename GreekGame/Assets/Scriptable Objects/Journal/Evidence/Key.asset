@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entryID: E003
   entryName: Key
-  description: 'A key found in vineyard local postal service station. '
+  description: A key that a guard accidentally dropped in jail.
   icon: {fileID: 1095141833252711340, guid: 970ac9dae264bd644be7b161b768219e, type: 3}
   possibleRelations: []
+  discovered: 0

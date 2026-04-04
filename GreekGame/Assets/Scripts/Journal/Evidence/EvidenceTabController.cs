@@ -53,6 +53,11 @@ public class EvidenceTabController : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+                
+    }
+
     // Refresh page - Call when player unlocks new evidence, or page is flipped as new evidence content needs to be displayed
     public void RefreshPage()
     {

@@ -245,6 +245,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3866799301142618769, guid: 4006f875aba9c26468073bc05d8b0aca, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5329604031429097000, guid: 4006f875aba9c26468073bc05d8b0aca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1431,6 +1435,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3671802642639524406, guid: 843001235425bf64d839fdaaa4244f2c, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8622037453259906570, guid: 843001235425bf64d839fdaaa4244f2c, type: 3}
       propertyPath: m_Name
       value: PopupCanvas
@@ -2471,6 +2479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canInteract: 1
   door: {fileID: 162139898}
+  key: {fileID: 11400000, guid: 56d4027438b7286498e885508d85c225, type: 2}
 --- !u!1 &608943683
 GameObject:
   m_ObjectHideFlags: 0

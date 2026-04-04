@@ -18,7 +18,10 @@ public class JournalManager : MonoBehaviour
     // If journal gameobject is active, this should be tagged as 'InUse'
     public static bool InUse;
 
-    // ** THIS SHOULD BE SAVED...!!!
+    public EvidenceDatabase eDatabase;
+    public RelationshipsDatabase rDatabase;
+
+    // ** THIS SHOULD NOT BE SAVED. CHECK DISCOVERED STATE OF OBJECTS!!!
     // ** DATA CAN HAVE ITS STATUS SAVED AND
     //    EVERYTIME GAME LOADS DISCOVERED THINGS CAN BE POPPED BACK IN
     // Check whether evidence | relationships | map are discovered
@@ -95,6 +98,7 @@ public class JournalManager : MonoBehaviour
     // ** Setup, Temporary Fix... Journal needs so much reworking :(
     private void ResetReferences()
     {
+
         // Re-assign all Canvas and Button references, especially if they're in the new scene
         c_notes = GameObject.Find("Canvas_Notes")?.GetComponent<Canvas>();
         c_evidence = GameObject.Find("Canvas_Evidence")?.GetComponent<Canvas>();
@@ -132,6 +136,8 @@ public class JournalManager : MonoBehaviour
         journalPanel.gameObject.SetActive(false);
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
+
+        DiscoveredEvidence();
     }
 
     // Update is called once per frame
@@ -275,25 +281,25 @@ public class JournalManager : MonoBehaviour
         c_maps.gameObject.SetActive(false);
         c_settings.gameObject.SetActive(false);
         
-        Vector3 mediumPos = b_notes.transform.position;
-        mediumPos.y = 1021;
-        b_notes.transform.position = mediumPos;
+        //Vector3 mediumPos = b_notes.transform.position;
+        //mediumPos.y = 1021;
+        //b_notes.transform.position = mediumPos;
 
-        mediumPos = b_evidence.transform.position;
-        mediumPos.y = 1007;
-        b_evidence.transform.position = mediumPos;
+        //mediumPos = b_evidence.transform.position;
+        //mediumPos.y = 1007;
+        //b_evidence.transform.position = mediumPos;
 
-        mediumPos = b_relationships.transform.position;
-        mediumPos.y = 1007;
-        b_relationships.transform.position = mediumPos;
+        //mediumPos = b_relationships.transform.position;
+        //mediumPos.y = 1007;
+        //b_relationships.transform.position = mediumPos;
 
-        mediumPos = b_maps.transform.position;
-        mediumPos.y = 1007;
-        b_maps.transform.position = mediumPos;
+        //mediumPos = b_maps.transform.position;
+        //mediumPos.y = 1007;
+        //b_maps.transform.position = mediumPos;
 
-        mediumPos = b_settings.transform.position;
-        mediumPos.y = 1007;
-        b_settings.transform.position = mediumPos;
+        //mediumPos = b_settings.transform.position;
+        //mediumPos.y = 1007;
+        //b_settings.transform.position = mediumPos;
 
         currentIndex = 0;
     }
@@ -310,25 +316,25 @@ public class JournalManager : MonoBehaviour
 
         c_e_popup.enabled = false;
 
-        Vector3 mediumPos = b_notes.transform.position;
-        mediumPos.y = 1007;
-        b_notes.transform.position = mediumPos;
+        //Vector3 mediumPos = b_notes.transform.position;
+        //mediumPos.y = 1007;
+        //b_notes.transform.position = mediumPos;
 
-        mediumPos = b_evidence.transform.position;
-        mediumPos.y = 1021;
-        b_evidence.transform.position = mediumPos;
+        //mediumPos = b_evidence.transform.position;
+        //mediumPos.y = 1021;
+        //b_evidence.transform.position = mediumPos;
 
-        mediumPos = b_relationships.transform.position;
-        mediumPos.y = 1007;
-        b_relationships.transform.position = mediumPos;
+        //mediumPos = b_relationships.transform.position;
+        //mediumPos.y = 1007;
+        //b_relationships.transform.position = mediumPos;
 
-        mediumPos = b_maps.transform.position;
-        mediumPos.y = 1007;
-        b_maps.transform.position = mediumPos;
+        //mediumPos = b_maps.transform.position;
+        //mediumPos.y = 1007;
+        //b_maps.transform.position = mediumPos;
 
-        mediumPos = b_settings.transform.position;
-        mediumPos.y = 1007;
-        b_settings.transform.position = mediumPos;
+        //mediumPos = b_settings.transform.position;
+        //mediumPos.y = 1007;
+        //b_settings.transform.position = mediumPos;
 
         currentIndex = 1;
     }
@@ -345,25 +351,25 @@ public class JournalManager : MonoBehaviour
 
         c_r_popup.enabled = false;
 
-        Vector3 mediumPos = b_notes.transform.position;
-        mediumPos.y = 1007;
-        b_notes.transform.position = mediumPos;
+        //Vector3 mediumPos = b_notes.transform.position;
+        //mediumPos.y = 1007;
+        //b_notes.transform.position = mediumPos;
 
-        mediumPos = b_evidence.transform.position;
-        mediumPos.y = 1007;
-        b_evidence.transform.position = mediumPos;
+        //mediumPos = b_evidence.transform.position;
+        //mediumPos.y = 1007;
+        //b_evidence.transform.position = mediumPos;
 
-        mediumPos = b_relationships.transform.position;
-        mediumPos.y = 1021;
-        b_relationships.transform.position = mediumPos;
+        //mediumPos = b_relationships.transform.position;
+        //mediumPos.y = 1021;
+        //b_relationships.transform.position = mediumPos;
 
-        mediumPos = b_maps.transform.position;
-        mediumPos.y = 1007;
-        b_maps.transform.position = mediumPos;
+        //mediumPos = b_maps.transform.position;
+        //mediumPos.y = 1007;
+        //b_maps.transform.position = mediumPos;
 
-        mediumPos = b_settings.transform.position;
-        mediumPos.y = 1007;
-        b_settings.transform.position = mediumPos;
+        //mediumPos = b_settings.transform.position;
+        //mediumPos.y = 1007;
+        //b_settings.transform.position = mediumPos;
 
         currentIndex = 2;
     }
@@ -378,25 +384,25 @@ public class JournalManager : MonoBehaviour
         c_maps.gameObject.SetActive(true);
         c_settings.gameObject.SetActive(false);
 
-        Vector3 mediumPos = b_notes.transform.position;
-        mediumPos.y = 1007;
-        b_notes.transform.position = mediumPos;
+        //Vector3 mediumPos = b_notes.transform.position;
+        //mediumPos.y = 1007;
+        //b_notes.transform.position = mediumPos;
 
-        mediumPos = b_evidence.transform.position;
-        mediumPos.y = 1007;
-        b_evidence.transform.position = mediumPos;
+        //mediumPos = b_evidence.transform.position;
+        //mediumPos.y = 1007;
+        //b_evidence.transform.position = mediumPos;
 
-        mediumPos = b_relationships.transform.position;
-        mediumPos.y = 1007;
-        b_relationships.transform.position = mediumPos;
+        //mediumPos = b_relationships.transform.position;
+        //mediumPos.y = 1007;
+        //b_relationships.transform.position = mediumPos;
 
-        mediumPos = b_maps.transform.position;
-        mediumPos.y = 1021;
-        b_maps.transform.position = mediumPos;
+        //mediumPos = b_maps.transform.position;
+        //mediumPos.y = 1021;
+        //b_maps.transform.position = mediumPos;
 
-        mediumPos = b_settings.transform.position;
-        mediumPos.y = 1007;
-        b_settings.transform.position = mediumPos;
+        //mediumPos = b_settings.transform.position;
+        //mediumPos.y = 1007;
+        //b_settings.transform.position = mediumPos;
 
         currentIndex = 3;
     }
@@ -411,25 +417,25 @@ public class JournalManager : MonoBehaviour
         c_maps.gameObject.SetActive(false);
         c_settings.gameObject.SetActive(true);
 
-        Vector3 mediumPos = b_notes.transform.position;
-        mediumPos.y = 1007;
-        b_notes.transform.position = mediumPos;
+        //Vector3 mediumPos = b_notes.transform.position;
+        //mediumPos.y = 1007;
+        //b_notes.transform.position = mediumPos;
 
-        mediumPos = b_evidence.transform.position;
-        mediumPos.y = 1007;
-        b_evidence.transform.position = mediumPos;
+        //mediumPos = b_evidence.transform.position;
+        //mediumPos.y = 1007;
+        //b_evidence.transform.position = mediumPos;
 
-        mediumPos = b_relationships.transform.position;
-        mediumPos.y = 1007;
-        b_relationships.transform.position = mediumPos;
+        //mediumPos = b_relationships.transform.position;
+        //mediumPos.y = 1007;
+        //b_relationships.transform.position = mediumPos;
 
-        mediumPos = b_maps.transform.position;
-        mediumPos.y = 1007;
-        b_maps.transform.position = mediumPos;
+        //mediumPos = b_maps.transform.position;
+        //mediumPos.y = 1007;
+        //b_maps.transform.position = mediumPos;
 
-        mediumPos = b_settings.transform.position;
-        mediumPos.y = 1021;
-        b_settings.transform.position = mediumPos;
+        //mediumPos = b_settings.transform.position;
+        //mediumPos.y = 1021;
+        //b_settings.transform.position = mediumPos;
 
         currentIndex = 4;
     }
@@ -477,6 +483,18 @@ public class JournalManager : MonoBehaviour
         {
             Debug.Log("New Evidence Discovered: " + evidence.name);
             EvidenceTabController.Instance.RefreshPage();
+        }
+    }
+
+    // Retrieve Saved Evidence 
+    public void DiscoveredEvidence()
+    {
+        for (int i = 0; i < eDatabase.Evidences.Length; i++)
+        {
+            if (eDatabase.Evidences[i].discovered)
+            {
+                JournalManager.Instance.UnlockEvidence(eDatabase.Evidences[i]);
+            }
         }
     }
 
@@ -531,4 +549,5 @@ public class JournalManager : MonoBehaviour
         // Move to previous scene
         SceneHistory.Instance.GoBack();
     }
+
 }
