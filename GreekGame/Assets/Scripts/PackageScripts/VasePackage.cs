@@ -119,4 +119,14 @@ public class VasePackage : MonoBehaviour
         // 4. reset sort layer count
         SortOrder = 0;
     }
+
+    /// <summary>
+    /// Switches the shape the player must make
+    /// </summary>
+    /// <param name="newShape">Name of the shape to switch to</param>
+    public void SwitchShape(string newShape)
+    {
+        //TriangleVase.Visible = false;
+        //newShape.Visible = true;
+    }
 }
