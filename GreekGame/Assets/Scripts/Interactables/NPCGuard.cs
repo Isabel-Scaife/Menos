@@ -1,21 +1,12 @@
 using UnityEngine;
 
 /// <summary>
-/// Guard that walks down after being interacted with
+/// One of two guards that must be talked to to get the key to get out of jail
 /// </summary>
 public class NPCGuard : NPC
 {
     [SerializeField]
-    private Interactable key;
-    [SerializeField]
-    private NPCGuard otherGuard;
-    public bool HasKey { get; set; }
-
-    // needs other guard to give this one the key
-    private void Start()
-    {
-        HasKey = false;
-    }
+    private GameObject key;
 
     /// <summary>
     /// Shows dialogue
@@ -23,24 +14,27 @@ public class NPCGuard : NPC
     /// <param name="player">player interacting with this NPC</param>
     public override void Interact(PlayerControlled player)
     {
-        // exits early if no interaction is allowed at this time
-        if (!canInteract) return;
-
-        // shows dialogue, passes key to other guard if they're still there, then destroys self
-        canInteract = false;
         if (dialogues != null && dialogues.Count > 0)
         {
+            // start dialogue
             if (DialogueManager.Instance == null) Debug.Log("No DialogueManager in scene");
-            else DialogueManager.Instance.BeginDialogue(dialogues[0], player);
-        }
-        if (otherGuard)
-        {
-            otherGuard.HasKey = true;
-        }
-        else
-        {
-            key.transform.SetPositionAndRotation(this.transform.position, Quaternion.identity);
-            key.gameObject.SetActive(true);
+            else
+            {
+                DialogueManager.Instance.BeginDialogue(dialogues[0], player);
+            }
+
+            // drops key or sets up other guard to do so
+            if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
+            else if (GameStateManager.Instance.HasFlag("talked_to_first_guard"))
+            {
+                key.transform.SetPositionAndRotation(this.transform.position, Quaternion.identity);
+                key.SetActive(true);
+            }
+            else
+            {
+                GameStateManager.Instance.SetFlag("talked_to_first_guard");
+            }
+
         }
         Destroy(this.gameObject);
     }

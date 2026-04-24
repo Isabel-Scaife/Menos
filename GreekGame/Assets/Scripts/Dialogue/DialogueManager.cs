@@ -51,19 +51,7 @@ public class DialogueManager : MonoBehaviour
     // functions
     private void Awake()
     {
-        /*
-        // destroy duplicate instance if one of this singleton already exists
-        if (Instance != null && Instance != this)
-        {
-            Debug.Log("Destroyed duplicate DialogueManager object");
-            Destroy(this.gameObject);
-            return;
-        }
-        */
-
         Instance = this;
-
-        //DontDestroyOnLoad(this.gameObject);
 
         // reset fields to defaults
         textIsScrolling = false;
@@ -128,10 +116,10 @@ public class DialogueManager : MonoBehaviour
         // displays next piece of dialogue based on option chosen
         else if (chosen != null)
         {
-            // TODO: do something with choice's outcome object, e.g. log something in journal
+            // apply outcome based on choice
             if (chosen.outcome != null)
             {
-
+                ApplyOutcome(chosen.outcome);
             }
             
             // hides choice boxes then displays next piece
@@ -252,5 +240,23 @@ public class DialogueManager : MonoBehaviour
         */
 
         chosen = currentNode.choices[index];
+    }
+
+    /// <summary>
+    /// applies an outcome from dialogue to affect game states
+    /// </summary>
+    /// <param name="outcome"></param>
+    private void ApplyOutcome(DialogueOutcome outcome)
+    {
+        // set flags
+        if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
+        else
+        {
+            for (int i = 0; i < outcome.flagsToSet.Count; i++)
+            {
+                GameStateManager.Instance.SetFlag(outcome.flagsToSet[i]);
+            }
+        }
+
     }
 }
