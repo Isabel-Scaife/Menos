@@ -22,14 +22,15 @@ public class ShapeStamps : Tool
 
         // update instances color to match parent
         Tool stamp = PackageManager.Instance.CurrentTool;
+
         if (stamp != null)
         {
             currentColor = stamp.GetComponent<ShapeStamps>().currentColor;
             Debug.Log("Color Changed on placed shape");
-        }
 
-        // call to find if placed in right zone on vase 
-        VasePackage.Instance.CheckCollidersHit(myCollider);
+            // call to find if placed in right zone on vase 
+            VasePackage.Instance.CheckCollidersHit(myCollider);
+        }
 
     }
 

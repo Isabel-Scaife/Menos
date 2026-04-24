@@ -20,9 +20,10 @@ public class VasePackage : MonoBehaviour
 
     private Color currentColor = Color.white;
     private List<GameObject> shapesPlaced;
+    private int sortOrder = 1;
 
     public static VasePackage Instance { get; private set; }
-    public int SortOrder {  get; set; }
+    public int SortOrder {  get => sortOrder; set => sortOrder = value; }
 
     public Color CurrentColor { get => currentColor; set => currentColor=value; }
 
@@ -100,11 +101,11 @@ public class VasePackage : MonoBehaviour
         // 1. remove placed shapes
         int shapeCount = shapesPlaced.Count;
 
-        for(int i = 8; i < shapeCount; i++)
+        for(int i = 0; i < shapeCount; i++)
         {
             Destroy(shapesPlaced[i]);
         }
-        shapesPlaced.RemoveRange(8, shapeCount - 8);
+        shapesPlaced.RemoveRange(0, shapeCount);
 
         // 2. reset points
         for(int i = 0; i < correctPointsHit.Count; i++)
@@ -117,7 +118,7 @@ public class VasePackage : MonoBehaviour
         inLoseZone = false;
 
         // 4. reset sort layer count
-        SortOrder = 0;
+        SortOrder = 1;
     }
 
     /// <summary>
