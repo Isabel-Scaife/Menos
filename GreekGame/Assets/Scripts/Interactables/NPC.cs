@@ -24,8 +24,7 @@ public class NPC : Interactable
         // exits early if no interaction is allowed at this time
         if (!canInteract) return;
 
-        // shows dialogue
-        canInteract = false;    // base class only responds to the first intaction
+        // shows dialogue (base class alwas runs first conversation)
         if (dialogues != null && dialogues.Count > 0)
         {
             if (DialogueManager.Instance == null) Debug.Log("No DialogueManager in scene");
