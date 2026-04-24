@@ -20,6 +20,14 @@ public class ShapeStamps : Tool
         
         Collider2D myCollider = GetComponent<Collider2D>();
 
+        // update instances color to match parent
+        Tool stamp = PackageManager.Instance.CurrentTool;
+        if (stamp != null)
+        {
+            currentColor = stamp.GetComponent<ShapeStamps>().currentColor;
+            Debug.Log("Color Changed on placed shape");
+        }
+
         // call to find if placed in right zone on vase 
         VasePackage.Instance.CheckCollidersHit(myCollider);
 
@@ -46,6 +54,7 @@ public class ShapeStamps : Tool
             // 3. match color and proper layer
             SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
             sprite.color = currentColor;
+
             sprite.sortingOrder = VasePackage.Instance.SortOrder;
             VasePackage.Instance.SortOrder++;
         }
