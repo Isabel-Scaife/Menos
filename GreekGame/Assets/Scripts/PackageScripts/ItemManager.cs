@@ -11,12 +11,15 @@ public class ItemManager : MonoBehaviour
     [SerializeField]
     private GameObject[] vaseInstances;
 
+    [SerializeField]
+    private GameObject[] stampSets;
+
     private Dictionary<uint, GameObject> vases;
 
     private Dictionary<int, GameObject> items;
 
     private uint currentVaseId = 0;
-
+    private uint currentStampSet = 0;
     public static ItemManager Instance { get; private set; }
 
     void Awake()
@@ -51,11 +54,12 @@ public class ItemManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    public void LoadVase(uint vaseId)
+    public void LoadVase(uint vaseId, uint stampSetIndex)
     {
         // load vase scene with vase
         SceneManager.LoadScene("PotPackage");
         currentVaseId = vaseId;
+        currentStampSet = stampSetIndex;
     }
 
     /// <summary>
@@ -67,7 +71,11 @@ public class ItemManager : MonoBehaviour
     {
         if(scene.name == "PotPackage")
         {
-            GameObject vaseObject = Instantiate(vases[currentVaseId], Vector2.zero, Quaternion.identity);
+            // create stamp set
+            Instantiate(stampSets[currentStampSet], Vector2.zero, Quaternion.identity);
+            
+            // create vase 
+            Instantiate(vases[currentVaseId], Vector2.zero, Quaternion.identity);
 
             // remove vase id, will not spawn in the future 
             vases.Remove(currentVaseId);
