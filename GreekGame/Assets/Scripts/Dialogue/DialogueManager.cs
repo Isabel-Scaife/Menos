@@ -250,7 +250,7 @@ public class DialogueManager : MonoBehaviour
     {
         // set flags
         if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
-        else
+        else if (outcome.flagsToSet != null)
         {
             for (int i = 0; i < outcome.flagsToSet.Count; i++)
             {
