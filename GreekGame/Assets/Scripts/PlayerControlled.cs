@@ -142,7 +142,7 @@ public class PlayerControlled : MonoBehaviour
                 }
                 else
                 {
-                    faceDirection = MoveDirections.Forward;
+                    faceDirection = MoveDirections.Backward;
                 }
             }
 
