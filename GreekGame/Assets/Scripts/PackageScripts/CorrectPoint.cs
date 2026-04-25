@@ -20,8 +20,9 @@ public class CorrectPoint : MonoBehaviour
     /// </returns>
     public int PaintPoint(Color paintColor)
     {
+        Debug.Log("Needed color: " + correctColor + "\tPainted Color: " + paintColor);
         // 1. covered point with correct color, and is not painted 
-        if(paintColor == correctColor && !isPainted)
+        if (paintColor == correctColor && !isPainted)
         {
             isPainted = true;
             return 1;
