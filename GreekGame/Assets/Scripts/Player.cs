@@ -4,8 +4,6 @@ using UnityEngine.InputSystem;
 public class Player : PlayerControlled
 {
 
-    public bool SpawnLastPosition { get; set; }
-
     private void Start()
     {
         // makes sure input control is only given to the player at start time
@@ -23,7 +21,7 @@ public class Player : PlayerControlled
         // them when they switch back 
 
         // save the player's last position 
-        if(SpawnLastPosition)
+        if(SpawnManager.Instance.SaveCurrentPosition)
         {
             SpawnManager.Instance.PlayerPosition = transform.position;
         }

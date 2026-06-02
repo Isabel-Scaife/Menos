@@ -1,7 +1,7 @@
 using System.IO;
 using UnityEngine;
 
-public class Key : Interactable
+public class Key : Item
 {
     [SerializeField]
     private Door door;
@@ -32,6 +32,7 @@ public class Key : Interactable
 
             Debug.Log("Key Discovered: " + key.discovered);
 
+            SpawnManager.Instance.RemoveItem(itemID);
             Destroy(this.gameObject);
         }
     }

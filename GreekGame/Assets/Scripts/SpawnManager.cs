@@ -7,22 +7,20 @@ using UnityEngine.SceneManagement;
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
-    private uint[] vaseIds;
-    [SerializeField]
-    private GameObject[] vaseInstances;
+    private List<string> initalItemIDs;
+    private HashSet<string> activeItemIDs = new HashSet<string>();
+
+    public Vector3 PlayerPosition { get; set; }
+    public bool SaveCurrentPosition { get; set; }
 
     [SerializeField]
     private GameObject[] stampSets;
 
-    private Dictionary<uint, GameObject> vases;
-
-    private Dictionary<int, GameObject> items;
-
-    private uint currentVaseId = 0;
+    // used to load correct pairing for minigame
+    private GameObject vasePrefab;
     private uint currentStampSet = 0;
-    public static SpawnManager Instance { get; private set; }
 
-    public Vector2 PlayerPosition { get; set; }
+    public static SpawnManager Instance { get; private set; }
 
     void Awake()
     {
@@ -34,16 +32,23 @@ public class SpawnManager : MonoBehaviour
         {
             Instance = this;
 
-            // fill vase dictionary 
-            vases = new Dictionary<uint, GameObject>();
-
-            for(int i = 0; i < vaseIds.Length; i++)
+            // fill active item IDs
+            foreach (string s in initalItemIDs)
             {
-                vases.Add(vaseIds[i], vaseInstances[i]);
+                activeItemIDs.Add(s);
             }
         }
 
         DontDestroyOnLoad(gameObject);
+    }
+
+    /// <summary>
+    /// Remove item so it will not spawn when scene loads in the future
+    /// </summary>
+    /// <param name="itemID">item to remove</param>
+    public void RemoveItem(string itemID)
+    {
+        activeItemIDs.Remove(itemID);
     }
 
     void OnEnable()
@@ -56,17 +61,17 @@ public class SpawnManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    public void LoadVase(uint vaseId, uint stampSetIndex)
+    public void LoadVase(string itemID, GameObject vaseGamePrefab, uint stampSetIndex)
     {
+        SaveCurrentPosition = true;
+
+        // remove item 
+        activeItemIDs.Remove(itemID);
+
         // load vase scene with vase
         SceneManager.LoadScene("PotPackage");
-        currentVaseId = vaseId;
+        vasePrefab = vaseGamePrefab;
         currentStampSet = stampSetIndex;
-    }
-
-    public bool VaseExist(uint vaseId)
-    {
-        return vases.ContainsKey(vaseId);
     }
 
     /// <summary>
@@ -75,19 +80,35 @@ public class SpawnManager : MonoBehaviour
     /// <param name="scene"></param>
     /// <param name="mode"></param>
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    { 
-        // store player's position if moving to certain scenes 
+    {
+        // destroy items when loading scene 
+        DestoryInactiveItems();
 
-        if(scene.name == "PotPackage")
+        // populate vase minigame
+        if (scene.name == "PotPackage")
         {
-            // create stamp set
             Instantiate(stampSets[currentStampSet], Vector2.zero, Quaternion.identity);
-            
-            // create vase 
-            Instantiate(vases[currentVaseId], Vector2.zero, Quaternion.identity);
+            Instantiate(vasePrefab, Vector2.zero, Quaternion.identity);
+        }
+    }
 
-            // remove vase id, will not spawn in the future 
-            vases.Remove(currentVaseId);
+    /// <summary>
+    /// Destory items not found in active list 
+    /// </summary>
+    private void DestoryInactiveItems()
+    {
+        // 1.Find items in loaded scene
+        Item[] itemsInScene = FindObjectsByType<Item>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.None);
+
+        foreach (Item item in itemsInScene)
+        {
+            // 2. If item is NOT in active list delete item
+            if (!activeItemIDs.Contains(item.ItemID))
+            {
+                Destroy(item.gameObject);
+            }
         }
     }
 
