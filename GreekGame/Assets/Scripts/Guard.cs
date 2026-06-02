@@ -17,8 +17,6 @@ public class Guard : MonoBehaviour
     private float max = 3f;
 
     // fields
-    [SerializeField]
-    public bool playerDetectable = true;
     private SpriteRenderer spriteRenderer;
     private SpriteRenderer coneRendererL;
     private SpriteRenderer coneRendererR;
@@ -32,10 +30,13 @@ public class Guard : MonoBehaviour
     protected Vector2 position;
     [SerializeField]
     private int distance = 10;
+    [SerializeField]
+    private bool horizontal = true;
 
     //vision cone
     [SerializeField]
     private Object visionConeL;
+    [SerializeField]
     private Object visionConeR;
 
     //player and bird references
@@ -45,6 +46,7 @@ public class Guard : MonoBehaviour
     private Player Player;
     [SerializeField]
     private Bird Bird;
+    public bool playerDetectable;
 
     //ping pong...
     //needed for guard walking later on
@@ -79,9 +81,18 @@ public class Guard : MonoBehaviour
         //figures out where the object is
         position = gameObject.transform.position;
 
-        //min and max for guard
-        min = transform.position.x;
-        max = transform.position.x + distance;
+        //decides if guard will move vertically or horizontally
+        if (horizontal)
+        {
+            min = transform.position.x;
+            max = transform.position.x + distance;
+        }
+        else
+        {
+            //need to add rotation
+            min = transform.position.y;
+            max = transform.position.y + distance;
+        }
     }
 
     void Update()
@@ -100,16 +111,15 @@ public class Guard : MonoBehaviour
         if (oldpingPong>pingPong)
         {
             //walking left
-            animator.Play("GuardWalkLeft");
+            //animator.Play("GuardWalkLeft");
         }
         else if (pingPong>oldpingPong)
         {
             //walking right
-            animator.Play("GuardWalkRight");
+            //animator.Play("GuardWalkRight");
         }
 
         VisionCheck(player);
-
 
     }
 
@@ -119,6 +129,7 @@ public class Guard : MonoBehaviour
     /// <param name="player"></param>
     private void VisionCheck(PlayerControlled player)
     {
+        //need to add bird stuff in here 
         //checks if cone renderer is enable
         if (renderCone)
         {
@@ -130,20 +141,8 @@ public class Guard : MonoBehaviour
             coneRendererL.enabled = false;
             coneRendererR.enabled = false;
         }
-
-        //the stuff below just. didn't work :/
-        /*
-        //detects whether player can see vision cone or not
-        //this only thinks the player is a birddd
-        if (player is Bird)
-        {
-            coneRenderer.enabled = true;
-        }
-        else if (player is Player)
-        {
-            coneRenderer.enabled = false;
-        }*/
     }
+
     /// <summary>
     /// When player enters vision cone
     /// </summary>
