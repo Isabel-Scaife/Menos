@@ -58,11 +58,10 @@ public class Guard : MonoBehaviour
 
     //GUARD TO DO:
 
-    //HIGH PRIORITY-- Vision --  DONE
-    //HIGH PRIORITY-- Bird Trigger-- DONE
-    //MED PRIORITY-- Respawn
-    //MED PRIORITY-- Hide Box-- DONE + FIXED
-    //LOW PRIORITY-- Walk Cycles -- Halfway done-- need to make these more modular
+    //Respawn function
+    //Fix the mystery -10 disappearnace???
+    //Horizontal toggle
+    //
 
     // run on start
     void Start()
@@ -81,7 +80,6 @@ public class Guard : MonoBehaviour
         //figures out where the object is
         position = gameObject.transform.position;
 
-        //decides if guard will move vertically or horizontally
         if (horizontal)
         {
             min = transform.position.x;
@@ -89,10 +87,10 @@ public class Guard : MonoBehaviour
         }
         else
         {
-            //need to add rotation
             min = transform.position.y;
             max = transform.position.y + distance;
         }
+       
     }
 
     void Update()
@@ -100,20 +98,30 @@ public class Guard : MonoBehaviour
         oldpingPong = pingPong;
         pingPong = Mathf.PingPong(Time.time * 2, max - min);
         //moves guard back and forth
-        transform.position =
-            new Vector3(pingPong + min,
-            transform.position.y,
-            transform.position.x);
+        if (horizontal)
+        {
+            transform.position =
+                new Vector3(pingPong + min,
+                transform.position.y,
+                transform.position.x);
+        }
+        else
+        {
+            transform.position =
+                new Vector3(transform.position.x,
+                pingPong + min,
+                transform.position.z);
+        }
 
         //compares new ping pong value to old
         //this tells us which direction the guard is walking
         //and we can put the sprite in there accordingly
-        if (oldpingPong>pingPong)
+        if (oldpingPong > pingPong)
         {
             //walking left
             //animator.Play("GuardWalkLeft");
         }
-        else if (pingPong>oldpingPong)
+        else if (pingPong > oldpingPong)
         {
             //walking right
             //animator.Play("GuardWalkRight");
