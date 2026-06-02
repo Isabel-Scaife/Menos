@@ -60,8 +60,7 @@ public class Guard : MonoBehaviour
 
     //Respawn function
     //Fix the mystery -10 disappearnace???
-    //Horizontal toggle
-    //
+    //Bird...
 
     // run on start
     void Start()
