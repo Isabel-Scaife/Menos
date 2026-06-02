@@ -16,6 +16,9 @@ public class SigilDoor : Interactable
     [SerializeField]
     private string nextScene;
     
+    // location player spawns in next scene
+    [SerializeField]
+    private Vector2 playerSpawnLocation;
     public override void Interact(PlayerControlled player)
     {
         if (!SigilsMatchPattern())
@@ -24,6 +27,9 @@ public class SigilDoor : Interactable
             Debug.Log("The door is locked!");
             return;
         }
+
+        // update spawn location
+        SpawnManager.Instance.PlayerPosition = playerSpawnLocation;
 
         // jump to new scene
         SceneManager.LoadScene(nextScene);

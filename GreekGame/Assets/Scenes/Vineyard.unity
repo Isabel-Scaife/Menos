@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 2
+  vaseId: 1
   stampSetIndex: 0
 --- !u!61 &566760882
 BoxCollider2D:
@@ -17211,7 +17211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 3
+  vaseId: 3
   stampSetIndex: 0
 --- !u!61 &737004267
 BoxCollider2D:
@@ -105148,7 +105148,7 @@ Transform:
   m_GameObject: {fileID: 1109892418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.82, y: -5.23, z: 0}
+  m_LocalPosition: {x: 12.82, y: -5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -105300,7 +105300,7 @@ GameObject:
   - component: {fileID: 1114458243}
   - component: {fileID: 1114458242}
   m_Layer: 0
-  m_Name: ItemManager
+  m_Name: SpawnManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105968,7 +105968,7 @@ Transform:
   m_GameObject: {fileID: 1228306965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.82, y: -5.23, z: 0}
+  m_LocalPosition: {x: 12.82, y: -5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106100,7 +106100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 4
+  vaseId: 4
   stampSetIndex: 1
 --- !u!61 &1249892219
 BoxCollider2D:
@@ -107567,7 +107567,7 @@ GameObject:
   - component: {fileID: 1675544428}
   - component: {fileID: 1675544431}
   m_Layer: 12
-  m_Name: Vase_0
+  m_Name: VaseTriangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107706,7 +107706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 0
+  vaseId: 0
   stampSetIndex: 0
 --- !u!1 &1740787950
 GameObject:
@@ -108368,7 +108368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.z
@@ -108794,7 +108794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 1
+  vaseId: 2
   stampSetIndex: 0
 --- !u!61 &1983598599
 BoxCollider2D:
@@ -109609,6 +109609,7 @@ SpriteRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1114458243}
   - {fileID: 1820729643}
   - {fileID: 1507480413}
   - {fileID: 1994729458}
@@ -109623,6 +109624,5 @@ SceneRoots:
   - {fileID: 1983598601}
   - {fileID: 737004269}
   - {fileID: 566760884}
-  - {fileID: 1114458243}
   - {fileID: 151177919}
   - {fileID: 1883358429}

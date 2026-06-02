@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ItemManager : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
     private uint[] vaseIds;
@@ -20,7 +20,9 @@ public class ItemManager : MonoBehaviour
 
     private uint currentVaseId = 0;
     private uint currentStampSet = 0;
-    public static ItemManager Instance { get; private set; }
+    public static SpawnManager Instance { get; private set; }
+
+    public Vector2 PlayerPosition { get; set; }
 
     void Awake()
     {
@@ -62,13 +64,20 @@ public class ItemManager : MonoBehaviour
         currentStampSet = stampSetIndex;
     }
 
+    public bool VaseExist(uint vaseId)
+    {
+        return vases.ContainsKey(vaseId);
+    }
+
     /// <summary>
     /// Delegate to load vase Object
     /// </summary>
     /// <param name="scene"></param>
     /// <param name="mode"></param>
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
+    { 
+        // store player's position if moving to certain scenes 
+
         if(scene.name == "PotPackage")
         {
             // create stamp set
