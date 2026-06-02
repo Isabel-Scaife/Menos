@@ -17,20 +17,26 @@ public class Guard : MonoBehaviour
     private float max = 3f;
 
     // fields
-    [SerializeField] //what does serialize feed do....
-    public bool playerDetectable = true;
     [SerializeField]
+    public bool playerDetectable = true;
     private SpriteRenderer spriteRenderer;
-    private SpriteRenderer coneRenderer;
+    private SpriteRenderer coneRendererL;
+    private SpriteRenderer coneRendererR;
+
+    [SerializeField]
+    private bool renderCone;
 
     // movement components
     [SerializeField]
     protected int speed = 5;
     protected Vector2 position;
+    [SerializeField]
+    private int distance = 10;
 
     //vision cone
     [SerializeField]
-    private Object visionCone;
+    private Object visionConeL;
+    private Object visionConeR;
 
     //player and bird references
     [SerializeField]
@@ -64,8 +70,8 @@ public class Guard : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         //get the sprite rendered attached to the vision cone
-        coneRenderer = visionCone.GetComponent<SpriteRenderer>();
-        coneRenderer.enabled = true;
+        coneRendererL = visionConeL.GetComponent<SpriteRenderer>();
+        coneRendererR = visionConeR.GetComponent<SpriteRenderer>();
 
         //get animating component
         animator = GetComponent<Animator>();
@@ -75,7 +81,7 @@ public class Guard : MonoBehaviour
 
         //min and max for guard
         min = transform.position.x;
-        max = transform.position.x + 3;
+        max = transform.position.x + distance;
     }
 
     void Update()
@@ -103,6 +109,8 @@ public class Guard : MonoBehaviour
         }
 
         VisionCheck(player);
+
+
     }
 
     /// <summary>
@@ -111,6 +119,20 @@ public class Guard : MonoBehaviour
     /// <param name="player"></param>
     private void VisionCheck(PlayerControlled player)
     {
+        //checks if cone renderer is enable
+        if (renderCone)
+        {
+            coneRendererL.enabled = true;
+            coneRendererR.enabled = true;
+        }
+        else
+        {
+            coneRendererL.enabled = false;
+            coneRendererR.enabled = false;
+        }
+
+        //the stuff below just. didn't work :/
+        /*
         //detects whether player can see vision cone or not
         //this only thinks the player is a birddd
         if (player is Bird)
@@ -120,7 +142,7 @@ public class Guard : MonoBehaviour
         else if (player is Player)
         {
             coneRenderer.enabled = false;
-        }
+        }*/
     }
     /// <summary>
     /// When player enters vision cone
