@@ -2417,7 +2417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 2
+  itemID: 
+  vaseGamePrefab: {fileID: 0}
   stampSetIndex: 0
 --- !u!61 &566760882
 BoxCollider2D:
@@ -18252,7 +18253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 3
+  itemID: 
+  vaseGamePrefab: {fileID: 0}
   stampSetIndex: 0
 --- !u!61 &737004267
 BoxCollider2D:
@@ -107032,13 +107034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbeefb5f279c9f42b50be1295aa1e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemManager
-  vaseIds: 0000000001000000020000000300000004000000
-  vaseInstances:
-  - {fileID: 6055532064570816364, guid: 60f0a7c72a22b11459b955d157e9e17e, type: 3}
-  - {fileID: 6945682103305120179, guid: 3cff2584dbf392342ae2b8f6be41bb18, type: 3}
-  - {fileID: 1735410669709576520, guid: 97680cb25cd94974eab72eb89eb91b18, type: 3}
-  - {fileID: 2699802827580191906, guid: 77ac1660a89c76e4fb07042c83d7f64d, type: 3}
-  - {fileID: 8133844023627013813, guid: f66f13819df99f84abda8b69071412ee, type: 3}
+  initalItemIDs: []
   stampSets:
   - {fileID: 7059252617295308528, guid: f1734a6faa5fdd44a8a6c19bbe16e437, type: 3}
   - {fileID: 6637857691997519382, guid: 8d4648a72fa260b47b7db9fea1f63666, type: 3}
@@ -108097,7 +108093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 4
+  itemID: 
+  vaseGamePrefab: {fileID: 0}
   stampSetIndex: 1
 --- !u!61 &1249892219
 BoxCollider2D:
@@ -109885,7 +109882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 0
+  itemID: 
+  vaseGamePrefab: {fileID: 0}
   stampSetIndex: 0
 --- !u!1 &1740787950
 GameObject:
@@ -110674,11 +110672,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7329037784009185052, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_Size.y
-      value: 3.1933553
+      value: 4.064962
       objectReference: {fileID: 0}
     - target: {fileID: 7329037784009185052, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_Offset.y
-      value: 1.457923
+      value: 1.8937263
       objectReference: {fileID: 0}
     - target: {fileID: 7329037784009185052, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -111064,7 +111062,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   canInteract: 1
-  vaseID: 1
+  itemID: 
+  vaseGamePrefab: {fileID: 0}
   stampSetIndex: 0
 --- !u!61 &1983598599
 BoxCollider2D:
