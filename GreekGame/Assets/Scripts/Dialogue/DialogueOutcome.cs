@@ -9,4 +9,5 @@ using UnityEngine;
 public class DialogueOutcome
 {
     public List<string> flagsToSet;
+    public int[] statChanges;
 }
