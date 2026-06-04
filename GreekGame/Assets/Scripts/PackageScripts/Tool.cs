@@ -3,14 +3,19 @@ using UnityEngine.InputSystem;
 
 public class Tool : MonoBehaviour
 {
-
+    private bool isFollowing = false;
+    protected bool mouseDown = false;
     private Vector2 mousePos;
     protected Vector2 worldPos;
-    [SerializeField]
-    protected bool mouseDown = false;
-    private bool isFollowing = false;
+
+    private Vector3 startPosition;
 
     protected RaycastHit2D hit;
+
+    private void Awake()
+    {
+        startPosition = transform.position;
+    }
 
     protected virtual void Update()
     {
@@ -41,35 +46,36 @@ public class Tool : MonoBehaviour
     /// </summary>
     public virtual void SelectTool() 
     {
-        Debug.Log("Pickuped Up tool");
+        // start following mouse 
         isFollowing = true;
-
-        // change objects depth to be on top 
-        Vector3 pos = transform.position;
-        pos.z = 0;
-        transform.position = pos;
-
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
         PackageManager.Instance.CurrentTool = this;
+
+        // change layer order
+        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 100;
     }
 
     /// <summary>
-    /// Updates the current tool in package manager
+    /// Drops tool and resets it to its inital position
     /// </summary>
     public void DropTool()
     {
-        Debug.Log("Dropped tool");
+        // stop following 
         isFollowing = false;
-
-        // change objects depth to orginal value
-        Vector3 pos = transform.position;
-        pos.z = 1;
-        transform.position = pos;
-
+        gameObject.layer = LayerMask.NameToLayer("Tool");
         PackageManager.Instance.CurrentTool = null;
+
+        // reset position
+        transform.position = startPosition;
+
+        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 10;
+
     }
 
     /// <summary>
-    /// Current tool follows mouse position
+    /// Current tool follows mouse
     /// </summary>
     private void Follow()
     {

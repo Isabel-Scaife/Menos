@@ -8,7 +8,7 @@ public class ShapeStamps : Tool
     private GameObject shapePrefab;
 
     [SerializeField]
-    private LayerMask vaseLayer;
+    private LayerMask clickable;
 
     [SerializeField]
     private Color currentColor; // change color of prefeb when placed 
@@ -26,7 +26,6 @@ public class ShapeStamps : Tool
         if (stamp != null)
         {
             currentColor = stamp.GetComponent<ShapeStamps>().currentColor;
-            Debug.Log("Color Changed on placed shape");
 
             // call to find if placed in right zone on vase 
             VasePackage.Instance.CheckCollidersHit(myCollider);
@@ -39,46 +38,60 @@ public class ShapeStamps : Tool
     /// </summary>
     public override void Use() 
     {
-        // 1. check if on pot
+        // determine what was hit 
         Vector3 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         RaycastHit2D hit; 
-        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, vaseLayer, 0f);
+        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, clickable);
         Collider2D collider = hit.collider;
 
-        if (collider != null)
+        Debug.Log(collider.tag);
+        Debug.Log(collider.name);
+        // vase hit, place stamp at mouse location
+        if (collider.CompareTag("Vase"))
         {
-            Debug.Log("somthign hit");
-            worldPos.z = 1f;
-            // 2. add current shape to scene where clicked 
-            GameObject newObj = Instantiate(shapePrefab, worldPos, Quaternion.identity);
-
-            // 3. match color and proper layer
-            SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
-            sprite.color = currentColor;
-
-            sprite.sortingOrder = VasePackage.Instance.SortOrder;
-            VasePackage.Instance.SortOrder++;
+            Debug.Log("on vase");
+            PlaceStamp(worldPos);
         }
 
-        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, -1, 1.1f);
-        collider = hit.collider;
-
-        if (collider != null && collider.CompareTag("NewColor"))
+        // color hit, change color of stamp 
+        if (collider.CompareTag("Color"))
         {
-            // 4. change color of sprite shape and in manager
-            currentColor = collider.GetComponent<SpriteRenderer>().color;
-
-            gameObject.GetComponent<SpriteRenderer>().color = currentColor;
-            VasePackage.Instance.CurrentColor = currentColor;
+            ChangeColor(collider);
         }
+    }
+
+
+    /// <summary>
+    /// Place stamp at location 
+    /// </summary>
+    /// <param name="position">mouse position</param>
+    private void PlaceStamp(Vector3 position)
+    {
+        // add shape where clicked 
+        GameObject newObj = Instantiate(shapePrefab, position, Quaternion.identity);
+
+        // match color and apply layer order
+        SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
+        sprite.color = currentColor;
+
+        sprite.sortingOrder = VasePackage.Instance.SortOrder;
+        VasePackage.Instance.SortOrder++;
+    }
+
+    /// <summary>
+    /// Change color of stamp to color of collider
+    /// </summary>
+    private void ChangeColor(Collider2D collider)
+    {
+        currentColor = collider.GetComponent<SpriteRenderer>().color;
+        gameObject.GetComponent<SpriteRenderer>().color = currentColor;
+        VasePackage.Instance.CurrentColor = currentColor;
     }
 
     public override void SelectTool()
     {
-        // 1. set color to picked up shapes color 
+        // apply color and pick up tool 
         VasePackage.Instance.CurrentColor = currentColor;
-
-        // 2. call base select tool 
         base.SelectTool();
     }
 
