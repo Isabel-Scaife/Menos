@@ -50,6 +50,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
       propertyPath: clickableLayer.m_Bits
       value: 262145
       objectReference: {fileID: 0}
@@ -103,6 +107,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3539206942948661073, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6111959964150603213, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
+      propertyPath: m_MaskInteraction
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -175,9 +183,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Tool
       objectReference: {fileID: 0}
+    - target: {fileID: 3837535452003362111, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
       propertyPath: currentColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
       objectReference: {fileID: 0}
     - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -201,6 +217,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6075536742385498841}
     m_Modifications:
+    - target: {fileID: 612698192725897017, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2439283950203878352, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
       propertyPath: m_Name
       value: satyrStamp0
@@ -214,8 +234,16 @@ PrefabInstance:
       value: Tool
       objectReference: {fileID: 0}
     - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 2439283950203878352, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
+    - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
       propertyPath: currentColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
       objectReference: {fileID: 0}
     - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -292,8 +320,16 @@ PrefabInstance:
       value: Tool
       objectReference: {fileID: 0}
     - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 405394878832270652, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
+    - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
       propertyPath: currentColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
       objectReference: {fileID: 0}
     - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -339,6 +375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6288290777676824140, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -362,8 +402,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
       propertyPath: clickableLayer.m_Bits
       value: 262145
+      objectReference: {fileID: 0}
+    - target: {fileID: 6423630563273077375, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8342678338141091846, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,6 +523,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3749998528466040310, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4158156967457628155, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
       propertyPath: m_Name
       value: satyrStamp5
@@ -488,8 +540,16 @@ PrefabInstance:
       value: Tool
       objectReference: {fileID: 0}
     - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 4158156967457628155, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
+    - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
       propertyPath: currentColor.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
+      propertyPath: clickable.m_Bits
+      value: 262145
       objectReference: {fileID: 0}
     - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
       propertyPath: clickableLayer.m_Bits

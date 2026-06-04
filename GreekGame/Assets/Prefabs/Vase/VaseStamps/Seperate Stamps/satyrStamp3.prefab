@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_Sprite: {fileID: -7704795883045856994, guid: d289e2785d3780049b79555e2cd4fbef, type: 3}
   m_Color: {r: 0.22352943, g: 0.13725491, b: 0.054901965, a: 1}
   m_FlipX: 0
@@ -163,9 +163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43b3edabe1427f41bb140b4f788e499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapeStamps
-  mouseDown: 0
   shapePrefab: {fileID: 1916408974532796690}
-  clickableLayer:
+  clickable:
     serializedVersion: 2
-    m_Bits: 262144
+    m_Bits: 0
   currentColor: {r: 0.22352943, g: 0.13725491, b: 0.054901965, a: 0}

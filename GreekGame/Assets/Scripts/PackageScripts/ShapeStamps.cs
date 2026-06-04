@@ -40,23 +40,29 @@ public class ShapeStamps : Tool
     {
         // determine what was hit 
         Vector3 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        RaycastHit2D hit; 
-        hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, clickable);
-        Collider2D collider = hit.collider;
+        RaycastHit2D[] hit; 
+        hit = Physics2D.RaycastAll(worldPos, Vector2.zero, 10.0f, clickable);
 
-        Debug.Log(collider.tag);
-        Debug.Log(collider.name);
-        // vase hit, place stamp at mouse location
-        if (collider.CompareTag("Vase"))
+        if (hit != null)
         {
-            Debug.Log("on vase");
-            PlaceStamp(worldPos);
-        }
+            // color hit, change color of stamp 
+            if (hit[0].collider.CompareTag("Color"))
+            {
+                ChangeColor(hit[0].collider);
+            }
 
-        // color hit, change color of stamp 
-        if (collider.CompareTag("Color"))
-        {
-            ChangeColor(collider);
+            // vase hit, place stamp at mouse location
+            for (int i = 0; i < hit.Length; i++)
+            {
+                if (hit[i].collider.CompareTag("Vase"))
+                {
+                    Debug.Log(hit[i].collider.tag);
+                    Debug.Log(hit[i].collider.name);
+
+                    Debug.Log("on vase");
+                    PlaceStamp(worldPos, hit[i].collider.transform);
+                }
+            }
         }
     }
 
@@ -65,10 +71,10 @@ public class ShapeStamps : Tool
     /// Place stamp at location 
     /// </summary>
     /// <param name="position">mouse position</param>
-    private void PlaceStamp(Vector3 position)
+    private void PlaceStamp(Vector3 position, Transform parent)
     {
         // add shape where clicked 
-        GameObject newObj = Instantiate(shapePrefab, position, Quaternion.identity);
+        GameObject newObj = Instantiate(shapePrefab, position, Quaternion.identity, parent);
 
         // match color and apply layer order
         SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
