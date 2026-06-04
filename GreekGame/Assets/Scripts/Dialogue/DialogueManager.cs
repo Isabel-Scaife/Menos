@@ -245,12 +245,18 @@ public class DialogueManager : MonoBehaviour
     /// <summary>
     /// applies an outcome from dialogue to affect game states
     /// </summary>
-    /// <param name="outcome"></param>
+    /// <param name="outcome">outcome data object</param>
     private void ApplyOutcome(DialogueOutcome outcome)
     {
+        // make sure GameStateManager exists
+        if (GameStateManager.Instance == null)
+        {
+            Debug.Log("No GameStateManager in scene");
+            return;
+        }
+
         // set flags
-        if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
-        else if (outcome.flagsToSet != null)
+        if (outcome.flagsToSet != null)
         {
             for (int i = 0; i < outcome.flagsToSet.Count; i++)
             {
@@ -258,5 +264,10 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        // change stats
+        if (outcome.statChanges != null)
+        {
+            GameStateManager.Instance.ChangeStats(outcome.statChanges);
+        }
     }
 }
