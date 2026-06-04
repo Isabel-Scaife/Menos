@@ -56,6 +56,8 @@ public class Guard : MonoBehaviour
     //animation
     private Animator animator;
 
+
+
     //GUARD TO DO:
 
     //Respawn function
@@ -79,6 +81,8 @@ public class Guard : MonoBehaviour
         //figures out where the object is
         position = gameObject.transform.position;
 
+        //changes start position based on if its hoirzontal or vertical
+        //if we use the same one for both it will start wonky
         if (horizontal)
         {
             min = transform.position.x;
@@ -102,14 +106,14 @@ public class Guard : MonoBehaviour
             transform.position =
                 new Vector3(pingPong + min,
                 transform.position.y,
-                transform.position.x);
+                0);
         }
         else
         {
             transform.position =
                 new Vector3(transform.position.x,
                 pingPong + min,
-                transform.position.z);
+                0);
         }
 
         //compares new ping pong value to old
