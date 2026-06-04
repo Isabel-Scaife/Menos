@@ -47,6 +47,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 741365339931874231}
     m_Modifications:
+    - target: {fileID: 2216643413105236087, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_Name
       value: CircleStamp
@@ -156,6 +160,10 @@ PrefabInstance:
     - target: {fileID: 8531949252014200650, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
       propertyPath: vaseLayer.m_Bits
       value: 262144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784921314323477103, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9047030589851899771, guid: d35943afd773a674b8fc59d17e584d28, type: 3}
       propertyPath: m_LocalScale.x
@@ -291,6 +299,10 @@ PrefabInstance:
       propertyPath: vaseLayer.m_Bits
       value: 262144
       objectReference: {fileID: 0}
+    - target: {fileID: 4178435087429208125, guid: bab9375a1628de6418a82acad4f25aef, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6936688906433809546, guid: bab9375a1628de6418a82acad4f25aef, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -384,6 +396,10 @@ PrefabInstance:
     - target: {fileID: 3584260169762175557, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: m_TagString
       value: Tool
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180844183323352742, guid: deff042b38379e745ab2651974c28964, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8478124136989035206, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: shapePrefab
@@ -503,6 +519,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7316932773698608639, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -577,6 +597,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.22745098
       objectReference: {fileID: 0}
+    - target: {fileID: 809400224778961777, guid: 95ff93b190745544391edb528e3a61db, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7159896751646529039, guid: 95ff93b190745544391edb528e3a61db, type: 3}
       propertyPath: m_Name
       value: StarStamp
@@ -615,6 +639,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 741365339931874231}
     m_Modifications:
+    - target: {fileID: 1257223013385100710, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3301373321434403706, guid: e11169a64037aef4fae25ee38f81040c, type: 3}
       propertyPath: shapePrefab
       value: 
@@ -716,6 +744,10 @@ PrefabInstance:
     - target: {fileID: 1633345017710013673, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
       propertyPath: clickable.m_Bits
       value: 262145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472066521067871753, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8122950079489114942, guid: 031860d6c0b16974f86bfb86ab2aa883, type: 3}
       propertyPath: m_LocalScale.x

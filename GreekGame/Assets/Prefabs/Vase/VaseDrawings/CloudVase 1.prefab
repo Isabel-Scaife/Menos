@@ -3285,6 +3285,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6180844183323352742, guid: deff042b38379e745ab2651974c28964, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8478124136989035206, guid: deff042b38379e745ab2651974c28964, type: 3}
       propertyPath: shapePrefab
       value: 
@@ -4135,6 +4139,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7316932773698608639, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6451567302449001239, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
     - {fileID: 2916953292832091781, guid: 26d1d825fa13b61468718342eecc5e72, type: 3}
@@ -4319,6 +4327,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5750483231878021414}
     m_Modifications:
+    - target: {fileID: 2216643413105236087, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_Name
       value: CircleStamp (4)
@@ -4493,6 +4505,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5750483231878021414}
     m_Modifications:
+    - target: {fileID: 2216643413105236087, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_Name
       value: CircleStamp (3)
@@ -5405,6 +5421,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5750483231878021414}
     m_Modifications:
+    - target: {fileID: 2216643413105236087, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_Name
       value: CircleStamp (1)
@@ -6563,6 +6583,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5750483231878021414}
     m_Modifications:
+    - target: {fileID: 2216643413105236087, guid: 6850e548f96575342971c18282ef3f30, type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3805400891043508247, guid: 6850e548f96575342971c18282ef3f30, type: 3}
       propertyPath: m_Name
       value: CircleStamp (2)

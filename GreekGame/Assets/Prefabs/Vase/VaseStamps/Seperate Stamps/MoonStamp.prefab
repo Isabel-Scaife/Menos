@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_MaskInteraction: 0
+  m_MaskInteraction: 1
   m_Sprite: {fileID: 7699978436774145253, guid: f6e183cef24065449b7eb6b4f12907ce, type: 3}
   m_Color: {r: 0.227451, g: 0.14117648, b: 0.054901965, a: 1}
   m_FlipX: 0
@@ -174,9 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43b3edabe1427f41bb140b4f788e499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseDown: 0
   shapePrefab: {fileID: 0}
-  clickableLayer:
+  clickable:
     serializedVersion: 2
-    m_Bits: 262144
+    m_Bits: 0
   currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}
