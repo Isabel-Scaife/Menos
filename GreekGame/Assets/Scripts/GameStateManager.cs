@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Holds and manages flags and hidden stats that determine which dialogue happens, etc.
+/// </summary>
 public class GameStateManager : MonoBehaviour
 {
     // singleton
@@ -8,6 +11,10 @@ public class GameStateManager : MonoBehaviour
 
     // string flags for tracking game states
     private HashSet<string> flags = new HashSet<string>();
+
+    // stats that determine which dialogue happens, etc.
+    private const int numberOfStats = 5;
+    private int[] stats;
 
     void Awake()
     {
@@ -22,13 +29,22 @@ public class GameStateManager : MonoBehaviour
         // persistent singleton
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        // default values for stats
+        if (stats == null)
+        {
+            stats = new int[numberOfStats];
+        }
     }
 
     /// <summary>
     /// adds a flag to the list
     /// </summary>
     /// <param name="flag">flag to set</param>
-    public void SetFlag(string flag) => flags.Add(flag);
+    public void SetFlag(string flag)
+    {
+        flags.Add(flag);
+    }
 
     /// <summary>
     /// checks if a flag is currently set
@@ -43,4 +59,30 @@ public class GameStateManager : MonoBehaviour
     /// <param name="flag">flag to clear</param>
     /// <returns>true if the flag was removed, false if it was not part of the list</returns>
     public bool ClearFlag(string flag) => flags.Remove(flag);
+
+    /// <summary>
+    /// gets all stat values as an array
+    /// </summary>
+    /// <returns>a copy of the manager's array of stats</returns>
+    public int[] GetStats()
+    {
+        if (stats != null) return (int[])stats.Clone();
+        else return new int[numberOfStats];
+    }
+
+    /// <summary>
+    /// adds the given values to each stat, respectively
+    /// </summary>
+    /// <param name="changes">values to add to each stat</param>
+    public void ChangeStats(int[] changes)
+    {
+        // no changes if given array has different number of elements from internal stats array
+        if (changes.Length != stats.Length) return;
+
+        // adds each value to its corresponding stat
+        for (int i = 0; i < stats.Length; i++)
+        {
+            stats[i] += changes[i];
+        }
+    }
 }
