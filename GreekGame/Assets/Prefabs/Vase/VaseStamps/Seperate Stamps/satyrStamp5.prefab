@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShapeStamps
   mouseDown: 0
   shapePrefab: {fileID: 4158156967457628155}
-  vaseLayer:
+  clickableLayer:
     serializedVersion: 2
     m_Bits: 262144
   currentColor: {r: 0.22352943, g: 0.13725491, b: 0.054901965, a: 0}

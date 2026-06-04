@@ -60,7 +60,6 @@ public class VasePackage : MonoBehaviour
                 if (collider.CompareTag("IncorrectZone"))
                 {
                     // 3. placed in lose zone, end early
-                    Debug.Log("lose zone");
                     inLoseZone = true;
                     return;
                 }
@@ -77,8 +76,6 @@ public class VasePackage : MonoBehaviour
                     }
 
                     pointsCorrect += paintValue;
-
-                    Debug.Log("Amt Correct: " + pointsCorrect);
                 }
             }
 

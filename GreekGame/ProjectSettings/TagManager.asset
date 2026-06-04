@@ -12,7 +12,9 @@ TagManager:
   - IncorrectZone
   - Vase
   - Button
-  - NewColor
+  - Color
+  - Undefined
+  - Tool
   layers:
   - Default
   - TransparentFX
