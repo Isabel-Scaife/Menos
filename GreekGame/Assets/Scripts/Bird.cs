@@ -8,10 +8,22 @@ public class Bird : PlayerControlled
 
     private Vector2 acceleration, steeringForce;
 
-    [SerializeField]
+    [SerializeField, Range(0, 1f)]
     private float seekWeight;
     [SerializeField]
     private GameObject seekTarget;
+
+    [SerializeField, Range(0, 1f)]
+    private float evadeWeight;
+    [SerializeField]
+    private LayerMask evadeTarget;
+    [SerializeField]
+    private float evadeRadius;
+
+    [SerializeField, Range(0, 1f)]
+    private float wanderWeight;
+    protected private Vector2 wanderTarget;
+
     private Vector2 totalForce;
 
     [SerializeField]
@@ -22,6 +34,7 @@ public class Bird : PlayerControlled
     [SerializeField]
     private float matchSpeed;
 
+    private Vector2 seekForce, evadeForce;
     public void Drop()
     {
         // remove item from bird
@@ -115,14 +128,94 @@ public class Bird : PlayerControlled
 
         if(distance >= catchUpRadius)
         {
-            totalForce += Seek(targetPos, speed);
+            seekForce += Seek(targetPos, speed) * seekWeight;
+            evadeForce += Evade(.6f, speed) * evadeWeight;
         }
         else if(distance >= matchSpeedRadius)
         {
-            totalForce += Seek(targetPos, matchSpeed);
+            seekForce += Seek(targetPos, matchSpeed) * seekWeight;
+            evadeForce += Evade(.6f, matchSpeed) * evadeWeight;
         }
+        totalForce += Wander(.5f, 1.5f, 2f) * wanderWeight;
+
+        totalForce += seekForce + evadeForce;
 
         return totalForce;
     }
 
+    private Vector2 Evade(float timeInSeconds, float currentSpeed)
+    {
+        // evade objects that are detected in range of futuer position 
+        RaycastHit2D hit;
+        hit = Physics2D.CircleCast(
+            GetFuturePosition(timeInSeconds),
+            evadeRadius,
+            velocity.normalized,
+            10,
+            evadeTarget);
+
+        if (hit.collider != null)
+        {
+            Vector2 desiredVelocity = transform.position - hit.transform.position;
+            desiredVelocity = desiredVelocity.normalized * currentSpeed;
+
+            return desiredVelocity - velocity;
+        }
+
+        return Vector2.zero;
+    
+    }
+
+    /// <summary>
+    /// Move in a tandom direction with a circle in front 
+    /// </summary>
+    /// <param name="wanderRadius">radius of circle</param>
+    /// <param name="wanderDistance">how far center circle in front</param>
+    /// <returns></returns>
+    protected Vector2 Wander(float wanderRadius, float wanderDistance, float wanderJitter)
+    {
+        if (wanderTarget == Vector2.zero)
+        {
+            wanderTarget = Random.insideUnitSphere.normalized * wanderRadius;
+        }
+
+        wanderJitter *= Time.deltaTime;
+
+        wanderTarget += new Vector2(
+            Random.Range(-1f, 1f) * wanderJitter,
+            Random.Range(-1f, 1f) * wanderJitter
+            );
+
+        wanderTarget = wanderTarget.normalized * wanderRadius;
+
+        Vector2 targetInWorldSpace = (Vector2)transform.position +
+            (velocity.normalized * wanderDistance) + wanderTarget;
+
+        return Seek(targetInWorldSpace, speed);
+    }
+
+
+    protected Vector2 GetFuturePosition(float timeInSeconds)
+    {
+        Vector2 futurePos = (Vector2)transform.position + velocity * timeInSeconds;
+
+        return futurePos;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawRay(transform.position, seekForce);
+
+        Gizmos.DrawWireSphere(GetFuturePosition(.5f), 1.5f);
+
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawRay(transform.position, evadeForce);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, totalForce);
+
+        Gizmos.DrawWireSphere(GetFuturePosition(.6f), 0.25f);
+
+    }
 }

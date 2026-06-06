@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -34,6 +35,9 @@ public class PlayerControlled : MonoBehaviour
     private PlayerInput playerInput;
     [SerializeField]
     protected bool controlBird = false;
+
+    // guard detection
+    public bool hidden = false;
 
     public Vector2 Direction { get { return direction; } }
 
