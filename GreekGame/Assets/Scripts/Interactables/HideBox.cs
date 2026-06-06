@@ -33,13 +33,12 @@ public class HideBox : Interactable
         //so for now, to enter box is E and to exit is SPACE
 
         //if player is alr hiding and needs to leave
-        if (guard.playerDetectable == false && Input.GetKeyDown(KeyCode.Space))
+        if (player.hidden == true && Input.GetKeyDown(KeyCode.Space))
         {
             //probably put a uncrouching sprite in here somewhere...?
-            spriteRenderer.color = Color.pink;
 
             //renders the player detectable to guard
-            guard.playerDetectable = true;
+            player.hidden = false;
 
             //resumes input controls -- this always defaults back to player???
             player.ResumeInputControls();
@@ -51,13 +50,12 @@ public class HideBox : Interactable
         if (!canInteract) return;
 
         //if player isn't currently hiding
-        if (guard.playerDetectable == true && player is Player)
+        if (player.hidden == false && player is Player)
         {
             //probably put a crouching sprite in here somewhere...?
-            spriteRenderer.color = Color.red;
 
             //renders the player undetectable to guard
-            guard.playerDetectable = false;
+            player.hidden = true;
 
             //pauses input control
             player.PauseInputControls();
