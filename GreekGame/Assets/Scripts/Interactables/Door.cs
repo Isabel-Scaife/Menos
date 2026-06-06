@@ -1,9 +1,7 @@
-
 using UnityEngine;
 
 public class Door : Interactable
 {
-
     public override void Interact(PlayerControlled player)
     {
         if(!canInteract)

@@ -32,7 +32,16 @@ public class Key : Item
 
             Debug.Log("Key Discovered: " + key.discovered);
 
-            SpawnManager.Instance.RemoveItem(itemID);
+            // remove ID from spawn manager
+            if (SpawnManager.Instance == null)
+            {
+                Debug.Log("No SpawnManager in scene");
+            }
+            else
+            {
+                SpawnManager.Instance.RemoveItem(itemID);
+            }
+
             Destroy(this.gameObject);
         }
     }

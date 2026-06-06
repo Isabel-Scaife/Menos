@@ -12,6 +12,13 @@ public class Vase : Item
 
     public override void Interact(PlayerControlled player)
     {
-        SpawnManager.Instance.LoadVase(itemID, vaseGamePrefab, stampSetIndex);
+        if (SpawnManager.Instance == null)
+        {
+            Debug.Log("No SpawnManager in scene");
+        }
+        else
+        {
+            SpawnManager.Instance.LoadVase(itemID, vaseGamePrefab, stampSetIndex);
+        }
     }
 }

@@ -29,7 +29,14 @@ public class SigilDoor : Interactable
         }
 
         // update spawn location
-        SpawnManager.Instance.PlayerPosition = playerSpawnLocation;
+        if (SpawnManager.Instance == null)
+        {
+            Debug.Log("No SpawnManager in scene");
+        }
+        else
+        {
+            SpawnManager.Instance.PlayerPosition = playerSpawnLocation;
+        }
 
         // jump to new scene
         SceneManager.LoadScene(nextScene);
