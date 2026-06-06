@@ -109021,6 +109021,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: matchSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -109033,16 +109037,32 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: evadeRadius
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: evadeWeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 1854854082}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: wanderWeight
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: catchUpRadius
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: matchSpeedRadius
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: evadeTarget.m_Bits
+      value: 98304
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
