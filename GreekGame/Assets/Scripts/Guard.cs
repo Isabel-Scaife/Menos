@@ -46,7 +46,6 @@ public class Guard : MonoBehaviour
     private Player Player;
     [SerializeField]
     private Bird Bird;
-    public bool playerDetectable;
 
     //ping pong...
     //needed for guard walking later on
@@ -61,7 +60,6 @@ public class Guard : MonoBehaviour
     //GUARD TO DO:
 
     //Respawn function
-    //Fix the mystery -10 disappearnace???
     //Bird...
 
     // run on start
@@ -161,7 +159,7 @@ public class Guard : MonoBehaviour
     /// /param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (playerDetectable) //makes sure player isn't hiding
+        if (!player.hidden) //makes sure player isn't hiding
         {
             spriteRenderer.color = Color.red;
             //run respawn/fail state code here
