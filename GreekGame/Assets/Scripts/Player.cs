@@ -9,8 +9,17 @@ public class Player : PlayerControlled
         // makes sure input control is only given to the player at start time
         SwitchActionMaps(false);
 
+        // make sure SpawnManager exists
+        if (SpawnManager.Instance == null)
+        {
+            Debug.Log("No SpawnManager in scene");
+        }
+
         // set player's position to proper location 
-        transform.position = SpawnManager.Instance.PlayerPosition;
+        else
+        {
+            transform.position = SpawnManager.Instance.PlayerPosition;
+        }
     }
 
     private void OnDestroy()
@@ -20,8 +29,14 @@ public class Player : PlayerControlled
         // like if the player touched a door they should spawn where the door tells 
         // them when they switch back 
 
+        // make sure SpawnManager exists
+        if (SpawnManager.Instance == null)
+        {
+            Debug.Log("No SpawnManager in scene");
+        }
+
         // save the player's last position 
-        if(SpawnManager.Instance.SaveCurrentPosition)
+        else if (SpawnManager.Instance.SaveCurrentPosition)
         {
             SpawnManager.Instance.PlayerPosition = transform.position;
         }
