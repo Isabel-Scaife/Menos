@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// Shows dialogue in UI, manages dialgoue choices (branching logic), etc.
@@ -208,14 +209,15 @@ public class DialogueManager : MonoBehaviour
             textIsScrolling = true;
         }
         else
-        {            
-            // shows the current node's choices
+        {
+            // shows the current node's choices, selecting the first choice            
             int len = currentNode.choices.Count;
             for (int i = 0; i < len; i++)
             {
                 choiceTMPs[i].text = currentNode.choices[i].text;
                 choiceBoxes[i].SetActive(true);                
             }
+            EventSystem.current.SetSelectedGameObject(choiceBoxes[0]);
             choicesShowing = true;
         }
     }
