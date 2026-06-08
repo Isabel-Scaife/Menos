@@ -1,14 +1,15 @@
 
 using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
     [SerializeField]
-    private List<string> initalItemIDs;
-    private HashSet<string> activeItemIDs = new HashSet<string>();
+    private List<string> itemIDs;
+    public HashSet<string> items = new HashSet<string>();
 
     public Vector3 PlayerPosition { get; set; }
     public bool SaveCurrentPosition { get; set; }
@@ -33,9 +34,12 @@ public class SpawnManager : MonoBehaviour
             Instance = this;
 
             // fill active item IDs
-            foreach (string s in initalItemIDs)
+            foreach (string s in itemIDs)
             {
-                activeItemIDs.Add(s);
+                if(!items.Add(s))
+                {
+                    Debug.LogError("Item ID #" + s + " already exists");
+                }
             }
         }
 
@@ -48,7 +52,7 @@ public class SpawnManager : MonoBehaviour
     /// <param name="itemID">item to remove</param>
     public void RemoveItem(string itemID)
     {
-        activeItemIDs.Remove(itemID);
+        items.Remove(itemID);
     }
 
     void OnEnable()
@@ -66,7 +70,7 @@ public class SpawnManager : MonoBehaviour
         SaveCurrentPosition = true;
 
         // remove item 
-        activeItemIDs.Remove(itemID);
+        items.Remove(itemID);
 
         // load vase scene with vase
         SceneManager.LoadScene("PotPackage");
@@ -105,7 +109,7 @@ public class SpawnManager : MonoBehaviour
         foreach (Item item in itemsInScene)
         {
             // 2. If item is NOT in active list delete item
-            if (!activeItemIDs.Contains(item.ItemID))
+            if (!items.Contains(item.ItemID))
             {
                 Destroy(item.gameObject);
             }
