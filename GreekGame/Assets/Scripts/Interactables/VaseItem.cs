@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Vase : Item
+public class VaseItem : Item
 {
     [SerializeField]
     private GameObject vaseGamePrefab;

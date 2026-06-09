@@ -1,11 +1,11 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Tool : MonoBehaviour
 {
-    private bool isFollowing = false;
     protected bool mouseDown = false;
-    private Vector2 mousePos;
+    protected FollowMouse mouse;
     protected Vector2 worldPos;
 
     private Vector3 startPosition;
@@ -15,13 +15,10 @@ public class Tool : MonoBehaviour
     private void Awake()
     {
         startPosition = transform.position;
-    }
-
-    protected virtual void Update()
-    {
-        if(isFollowing)
+        
+        if((mouse = GetComponent<FollowMouse>()) == null)
         {
-            Follow();
+            Debug.LogError(name + " is missing follow mouse component");
         }
     }
 
@@ -32,55 +29,54 @@ public class Tool : MonoBehaviour
     public virtual void RayCast() { }
 
     /// <summary>
-    /// Performs tools designate action when the user clicks
+    /// Performs tools action 
     /// </summary>
     public virtual void Use() { }
 
     /// <summary>
-    /// Resets any trackers for using if action complete or cancellted 
+    /// Resets any trackers for using if action complete or cancelled 
     /// </summary>
     public virtual void ResetUse() { }
 
     /// <summary>
-    /// Updates the current tool in package manager
+    /// Updates current tool
     /// </summary>
     public virtual void SelectTool() 
-    {
-        // start following mouse 
-        isFollowing = true;
-        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-        PackageManager.Instance.CurrentTool = this;
+    { 
+        if (ToolManager.Instance == null)
+        {
+            Debug.LogError("No Tool Manager in scene");
+        }
+        else
+        {
+            mouse.enabled = true;
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            ToolManager.Instance.CurrentTool = this;
 
-        // change layer order
-        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
-        sprite.sortingOrder = 100;
+            SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+            sprite.sortingOrder = 100;
+        }
     }
 
     /// <summary>
-    /// Drops tool and resets it to its inital position
+    /// Drop and reset tool 
     /// </summary>
     public void DropTool()
     {
-        // stop following 
-        isFollowing = false;
-        gameObject.layer = LayerMask.NameToLayer("Tool");
-        PackageManager.Instance.CurrentTool = null;
+        if (ToolManager.Instance == null)
+        {
+            Debug.LogError("No Tool Manager in scene");
+        }
+        else
+        {
+            mouse.enabled = false;
+            gameObject.layer = LayerMask.NameToLayer("Tool");
+            ToolManager.Instance.CurrentTool = null;
 
-        // reset position
-        transform.position = startPosition;
+            transform.position = startPosition;
 
-        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
-        sprite.sortingOrder = 10;
-
-    }
-
-    /// <summary>
-    /// Current tool follows mouse
-    /// </summary>
-    private void Follow()
-    {
-        mousePos = Mouse.current.position.ReadValue();
-        Vector3 worldPos = (Vector2)Camera.main.ScreenToWorldPoint(mousePos);
-        transform.position = worldPos;
+            SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+            sprite.sortingOrder = 10;
+        }
     }
 }

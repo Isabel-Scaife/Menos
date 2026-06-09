@@ -115,9 +115,4 @@ public class SpawnManager : MonoBehaviour
             }
         }
     }
-
-    public void Save()
-    {
-        throw new NotImplementedException();
-    }
 }

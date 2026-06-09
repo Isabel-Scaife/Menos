@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8784921314323477103}
   - component: {fileID: 75774589151307523}
   - component: {fileID: 8531949252014200650}
+  - component: {fileID: -4676945950319677697}
   m_Layer: 6
   m_Name: HexagonStamp
   m_TagString: Untagged
@@ -163,3 +164,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}
+--- !u!114 &-4676945950319677697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513869672493075285}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d699f7cb30c7d14183591838694dbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowMouse

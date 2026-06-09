@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3472066521067871753}
   - component: {fileID: 5510336537866238112}
   - component: {fileID: 1633345017710013673}
+  - component: {fileID: 4394036649403895182}
   m_Layer: 6
   m_Name: DiamondStamp
   m_TagString: Untagged
@@ -161,3 +162,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}
+--- !u!114 &4394036649403895182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319402767196640045}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d699f7cb30c7d14183591838694dbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowMouse

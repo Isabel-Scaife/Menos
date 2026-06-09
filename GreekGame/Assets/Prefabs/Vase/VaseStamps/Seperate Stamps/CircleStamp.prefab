@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2216643413105236087}
   - component: {fileID: 7885873824587653006}
   - component: {fileID: 6671947764883383713}
+  - component: {fileID: 6076096605478789947}
   m_Layer: 6
   m_Name: CircleStamp
   m_TagString: Untagged
@@ -146,3 +147,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}
+--- !u!114 &6076096605478789947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3805400891043508247}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d699f7cb30c7d14183591838694dbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowMouse

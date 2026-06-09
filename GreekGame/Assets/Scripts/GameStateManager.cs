@@ -13,7 +13,7 @@ public class GameStateManager : MonoBehaviour
     private HashSet<string> flags = new HashSet<string>();
 
     // stats that determine which dialogue happens, etc.
-    private const int numberOfStats = 5;
+    private const int NUMBEROFSTATS = 5;
     private int[] stats;
 
     void Awake()
@@ -33,7 +33,7 @@ public class GameStateManager : MonoBehaviour
         // default values for stats
         if (stats == null)
         {
-            stats = new int[numberOfStats];
+            stats = new int[NUMBEROFSTATS];
         }
     }
 
@@ -61,13 +61,23 @@ public class GameStateManager : MonoBehaviour
     public bool ClearFlag(string flag) => flags.Remove(flag);
 
     /// <summary>
+    /// get all current flags as an array
+    /// </summary>
+    /// <returns>a copy of all current flags</returns>
+    public string[] GetFlags()
+    {
+        string[] flagsArray = new string[flags.Count];
+        flags.CopyTo(flagsArray);
+        return flagsArray;
+    }
+    /// <summary>
     /// gets all stat values as an array
     /// </summary>
     /// <returns>a copy of the manager's array of stats</returns>
     public int[] GetStats()
     {
         if (stats != null) return (int[])stats.Clone();
-        else return new int[numberOfStats];
+        else return new int[NUMBEROFSTATS];
     }
 
     /// <summary>

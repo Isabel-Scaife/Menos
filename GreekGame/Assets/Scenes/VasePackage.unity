@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 403922761}
   - component: {fileID: 403922763}
   m_Layer: 0
-  m_Name: PackageManager
+  m_Name: ToolManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -526,9 +526,6 @@ MonoBehaviour:
   clickable:
     serializedVersion: 2
     m_Bits: 262209
-  clickableNoTool:
-    serializedVersion: 2
-    m_Bits: 262145
 --- !u!114 &1092051621
 MonoBehaviour:
   m_ObjectHideFlags: 0

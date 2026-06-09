@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class VasePackage : MonoBehaviour
+public class Vase : MonoBehaviour
 {
     [SerializeField, Range(50, 100)]
     private float completeThreshold = 80;
@@ -22,7 +22,7 @@ public class VasePackage : MonoBehaviour
     private List<GameObject> shapesPlaced;
     private int sortOrder = 1;
 
-    public static VasePackage Instance { get; private set; }
+    public static Vase Instance { get; private set; }
     public int SortOrder {  get => sortOrder; set => sortOrder = value; }
 
     public Color CurrentColor { get => currentColor; set => currentColor=value; }

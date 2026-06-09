@@ -21,14 +21,14 @@ public class ShapeStamps : Tool
         Collider2D myCollider = GetComponent<Collider2D>();
 
         // update instances color to match parent
-        Tool stamp = PackageManager.Instance.CurrentTool;
+        Tool stamp = ToolManager.Instance.CurrentTool;
 
         if (stamp != null)
         {
             currentColor = stamp.GetComponent<ShapeStamps>().currentColor;
 
             // call to find if placed in right zone on vase 
-            VasePackage.Instance.CheckCollidersHit(myCollider);
+            Vase.Instance.CheckCollidersHit(myCollider);
         }
 
     }
@@ -80,8 +80,8 @@ public class ShapeStamps : Tool
         SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
         sprite.color = currentColor;
 
-        sprite.sortingOrder = VasePackage.Instance.SortOrder;
-        VasePackage.Instance.SortOrder++;
+        sprite.sortingOrder = Vase.Instance.SortOrder;
+        Vase.Instance.SortOrder++;
     }
 
     /// <summary>
@@ -91,13 +91,13 @@ public class ShapeStamps : Tool
     {
         currentColor = collider.GetComponent<SpriteRenderer>().color;
         gameObject.GetComponent<SpriteRenderer>().color = currentColor;
-        VasePackage.Instance.CurrentColor = currentColor;
+        Vase.Instance.CurrentColor = currentColor;
     }
 
     public override void SelectTool()
     {
         // apply color and pick up tool 
-        VasePackage.Instance.CurrentColor = currentColor;
+        Vase.Instance.CurrentColor = currentColor;
         base.SelectTool();
     }
 

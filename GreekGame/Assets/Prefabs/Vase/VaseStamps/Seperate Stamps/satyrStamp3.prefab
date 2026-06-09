@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6111959964150603213}
   - component: {fileID: 3428990090234565997}
   - component: {fileID: 1047980449740500419}
+  - component: {fileID: 4294423768388536012}
   m_Layer: 0
   m_Name: satyrStamp3
   m_TagString: Untagged
@@ -168,3 +169,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   currentColor: {r: 0.22352943, g: 0.13725491, b: 0.054901965, a: 0}
+--- !u!114 &4294423768388536012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916408974532796690}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d699f7cb30c7d14183591838694dbcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FollowMouse
