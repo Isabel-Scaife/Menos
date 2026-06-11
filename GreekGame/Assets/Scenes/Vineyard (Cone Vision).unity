@@ -18208,8 +18208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BirdTrigger
   spriteRenderer: {fileID: 0}
-  player: {fileID: 0}
-  bird: {fileID: 0}
+  player: {fileID: 1854854078}
+  bird: {fileID: 1299935200}
 --- !u!61 &773669992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106058,7 +106058,7 @@ Transform:
   m_GameObject: {fileID: 1109892418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.12, y: -21.029999, z: 0}
+  m_LocalPosition: {x: 19.44, y: -10.610001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106228,7 +106228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbeefb5f279c9f42b50be1295aa1e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemManager
-  initalItemIDs: []
+  itemIDs: []
   stampSets:
   - {fileID: 7059252617295308528, guid: f1734a6faa5fdd44a8a6c19bbe16e437, type: 3}
   - {fileID: 6637857691997519382, guid: 8d4648a72fa260b47b7db9fea1f63666, type: 3}
@@ -106998,7 +106998,7 @@ Transform:
   m_GameObject: {fileID: 1228306965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.12, y: -21.029999, z: 0}
+  m_LocalPosition: {x: 19.44, y: -10.610001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -109443,6 +109443,10 @@ PrefabInstance:
       propertyPath: hidden
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
+      propertyPath: controlBird
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3399567360816744471, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_Name
       value: Player
@@ -109613,11 +109617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.3
+      value: 12.62
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.9
+      value: -3.48
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.z
@@ -110042,11 +110046,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6230130998889357770, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.4
+      value: 19.55
       objectReference: {fileID: 0}
     - target: {fileID: 6230130998889357770, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.19
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 6230130998889357770, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -110090,6 +110094,10 @@ PrefabInstance:
       objectReference: {fileID: 1173945611}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
       propertyPath: seekWeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+      propertyPath: controlBird
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8233537590199321328, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
