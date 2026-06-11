@@ -4,9 +4,11 @@ using UnityEngine.InputSystem;
 
 public class Tool : MonoBehaviour
 {
+    [SerializeField]
+    protected LayerMask clickable;
+
     protected bool mouseDown = false;
     protected FollowMouse mouse;
-    protected Vector2 worldPos;
 
     private Vector3 startPosition;
 
@@ -18,15 +20,9 @@ public class Tool : MonoBehaviour
         
         if((mouse = GetComponent<FollowMouse>()) == null)
         {
-            Debug.LogError(name + " is missing follow mouse component");
+            Debug.Log(name + " is missing follow mouse component");
         }
     }
-
-    /// <summary>
-    /// Tools specific raycast check
-    /// used to call actions methods 
-    /// </summary>
-    public virtual void RayCast() { }
 
     /// <summary>
     /// Performs tools action 
@@ -61,7 +57,7 @@ public class Tool : MonoBehaviour
     /// <summary>
     /// Drop and reset tool 
     /// </summary>
-    public void DropTool()
+    public virtual void DropTool()
     {
         if (ToolManager.Instance == null)
         {

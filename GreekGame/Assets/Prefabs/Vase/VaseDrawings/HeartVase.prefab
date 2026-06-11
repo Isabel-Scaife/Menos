@@ -1422,7 +1422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6989653832499329269}
-  - component: {fileID: 9051451095589687137}
+  - component: {fileID: 713856320489368031}
   m_Layer: 18
   m_Name: HeartVase
   m_TagString: Vase
@@ -1449,7 +1449,7 @@ Transform:
   - {fileID: 6501879071924005204}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9051451095589687137
+--- !u!114 &713856320489368031
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1458,11 +1458,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6945682103305120179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9e4b1da186aed409eba2db3f6b0086, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b7f52e190f1de246a70eeaf0c19f15c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vase
   completeThreshold: 100
-  correctSpaces: 29
+  correctSpaces: 28
   incorrectArea: {fileID: 9093531680945388157}
 --- !u!1 &6963261887457896157
 GameObject:

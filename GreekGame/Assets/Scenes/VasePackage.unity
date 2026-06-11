@@ -128,8 +128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 403922762}
-  - component: {fileID: 403922761}
   - component: {fileID: 403922763}
+  - component: {fileID: 403922764}
   m_Layer: 0
   m_Name: ToolManager
   m_TagString: Untagged
@@ -137,22 +137,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &403922761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403922760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48bd8f4373133294693d1e754ebe65d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentTool: {fileID: 0}
-  toolType: 0
-  mailObj: {fileID: 0}
-  letter: {fileID: 0}
 --- !u!4 &403922762
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +310,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &403922764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403922760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c7b203df6241c4cb0b8e66eae1003e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToolManager
+  currentTool: {fileID: 0}
 --- !u!1 &870031533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,7 +1988,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1890062116926779903, guid: f66f13819df99f84abda8b69071412ee, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

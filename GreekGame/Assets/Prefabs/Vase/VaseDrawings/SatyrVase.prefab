@@ -890,7 +890,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105830756843947132}
-  - component: {fileID: 1890062116926779903}
+  - component: {fileID: 8165480675652930828}
   m_Layer: 18
   m_Name: SatyrVase
   m_TagString: Untagged
@@ -917,7 +917,7 @@ Transform:
   - {fileID: 7023469447059276196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1890062116926779903
+--- !u!114 &8165480675652930828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -926,11 +926,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8133844023627013813}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9e4b1da186aed409eba2db3f6b0086, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b7f52e190f1de246a70eeaf0c19f15c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::VasePackage
+  m_EditorClassIdentifier: Assembly-CSharp::Vase
   completeThreshold: 100
-  correctSpaces: 56
+  correctSpaces: 55
   incorrectArea: {fileID: 2519239041595943282}
 --- !u!1001 &279426160453133534
 PrefabInstance:
