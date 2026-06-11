@@ -29,7 +29,7 @@ public class BirdTrigger : MonoBehaviour
     /// When player enters trigger zone
     /// </summary>
     /// <param name="collision"></param>
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
         //for debug purposes changes it to red if player detected
         spriteRenderer.color = Color.red;
