@@ -5,7 +5,7 @@ public class OlivesBird : MonoBehaviour
     // movement components
     [SerializeField]
     protected int speed = 5;
-    protected Vector3 moveTo;
+    protected Vector3 target;
     protected bool moving;
 
     // fields
@@ -25,9 +25,13 @@ public class OlivesBird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void MoveTo(Vector3 target)
+    {
         float step = speed * Time.deltaTime;
 
-        transform.position = Vector3.MoveTowards(transform.position, moveTo, step);
+        transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
 
 }
