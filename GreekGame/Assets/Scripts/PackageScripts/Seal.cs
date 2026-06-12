@@ -16,10 +16,10 @@ public class Seal : MonoBehaviour, IRaycast
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Destroy(gameObject);
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    Destroy(gameObject);
+    //}
 
     public void Interact()
     {

@@ -23,7 +23,7 @@ TagManager:
   - Water
   - UI
   - Tool
-  - Letter
+  - Clickable
   - Mail
   - NPC
   - Bird
@@ -36,7 +36,7 @@ TagManager:
   - BothInteractable
   - Vase
   - PushableObject
-  - 
+  - ClickableEvidence
   - 
   - 
   - 

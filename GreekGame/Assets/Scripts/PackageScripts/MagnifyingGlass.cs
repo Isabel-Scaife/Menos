@@ -10,6 +10,9 @@ public interface IRaycast
 public class MagnifyingGlass : Tool
 {
 
+    [SerializeField]
+    SpriteRenderer detectZone;
+
     /// <summary>
     /// Interact with object clicked
     /// May add information to journal or cause something to move
@@ -30,4 +33,14 @@ public class MagnifyingGlass : Tool
     }
 
     public override void DropTool() { }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        detectZone.enabled = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        detectZone.enabled = false;
+    }
 }
