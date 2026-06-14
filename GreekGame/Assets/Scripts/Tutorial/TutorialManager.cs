@@ -19,6 +19,9 @@ public class TutorialManager : MonoBehaviour
     {
         Instance = this;
         currentTask = null;
+
+        Debug.Log($"TutorialManager Awake on {name}");
+        Debug.Log($"popupRect = {popupRect}");
     }
 
     private void Update()
