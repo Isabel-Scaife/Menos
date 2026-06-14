@@ -3007,7 +3007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3366863872266778106}
-  - component: {fileID: 7029296229193767079}
+  - component: {fileID: 6553137764386210017}
   m_Layer: 0
   m_Name: TriangleVase
   m_TagString: Untagged
@@ -3034,7 +3034,7 @@ Transform:
   - {fileID: 5376553271498635625}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7029296229193767079
+--- !u!114 &6553137764386210017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3043,9 +3043,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6055532064570816364}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9e4b1da186aed409eba2db3f6b0086, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b7f52e190f1de246a70eeaf0c19f15c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vase
   completeThreshold: 100
   correctSpaces: 45
   incorrectArea: {fileID: 8307690731188984784}

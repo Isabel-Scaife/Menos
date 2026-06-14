@@ -666,7 +666,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7129254058567568318}
-  - component: {fileID: 693234582302751068}
+  - component: {fileID: 8782296432464921423}
   m_Layer: 18
   m_Name: CloudVase 1
   m_TagString: Vase
@@ -693,7 +693,7 @@ Transform:
   - {fileID: 5750483231878021414}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &693234582302751068
+--- !u!114 &8782296432464921423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -702,11 +702,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735410669709576520}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9e4b1da186aed409eba2db3f6b0086, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b7f52e190f1de246a70eeaf0c19f15c, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::Vase
   completeThreshold: 100
-  correctSpaces: 34
+  correctSpaces: 37
   incorrectArea: {fileID: 9029937508746645455}
 --- !u!1 &1833010191283094025
 GameObject:

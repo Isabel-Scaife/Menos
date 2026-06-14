@@ -8,9 +8,6 @@ public class ShapeStamps : Tool
     private GameObject shapePrefab;
 
     [SerializeField]
-    private LayerMask clickable;
-
-    [SerializeField]
     private Color currentColor; // change color of prefeb when placed 
 
     public Color CurrentColor { get => currentColor; set => currentColor = value; }
@@ -99,14 +96,6 @@ public class ShapeStamps : Tool
         // apply color and pick up tool 
         Vase.Instance.CurrentColor = currentColor;
         base.SelectTool();
-    }
-
-    /// <summary>
-    /// Use the stamp 
-    /// </summary>
-    public override void RayCast()
-    {
-        Use();
     }
 
 }
