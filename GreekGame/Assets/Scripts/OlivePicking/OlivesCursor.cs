@@ -15,6 +15,10 @@ public class OlivesCursor : MonoBehaviour
     //true when olive has been clicked on
     private bool dragOlive = false;
 
+    //identifies whether olive has been collected
+    //ensuers you cannot double count olives
+    private bool oliveCollected;
+
     [SerializeField]
     private OlivesBird bird;
 
@@ -61,14 +65,14 @@ public class OlivesCursor : MonoBehaviour
             currentHeldOlive = collision.gameObject;
 
             //detects olive clicks and set it to dragging
-            print("Hovering Olive");
             if (Input.GetMouseButton(0))
             {
                 currentHeldOlive.transform.position = transform.position;
             }
             else if (Input.GetMouseButtonUp(0))
             {
-                
+                //nothing goes here, but keep this, othewise it weirdly
+                //drags the olive around :(
             }
         }
     }
