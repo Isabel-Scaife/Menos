@@ -1,39 +1,23 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SavePoint : Interactable
 {
+    [SerializeField] SaveSlotMenu menu;
+
     /// <summary>
-    /// Try to save game
+    /// Activate save menu
     /// </summary>
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        try
-        {
-            if (player is Player)
-            {
-                SaveSystem.SaveData<Player, PlayerData>
-                    ((Player)player, "/Player.json");
-            }
+        // need some way to turn controls back on when back clicked, 
+        // hut woul need player reference then 
+        //player.PauseInputControls();
+        SpawnManager.Instance.PlayerPosition = player.transform.position;
 
-            if (GameStateManager.Instance != null)
-            {
-                SaveSystem.SaveData<GameStateManager, GameStateManagerData>
-                    (GameStateManager.Instance, "/GameStateManager.json");
-            }
-
-            if (SpawnManager.Instance != null)
-            {
-                SaveSystem.SaveData<SpawnManager, SpawnManagerData>
-                    (SpawnManager.Instance, "/SpawnManager.json");
-            }
-               
-            Debug.Log("Save Successful! Files found at: " + Application.persistentDataPath);
-        }
-        catch (Exception e)
-        {
-            throw new System.Exception("Error while saving.", e);
-        }
+        menu.ActivateMenu();
     }
+
 }

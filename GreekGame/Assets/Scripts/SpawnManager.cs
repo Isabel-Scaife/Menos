@@ -1,27 +1,28 @@
 
 using System;
 using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SpawnManager : MonoBehaviour
 {
-    [SerializeField]
-    private List<string> itemIDs;
-    public HashSet<string> items = new HashSet<string>();
 
-    public Vector3 PlayerPosition { get; set; }
-    public bool SaveCurrentPosition { get; set; }
+    private HashSet<string> items = new HashSet<string>();
 
-    [SerializeField]
-    private GameObject[] stampSets;
+    // track every scene that has been loaded 
+    private HashSet<string> pastScenesLoaded = new HashSet<string>();
+
+    [SerializeField] private GameObject[] stampSets;
 
     // used to load correct pairing for minigame
     private GameObject vasePrefab;
     private uint currentStampSet = 0;
 
     public static SpawnManager Instance { get; private set; }
+    public Vector3 PlayerPosition { get; set; }
+    public bool SaveCurrentPosition { get; set; }
+    public HashSet<string> Items { get => items; }
+    public HashSet<string> PastScenesLoaded { get => pastScenesLoaded; }
 
     void Awake()
     {
@@ -32,19 +33,19 @@ public class SpawnManager : MonoBehaviour
         else
         {
             Instance = this;
-
-            // fill active item IDs
-            foreach (string s in itemIDs)
-            {
-                if(!items.Add(s))
-                {
-                    Debug.LogError("Item ID #" + s + " already exists");
-                }
-            }
         }
 
         DontDestroyOnLoad(gameObject);
     }
+    /// <summary>
+    /// Check if the given scene has been loaded before
+    /// </summary>
+    /// <returns>true if scene has been load in the past, false otherwise</returns>
+    public bool SceneLoadedInPast(string scene)
+    {
+        return pastScenesLoaded.Contains(scene);
+    }
+
 
     /// <summary>
     /// Remove item so it will not spawn when scene loads in the future
@@ -55,16 +56,6 @@ public class SpawnManager : MonoBehaviour
         items.Remove(itemID);
     }
 
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
     public void LoadVase(string itemID, GameObject vaseGamePrefab, uint stampSetIndex)
     {
         SaveCurrentPosition = true;
@@ -73,7 +64,7 @@ public class SpawnManager : MonoBehaviour
         items.Remove(itemID);
 
         // load vase scene with vase
-        SceneManager.LoadScene("PotPackage");
+        SceneManager.LoadScene("VasePackage");
         vasePrefab = vaseGamePrefab;
         currentStampSet = stampSetIndex;
     }
@@ -85,15 +76,36 @@ public class SpawnManager : MonoBehaviour
     /// <param name="mode"></param>
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // destroy items when loading scene 
-        DestoryInactiveItems();
+
+        // add items in scene if first time it has been encountered
+        if (!pastScenesLoaded.Contains(scene.name))
+        {
+            AddItems();
+            pastScenesLoaded.Add(scene.name);
+
+        }
+        else
+        {
+            // destroy items when loading scene (second time onward)
+            DestoryInactiveItems();
+        }
 
         // populate vase minigame
-        if (scene.name == "PotPackage")
+        if (scene.name == "VasePackage")
         {
             Instantiate(stampSets[currentStampSet], Vector2.zero, Quaternion.identity);
             Instantiate(vasePrefab, Vector2.zero, Quaternion.identity);
         }
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     /// <summary>
@@ -114,5 +126,49 @@ public class SpawnManager : MonoBehaviour
                 Destroy(item.gameObject);
             }
         }
+    }
+
+    /// <summary>
+    /// Add all items found in scene to items list 
+    /// </summary>
+    private void AddItems()
+    {
+        Item[] itemsInScene = FindObjectsByType<Item>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.None);
+
+        foreach (Item item in itemsInScene)
+        {
+            if (!items.Add(item.ItemID))
+            {
+                Debug.LogError("Item " + item.name + " has an already existing id, will not add to list.");
+            }
+
+        }
+    }
+
+    public void LoadData(SpawnManagerData data)
+    {
+        items.Clear();
+
+        foreach (string s in data.items)
+        {
+            if (!items.Add(s))
+            {
+                Debug.Log("Item ID #" + s + " already added");
+            }
+        }
+
+        pastScenesLoaded.Clear();
+
+        foreach (string s in data.pastScenesLoaded)
+        {
+            if (!pastScenesLoaded.Add(s))
+            {
+                Debug.Log("Scene " + s + " already added");
+            }
+        }
+
+        PlayerPosition = data.playerPosition;
     }
 }

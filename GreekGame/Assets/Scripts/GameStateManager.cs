@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -93,6 +94,18 @@ public class GameStateManager : MonoBehaviour
         for (int i = 0; i < stats.Length; i++)
         {
             stats[i] += changes[i];
+        }
+    }
+
+    public void LoadData(GameStateManagerData data)
+    {
+        ChangeStats(data.stats);
+
+
+        flags.Clear();
+        foreach(string s in data.flags)
+        {
+            flags.Add(s);
         }
     }
 }

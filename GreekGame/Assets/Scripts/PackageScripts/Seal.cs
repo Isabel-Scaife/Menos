@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class Seal : MonoBehaviour, IRaycast
 {
-    [SerializeField]
-    Envelope envelope;
+    [SerializeField] Envelope envelope;
     
     Rigidbody2D rg;
 
