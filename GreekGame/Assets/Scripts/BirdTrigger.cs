@@ -13,7 +13,7 @@ public class BirdTrigger : MonoBehaviour
     [SerializeField]
     private SpriteRenderer spriteRenderer;
     [SerializeField]
-    private PlayerControlled player;
+    private Player player;
     [SerializeField]
     private Bird bird;
 
@@ -29,13 +29,15 @@ public class BirdTrigger : MonoBehaviour
     /// When player enters trigger zone
     /// </summary>
     /// <param name="collision"></param>
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         //for debug purposes changes it to red if player detected
         spriteRenderer.color = Color.red;
 
         //swaps the controlling object
         player.SwapControlledObject();
+        bird.SwapControlledObject();
+
     }
     
 }

@@ -172,7 +172,8 @@ public class PlayerControlled : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // get reference to intertactable in rage
-        interactObject = collision.gameObject.GetComponent<Interactable>();
+        Interactable script = collision.gameObject.GetComponent<Interactable>();
+        if (script) interactObject = script;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
