@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -106,6 +107,26 @@ public class SaveSlot : MonoBehaviour
     public void OnSaveClicked()
     {
         Save();
+    }
+
+    /// <summary>
+    /// Delete save file
+    /// </summary>
+    public void OnResetClicked()
+    {
+        string folderPath = Path.Combine(Application.persistentDataPath, ID);
+
+        if(Directory.Exists(folderPath))
+        {
+            Directory.Delete(folderPath, true);
+
+            noDataContent.SetActive(true);
+            hasDataContent.SetActive(false);
+        }
+        else
+        {
+            Debug.Log("Folder does not exist, can not delete: " + folderPath);
+        }
     }
 
     /// <summary>
