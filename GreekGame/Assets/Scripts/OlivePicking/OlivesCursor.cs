@@ -9,6 +9,12 @@ public class OlivesCursor : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 birdTarget;
 
+    //olive currrently being inteacted with
+    private GameObject currentHeldOlive;
+
+    //true when olive has been clicked on
+    private bool dragOlive = false;
+
     [SerializeField]
     private OlivesBird bird;
 
@@ -43,6 +49,28 @@ public class OlivesCursor : MonoBehaviour
         else // mouse is on lower half-- control hand
         {
             spriteRenderer.color = Color.red;
+
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Olive")
+        {
+            //sets olive
+            currentHeldOlive = collision.gameObject;
+
+            //detects olive clicks and set it to dragging
+            print("Hovering Olive");
+            if (Input.GetMouseButton(0))
+            {
+                currentHeldOlive.transform.position = transform.position;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                
+            }
         }
     }
 }
+
