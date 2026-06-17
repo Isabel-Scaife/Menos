@@ -27,7 +27,8 @@ public class QuestManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Completes quest if not already complete
+    /// Completes quest if not already complete,
+    /// does not check prerequisites (override for completing quests)
     /// </summary>
     /// <param name="quest"></param>
     public void CompleteQuest(QuestData quest)

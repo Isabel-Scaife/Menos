@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ToggleItem : IEvent
+public class ToggleObject : MonoBehaviour, IEvent
 {
     [SerializeField] private GameObject item;
     [SerializeField] private bool activate; // be inactive/active

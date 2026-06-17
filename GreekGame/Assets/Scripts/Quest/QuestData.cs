@@ -39,6 +39,24 @@ public class QuestData : ScriptableObject
     }
 
     /// <summary>
+    /// Adds a new event upon quest completion
+    /// </summary>
+    /// <param name="newEvent"></param>
+    public void AddEvent(IEvent newEvent)
+    {
+        completionEvents.Add(newEvent);
+    }
+
+    /// <summary>
+    /// Removes event if found in list 
+    /// </summary>
+    /// <param name="newEvent"></param>
+    public void RevomeEvent(IEvent newEvent)
+    {
+        completionEvents.Remove(newEvent);
+    }
+
+    /// <summary>
     /// Check if all prerequisites are complete
     /// </summary>
     /// <returns>return true if all prerequisites are complete, false otherwise</returns>
@@ -60,4 +78,4 @@ public class QuestData : ScriptableObject
         }
         return true;
     }
-}
+} 

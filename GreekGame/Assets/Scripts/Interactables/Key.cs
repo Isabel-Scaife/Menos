@@ -24,11 +24,7 @@ public class Key : Item
         // destory key if it's not currently held
         else if (player is Player && transform.parent == null)
         {
-            Debug.Log("player picks up key");
-
             key.discovered = true;
-            string keyJSON = JsonUtility.ToJson(key);
-            File.WriteAllText(Application.persistentDataPath + "/saveData.json", keyJSON);
 
             Debug.Log("Key Discovered: " + key.discovered);
 
