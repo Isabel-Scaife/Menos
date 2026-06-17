@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 public class ToggleObject : MonoBehaviour, IEvent
 {
     [SerializeField] private GameObject item;
@@ -7,7 +8,8 @@ public class ToggleObject : MonoBehaviour, IEvent
 
     public void OnQuestComplete()
     {
-        if(item != null)
+        Debug.Log("item toggled");
+        if (item != null)
         {
             item.SetActive(activate);
         }

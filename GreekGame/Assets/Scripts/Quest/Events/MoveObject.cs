@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 public class MoveObject : MonoBehaviour, IEvent
 {
     [SerializeField] Vector2 moveTo;

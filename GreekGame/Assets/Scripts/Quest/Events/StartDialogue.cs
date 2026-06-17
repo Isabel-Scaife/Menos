@@ -1,5 +1,5 @@
 using UnityEngine;
-
+[System.Serializable]
 public class StartDialogue : MonoBehaviour, IEvent
 {
     [SerializeField] private DialogueSO dialogue;

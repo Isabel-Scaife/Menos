@@ -10,4 +10,5 @@ public class DialogueOutcome
 {
     public List<string> flagsToSet;
     public int[] statChanges;
+    public QuestData quest;
 }

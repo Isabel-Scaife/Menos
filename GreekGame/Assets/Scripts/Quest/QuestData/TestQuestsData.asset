@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
   m_Name: TestQuestsData
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
-  questID: 
+  questID: q_1
   requiredPrerequisites: []

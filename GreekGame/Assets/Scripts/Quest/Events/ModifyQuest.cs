@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ModifyQuest : MonoBehaviour, IEvent
 {
     [SerializeField] private QuestData questToModify;

@@ -271,5 +271,11 @@ public class DialogueManager : MonoBehaviour
         {
             GameStateManager.Instance.ChangeStats(outcome.statChanges);
         }
+
+        // complete quest
+        if(outcome.quest != null)
+        {
+            QuestManager.Instance.CompleteQuest(outcome.quest);
+        }
     }
 }

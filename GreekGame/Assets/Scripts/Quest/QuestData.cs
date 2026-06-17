@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "NewQuest", menuName = "Quests/QuestData")]
@@ -8,7 +9,7 @@ public class QuestData : ScriptableObject
     [SerializeField] private List<string> requiredPrerequisites; // quests needed to start this one
 
     // events that run when quest completed
-    List<IEvent> completionEvents = new List<IEvent>();
+    private List<IEvent> completionEvents = new List<IEvent>();
 
     public string QuestID { get => questID; set => questID=value; }
 

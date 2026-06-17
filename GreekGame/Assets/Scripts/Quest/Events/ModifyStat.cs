@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[System.Serializable]
 public class ModifyStat : MonoBehaviour, IEvent
 {
     [SerializeField] private int[] statChanges; 

@@ -27,8 +27,7 @@ public class QuestManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Completes quest if not already complete,
-    /// does not check prerequisites (override for completing quests)
+    /// Completes quest if not already complete and all prerequisites met
     /// </summary>
     /// <param name="quest"></param>
     public void CompleteQuest(QuestData quest)
@@ -36,8 +35,11 @@ public class QuestManager : MonoBehaviour
         // check if quest has already been completed
         if(!completedQuests.Contains(quest.QuestID))
         {
-            completedQuests.Add(quest.QuestID);
-            quest.QuestComplete();
+            if (quest.AllPrerequisitesComplete())
+            {
+                completedQuests.Add(quest.QuestID);
+                quest.QuestComplete();
+            }
         }
     }
 
