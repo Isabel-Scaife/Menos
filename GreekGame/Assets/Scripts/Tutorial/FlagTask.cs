@@ -26,8 +26,6 @@ public class FlagTask : TutorialTask
         if (collision.CompareTag("Player") && TutorialManager.Instance != null)
         {
             TutorialManager.Instance.ShowTask(this);
-            Debug.Log("COLLIDED WITH FLAG TASK");
-
         }
     }
 }
