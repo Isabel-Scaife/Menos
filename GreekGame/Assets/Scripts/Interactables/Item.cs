@@ -11,10 +11,6 @@ public class Item : Interactable
 
     public override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
-        // TODO: add item to inventory
-
         // methods that run when item is picked up 
         OnCollect.Invoke();
         
