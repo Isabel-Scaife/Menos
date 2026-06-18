@@ -1,19 +1,11 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class NPCQuest : NPC
+public class NPCQuest : NPC, IQuestCompleter
 {
-    [SerializeField] private QuestData quest;
+    [SerializeField] private List<string> questsID;
 
-    private void Awake()
-    {
-        IEvent[] eventsTemp = this.GetComponents<IEvent>();
-
-        foreach (IEvent e in eventsTemp)
-        {
-            Debug.Log("adding event");
-            quest.AddEvent(e);
-        }
-    }
+    public List<string> QuestsID { get => questsID; set => questsID = value; }
 
     /// <summary>
     /// Talk to NPC and complete quest 
@@ -21,9 +13,7 @@ public class NPCQuest : NPC
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        Debug.Log("completing quest");
-        QuestManager.Instance.CompleteQuest(quest);
-
+        ((IQuestCompleter)this).OnQuestComplete();
         base.Interact(player);
     }
 }
