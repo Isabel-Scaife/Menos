@@ -43,6 +43,8 @@ public class QuestManager : MonoBehaviour
     private HashSet<string> completedQuests = new HashSet<string>();
     private Dictionary<string, QuestData> allQuests = new Dictionary<string, QuestData>();
 
+    public HashSet<string> CompletedQuests { get => completedQuests; }
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -131,5 +133,18 @@ public class QuestManager : MonoBehaviour
     public bool IsQuestComplete(string questID)
     {
         return completedQuests.Contains(questID);
+    }
+
+    public void LoadData(QuestManagerData data)
+    {
+        completedQuests.Clear();
+
+        foreach (string s in data.completedQuests)
+        {
+            if (!completedQuests.Add(s))
+            {
+                Debug.Log("Item ID #" + s + " already added");
+            }
+        }
     }
 }
