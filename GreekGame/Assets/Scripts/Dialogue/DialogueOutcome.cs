@@ -14,8 +14,8 @@ public class DialogueOutcome : IQuestCompleter
 
     public List<string> QuestsID { get => questsID; set => questsID = value; }
 
-    public void OnQuestComplete()
-    {
-        ((IQuestCompleter)this).OnQuestComplete();
-    }
+    //public void OnQuestComplete()
+    //{
+    //    ((IQuestCompleter)this).OnQuestComplete();
+    //}
 }

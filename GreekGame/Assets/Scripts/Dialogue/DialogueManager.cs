@@ -281,7 +281,7 @@ public class DialogueManager : MonoBehaviour
         // complete quest
         if(outcome.QuestsID != null)
         {
-            outcome.OnQuestComplete();
+            ((IQuestCompleter)outcome).OnQuestComplete();
         }
     }
 }

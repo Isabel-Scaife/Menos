@@ -33,12 +33,7 @@ public class CollectQuest : MonoBehaviour, IQuestCompleter
 
         if(amountCollected >= amountNeeded)
         {
-            OnQuestComplete();
+            ((IQuestCompleter)this).OnQuestComplete();
         }
-    }
-
-    public void OnQuestComplete()
-    {
-        ((IQuestCompleter)this).OnQuestComplete();
     }
 }
