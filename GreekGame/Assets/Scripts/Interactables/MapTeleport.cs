@@ -14,7 +14,6 @@ public class MapTeleport : Interactable
     }
 
     [Header("Camera")]
-    [SerializeField] Transform cameraPos;
     [SerializeField] PolygonCollider2D mapBounds;
 
     private CinemachineConfiner2D confiner;
@@ -53,7 +52,6 @@ public class MapTeleport : Interactable
         confiner.BoundingShape2D = mapBounds;
 
         // set position
-        //cameraPos.transform.position = newPos;
         player.transform.position = newPos;
 
         await ScreenFader.Instance.FadeIn();
