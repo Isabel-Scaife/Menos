@@ -32,9 +32,10 @@ public class TutorialManager : MonoBehaviour
 
     private void Update()
     {
-        // hides popup when task is completed
+        // hides popup and disables task script when task is completed
         if (taskActive && tasks[currentTaskIndex].Completed())
         {
+            tasks[currentTaskIndex].enabled = false;
             taskActive = false;
             popupRect.gameObject.SetActive(false);
             popupTMP.text = "";
@@ -44,6 +45,12 @@ public class TutorialManager : MonoBehaviour
             if (currentTaskIndex >= tasks.Count)
             {
                 this.enabled = false;
+            }
+
+            // else enables next task
+            else
+            {
+                tasks[currentTaskIndex].enabled = true;
             }
         }
 
