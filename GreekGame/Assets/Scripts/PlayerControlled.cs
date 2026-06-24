@@ -19,22 +19,18 @@ public class PlayerControlled : MonoBehaviour
     protected Animator animator;
     protected MoveDirections faceDirection = MoveDirections.Forward;
 
-    // interactions 
-    [SerializeField]
-    protected Interactable interactObject;
+    [Header("Interactions")]
+    [SerializeField] protected Interactable interactObject;
 
-    // movement
-    [SerializeField]
-    protected float speed;
+    [Header("Movement")]
+    [SerializeField] protected float speed;
     protected Vector2 direction;
     protected Vector2 velocity;
     protected Vector2 position;
 
-    // switching controllable object
-    [SerializeField]
-    private PlayerInput playerInput;
-    [SerializeField]
-    protected bool controlBird = false;
+    [Header("Player Input")]
+    [SerializeField] private PlayerInput playerInput;
+    [SerializeField] protected bool controlBird = false;
 
     // guard detection
     public bool hidden = false;

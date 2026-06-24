@@ -3,37 +3,30 @@ using UnityEngine.InputSystem;
 
 public class Bird : PlayerControlled
 {
-    [SerializeField]
-    private GameObject heldObject = null;
+    [SerializeField] private GameObject heldObject = null;
 
     private Vector2 acceleration, steeringForce;
 
     [Header("Non-Player control movement")]
-    [SerializeField, Range(0, 1f)]
-    private float seekWeight;
-    [SerializeField]
-    private GameObject seekTarget;
+    [Header("Seek")]
+    [SerializeField, Range(0, 1f)] private float seekWeight;
+    [SerializeField] private GameObject seekTarget;
 
-    [SerializeField, Range(0, 1f)]
-    private float evadeWeight;
-    [SerializeField]
-    private LayerMask evadeTarget;
-    [SerializeField]
-    private float evadeRadius;
+    [Header("Evade")]
+    [SerializeField, Range(0, 1f)] private float evadeWeight;
+    [SerializeField] private LayerMask evadeTarget;
+    [SerializeField] private float evadeRadius;
 
-    [SerializeField, Range(0, 1f)]
-    private float wanderWeight;
+    [Header("Wander")]
+    [SerializeField, Range(0, 1f)] private float wanderWeight; 
     protected private Vector2 wanderTarget;
 
     private Vector2 totalForce;
 
-    [SerializeField]
-    private float catchUpRadius;
-    [SerializeField] 
-    private float matchSpeedRadius;
+    [SerializeField] private float catchUpRadius;
+    [SerializeField] private float matchSpeedRadius;
 
-    [SerializeField]
-    private float matchSpeed;
+    [SerializeField] private float matchSpeed;
 
     private Vector2 seekForce, evadeForce;
     public void Drop()

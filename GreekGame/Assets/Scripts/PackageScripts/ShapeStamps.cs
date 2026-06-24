@@ -54,9 +54,8 @@ public class ShapeStamps : Tool
                 if (hit[i].collider.CompareTag("Vase"))
                 {
                     Debug.Log(hit[i].collider.tag);
-                    Debug.Log(hit[i].collider.name);
+                    Debug.Log(worldPos);
 
-                    Debug.Log("on vase");
                     PlaceStamp(worldPos, hit[i].collider.transform);
                 }
             }
@@ -72,6 +71,9 @@ public class ShapeStamps : Tool
     {
         // add shape where clicked 
         GameObject newObj = Instantiate(shapePrefab, position, Quaternion.identity, parent);
+
+        Debug.Log(newObj.transform.position);
+
 
         // match color and apply layer order
         SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();

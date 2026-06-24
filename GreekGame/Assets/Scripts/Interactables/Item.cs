@@ -4,6 +4,7 @@ using UnityEngine;
 public class Item : Interactable
 {
     // might change how this works from 
+    [Header("Item Info")]
     [SerializeField] protected string itemID;
     public event Action OnCollect;
 

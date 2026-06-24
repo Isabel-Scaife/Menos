@@ -163,10 +163,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43b3edabe1427f41bb140b4f788e499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapePrefab: {fileID: 0}
   clickable:
     serializedVersion: 2
     m_Bits: 0
+  shapePrefab: {fileID: 0}
   currentColor: {r: 0.22745098, g: 0.14117648, b: 0.054901965, a: 1}
 --- !u!114 &-5232209208741809004
 MonoBehaviour:

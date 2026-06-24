@@ -46,12 +46,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 6075536742385498841}
     m_Modifications:
     - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 1916408974532796690, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
+    - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
       propertyPath: currentColor.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 1047980449740500419, guid: 463a5e33cab199c47ad98bf259ead2ba, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -188,12 +192,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 3413583978262063334, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
+    - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
       propertyPath: currentColor.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 7824027989423620528, guid: 634a759500266d54ca32c3aac98a32f8, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -243,7 +251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 5117312992450866291, guid: 9a9601f4689d65f42b41c0695b8c7552, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -329,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 4752453638858139083, guid: 5e629960818df9749839d3aeba3ea8a1, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -398,12 +406,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 6075536742385498841}
     m_Modifications:
     - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
+      propertyPath: shapePrefab
+      value: 
+      objectReference: {fileID: 8700012545403546486, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
+    - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
       propertyPath: currentColor.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 3355104940545281422, guid: 858356cbfec3c434dae0afaf0a0c4a3a, type: 3}
       propertyPath: clickableLayer.m_Bits
@@ -549,7 +561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
       propertyPath: clickable.m_Bits
-      value: 262145
+      value: 262272
       objectReference: {fileID: 0}
     - target: {fileID: 8787401098409856880, guid: 005b451b9c8ad5b4f9df562566b71f18, type: 3}
       propertyPath: clickableLayer.m_Bits

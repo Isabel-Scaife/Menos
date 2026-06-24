@@ -21,6 +21,7 @@ public class CameraFollow : MonoBehaviour
         }
 
         originalTarget = cinemachineCamera.Follow;
+        orginalFOV = cinemachineCamera.Lens.OrthographicSize;
     }
 
 

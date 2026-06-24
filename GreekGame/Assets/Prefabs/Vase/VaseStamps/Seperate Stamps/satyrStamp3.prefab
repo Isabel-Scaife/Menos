@@ -164,10 +164,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43b3edabe1427f41bb140b4f788e499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShapeStamps
-  shapePrefab: {fileID: 1916408974532796690}
   clickable:
     serializedVersion: 2
     m_Bits: 0
+  shapePrefab: {fileID: 1916408974532796690}
   currentColor: {r: 0.22352943, g: 0.13725491, b: 0.054901965, a: 0}
 --- !u!114 &4294423768388536012
 MonoBehaviour:
