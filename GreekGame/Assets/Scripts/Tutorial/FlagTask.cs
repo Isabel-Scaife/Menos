@@ -9,23 +9,26 @@ public class FlagTask : TutorialTask
     [SerializeField]
     private string flag;
 
-    public override bool Completed()
+    private bool ready;
+
+    public override bool Ready()
     {
-        // completed when given flag is set, disables this object
-        if (GameStateManager.Instance != null && GameStateManager.Instance.HasFlag(flag))
-        {
-            this.gameObject.SetActive(false);
-            return true;
-        }
-        return false;
+        return ready;
     }
 
-    protected override void OnTriggerEnter2D(Collider2D collision)
-    {       
-        // show popup when player collides for first time
-        if (collision.CompareTag("Player") && TutorialManager.Instance != null)
+    public override bool Completed()
+    {
+        // completed when given flag is set
+        return GameStateManager.Instance.HasFlag(flag);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // ready once player enters trigger zone for first time
+        if (collision.CompareTag("Player"))
         {
-            TutorialManager.Instance.ShowTask(this);
+            ready = true;
         }
     }
 }

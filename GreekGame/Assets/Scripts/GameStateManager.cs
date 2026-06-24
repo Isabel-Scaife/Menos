@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -29,7 +28,7 @@ public class GameStateManager : MonoBehaviour
 
         // persistent singleton
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(this.gameObject);
 
         // default values for stats
         if (stats == null)
@@ -71,6 +70,7 @@ public class GameStateManager : MonoBehaviour
         flags.CopyTo(flagsArray);
         return flagsArray;
     }
+
     /// <summary>
     /// gets all stat values as an array
     /// </summary>
