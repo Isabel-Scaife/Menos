@@ -31,12 +31,24 @@ public class BirdTrigger : MonoBehaviour
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        //for debug purposes changes it to red if player detected
-        spriteRenderer.color = Color.red;
+        if (collision.gameObject.name == "Bird")
+        {
+            //for debug purposes changes it to red if bird detected
+            spriteRenderer.color = Color.red;
 
-        //swaps the controlling object
-        player.SwapControlledObject();
-        bird.SwapControlledObject();
+            //swaps the controlling object
+            player.SwapControlledObject();
+            bird.SwapControlledObject();
+        }
+        else if (collision.gameObject.name == "Player")
+        {
+            //for debug purposes changes it to red if bird detected
+            spriteRenderer.color = Color.green;
+
+            //swaps the controlling object
+            player.SwapControlledObject();
+            bird.SwapControlledObject();
+        }
 
     }
     

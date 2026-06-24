@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: TestQuestBlacksmithPostOffice
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: 0
+  nodes:
+  - isEndpoint: 0
+    id: 0
+    nextNodeID: 1
+    text: 'Oh, thank you for the materials! '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: 1
+    nextNodeID: 
+    text: 'Can you take this back to the post office for me? '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

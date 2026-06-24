@@ -1,16 +1,50 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public interface IEvent
 {
     void OnQuestComplete();
 }
 
+public interface IQuestCompleter
+{
+    public List<string> QuestsID { get; set; }
+
+    /// <summary>
+    /// Completes quest and remove from list, if it could be completed 
+    /// </summary>
+    public void OnQuestComplete()
+    {
+        if (QuestsID == null) return;
+        
+        if(QuestManager.Instance == null)
+        {
+            Debug.Log("Missing QuestManager");
+            return;
+        }
+
+        // complete quest and remove from list, if possible 
+        for (int i = QuestsID.Count - 1; i >= 0; i--)
+        {
+            Debug.Log(i);
+            if (QuestManager.Instance.CompleteQuest(QuestsID[i]))
+            {
+                QuestsID.RemoveAt(i);
+            }
+        }
+    }
+}
+
+
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance { get; private set; }
 
     private HashSet<string> completedQuests = new HashSet<string>();
+    private Dictionary<string, QuestData> allQuests = new Dictionary<string, QuestData>();
+
+    public HashSet<string> CompletedQuests { get => completedQuests; }
 
     void Awake()
     {
@@ -26,21 +60,70 @@ public class QuestManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    /// <summary>
-    /// Completes quest if not already complete and all prerequisites met
-    /// </summary>
-    /// <param name="quest"></param>
-    public void CompleteQuest(QuestData quest)
+    void OnEnable()
     {
-        // check if quest has already been completed
-        if(!completedQuests.Contains(quest.QuestID))
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // 1. Find all quests in scene
+        QuestData[] questsInScene = FindObjectsByType<QuestData>(
+            FindObjectsInactive.Include,
+            FindObjectsSortMode.None);
+
+        // 2. add quests to all quest list, if any quest already in list end early
+        foreach (QuestData quest in questsInScene)
         {
-            if (quest.AllPrerequisitesComplete())
+            if (allQuests.ContainsKey(quest.QuestID))
             {
-                completedQuests.Add(quest.QuestID);
-                quest.QuestComplete();
+                return;
+            }
+            else
+            {
+                allQuests.Add(quest.QuestID, quest);
+            }
+
+        }
+    }
+
+
+    /// <summary>
+    /// Complete quest if requirments are met
+    /// </summary>
+    /// <param name="questID"></param>
+    /// <returns>true if quest could be completed, false otherwise</returns>
+    public bool CompleteQuest(string questID)
+    {
+        // quest exists and not already complete
+        if (allQuests.ContainsKey(questID) && !completedQuests.Contains(questID))
+        {
+            // quest active and prerequisites met and 
+            if(allQuests[questID].QuestComplete())
+            {
+                completedQuests.Add(questID);
+                return true;
             }
         }
+        return false;
+    }
+
+    /// <summary>
+    /// Completes quest without checking if it is already complete or met prerequisites
+    /// </summary>
+    /// <param name="questID"></param>
+    public void OverrideQuest(string questID)
+    {
+        if(allQuests.ContainsKey(questID))
+        {
+            completedQuests.Add(questID);
+            allQuests[questID].OverrideComplete();
+        }    
     }
 
     /// <summary>
@@ -51,5 +134,18 @@ public class QuestManager : MonoBehaviour
     public bool IsQuestComplete(string questID)
     {
         return completedQuests.Contains(questID);
+    }
+
+    public void LoadData(QuestManagerData data)
+    {
+        completedQuests.Clear();
+
+        foreach (string s in data.completedQuests)
+        {
+            if (!completedQuests.Add(s))
+            {
+                Debug.Log("Item ID #" + s + " already added");
+            }
+        }
     }
 }

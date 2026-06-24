@@ -87,11 +87,8 @@ public class SaveSlot : MonoBehaviour
         SpawnManagerData spawnData = SaveSystem.LoadData<SpawnManagerData>(ID, "SpawnManager.json");
         SpawnManager.Instance.LoadData(spawnData);
 
-        // Only holds player position which also held in spawn manager
-        // so currently player data is not needed
-        //PlayerData playerDatat = SaveSystem.LoadData<PlayerData>(ID, "Player.json");
-        //SpawnManager.Instance.PlayerPosition = playerDatat.position;
-
+        QuestManagerData questData = SaveSystem.LoadData<QuestManagerData>(ID, "QuestManager.json");
+        QuestManager.Instance.LoadData(questData);
 
         GameStateManagerData stateData = SaveSystem.LoadData<GameStateManagerData>(ID, "GameStateManager.json");
         GameStateManager.Instance.LoadData(stateData);
@@ -153,6 +150,12 @@ public class SaveSlot : MonoBehaviour
             {
                 SaveSystem.SaveData<ProgressionManager, ProgressionManagerData>
                     (ProgressionManager.Instance, ID, "ProgressionManager.json");
+            }
+
+            if (QuestManager.Instance != null)
+            {
+                SaveSystem.SaveData<QuestManager, QuestManagerData>
+                    (QuestManager.Instance, ID, "QuestManager.json");
             }
 
             Debug.Log("Save Successful! Files found at: " + Application.persistentDataPath);

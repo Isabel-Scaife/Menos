@@ -6,9 +6,16 @@ using UnityEngine;
 /// (e.g. adds item to inventory, logs decision in journal, etc.)
 /// </summary>
 [System.Serializable]
-public class DialogueOutcome
+public class DialogueOutcome : IQuestCompleter
 {
     public List<string> flagsToSet;
     public int[] statChanges;
-    public QuestData quest;
+    public List<string> questsID;
+
+    public List<string> QuestsID { get => questsID; set => questsID = value; }
+
+    //public void OnQuestComplete()
+    //{
+    //    ((IQuestCompleter)this).OnQuestComplete();
+    //}
 }

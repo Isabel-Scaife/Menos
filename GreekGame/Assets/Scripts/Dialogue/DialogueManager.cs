@@ -257,6 +257,12 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (QuestManager.Instance == null)
+        {
+            Debug.Log("No QuestManager in scene");
+            return;
+        }
+
         // set flags
         if (outcome.flagsToSet != null)
         {
@@ -273,9 +279,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         // complete quest
-        if(outcome.quest != null)
+        if(outcome.QuestsID != null)
         {
-            QuestManager.Instance.CompleteQuest(outcome.quest);
+            ((IQuestCompleter)outcome).OnQuestComplete();
         }
     }
 }

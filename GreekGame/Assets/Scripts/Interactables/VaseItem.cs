@@ -12,6 +12,8 @@ public class VaseItem : Item
 
     public override void Interact(PlayerControlled player)
     {
+        if (!canInteract) return;
+
         if (SpawnManager.Instance == null)
         {
             Debug.Log("No SpawnManager in scene");
@@ -20,5 +22,7 @@ public class VaseItem : Item
         {
             SpawnManager.Instance.LoadVase(itemID, vaseGamePrefab, stampSetIndex);
         }
+
+        base.Interact(player);
     }
 }

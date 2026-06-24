@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -5,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public abstract class Interactable : MonoBehaviour
 {
-    [SerializeField]
-    protected bool canInteract;
+    [SerializeField] protected bool canInteract;
+
     public abstract void Interact(PlayerControlled player);
 }

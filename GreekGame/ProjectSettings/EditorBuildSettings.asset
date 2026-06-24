@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Journal.unity
     guid: 7c43ff38919cf7444ba98105a8d72e6f
+  - enabled: 1
+    path: Assets/Scenes/IsabelTest/VineyardQuestTest.unity
+    guid: b862c5238d25d7c4584f4140018cf683
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

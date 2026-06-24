@@ -9,7 +9,7 @@ public class SpawnManagerData : ISaveData<SpawnManager>
     public Vector2 playerPosition;
 
     public void CreateSaveData(SpawnManager spawnManager)
-    { 
+    {
         items = new string[spawnManager.Items.Count];
         spawnManager.Items.CopyTo(items, 0);
 
@@ -18,4 +18,5 @@ public class SpawnManagerData : ISaveData<SpawnManager>
 
         playerPosition = spawnManager.PlayerPosition;
     }
+
 }

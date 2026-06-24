@@ -11,6 +11,8 @@ public class Key : Item
 
     public override void Interact(PlayerControlled player)
     {
+        if (!canInteract) return;
+
         // place object in bird inventory
         if (player is Bird)
         {
@@ -38,7 +40,7 @@ public class Key : Item
                 SpawnManager.Instance.RemoveItem(itemID);
             }
 
-            Destroy(this.gameObject);
+            base.Interact(player);
         }
     }
 

@@ -20789,7 +20789,8 @@ MonoBehaviour:
   canInteract: 1
   dialogues:
   - {fileID: 11400000, guid: ad9cd87cb1bba154785062450fa976c8, type: 2}
-  quest: {fileID: 11400000, guid: d0e17ebef59c0d345923da409ee8a8e6, type: 2}
+  questsID:
+  - v-001
 --- !u!114 &984628821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107759,6 +107760,67 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1082639555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082639558}
+  - component: {fileID: 1082639557}
+  - component: {fileID: 1082639556}
+  m_Layer: 19
+  m_Name: QuestTest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1082639556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082639555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
+  item: {fileID: 1916003952}
+  activate: 1
+--- !u!114 &1082639557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082639555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: v-001
+  requiredPrerequisites: []
+--- !u!4 &1082639558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082639555}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.36812, y: 7.8600545, z: 0}
+  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096191416
 GameObject:
   m_ObjectHideFlags: 0
@@ -115774,4 +115836,5 @@ SceneRoots:
   - {fileID: 1374443599}
   - {fileID: 1386644571}
   - {fileID: 960617162}
+  - {fileID: 1082639558}
   - {fileID: 1639973302}
