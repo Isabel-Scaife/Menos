@@ -8,6 +8,7 @@ public class Bird : PlayerControlled
 
     private Vector2 acceleration, steeringForce;
 
+    [Header("Non-Player control movement")]
     [SerializeField, Range(0, 1f)]
     private float seekWeight;
     [SerializeField]
@@ -43,9 +44,14 @@ public class Bird : PlayerControlled
 
     }
 
+    public override void Move(InputAction.CallbackContext context)
+    {
+        if(controlBird) base.Move(context);
+    }
+
     public override void Interact(InputAction.CallbackContext context)
     {
-        if (!controlBird)
+        if (controlBird)
         {
 
             if (context.performed)
@@ -86,7 +92,7 @@ public class Bird : PlayerControlled
     protected override void FixedUpdate()
     {
         // bird automoved if not controlled
-        if(controlBird)
+        if(!controlBird)
         {
             // determine acceleration
             acceleration = Vector2.zero;
@@ -101,11 +107,7 @@ public class Bird : PlayerControlled
             Vector2 nextPos = (Vector2) transform.position + velocity * Time.fixedDeltaTime;
             rb.MovePosition(nextPos);
         }
-        else
-        {
-            Debug.Log("move bird");
-            base.FixedUpdate();
-        }
+        else base.FixedUpdate();
     }
 
     // methods that help determine bird movement when not controlled

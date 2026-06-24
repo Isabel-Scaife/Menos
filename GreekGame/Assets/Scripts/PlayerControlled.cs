@@ -52,13 +52,8 @@ public class PlayerControlled : MonoBehaviour
     {
         // update player's position
         velocity = direction * speed;
-
-        // determine whethere move player or bird
-        if(!controlBird)
-        {
-            position = (Vector2)transform.position + velocity * Time.fixedDeltaTime;
-            rb.MovePosition(position);
-        }
+        position = (Vector2)transform.position + velocity * Time.fixedDeltaTime;
+        rb.MovePosition(position);
 
     }
 
@@ -78,7 +73,18 @@ public class PlayerControlled : MonoBehaviour
 
     public void SwapControlledObject()
     {
-        controlBird = !controlBird; 
+        controlBird = !controlBird;
+
+        // swap follow target
+        if (controlBird && this.CompareTag("Bird"))
+        {
+            CameraFollow.Instance.ChangeTarget(this.gameObject.transform);
+        }
+        else if (!controlBird && this.CompareTag("Player"))
+        {
+            CameraFollow.Instance.SetOrginalTarget();
+        }
+
     }
 
     /// <summary>
@@ -121,11 +127,11 @@ public class PlayerControlled : MonoBehaviour
         }
     }
 
-    public void Move(InputAction.CallbackContext context)
+    public virtual void Move(InputAction.CallbackContext context)
     {
         direction = context.ReadValue<Vector2>();
 
-        if( direction != Vector2.zero && !controlBird)
+        if( direction != Vector2.zero)
         {
             if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.normalized.y))
             {

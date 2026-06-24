@@ -21,7 +21,10 @@ public class Player : PlayerControlled
             transform.position = SpawnManager.Instance.PlayerPosition;
         }
     }
-
+    protected override void FixedUpdate()
+    {
+        if (!controlBird) base.FixedUpdate();
+    }
     private void OnDestroy()
     {
         // some if statement to check if position needs to be stored should not be
@@ -40,5 +43,10 @@ public class Player : PlayerControlled
         {
             SpawnManager.Instance.PlayerPosition = transform.position;
         }
+    }
+
+    public override void Move(InputAction.CallbackContext context)
+    {
+        if (!controlBird) base.Move(context);
     }
 }
