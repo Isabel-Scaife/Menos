@@ -15,6 +15,7 @@ TagManager:
   - Color
   - Undefined
   - Tool
+  - Bird
   layers:
   - Default
   - TransparentFX

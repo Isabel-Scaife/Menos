@@ -929,9 +929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7f52e190f1de246a70eeaf0c19f15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Vase
-  completeThreshold: 100
-  correctSpaces: 55
-  incorrectArea: {fileID: 2519239041595943282}
+  spaces: 55
+  loseArea: {fileID: 2519239041595943282}
 --- !u!1001 &279426160453133534
 PrefabInstance:
   m_ObjectHideFlags: 0

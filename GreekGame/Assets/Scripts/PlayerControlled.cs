@@ -75,14 +75,16 @@ public class PlayerControlled : MonoBehaviour
     {
         controlBird = !controlBird;
 
+        if (CameraFollow.Instance == null) { Debug.Log("Missing camera follow"); return; }
+
         // swap follow target
         if (controlBird && this.CompareTag("Bird"))
         {
-            CameraFollow.Instance.ChangeTarget(this.gameObject.transform);
+            CameraFollow.Instance.SetTarget(this.gameObject.transform);
         }
         else if (!controlBird && this.CompareTag("Player"))
         {
-            CameraFollow.Instance.SetOrginalTarget();
+            CameraFollow.Instance.ResetCamera();
         }
 
     }

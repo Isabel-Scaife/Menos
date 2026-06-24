@@ -12,8 +12,11 @@ public class Item : Interactable
     public override void Interact(PlayerControlled player)
     {
         // methods that run when item is picked up 
-        OnCollect.Invoke();
+        if(OnCollect != null) OnCollect.Invoke();
+
+        if(SpawnManager.Instance == null) { Debug.Log("Missing Spawn Manger"); return; }
         
+        SpawnManager.Instance.RemoveItem(itemID);
         Destroy(this.gameObject);
     }
 

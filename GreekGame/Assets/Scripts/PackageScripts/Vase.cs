@@ -1,31 +1,23 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Vase : MonoBehaviour
 {
-    [SerializeField, Range(50, 100)]
-    private float completeThreshold = 80;
+    public event Action OnComplete;
 
-    private int amtToWin;
-    private int pointsCorrect;   // +1 for correct, -1 for incorrect 
-    [SerializeField, Range(0, 270)]
-    private int correctSpaces;
-
-    [SerializeField]
-    private Collider2D incorrectArea;
-    private bool inLoseZone = false;
-
+    [SerializeField] private int spaces;
+    private int numCorrect; // +1 for correct, -1 for incorrect 
     private List<CorrectPoint> correctPointsHit;
 
-    private Color currentColor = Color.white;
+    [SerializeField] private Collider2D loseArea;
+    private bool lost = false;
     private List<GameObject> shapesPlaced;
-    private int sortOrder = 1;
 
     public static Vase Instance { get; private set; }
-    public int SortOrder {  get => sortOrder; set => sortOrder = value; }
-
-    public Color CurrentColor { get => currentColor; set => currentColor=value; }
+    public int SortOrder {  get; set; }
+    public Color CurrentColor { get; set; }
 
     private void Awake()
     {
@@ -38,7 +30,8 @@ public class Vase : MonoBehaviour
             Instance = this;
         }
 
-        amtToWin = (int)(correctSpaces * completeThreshold * .01);
+        SortOrder = 1;
+        CurrentColor = Color.white;
 
         shapesPlaced = new List<GameObject>();
         correctPointsHit = new List<CorrectPoint>();
@@ -49,47 +42,51 @@ public class Vase : MonoBehaviour
         shapesPlaced.Add(shapeCollider.gameObject);
 
         // 1. check if player already lost 
-        if(!inLoseZone)
+        if (lost) return;
+
+        // 2. find all colliders hit 
+        List<Collider2D> collidersHit = new List<Collider2D>();
+        shapeCollider.Overlap(collidersHit);
+
+        foreach (Collider2D collider in collidersHit)
         {
-            // 2. find all colliders hit 
-            List<Collider2D> collidersHit = new List<Collider2D>();
-            shapeCollider.Overlap(collidersHit);
-
-            foreach (Collider2D collider in collidersHit)
+            // 3. lose end early 
+            if (collider.CompareTag("IncorrectZone")) { lost = true; return; }
+            
+            // 4.update correct count
+            if (collider.CompareTag("CorrectZone"))
             {
-                if (collider.CompareTag("IncorrectZone"))
+                CorrectPoint point = collider.GetComponent<CorrectPoint>();
+                int paintValue = point.PaintPoint(CurrentColor);
+
+                if(paintValue == 1)
                 {
-                    // 3. placed in lose zone, end early
-                    inLoseZone = true;
-                    return;
+                    correctPointsHit.Add(point);
                 }
-                else if (collider.CompareTag("CorrectZone"))
-                {
-                    // 4. correct point collider hit, update correct count
 
-                    CorrectPoint point = collider.GetComponent<CorrectPoint>();
-                    int paintValue = point.PaintPoint(currentColor);
-
-                    if(paintValue == 1)
-                    {
-                        correctPointsHit.Add(point);
-                    }
-
-                    pointsCorrect += paintValue;
-                }
+                numCorrect += paintValue;
             }
+        }
 
-            if(amtToWin <= pointsCorrect)
-            {
-                Debug.Log("Complete Puzzle");
-                ///     - 2. vase needs threshold for completion (seralize field) 
-                ///         - once passed, play complete animation
-                ///             - food enter vase 
-                ///             - sealed shut
-                ///             - close scene 
-                ///         - else nothhing happens
-                SceneManager.LoadScene("Vineyard");
-            }
+        // 5. complete puzzle if there are enough correct 
+        if(numCorrect >= spaces)
+        {
+            Debug.Log("Complete Puzzle");
+
+            CompletePuzzle();
+
+            //SceneManager.LoadScene("Vineyard");
+        }
+        
+    }
+
+    private void CompletePuzzle()
+    {
+        // play animation needs await (finish animation before moving on) 
+
+        if (OnComplete != null)
+        {
+            OnComplete();
         }
     }
 
@@ -111,20 +108,18 @@ public class Vase : MonoBehaviour
         }
 
         // 3. reset count  
-        pointsCorrect = 0;
-        inLoseZone = false;
+        numCorrect = 0;
+        lost = false;
 
         // 4. reset sort layer count
         SortOrder = 1;
     }
 
-    /// <summary>
-    /// Switches the shape the player must make
-    /// </summary>
-    /// <param name="newShape">Name of the shape to switch to</param>
-    public void SwitchShape(string newShape)
+    private void OnDestroy()
     {
-        //TriangleVase.Visible = false;
-        //newShape.Visible = true;
+        for (int i = 0; i <  shapesPlaced.Count; i++)
+        {
+            Destroy(shapesPlaced[i]);
+        }
     }
 }

@@ -13,15 +13,15 @@ public class MapTeleport : Interactable
         NoOffset
     }
 
-    [Header("Camera")]
-    [SerializeField] PolygonCollider2D mapBounds;
+    [Header("Camera Bounds")]
+    [SerializeField] private PolygonCollider2D mapBounds;
 
     private CinemachineConfiner2D confiner;
 
     [Header("Teloport Location")]
-    [SerializeField] Transform teleportTo;
-    [SerializeField] Direction direction;
-    [SerializeField] float offset = 5;
+    [SerializeField] private Transform teleportTo;
+    [SerializeField] private Direction direction;
+    [SerializeField] private float offset = 5;
 
     private Vector3 newPos;
 

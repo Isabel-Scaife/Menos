@@ -6,6 +6,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] CinemachineCamera cinemachineCamera;
 
     private Transform originalTarget;
+    private float orginalFOV;
 
     public static CameraFollow Instance { get; private set; }
     void Awake()
@@ -23,13 +24,19 @@ public class CameraFollow : MonoBehaviour
     }
 
 
-    public void ChangeTarget(Transform target)
+    public void SetTarget(Transform target)
     {
         cinemachineCamera.Follow = target;
     }
 
-    public void SetOrginalTarget()
+
+    public void SetDistance(float fov)
     {
-        ChangeTarget(originalTarget);
+        cinemachineCamera.Lens.OrthographicSize = fov;
+    }
+    public void ResetCamera()
+    {
+        SetTarget(originalTarget);
+        SetDistance(orginalFOV);
     }
 }

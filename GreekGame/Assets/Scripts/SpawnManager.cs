@@ -12,12 +12,6 @@ public class SpawnManager : MonoBehaviour
     // track every scene that has been loaded 
     private HashSet<string> pastScenesLoaded = new HashSet<string>();
 
-    [SerializeField] private GameObject[] stampSets;
-
-    // used to load correct pairing for minigame
-    private GameObject vasePrefab;
-    private uint currentStampSet = 0;
-
     public static SpawnManager Instance { get; private set; }
     public Vector3 PlayerPosition { get; set; }
     public bool SaveCurrentPosition { get; set; }
@@ -56,19 +50,6 @@ public class SpawnManager : MonoBehaviour
         items.Remove(itemID);
     }
 
-    public void LoadVase(string itemID, GameObject vaseGamePrefab, uint stampSetIndex)
-    {
-        SaveCurrentPosition = true;
-
-        // remove item 
-        items.Remove(itemID);
-
-        // load vase scene with vase
-        SceneManager.LoadScene("VasePackage");
-        vasePrefab = vaseGamePrefab;
-        currentStampSet = stampSetIndex;
-    }
-
     /// <summary>
     /// Delegate to load vase Object
     /// </summary>
@@ -88,13 +69,6 @@ public class SpawnManager : MonoBehaviour
         {
             // destroy items when loading scene (second time onward)
             DestoryInactiveItems();
-        }
-
-        // populate vase minigame
-        if (scene.name == "VasePackage")
-        {
-            Instantiate(stampSets[currentStampSet], Vector2.zero, Quaternion.identity);
-            Instantiate(vasePrefab, Vector2.zero, Quaternion.identity);
         }
     }
 
