@@ -1,6 +1,10 @@
 using UnityEngine;
+using System.Collections.Generic;
 using TMPro;
 
+/// <summary>
+/// manages task flow and popups for early-game tutorial
+/// </summary>
 public class TutorialManager : MonoBehaviour
 {
     // singleton
@@ -13,43 +17,50 @@ public class TutorialManager : MonoBehaviour
     [SerializeField]
     private TMP_Text popupTMP;
 
-    private TutorialTask currentTask;
+    [SerializeField]
+    private List<TutorialTask> tasks;
+
+    private int currentTaskIndex;
+    private bool taskActive;
 
     private void Awake()
     {
         Instance = this;
-        currentTask = null;
-
-        Debug.Log($"TutorialManager Awake on {name}");
-        Debug.Log($"popupRect = {popupRect}");
+        currentTaskIndex = 0;
+        taskActive = false;
     }
 
     private void Update()
     {
-        // hides popup when task is completed        
-        if (currentTask != null && currentTask.Completed())
+        // hides popup when task is completed
+        if (taskActive && tasks[currentTaskIndex].Completed())
         {
+            taskActive = false;
             popupRect.gameObject.SetActive(false);
             popupTMP.text = "";
-            currentTask = null;
+            currentTaskIndex++;
+
+            // disable this script if all tasks are completed
+            if (currentTaskIndex >= tasks.Count)
+            {
+                this.enabled = false;
+            }
+        }
+
+        // shows next task when ready
+        else if (!taskActive && tasks[currentTaskIndex].Ready())
+        {
+            taskActive = true;
+            popupTMP.text = tasks[currentTaskIndex].text;
+            popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
+            popupRect.gameObject.SetActive(true);
         }
     }
 
     private void LateUpdate()
     {
         // update popup position on the screen after any camera movement
-        if (currentTask == null) return;
-        popupRect.position = Camera.main.WorldToScreenPoint(currentTask.anchor.position);
-    }
-
-    public void ShowTask(TutorialTask task)
-    {
-        // do not show if already showing a task
-        if (currentTask != null) return;
-        
-        currentTask = task;
-        popupTMP.text = currentTask.text;
-        popupRect.position = Camera.main.WorldToScreenPoint(currentTask.anchor.position);
-        popupRect.gameObject.SetActive(true);
+        if (!taskActive) return;
+        popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
     }
 }
