@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Vase : MonoBehaviour
+public class VaseMinigame : MonoBehaviour
 {
     public event Action OnComplete;
 
@@ -15,7 +14,7 @@ public class Vase : MonoBehaviour
     private bool lost = false;
     private List<GameObject> shapesPlaced;
 
-    public static Vase Instance { get; private set; }
+    public static VaseMinigame Instance { get; private set; }
     public int SortOrder {  get; set; }
     public Color CurrentColor { get; set; }
 
@@ -71,23 +70,16 @@ public class Vase : MonoBehaviour
         // 5. complete puzzle if there are enough correct 
         if(numCorrect >= spaces)
         {
-            Debug.Log("Complete Puzzle");
-
-            CompletePuzzle();
-
-            //SceneManager.LoadScene("Vineyard");
+            Complete();
         }
         
     }
 
-    private void CompletePuzzle()
+    private void Complete()
     {
         // play animation needs await (finish animation before moving on) 
-
-        if (OnComplete != null)
-        {
-            OnComplete();
-        }
+         
+        if (OnComplete != null) OnComplete();
     }
 
     public void ResetImage()

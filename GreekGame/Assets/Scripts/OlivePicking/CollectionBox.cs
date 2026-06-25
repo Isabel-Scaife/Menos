@@ -2,36 +2,27 @@ using UnityEngine;
 
 public class CollectionBox : MonoBehaviour
 {
-    [SerializeField]
-    private int oliveMax;
+    [SerializeField] private int oliveMax;
+    [SerializeField] private OliveMinigame minigame;
 
-    private int currentOliveCt;
+    private int collected = 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        currentOliveCt = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (oliveMax == currentOliveCt)
-        {
-            print("game win");
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Olive")
         {
             //adds to olive count
-            currentOliveCt++;
-            //sends it into the ether so it cant be recounted
-            //and gives appearance of entering crate
-            collision.gameObject.transform.position = new Vector3(500,500,0);
+            collected++;
+
+            // destory olive
+            Destroy(collision.gameObject);
+
+            if (oliveMax == collected)
+            {
+                minigame.Complete();
+            }
         }
-        print("Current Olives: " + currentOliveCt);
+        print("Current Olives: " + collected);
     }
 }

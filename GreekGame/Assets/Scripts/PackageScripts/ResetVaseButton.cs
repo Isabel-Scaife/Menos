@@ -4,8 +4,8 @@ public class ResetVaseButton : MonoBehaviour
 {
     public void ResetVase()
     {
-        Vase.Instance.ResetImage();
+        VaseMinigame.Instance.ResetImage();
 
-        Debug.Log(Vase.Instance.gameObject.name);
+        Debug.Log(VaseMinigame.Instance.gameObject.name);
     }
 }

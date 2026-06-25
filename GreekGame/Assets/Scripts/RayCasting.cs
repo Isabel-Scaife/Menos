@@ -31,15 +31,9 @@ public class RayCasting : MonoBehaviour
 
         if (hit != null || (hit == null && tool != null))
         {
-            if(HoldingTool(hit, tool))
-            {
-                return;
-            }
+            if(HoldingTool(hit, tool)) return;
 
-            if (PickUpTool(hit))
-            {
-                return;
-            }
+            if (PickUpTool(hit)) return;
         }
     }
 

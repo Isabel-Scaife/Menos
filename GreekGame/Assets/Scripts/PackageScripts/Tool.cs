@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Tool : MonoBehaviour
 {
@@ -10,7 +8,7 @@ public class Tool : MonoBehaviour
     protected bool mouseDown = false;
     protected FollowMouse mouse;
 
-    private Vector3 startPosition;
+    protected Vector3 startPosition;
 
     protected RaycastHit2D hit;
 
@@ -39,19 +37,12 @@ public class Tool : MonoBehaviour
     /// </summary>
     public virtual void SelectTool() 
     { 
-        if (ToolManager.Instance == null)
-        {
-            Debug.LogError("No Tool Manager in scene");
-        }
-        else
-        {
-            mouse.enabled = true;
-            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
-            ToolManager.Instance.CurrentTool = this;
+        if (ToolManager.Instance == null) { Debug.Log("Missing Tool Manager"); return; }
 
-            SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
-            sprite.sortingOrder = 100;
-        }
+        Follow();
+
+        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 100;
     }
 
     /// <summary>
@@ -59,20 +50,22 @@ public class Tool : MonoBehaviour
     /// </summary>
     public virtual void DropTool()
     {
-        if (ToolManager.Instance == null)
-        {
-            Debug.LogError("No Tool Manager in scene");
-        }
-        else
-        {
-            mouse.enabled = false;
-            gameObject.layer = LayerMask.NameToLayer("Tool");
-            ToolManager.Instance.CurrentTool = null;
+        if (ToolManager.Instance == null) { Debug.Log("Missing Tool Manager"); return; }
 
-            transform.position = startPosition;
+        StopFollow();
+    }
 
-            SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
-            sprite.sortingOrder = 10;
-        }
+    protected void Follow()
+    {
+        mouse.enabled = true;
+        gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+        ToolManager.Instance.CurrentTool = this;
+    }
+
+    protected void StopFollow()
+    {
+        mouse.enabled = false;
+        gameObject.layer = LayerMask.NameToLayer("Tool");
+        ToolManager.Instance.CurrentTool = null;
     }
 }

@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class VaseItem : MinigameSwapper
+public class Vase : MinigameSwapper
 {
     [Header("Vase Instance")]
     [SerializeField] private GameObject vasePrefab;
@@ -30,15 +30,15 @@ public class VaseItem : MinigameSwapper
         stampSet = Instantiate(stampSetPrefab, followObject, false);
 
         // add on complete event  
-        Vase vaseScript = vase.GetComponent<Vase>();
-        vaseScript.OnComplete += HandleComplete;
+        VaseMinigame minigame = vase.GetComponent<VaseMinigame>();
+        minigame.OnComplete += HandleComplete;
     }
 
     private async void HandleComplete()
     {
         await ScreenFader.Instance.FadeOut();
 
-        // destroy vase objects
+        // destroy minigame 
         Destroy(stampSet);
         Destroy(vase);
 

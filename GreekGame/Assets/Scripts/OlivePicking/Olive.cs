@@ -1,38 +1,36 @@
 using UnityEngine;
 
-public class Olive : MonoBehaviour
+public class Olive : Tool
 {
-    [SerializeField]
-    private OlivesBird bird;
-    private Collider2D birdCollider;
-    private Collider2D oliveCollider;
-
+    private Collider2D objCollider;
     private Rigidbody2D rb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Vector3 parentPos;
+
     void Start()
     {
         //gets necessary colliders and such
         rb = GetComponent<Rigidbody2D>();
-        birdCollider = bird.GetComponent<Collider2D>();
-        oliveCollider = GetComponent<Collider2D>();
+        objCollider = GetComponent<Collider2D>();
+        
+        parentPos = transform.parent.position;
+
         rb.gravityScale = 0;
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void SelectTool()
     {
-        
+        // only pick if on bottom of screen 
+        if (mouse.MousePostion.y - parentPos.y < 1) base.SelectTool();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "OlivesBird")
+        if (collision.CompareTag("Bird"))
         {
-            //turns gravity on
+            // drop olive on ground 
             rb.gravityScale = 1;
-            //turns trigger off so it collides with gound
-            oliveCollider.isTrigger = false;
+            objCollider.isTrigger = false;
         }
     }
 }

@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -25,7 +24,7 @@ public class ShapeStamps : Tool
             currentColor = stamp.GetComponent<ShapeStamps>().currentColor;
 
             // call to find if placed in right zone on vase 
-            Vase.Instance.CheckCollidersHit(myCollider);
+            VaseMinigame.Instance.CheckCollidersHit(myCollider);
         }
 
     }
@@ -40,24 +39,21 @@ public class ShapeStamps : Tool
         RaycastHit2D[] hit; 
         hit = Physics2D.RaycastAll(worldPos, Vector2.zero, 10.0f, clickable);
 
-        if (hit != null)
+        // hit nothing 
+        if (hit.Length <= 0) return;
+        
+        // color hit, change color of stamp 
+        if (hit[0].collider.CompareTag("Color"))
         {
-            // color hit, change color of stamp 
-            if (hit[0].collider.CompareTag("Color"))
-            {
-                ChangeColor(hit[0].collider);
-            }
+            ChangeColor(hit[0].collider);
+        }
 
-            // vase hit, place stamp at mouse location
-            for (int i = 0; i < hit.Length; i++)
+        // vase hit, place stamp at mouse location
+        for (int i = 0; i < hit.Length; i++)
+        {
+            if (hit[i].collider.CompareTag("Vase"))
             {
-                if (hit[i].collider.CompareTag("Vase"))
-                {
-                    Debug.Log(hit[i].collider.tag);
-                    Debug.Log(worldPos);
-
-                    PlaceStamp(worldPos, hit[i].collider.transform);
-                }
+                PlaceStamp(worldPos, hit[i].collider.transform);
             }
         }
     }
@@ -72,15 +68,12 @@ public class ShapeStamps : Tool
         // add shape where clicked 
         GameObject newObj = Instantiate(shapePrefab, position, Quaternion.identity, parent);
 
-        Debug.Log(newObj.transform.position);
-
-
         // match color and apply layer order
         SpriteRenderer sprite = newObj.GetComponent<SpriteRenderer>();
         sprite.color = currentColor;
 
-        sprite.sortingOrder = Vase.Instance.SortOrder;
-        Vase.Instance.SortOrder++;
+        sprite.sortingOrder = VaseMinigame.Instance.SortOrder;
+        VaseMinigame.Instance.SortOrder++;
     }
 
     /// <summary>
@@ -90,14 +83,25 @@ public class ShapeStamps : Tool
     {
         currentColor = collider.GetComponent<SpriteRenderer>().color;
         gameObject.GetComponent<SpriteRenderer>().color = currentColor;
-        Vase.Instance.CurrentColor = currentColor;
+        VaseMinigame.Instance.CurrentColor = currentColor;
     }
 
     public override void SelectTool()
     {
         // apply color and pick up tool 
-        Vase.Instance.CurrentColor = currentColor;
+        VaseMinigame.Instance.CurrentColor = currentColor;
         base.SelectTool();
+    }
+
+    public override void DropTool()
+    {
+        base.DropTool();
+
+        transform.position = startPosition;
+
+        SpriteRenderer sprite = gameObject.GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = 10;
+
     }
 
 }

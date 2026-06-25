@@ -1,4 +1,5 @@
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MinigameSwapper : Item
@@ -7,6 +8,9 @@ public class MinigameSwapper : Item
     [SerializeField] protected Transform followObject;
     [SerializeField] private Collider2D mapBounds;
     [SerializeField] private float fov = 6;
+
+    [Header("Minigame Canvas")]
+    [SerializeField] private GameObject canvas;
 
     private Collider2D originalBounds;
     private CinemachineConfiner2D confiner;
@@ -23,6 +27,7 @@ public class MinigameSwapper : Item
         confiner.BoundingShape2D = mapBounds;
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
+        if (canvas != null) canvas.SetActive(true);
     }
 
     protected void ResetCamera()
@@ -30,6 +35,7 @@ public class MinigameSwapper : Item
         confiner.BoundingShape2D = originalBounds;
         CameraFollow.Instance.ResetCamera();
         playerRef.ResumeInputControls();
+        if (canvas != null) canvas.SetActive(false);
     }
 
     public override void Interact(PlayerControlled player)
