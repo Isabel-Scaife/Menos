@@ -5071,139 +5071,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423878526}
   m_CullTransparentMesh: 1
---- !u!1 &433263564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 433263565}
-  - component: {fileID: 433263569}
-  - component: {fileID: 433263568}
-  - component: {fileID: 433263567}
-  - component: {fileID: 433263566}
-  m_Layer: 5
-  m_Name: Canvas_Evidence_Popup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &433263565
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433263564}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1527985041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 325, y: 182.75}
-  m_SizeDelta: {x: 650, y: 365.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &433263566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433263564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20262a82dfa0d2e47beab584e20089e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentEvidence: {fileID: 0}
-  itemImg: {fileID: 410559750}
-  name: {fileID: 824523410}
-  description: {fileID: 928908004}
-  suspects:
-  - {fileID: 2143160182}
-  - {fileID: 1412394019}
-  - {fileID: 1317022674}
-  - {fileID: 622421866}
-  suspectData:
-  - {fileID: 11400000, guid: 162d0fc119c224c4d984a8dcaa3aac44, type: 2}
-  - {fileID: 11400000, guid: 5d7f15a16542ff54c8f9b55d927ac312, type: 2}
-  - {fileID: 11400000, guid: f99bcf2e4df08d64785d15d65eaf9028, type: 2}
-  - {fileID: 11400000, guid: 1674fb06d3322684faf182aa974bd5eb, type: 2}
-  relatedRelations:
-  - {fileID: 2132117909}
-  - {fileID: 2114480101}
-  - {fileID: 1904364290}
-  - {fileID: 1591962267}
---- !u!114 &433263567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433263564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &433263568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433263564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &433263569
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 433263564}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &448298910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5279,157 +5146,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448298910}
   m_CullTransparentMesh: 1
---- !u!1 &455476107
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 455476108}
-  - component: {fileID: 455476112}
-  - component: {fileID: 455476111}
-  - component: {fileID: 455476110}
-  - component: {fileID: 455476109}
-  m_Layer: 5
-  m_Name: Canvas_Relationships
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &455476108
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455476107}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1527985041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 325, y: 182.75}
-  m_SizeDelta: {x: 650, y: 365.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &455476109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455476107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2aaf0d380ab042c458d3162bb0aa9582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 9b403df20fa7db241b2c6fc7f181f296, type: 2}
-  family:
-  - {fileID: 762478195}
-  - {fileID: 939392283}
-  - {fileID: 1921835711}
-  - {fileID: 2014343131}
-  - {fileID: 332474505}
-  - {fileID: 28331781}
-  - {fileID: 270181842}
-  - {fileID: 1146768618}
-  - {fileID: 1251223517}
-  - {fileID: 112301284}
-  familyTreePanel: {fileID: 1139485658}
-  otherRelation:
-  - {fileID: 1583813258}
-  - {fileID: 1748456113}
-  - {fileID: 1711151835}
-  - {fileID: 69179825}
-  - {fileID: 1170111244}
-  - {fileID: 998688843}
-  - {fileID: 471839736}
-  - {fileID: 1739905674}
-  - {fileID: 1561623107}
-  - {fileID: 1326253676}
-  - {fileID: 364764607}
-  - {fileID: 1032905052}
-  - {fileID: 1157287462}
-  - {fileID: 2067016661}
-  - {fileID: 993163005}
-  - {fileID: 1903238231}
-  - {fileID: 1437420428}
-  - {fileID: 1680116820}
-  - {fileID: 2049312239}
-  - {fileID: 303488465}
-  relationsGridPanel: {fileID: 871417032}
-  relationPerPage: 20
-  currentPage: 0
---- !u!114 &455476110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455476107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &455476111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455476107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &455476112
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455476107}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &460719441
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,7 +7948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1527985045}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: ClickEvidenceButton
         m_Mode: 1
@@ -9986,9 +9702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb9edf8c5aa7b2429d8f7231d467024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RelationshipsPopup
-  characterSprite: {fileID: 0}
-  name: {fileID: 0}
-  description: {fileID: 0}
+  characterSprite: {fileID: 460719443}
+  name: {fileID: 1508923585}
+  description: {fileID: 1169318944}
 --- !u!1 &897061697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11974,7 +11690,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1527985045}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: ClickRelationshipsButton
         m_Mode: 1
@@ -12223,47 +11939,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EvidenceTabController
   database: {fileID: 11400000, guid: 15136844d576e474994cb023c82c70cb, type: 2}
   slots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7323959975446382283}
+  - {fileID: 2000534790}
+  - {fileID: 1203937904}
+  - {fileID: 355543295}
+  - {fileID: 1245990702}
+  - {fileID: 198764309}
+  - {fileID: 332671959}
+  - {fileID: 1435534347}
+  - {fileID: 1498307957}
+  - {fileID: 2082436966}
+  - {fileID: 1188047951}
+  - {fileID: 1653114264}
+  - {fileID: 1857212211}
+  - {fileID: 1828744174}
+  - {fileID: 593962860}
+  - {fileID: 1823617647}
+  - {fileID: 570494102}
+  - {fileID: 1879381394}
+  - {fileID: 1672674793}
+  - {fileID: 2116305289}
   tagsParent:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7323959975446382282}
+  - {fileID: 2127681788}
+  - {fileID: 969994049}
+  - {fileID: 2002392843}
+  - {fileID: 817035000}
+  - {fileID: 421003467}
+  - {fileID: 1070936035}
+  - {fileID: 491382639}
+  - {fileID: 537363678}
+  - {fileID: 1131165482}
+  - {fileID: 1413209556}
+  - {fileID: 497791929}
+  - {fileID: 173599500}
+  - {fileID: 1822777991}
+  - {fileID: 1189786009}
+  - {fileID: 1269920980}
+  - {fileID: 1839484391}
+  - {fileID: 143324366}
+  - {fileID: 900785594}
+  - {fileID: 1376879209}
   itemsPerPage: 20
   currentPage: 0
 --- !u!1 &1020296759
@@ -13358,7 +13074,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1527985045}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: ClickMapsButton
         m_Mode: 1
@@ -16488,7 +16204,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1527985045}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: ClickSettingsButton
         m_Mode: 1
@@ -19152,11 +18868,8 @@ RectTransform:
   - {fileID: 1607771765}
   - {fileID: 1018137820}
   - {fileID: 1591559144}
-  - {fileID: 433263565}
   - {fileID: 1806905176}
-  - {fileID: 455476108}
   - {fileID: 885752435}
-  - {fileID: 1653576290}
   - {fileID: 1034424867}
   - {fileID: 1527706059}
   m_Father: {fileID: 962482303}
@@ -19426,13 +19139,25 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/Exit[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1527985040}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1018137822}
+        m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
+        m_MethodName: PreviousPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1806905179}
+        m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
+        m_MethodName: PreviousPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19442,13 +19167,25 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/PageProgressL[/Keyboard/a]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1018137822}
+        m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
+        m_MethodName: RefreshPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1806905179}
+        m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
+        m_MethodName: RefreshPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -19458,13 +19195,25 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/PageProgressR[/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1591559148}
+        m_TargetAssemblyTypeName: EvidencePopup, Assembly-CSharp
+        m_MethodName: ExitEvidencePopup
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 885752439}
+        m_TargetAssemblyTypeName: RelationshipsPopup, Assembly-CSharp
+        m_MethodName: ExitRelationshipsPopup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -20608,24 +20357,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EvidencePopup
   currentEvidence: {fileID: 0}
-  itemImg: {fileID: 0}
-  name: {fileID: 0}
-  description: {fileID: 0}
+  itemImg: {fileID: 410559750}
+  name: {fileID: 824523410}
+  description: {fileID: 928908004}
   suspects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2143160182}
+  - {fileID: 1412394019}
+  - {fileID: 1317022674}
+  - {fileID: 622421866}
   suspectData:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 162d0fc119c224c4d984a8dcaa3aac44, type: 2}
+  - {fileID: 11400000, guid: 5d7f15a16542ff54c8f9b55d927ac312, type: 2}
+  - {fileID: 11400000, guid: f99bcf2e4df08d64785d15d65eaf9028, type: 2}
+  - {fileID: 11400000, guid: 1674fb06d3322684faf182aa974bd5eb, type: 2}
   relatedRelations:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2132117909}
+  - {fileID: 2114480101}
+  - {fileID: 1904364290}
+  - {fileID: 1591962267}
 --- !u!1 &1591962265
 GameObject:
   m_ObjectHideFlags: 0
@@ -21319,123 +21068,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653114262}
   m_CullTransparentMesh: 1
---- !u!1 &1653576289
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1653576290}
-  - component: {fileID: 1653576294}
-  - component: {fileID: 1653576293}
-  - component: {fileID: 1653576292}
-  - component: {fileID: 1653576291}
-  m_Layer: 5
-  m_Name: Canvas_Relationships_Popup
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1653576290
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653576289}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1527985041}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 325, y: 182.75}
-  m_SizeDelta: {x: 650, y: 365.5}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1653576291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653576289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb9edf8c5aa7b2429d8f7231d467024, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterSprite: {fileID: 460719443}
-  name: {fileID: 1508923585}
-  description: {fileID: 1169318944}
---- !u!114 &1653576292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653576289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1653576293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653576289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1653576294
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653576289}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &1661095949
 GameObject:
   m_ObjectHideFlags: 0
@@ -21670,7 +21302,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1527985045}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: ClickNotesButton
         m_Mode: 1
@@ -23353,38 +22985,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RelationshipsTabController
   database: {fileID: 11400000, guid: 9b403df20fa7db241b2c6fc7f181f296, type: 2}
   family:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 762478195}
+  - {fileID: 939392283}
+  - {fileID: 1921835711}
+  - {fileID: 2014343131}
+  - {fileID: 332474505}
+  - {fileID: 270181842}
+  - {fileID: 112301284}
+  - {fileID: 1251223517}
+  - {fileID: 28331781}
+  - {fileID: 1146768618}
   familyTreePanel: {fileID: 1139485658}
   otherRelation:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1583813258}
+  - {fileID: 1748456113}
+  - {fileID: 1711151835}
+  - {fileID: 69179825}
+  - {fileID: 1170111244}
+  - {fileID: 998688843}
+  - {fileID: 471839736}
+  - {fileID: 1739905674}
+  - {fileID: 1561623107}
+  - {fileID: 1326253676}
+  - {fileID: 364764607}
+  - {fileID: 1032905052}
+  - {fileID: 1157287462}
+  - {fileID: 2067016661}
+  - {fileID: 993163005}
+  - {fileID: 1903238231}
+  - {fileID: 1437420428}
+  - {fileID: 1680116820}
+  - {fileID: 2049312239}
+  - {fileID: 303488465}
   relationsGridPanel: {fileID: 871417032}
   relationPerPage: 20
   currentPage: 0
@@ -28548,6 +28180,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2914644911ff610419a677dc8ddb976b, type: 3}
+--- !u!114 &7323959975446382282 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 96375666636161986, guid: 2914644911ff610419a677dc8ddb976b, type: 3}
+  m_PrefabInstance: {fileID: 7323959975446382281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e2e3f048c018f4695a6848a500cf14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SuspectTags
+--- !u!114 &7323959975446382283 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7442944716842302042, guid: 2914644911ff610419a677dc8ddb976b, type: 3}
+  m_PrefabInstance: {fileID: 7323959975446382281}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d659a9052d74bc40965e07645fb5818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
