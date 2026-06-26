@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine.SceneManagement;
 
 public class JournalManager : MonoBehaviour
@@ -11,8 +10,8 @@ public class JournalManager : MonoBehaviour
     public static JournalManager Instance;
     // public Canvas journalMain;              // Instance.gameObject
 
-    // Parent of all the things Journal canvas contains
-    public Image journalPanel;
+    // Canvas component of Journal Object (This will be turned off and on)
+    public Canvas mainCanvas;
 
     // State of the Journal. This will be used to change the action map from other things to journal map
     // If journal gameobject is active, this should be tagged as 'InUse'
@@ -25,8 +24,8 @@ public class JournalManager : MonoBehaviour
     // ** DATA CAN HAVE ITS STATUS SAVED AND
     //    EVERYTIME GAME LOADS DISCOVERED THINGS CAN BE POPPED BACK IN
     // Check whether evidence | relationships | map are discovered
-    private HashSet<EvidenceData> discoveredEvidence = new HashSet<EvidenceData>();
-    private HashSet<RelationshipsData> unlockedRelations = new HashSet<RelationshipsData>();
+    private static HashSet<EvidenceData> discoveredEvidence = new HashSet<EvidenceData>();
+    private static HashSet<RelationshipsData> unlockedRelations = new HashSet<RelationshipsData>();
 
     // Going to be used for section changes and button position reset
     public delegate void ChangeSection();
@@ -52,20 +51,21 @@ public class JournalManager : MonoBehaviour
     public bool escapeHandledThisFrame = false; 
 
     // Store Child Canvases
+    // ** Don't store in child canvases because it cannot scale the objects in it separate from the parent canvas
     [SerializeField]
-    private Canvas c_notes;
+    private GameObject p_notes;
     [SerializeField]
-    private Canvas c_evidence;
+    private GameObject p_evidence;
     [SerializeField]
-    private Canvas c_e_popup;
+    private GameObject p_e_popup;
     [SerializeField]
-    private Canvas c_relationships;
+    private GameObject p_relationships;
     [SerializeField]
-    private Canvas c_r_popup;
+    private GameObject p_r_popup;
     [SerializeField]
-    private Canvas c_maps;
+    private GameObject p_maps;
     [SerializeField]
-    private Canvas c_settings;
+    private GameObject p_settings;
 
     // Store Buttons to manipulate location
     [SerializeField]
@@ -95,18 +95,16 @@ public class JournalManager : MonoBehaviour
         ResetReferences();
     }
 
-    // ** Setup, Temporary Fix... Journal needs so much reworking :(
     private void ResetReferences()
     {
-
         // Re-assign all Canvas and Button references, especially if they're in the new scene
-        c_notes = GameObject.Find("Canvas_Notes")?.GetComponent<Canvas>();
-        c_evidence = GameObject.Find("Canvas_Evidence")?.GetComponent<Canvas>();
-        c_e_popup = GameObject.Find("Canvas_Evidence_Popup")?.GetComponent<Canvas>();
-        c_relationships = GameObject.Find("Canvas_Relationships")?.GetComponent<Canvas>();
-        c_r_popup = GameObject.Find("Canvas_Relationships_Popup")?.GetComponent<Canvas>();
-        c_maps = GameObject.Find("Canvas_Maps")?.GetComponent<Canvas>();
-        c_settings = GameObject.Find("Canvas_Settings")?.GetComponent<Canvas>();
+        p_notes = GameObject.Find("Notes Section");
+        p_evidence = GameObject.Find("Evidence Section");
+        p_e_popup = GameObject.Find("Evidence Popup");
+        p_relationships = GameObject.Find("Relationship Section");
+        p_r_popup = GameObject.Find("Relationships Popup");
+        p_maps = GameObject.Find("Maps Section");
+        p_settings = GameObject.Find("Settings Section");
 
         b_notes = GameObject.Find("Button_Notes")?.GetComponent<Button>();
         b_evidence = GameObject.Find("Button_Evidence")?.GetComponent<Button>();
@@ -133,7 +131,7 @@ public class JournalManager : MonoBehaviour
         Open += OpenJournal;
 
         if(SceneManager.GetActiveScene().name != "Journal") 
-        journalPanel.gameObject.SetActive(false);
+        mainCanvas.gameObject.SetActive(false);
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
 
@@ -167,7 +165,7 @@ public class JournalManager : MonoBehaviour
         ClickNotesButton();
 
         // Change the action map to Journal (Not needed because Journal is in a SEPARATE scene)
-        // playerInput.SwitchCurrentActionMap("Journal/UI");
+        playerInput.SwitchCurrentActionMap("Journal/UI");
 
         InUse = true;
     }
@@ -179,7 +177,7 @@ public class JournalManager : MonoBehaviour
         // Set other components back to active ( Shoud be events setup in other components )
         // Change the used action map back to player
         // (Not needed because Journal is in a SEPARATE scene)
-        // playerInput.SwitchCurrentActionMap("Player");
+        playerInput.SwitchCurrentActionMap("Player");
 
         // Unsubscribe to events
         ProgressL -= UpdateIndex_L;
@@ -273,13 +271,13 @@ public class JournalManager : MonoBehaviour
     // Manually Clicking button to change sections in journal
     public void ClickNotesButton()
     {
-        c_notes.gameObject.SetActive(true);
-        c_evidence.gameObject.SetActive(false);
-        c_e_popup.gameObject.SetActive(false);
-        c_relationships.gameObject.SetActive(false);
-        c_r_popup.gameObject.SetActive(false);
-        c_maps.gameObject.SetActive(false);
-        c_settings.gameObject.SetActive(false);
+        p_notes.gameObject.SetActive(true);
+        p_evidence.gameObject.SetActive(false);
+        p_e_popup.gameObject.SetActive(false);
+        p_relationships.gameObject.SetActive(false);
+        p_r_popup.gameObject.SetActive(false);
+        p_maps.gameObject.SetActive(false);
+        p_settings.gameObject.SetActive(false);
         
         //Vector3 mediumPos = b_notes.transform.position;
         //mediumPos.y = 1021;
@@ -306,15 +304,15 @@ public class JournalManager : MonoBehaviour
 
     public void ClickEvidenceButton()
     {
-        c_notes.gameObject.SetActive(false);
-        c_evidence.gameObject.SetActive(true);
-        c_e_popup.gameObject.SetActive(true);
-        c_relationships.gameObject.SetActive(false);
-        c_r_popup.gameObject.SetActive(false);
-        c_maps.gameObject.SetActive(false);
-        c_settings.gameObject.SetActive(false);
+        p_notes.gameObject.SetActive(false);
+        p_evidence.gameObject.SetActive(true);
+        p_e_popup.gameObject.SetActive(true);
+        p_relationships.gameObject.SetActive(false);
+        p_r_popup.gameObject.SetActive(false);
+        p_maps.gameObject.SetActive(false);
+        p_settings.gameObject.SetActive(false);
 
-        c_e_popup.enabled = false;
+        p_e_popup.SetActive(false);
 
         //Vector3 mediumPos = b_notes.transform.position;
         //mediumPos.y = 1007;
@@ -341,15 +339,15 @@ public class JournalManager : MonoBehaviour
 
     public void ClickRelationshipsButton()
     {
-        c_notes.gameObject.SetActive(false);
-        c_evidence.gameObject.SetActive(false);
-        c_e_popup.gameObject.SetActive(false);
-        c_relationships.gameObject.SetActive(true);
-        c_r_popup.gameObject.SetActive(true);
-        c_maps.gameObject.SetActive(false);
-        c_settings.gameObject.SetActive(false);
+        p_notes.gameObject.SetActive(false);
+        p_evidence.gameObject.SetActive(false);
+        p_e_popup.gameObject.SetActive(false);
+        p_relationships.gameObject.SetActive(true);
+        p_r_popup.gameObject.SetActive(true);
+        p_maps.gameObject.SetActive(false);
+        p_settings.gameObject.SetActive(false);
 
-        c_r_popup.enabled = false;
+        p_r_popup.SetActive(false);
 
         //Vector3 mediumPos = b_notes.transform.position;
         //mediumPos.y = 1007;
@@ -376,13 +374,13 @@ public class JournalManager : MonoBehaviour
 
     public void ClickMapsButton()
     {
-        c_notes.gameObject.SetActive(false);
-        c_evidence.gameObject.SetActive(false);
-        c_e_popup.gameObject.SetActive(false);
-        c_relationships.gameObject.SetActive(false);
-        c_r_popup.gameObject.SetActive(false);
-        c_maps.gameObject.SetActive(true);
-        c_settings.gameObject.SetActive(false);
+        p_notes.gameObject.SetActive(false);
+        p_evidence.gameObject.SetActive(false);
+        p_e_popup.gameObject.SetActive(false);
+        p_relationships.gameObject.SetActive(false);
+        p_r_popup.gameObject.SetActive(false);
+        p_maps.gameObject.SetActive(true);
+        p_settings.gameObject.SetActive(false);
 
         //Vector3 mediumPos = b_notes.transform.position;
         //mediumPos.y = 1007;
@@ -409,13 +407,13 @@ public class JournalManager : MonoBehaviour
 
     public void ClickSettingsButton()
     {
-        c_notes.gameObject.SetActive(false);
-        c_evidence.gameObject.SetActive(false);
-        c_e_popup.gameObject.SetActive(false);
-        c_relationships.gameObject.SetActive(false);
-        c_r_popup.gameObject.SetActive(false);
-        c_maps.gameObject.SetActive(false);
-        c_settings.gameObject.SetActive(true);
+        p_notes.gameObject.SetActive(false);
+        p_evidence.gameObject.SetActive(false);
+        p_e_popup.gameObject.SetActive(false);
+        p_relationships.gameObject.SetActive(false);
+        p_r_popup.gameObject.SetActive(false);
+        p_maps.gameObject.SetActive(false);
+        p_settings.gameObject.SetActive(true);
 
         //Vector3 mediumPos = b_notes.transform.position;
         //mediumPos.y = 1007;
@@ -444,23 +442,23 @@ public class JournalManager : MonoBehaviour
     // Opening Evidence / Relationship popup windows
     public void OpenEvidencePopup()
     {
-        c_e_popup.enabled = true;
+        p_e_popup.SetActive(true);
     }
 
     public void OpenRelationshipsPopup()
     {
-        c_r_popup.enabled = true;
+        p_r_popup.SetActive(true);
     }
 
     // Closing Evidence / Relationship popup windows
     public void CloseEvidencePopup()
     {
-        c_e_popup.enabled = false;
+        p_e_popup.SetActive(false);
     }
 
     public void CloseRelationshipsPopup()
     {
-        c_r_popup.enabled = false;
+        p_r_popup.SetActive(false);
     }
 
 
@@ -519,6 +517,8 @@ public class JournalManager : MonoBehaviour
     // Open Journal
     public void OpenJournal()
     {
+        // Set the canvas component to true to display everything
+        mainCanvas.enabled = true;
     }
 
     // NOT NEEDED FOR NOW - UNLESS JOURNAL WILL BE IN THE SAME SCENE WITH OTHER THINGS
@@ -531,20 +531,20 @@ public class JournalManager : MonoBehaviour
     // Resetting pages when closing journal 
     public void CloseJournal()
     {
-        // Not needed because we are just gonna change back to the previous scene
-        // If evidence &relationship popup are both not active, close journal
-        //if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
-        //{
-        //    // Reset pages of sections
-        //    EvidenceTabController.Instance.currentPage = 0;
-        //    RelationshipsTabController.Instance.currentPage = 0;
-
-        //    // Set the canvas inactive
-        //    journalPanel.gameObject.SetActive(false);
-        //}
-
         // Change the input action map
         playerInput.SwitchCurrentActionMap("Player");
+
+        // Not needed because we are just gonna change back to the previous scene
+        // If evidence &relationship popup are both not active, close journal
+        if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
+        {
+            // Reset pages of sections
+            EvidenceTabController.Instance.currentPage = 0;
+            RelationshipsTabController.Instance.currentPage = 0;
+
+            // Set the canvas inactive
+            mainCanvas.enabled = false;
+        }
 
         // Move to previous scene
         SceneHistory.Instance.GoBack();
