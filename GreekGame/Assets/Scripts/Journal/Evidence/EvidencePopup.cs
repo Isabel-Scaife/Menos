@@ -97,6 +97,13 @@ public class EvidencePopup : MonoBehaviour
     // When this is called, tag this relationship and show this
     public void TagRelationship(RelationshipsData relationship)
     {
+        // IF THE CURRENT POSSIBLE RELATION LIST HAS THIS CHARACTER TAG
+        // break out from the function early
+        if(currentEvidence.possibleRelations.Contains(relationship))
+        {
+            return;
+        }
+
         // Update the evidence data to include this relation
         currentEvidence.possibleRelations.Add(relationship);
 
