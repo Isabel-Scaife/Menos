@@ -12,8 +12,6 @@ public class Vase : MinigameSwapper
 
     public async override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         await ScreenFader.Instance.FadeOut();
 
         CreateVase();

@@ -4,8 +4,6 @@ public class OliveTree : MinigameSwapper
 {
     public async override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         await ScreenFader.Instance.FadeOut();
 
         OliveMinigame minigame = followObject.GetComponent<OliveMinigame>();

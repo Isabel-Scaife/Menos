@@ -21,9 +21,6 @@ public class NPC : Interactable
     {
         // can be overridden if states determine which conversation should happen
 
-        // exits early if no interaction is allowed at this time
-        if (!canInteract) return;
-
         // shows dialogue (base class alwas runs first conversation)
         if (dialogues != null && dialogues.Count > 0)
         {

@@ -33,8 +33,6 @@ public class teleportMechanic : Interactable
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         //teleports both player and camera
          //must teleport both, otherwise camera goes all wonky and stops rendering
          //subtracts y so it teleports you slightly in front of the door

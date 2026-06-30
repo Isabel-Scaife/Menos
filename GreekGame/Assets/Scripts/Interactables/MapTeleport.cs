@@ -63,9 +63,6 @@ public class MapTeleport : Interactable
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         FadeTransition(player);
-
     }
 }

@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canInteract: 0
+  unlockFlag: has_jail_key
 --- !u!61 &290840954203143371
 BoxCollider2D:
   m_ObjectHideFlags: 0

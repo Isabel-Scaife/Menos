@@ -1,4 +1,3 @@
-using System.IO;
 using UnityEngine;
 
 public class Key : Item
@@ -9,10 +8,11 @@ public class Key : Item
     [SerializeField]
     public EvidenceData key;
 
+    [SerializeField]
+    private string collectedFlag;
+
     public override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         // place object in bird inventory
         if (player is Bird)
         {
@@ -40,15 +40,11 @@ public class Key : Item
                 SpawnManager.Instance.RemoveItem(itemID);
             }
 
+            // set a flag to mark this has been obtained
+            if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
+            else GameStateManager.Instance.SetFlag(collectedFlag);
+
             base.Interact(player);
         }
-    }
-
-    /// <summary>
-    /// Unlock door that corresponds
-    /// </summary>
-    private void OnDestroy()
-    {
-        door.Unlock();
     }
 }

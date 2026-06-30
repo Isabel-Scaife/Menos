@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem.LowLevel;
 
 public class HideBox : Interactable
 {
@@ -47,8 +46,6 @@ public class HideBox : Interactable
 
     public override void Interact(PlayerControlled player)
     {
-        if (!canInteract) return;
-
         //if player isn't currently hiding
         if (player.hidden == false && player is Player)
         {
