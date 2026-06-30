@@ -1705,6 +1705,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1031931044}
   m_SourcePrefab: {fileID: 100100000, guid: c301caf8ee618c84797a50e608cc7e68, type: 3}
+--- !u!114 &249120054 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5363838321660817236, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1143537753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaf0d380ab042c458d3162bb0aa9582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RelationshipsTabController
 --- !u!1 &257523679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4833346755544732464, guid: c301caf8ee618c84797a50e608cc7e68, type: 3}
@@ -2052,23 +2063,107 @@ MonoBehaviour:
     m_ActionId: 6b0ebbce-df98-4fa1-add3-f176c083cff9
     m_ActionName: 'Dialogue/AdvanceDialogue[/Keyboard/numpad0,/Keyboard/e,/Keyboard/enter,/Keyboard/space,/Mouse/leftButton]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884898296}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: InvokeProgressL
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 24e7f96d-3197-4536-aa05-65bd18bdd513
     m_ActionName: 'Journal/UI/SectionProgressL[/Keyboard/q]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884898296}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: InvokeProgressR
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: e9da2c17-cf35-49ad-b48d-cb77361889a8
     m_ActionName: 'Journal/UI/SectionProgressR[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884898296}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: CloseJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 8af2568e-fd88-44ca-9ff8-a57bc5eda803
     m_ActionName: 'Journal/UI/Exit[/Keyboard/escape]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456394338}
+        m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
+        m_MethodName: PreviousPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 249120054}
+        m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
+        m_MethodName: PreviousPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0d2ff486-6551-4322-9990-b0d2356f8c9f
     m_ActionName: 'Journal/UI/PageProgressL[/Keyboard/a]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1456394338}
+        m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 249120054}
+        m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
+        m_MethodName: NextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 2251f674-3fb1-4265-b989-a7151f91d8c5
     m_ActionName: 'Journal/UI/PageProgressR[/Keyboard/d]'
   - m_PersistentCalls:
@@ -2132,7 +2227,19 @@ MonoBehaviour:
     m_ActionId: b73e6832-7619-4bb6-8f3a-90bbe1bc9809
     m_ActionName: Player/JournalExit
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1884898296}
+        m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
+        m_MethodName: CloseJournal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5f2c27ee-8d17-46fe-ad5d-6fbdc0504c93
     m_ActionName: 'Journal/UI/ClosePopup[/Keyboard/tab]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -117720,6 +117827,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6990950424645656757, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 294112413}
     - target: {fileID: 7057740648383259660, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -117996,7 +118107,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 475639597447274292, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -120074,6 +120186,17 @@ PolygonCollider2D:
       - {x: 20, y: -14}
       - {x: 20, y: 14}
   m_UseDelaunayMesh: 0
+--- !u!114 &1456394338 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2085398879148913437, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1143537753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9af47d6661eeae43ba5dd649b71f40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceTabController
 --- !u!1 &1481681878
 GameObject:
   m_ObjectHideFlags: 0
@@ -154820,7 +154943,7 @@ PrefabInstance:
     - target: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: playerInput
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 294112413}
     - target: {fileID: 3399567360816744471, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_Name
       value: Player
@@ -155147,6 +155270,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1884898296 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6990950424645656757, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1143537753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d35b425aacd2bc428c9da1b89358678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JournalManager
 --- !u!1001 &1898004028
 PrefabInstance:
   m_ObjectHideFlags: 0
