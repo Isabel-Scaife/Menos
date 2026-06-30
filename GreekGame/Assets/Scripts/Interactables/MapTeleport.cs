@@ -13,13 +13,11 @@ public class MapTeleport : Interactable
         NoOffset
     }
 
-    [Header("Camera Bounds")]
-    [SerializeField] private PolygonCollider2D mapBounds;
-
     private CinemachineConfiner2D confiner;
 
     [Header("Teloport Location")]
     [SerializeField] private Transform teleportTo;
+    [SerializeField] private Collider2D newMapBounds;
     [SerializeField] private Direction direction;
     [SerializeField] private float offset = 5;
 
@@ -44,15 +42,15 @@ public class MapTeleport : Interactable
     /// <summary>
     /// fade to black, teleport, fade back in 
     /// </summary>
-    async void FadeTransition(PlayerControlled player)
+    async void FadeTransition(Transform player)
     {
         await ScreenFader.Instance.FadeOut();
 
         // apply new camera bounds
-        confiner.BoundingShape2D = mapBounds;
+        confiner.BoundingShape2D = newMapBounds;
 
         // set position
-        player.transform.position = newPos;
+        player.position = newPos;
 
         await ScreenFader.Instance.FadeIn();
     }
@@ -63,6 +61,14 @@ public class MapTeleport : Interactable
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        FadeTransition(player);
+        FadeTransition(player.transform);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!canInteract)
+        {
+            FadeTransition(collision.transform);
+        }
     }
 }

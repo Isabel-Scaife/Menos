@@ -17,3 +17,4 @@ MonoBehaviour:
   description: The only empty wineglass at the Dionysus temple.
   icon: {fileID: 453399515169039039, guid: ba1bf83c4190bd246bc554b7fd72e14e, type: 3}
   possibleRelations: []
+  discovered: 0

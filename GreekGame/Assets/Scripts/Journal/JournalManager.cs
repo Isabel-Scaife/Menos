@@ -24,8 +24,12 @@ public class JournalManager : MonoBehaviour
     // ** DATA CAN HAVE ITS STATUS SAVED AND
     //    EVERYTIME GAME LOADS DISCOVERED THINGS CAN BE POPPED BACK IN
     // Check whether evidence | relationships | map are discovered
-    private static HashSet<EvidenceData> discoveredEvidence = new HashSet<EvidenceData>();
-    private static HashSet<RelationshipsData> unlockedRelations = new HashSet<RelationshipsData>();
+    private static List<EvidenceData> discoveredEvidence = new List<EvidenceData>();
+    private static List<RelationshipsData> unlockedRelations = new List<RelationshipsData>();
+
+    // Public property to access data inside list
+    public List<EvidenceData> DiscoveredEvidence { get { return discoveredEvidence; } }
+    public List<RelationshipsData> UnlockedRelations { get { return unlockedRelations; } }
 
     // Going to be used for section changes and button position reset
     public delegate void ChangeSection();
@@ -135,7 +139,7 @@ public class JournalManager : MonoBehaviour
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
 
-        DiscoveredEvidence();
+        RetrieveDiscoveredEvidence();
     }
 
     // Update is called once per frame
@@ -453,11 +457,13 @@ public class JournalManager : MonoBehaviour
     // Closing Evidence / Relationship popup windows
     public void CloseEvidencePopup()
     {
+        Debug.Log("Close Evidence Popup");
         p_e_popup.SetActive(false);
     }
 
     public void CloseRelationshipsPopup()
     {
+        Debug.Log("Close Relationships Popup");
         p_r_popup.SetActive(false);
     }
 
@@ -476,16 +482,16 @@ public class JournalManager : MonoBehaviour
 
     public void UnlockEvidence(EvidenceData evidence)   // Show the pre-defined evidence data
     {
-        // This is possible because HashSets don't allow same entries to be added multiple times
-        if (discoveredEvidence.Add(evidence))
+        if (!discoveredEvidence.Contains(evidence))
         {
+            discoveredEvidence.Add(evidence);
             Debug.Log("New Evidence Discovered: " + evidence.name);
             EvidenceTabController.Instance.RefreshPage();
         }
     }
 
     // Retrieve Saved Evidence 
-    public void DiscoveredEvidence()
+    public void RetrieveDiscoveredEvidence()
     {
         for (int i = 0; i < eDatabase.Evidences.Length; i++)
         {
@@ -500,8 +506,9 @@ public class JournalManager : MonoBehaviour
     // Relationships
     public void UnlockRelation(RelationshipsData relationship)
     {
-        if(unlockedRelations.Add(relationship))
+        if(!unlockedRelations.Contains(relationship))
         {
+            unlockedRelations.Add(relationship);
             Debug.Log("New Relationship Discovered: " + relationship.name);
             RelationshipsTabController.Instance.RefreshPage();
         }
@@ -535,19 +542,26 @@ public class JournalManager : MonoBehaviour
         playerInput.SwitchCurrentActionMap("Player");
 
         // Not needed because we are just gonna change back to the previous scene
-        // If evidence &relationship popup are both not active, close journal
-        if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
-        {
-            // Reset pages of sections
-            EvidenceTabController.Instance.currentPage = 0;
-            RelationshipsTabController.Instance.currentPage = 0;
+        // If evidence &relationship popup are both not active, close journal --> Not needed bc different key binding is used to close popups
+        //if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
+        //{
+        //    // Reset pages of sections
+        //    EvidenceTabController.Instance.currentPage = 0;
+        //    RelationshipsTabController.Instance.currentPage = 0;
 
-            // Set the canvas inactive
-            mainCanvas.enabled = false;
-        }
+        //    // Set the canvas inactive
+        //    mainCanvas.enabled = false;
+        //}
 
-        // Move to previous scene
-        SceneHistory.Instance.GoBack();
+        // Reset pages of sections
+        EvidenceTabController.Instance.currentPage = 0;
+        RelationshipsTabController.Instance.currentPage = 0;
+
+        // Set the canvas inactive
+        mainCanvas.enabled = false;
+
+        // Move to previous scene (Not needed unless Journal is in a separate scene)
+        // SceneHistory.Instance.GoBack();
     }
 
 }
