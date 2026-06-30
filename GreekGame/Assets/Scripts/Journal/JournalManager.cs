@@ -526,6 +526,26 @@ public class JournalManager : MonoBehaviour
     {
         // Set the canvas component to true to display everything
         mainCanvas.enabled = true;
+
+        playerInput.SwitchCurrentActionMap("Journal/UI");
+
+        ProgressL += UpdateIndex_L;
+        ProgressL += UpdateSection;
+
+        ProgressR += UpdateIndex_R;
+        ProgressR += UpdateSection;
+
+        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
+        Open += OpenJournal;
+
+        // After Journal Instance has been set active and open journal was triggered, this runs
+        // First section to see is notes
+        ClickNotesButton();
+
+        // Change the action map to Journal (Not needed because Journal is in a SEPARATE scene)
+        // playerInput.SwitchCurrentActionMap("Journal/UI");
+
+        InUse = true;
     }
 
     // NOT NEEDED FOR NOW - UNLESS JOURNAL WILL BE IN THE SAME SCENE WITH OTHER THINGS
@@ -552,6 +572,18 @@ public class JournalManager : MonoBehaviour
         //    // Set the canvas inactive
         //    mainCanvas.enabled = false;
         //}
+        
+        // Unsubscribe to events
+        ProgressL -= UpdateIndex_L;
+        ProgressL -= UpdateSection;
+
+        ProgressR -= UpdateIndex_R;
+        ProgressR -= UpdateSection;
+
+        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
+        Open -= OpenJournal;
+
+        InUse = false;
 
         // Reset pages of sections
         EvidenceTabController.Instance.currentPage = 0;
@@ -564,4 +596,5 @@ public class JournalManager : MonoBehaviour
         // SceneHistory.Instance.GoBack();
     }
 
+    
 }

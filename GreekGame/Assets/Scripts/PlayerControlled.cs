@@ -187,7 +187,7 @@ public class PlayerControlled : MonoBehaviour
 
     public void OpenJournalUI()
     {
-        SceneManager.LoadScene("Journal");
+        JournalManager.Instance.OpenJournal();
     }
 }
 
