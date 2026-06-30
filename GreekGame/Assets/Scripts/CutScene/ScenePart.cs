@@ -24,7 +24,6 @@ public class ScenePart : MonoBehaviour
         if (thisDialogue != null)
         {
             if (DialogueManager.Instance == null) { Debug.Log("No DialogueManager in scene"); return; }
-            //player.gameObject.SetActive(true);      // temp fix just so i can accept dialogue input
             DialogueManager.Instance.BeginDialogue(thisDialogue, player);
         }
     }
@@ -46,6 +45,7 @@ public class ScenePart : MonoBehaviour
             // no next scene return to player
             player.gameObject.SetActive(true);
             disableAfter.SetActive(false);
+            this.gameObject.SetActive(false);
         }
 
     }
