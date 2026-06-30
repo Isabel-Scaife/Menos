@@ -30,18 +30,23 @@ public class PlayerControlled : MonoBehaviour
 
     [Header("Player Input")]
     [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private bool pauseMovement;
     [SerializeField] protected bool controlBird = false;
 
     // guard detection
     public bool hidden = false;
 
     public Vector2 Direction { get { return direction; } }
+    public bool PauseMovement { get => pauseMovement; set => pauseMovement = value; }
+
 
     private void Awake()
     {
         // gets components
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        PauseMovement = false;
     }
 
     protected virtual void FixedUpdate()
@@ -129,6 +134,8 @@ public class PlayerControlled : MonoBehaviour
     {
         direction = context.ReadValue<Vector2>();
 
+        if (PauseMovement) direction = Vector2.zero;
+
         if( direction != Vector2.zero)
         {
             if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.normalized.y))
@@ -170,7 +177,10 @@ public class PlayerControlled : MonoBehaviour
         }
 
         // play correct facing animation
-        animator.SetInteger("direction", (int)faceDirection);
+        if (animator != null)
+        {
+            animator.SetInteger("direction", (int)faceDirection);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
