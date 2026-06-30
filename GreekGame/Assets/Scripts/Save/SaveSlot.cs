@@ -158,6 +158,18 @@ public class SaveSlot : MonoBehaviour
                     (QuestManager.Instance, ID, "QuestManager.json");
             }
 
+            if(JournalManager.Instance != null)
+            {
+                SaveSystem.SaveData<JournalManager, DiscoveredEvidenceData>
+                    (null, ID, "Evidence.json");
+            }
+
+            if(JournalManager.Instance != null)
+            {
+                SaveSystem.SaveData<JournalManager, DiscoveredRelationshipData>
+                    (null, ID, "Relationships.json");
+            }
+
             Debug.Log("Save Successful! Files found at: " + Application.persistentDataPath);
         }
         catch (Exception e)
