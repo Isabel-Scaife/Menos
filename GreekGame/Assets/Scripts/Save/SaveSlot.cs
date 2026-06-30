@@ -161,13 +161,13 @@ public class SaveSlot : MonoBehaviour
             if(JournalManager.Instance != null)
             {
                 SaveSystem.SaveData<JournalManager, DiscoveredEvidenceData>
-                    (null, ID, "Evidence.json");
+                    (JournalManager.Instance, ID, "Evidence.json");
             }
 
             if(JournalManager.Instance != null)
             {
                 SaveSystem.SaveData<JournalManager, DiscoveredRelationshipData>
-                    (null, ID, "Relationships.json");
+                    (JournalManager.Instance, ID, "Relationships.json");
             }
 
             Debug.Log("Save Successful! Files found at: " + Application.persistentDataPath);
