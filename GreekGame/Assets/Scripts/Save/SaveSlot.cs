@@ -93,6 +93,12 @@ public class SaveSlot : MonoBehaviour
         GameStateManagerData stateData = SaveSystem.LoadData<GameStateManagerData>(ID, "GameStateManager.json");
         GameStateManager.Instance.LoadData(stateData);
 
+        DiscoveredEvidenceData evidenceData = SaveSystem.LoadData<DiscoveredEvidenceData>(ID, "Evidence.json");
+        JournalManager.Instance.LoadData(evidenceData);
+
+        DiscoveredRelationshipData relationshipData = SaveSystem.LoadData<DiscoveredRelationshipData>(ID, "Relationships.json");
+        JournalManager.Instance.LoadData(relationshipData);
+
         // switch to scene
         SceneManager.LoadScene(ProgressionManager.Instance.SceneName);
     }
@@ -156,6 +162,18 @@ public class SaveSlot : MonoBehaviour
             {
                 SaveSystem.SaveData<QuestManager, QuestManagerData>
                     (QuestManager.Instance, ID, "QuestManager.json");
+            }
+
+            if(JournalManager.Instance != null)
+            {
+                SaveSystem.SaveData<JournalManager, DiscoveredEvidenceData>
+                    (JournalManager.Instance, ID, "Evidence.json");
+            }
+
+            if(JournalManager.Instance != null)
+            {
+                SaveSystem.SaveData<JournalManager, DiscoveredRelationshipData>
+                    (JournalManager.Instance, ID, "Relationships.json");
             }
 
             Debug.Log("Save Successful! Files found at: " + Application.persistentDataPath);

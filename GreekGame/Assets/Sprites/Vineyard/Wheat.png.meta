@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: df244299ba95eee40baba2a6c56561f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4818313753074155868
+    second: WheatSheet_0
+  - first:
+      213: -1504871244760539903
+    second: WheatSheet_1
+  - first:
+      213: 4936661642335583362
+    second: WheatSheet_2
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wheat_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14dd3db72f9604488d76fb5f2756eac
+      internalID: 1880025098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: da17bb79675c75145a9265c2c6fd90a9
+      internalID: -1544242830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -13, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae91880df8c17c4ba6f1a86420aa36a
+      internalID: 1605875205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4196b3eba6e0b4b968122ce5558f77
+      internalID: -1120505384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15432064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4160717b87e34543b4161322e908e97
+      internalID: 1426304640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 8, y: -113}
+        - {x: 8, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9120f5f008b5611498af7d74b0cb3010
+      internalID: -634814749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -113}
+        - {x: 25, y: -113}
+        - {x: 25, y: -45}
+        - {x: -13, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c489026a53fd34fb41d1a065ef7a4f
+      internalID: -1195482312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wheat_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 300
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1543206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -113}
+        - {x: 8, y: -113}
+        - {x: 8, y: -45}
+        - {x: -25, y: -45}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24660a4580a01be4397b982a2a0fe57c
+      internalID: -1785374649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d19e291457757954bb8963e58f4bf4ac
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":300.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Wheat_0: 1880025098
+      Wheat_1: -1544242830
+      Wheat_2: 1605875205
+      Wheat_3: -1120505384
+      Wheat_4: 1426304640
+      Wheat_5: -634814749
+      Wheat_6: -1195482312
+      Wheat_7: -1785374649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

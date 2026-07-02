@@ -13,7 +13,7 @@ public class MapTeleport : Interactable
         NoOffset
     }
 
-    private CinemachineConfiner2D confiner;
+    [SerializeField] private CinemachineConfiner2D confiner;
 
     [Header("Teloport Location")]
     [SerializeField] private Transform teleportTo;
@@ -25,7 +25,7 @@ public class MapTeleport : Interactable
 
     private void Awake()
     {
-        confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
+        if(confiner == null) confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
 
         // determine teleport position 
         newPos = teleportTo.position;
@@ -42,17 +42,19 @@ public class MapTeleport : Interactable
     /// <summary>
     /// fade to black, teleport, fade back in 
     /// </summary>
-    async void FadeTransition(Transform player)
+    async void FadeTransition(PlayerControlled player)
     {
+        player.PauseMovement = true;
         await ScreenFader.Instance.FadeOut();
+
+        // set position
+        player.transform.position = newPos;
 
         // apply new camera bounds
         confiner.BoundingShape2D = newMapBounds;
 
-        // set position
-        player.position = newPos;
-
         await ScreenFader.Instance.FadeIn();
+        player.PauseMovement = false;
     }
 
     /// <summary>
@@ -66,9 +68,6 @@ public class MapTeleport : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!canInteract)
-        {
-            FadeTransition(collision.transform);
-        }
+        FadeTransition(collision.GetComponent<PlayerControlled>());
     }
 }

@@ -35,6 +35,12 @@ public class CameraFollow : MonoBehaviour
     {
         cinemachineCamera.Lens.OrthographicSize = fov;
     }
+
+    public void SetScreenPos(Vector2 screenPos)
+    {
+        // cjange sreen postion need cinemachine position composer
+    }
+
     public void ResetCamera()
     {
         SetTarget(originalTarget);

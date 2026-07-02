@@ -8,6 +8,7 @@ public class MinigameSwapper : Item
     [SerializeField] protected Transform followObject;
     [SerializeField] private Collider2D mapBounds;
     [SerializeField] private float fov = 6;
+    private Vector2 screenPostion = Vector2.zero;
 
     [Header("Minigame Canvas")]
     [SerializeField] private GameObject canvas;
@@ -27,6 +28,7 @@ public class MinigameSwapper : Item
         confiner.BoundingShape2D = mapBounds;
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
+        CameraFollow.Instance.SetScreenPos(screenPostion);
         if (canvas != null) canvas.SetActive(true);
     }
 
@@ -34,14 +36,14 @@ public class MinigameSwapper : Item
     {
         confiner.BoundingShape2D = originalBounds;
         CameraFollow.Instance.ResetCamera();
-        playerRef.ResumeInputControls();
+        playerRef.PauseMovement = false;
         if (canvas != null) canvas.SetActive(false);
     }
 
     public override void Interact(PlayerControlled player)
     {
         originalBounds = confiner.BoundingShape2D;
-        player.PauseInputControls();
+        player.PauseMovement = true;
         playerRef = player;
         base.Interact(player);
     }

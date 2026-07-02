@@ -44,8 +44,8 @@ public class ScreenFader : MonoBehaviour
     /// </summary>
     public async Task FadeOut()
     {
-        await Fade(1);
         SetDamping(Vector3.zero);
+        await Fade(1);
     }
 
     /// <summary>
