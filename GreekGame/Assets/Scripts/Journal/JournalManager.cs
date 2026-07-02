@@ -121,6 +121,7 @@ public class JournalManager : MonoBehaviour
     void Start()
     {
         // Subscribe to button or controller triggered events (Also Unsubscribe to previous methods)
+        // ** THIS IS SUBSCRIBED WHEN JOURNAL IS OPEN | COMMENT THIS OUT WHEN TESTING IN THE GAME SCENES
         ProgressL -= UpdateIndex_L;
         ProgressL -= UpdateSection;
         ProgressL += UpdateIndex_L;
@@ -134,8 +135,7 @@ public class JournalManager : MonoBehaviour
         // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
         Open += OpenJournal;
 
-        //if(SceneManager.GetActiveScene().name != "Journal") 
-        //mainCanvas.gameObject.SetActive(false);
+        ClickNotesButton();
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
 
@@ -150,50 +150,15 @@ public class JournalManager : MonoBehaviour
     }
 
    
+    // ** JOURNAL MANAGER SHOULD NOT BE ENABLED AND DISABLED. THEREFORE, THESE CODE WERE MOVED TO OPEN/CLOSE JOURNAL
     private void OnEnable()
     {
-        playerInput.SwitchCurrentActionMap("Journal/UI");
-
-        ProgressL += UpdateIndex_L;
-        ProgressL += UpdateSection;
-
-        ProgressR += UpdateIndex_R;
-        ProgressR += UpdateSection;
-
-        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
-        Open += OpenJournal;
-
-
-        // After Journal Instance has been set active and open journal was triggered, this runs
-        // First section to see is notes
-        ClickNotesButton();
-
-        // Change the action map to Journal (Not needed because Journal is in a SEPARATE scene)
-        playerInput.SwitchCurrentActionMap("Journal/UI");
-
-        InUse = true;
     }
 
     // This can later be called when it is integrated within the main overlay screen
     // Just simply disable the journal UI
     private void OnDisable()
     {
-        // Set other components back to active ( Shoud be events setup in other components )
-        // Change the used action map back to player
-        // (Not needed because Journal is in a SEPARATE scene)
-        playerInput.SwitchCurrentActionMap("Player");
-
-        // Unsubscribe to events
-        ProgressL -= UpdateIndex_L;
-        ProgressL -= UpdateSection;
-
-        ProgressR -= UpdateIndex_R;
-        ProgressR -= UpdateSection;
-
-        // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
-        Open -= OpenJournal;
-
-        InUse = false;
     }
 
     // Disable Player Input component (Used when player is taking notes | Can be used in other instances such as when UI shouldn't change)
@@ -225,24 +190,28 @@ public class JournalManager : MonoBehaviour
     {
         if (currentIndex > 0)
         {
-            currentIndex--;
+            currentIndex -= 1;
         }
         else
         {
             currentIndex = 4;
         }
+
+        Debug.Log("Progress Left: " + currentIndex);
     }
 
     void UpdateIndex_R()
     {
         if(currentIndex < 4)
         {
-            currentIndex++;
+            currentIndex += 1;
         }
         else
         {
             currentIndex = 0;
         }
+
+        Debug.Log("Progress Right: " + currentIndex);
     }
 
     void UpdateSection()
@@ -536,7 +505,7 @@ public class JournalManager : MonoBehaviour
         ProgressR += UpdateSection;
 
         // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
-        Open += OpenJournal;
+        // Open += OpenJournal;
 
         // After Journal Instance has been set active and open journal was triggered, this runs
         // First section to see is notes
@@ -560,18 +529,6 @@ public class JournalManager : MonoBehaviour
     {
         // Change the input action map
         playerInput.SwitchCurrentActionMap("Player");
-
-        // Not needed because we are just gonna change back to the previous scene
-        // If evidence &relationship popup are both not active, close journal --> Not needed bc different key binding is used to close popups
-        //if (!EvidencePopup.open && !RelationshipsPopup.open && !escapeHandledThisFrame)
-        //{
-        //    // Reset pages of sections
-        //    EvidenceTabController.Instance.currentPage = 0;
-        //    RelationshipsTabController.Instance.currentPage = 0;
-
-        //    // Set the canvas inactive
-        //    mainCanvas.enabled = false;
-        //}
         
         // Unsubscribe to events
         ProgressL -= UpdateIndex_L;
@@ -597,4 +554,14 @@ public class JournalManager : MonoBehaviour
     }
 
     
+    // ** Loading saved journal data
+    public void LoadData(DiscoveredRelationshipData relationshipData)
+    {
+
+    }
+
+    public void LoadData(DiscoveredEvidenceData evidenceData)
+    {
+
+    }
 }
