@@ -17,4 +17,4 @@ MonoBehaviour:
   description: 'Seed collected from farmer. '
   icon: {fileID: 2684744340924119359, guid: 926660b7a5aeaf84880e34f53bf01808, type: 3}
   possibleRelations: []
-  discovered: 1
+  discovered: 0

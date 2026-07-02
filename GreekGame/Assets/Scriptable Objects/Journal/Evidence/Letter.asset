@@ -17,4 +17,4 @@ MonoBehaviour:
   description: 'A Letter that was sent from Aglaraus to Alcippe. '
   icon: {fileID: 5668723071718756358, guid: dc1fedfdf42563a4b9cca920a38eb87d, type: 3}
   possibleRelations: []
-  discovered: 1
+  discovered: 0
