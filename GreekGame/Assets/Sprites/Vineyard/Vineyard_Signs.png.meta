@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 676d36c841e8b2a42a35fde2242b6d47
+guid: d6de567bae417a148b90f8c85e541017
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8808650780217112902
-    second: Temple_Guard_0
+      213: -9101687572967448756
+    second: Vineyard_Signs_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -87,25 +87,12 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 12
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
+    overridden: 1
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -113,23 +100,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Temple_Guard_0
+      name: Vineyard_Signs_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 6
-        width: 161
-        height: 428
+        x: 0
+        y: 0
+        width: 150
+        height: 150
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
-      tessellationDetail: -1
+      physicsShape:
+      - - {x: -9, y: -75}
+        - {x: 8, y: -75}
+        - {x: 8, y: -42}
+        - {x: -9, y: -42}
+      tessellationDetail: 0
       bones: []
-      spriteID: 649fe41e63d9e3a70800000000000000
-      internalID: 8808650780217112902
+      spriteID: c4f10bc006f40b180800000000000000
+      internalID: -9101687572967448756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vineyard_Signs_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -9, y: -75}
+        - {x: 8, y: -75}
+        - {x: 8, y: -42}
+        - {x: -9, y: -42}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0552574506f1ddb43a63c3fd730478e5
+      internalID: 1732368960
       vertices: []
       indices: 
       edges: []
@@ -138,7 +155,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 43d04bfdbce4001408b4c0576aad539f
+    spriteID: 0d560ccc2deca0e409c5e82fa5f5e594
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +163,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":150.0,"y":150.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Temple_Guard_0: 8808650780217112902
+      Vineyard_Signs_0: -9101687572967448756
+      Vineyard_Signs_1: 1732368960
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
