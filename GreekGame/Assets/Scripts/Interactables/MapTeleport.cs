@@ -63,7 +63,7 @@ public class MapTeleport : Interactable
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        FadeTransition(player.transform);
+        FadeTransition(player);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -6,9 +6,6 @@ public class Key : Item
     private Door door;
 
     [SerializeField]
-    public EvidenceData key;
-
-    [SerializeField]
     private string collectedFlag;
 
     public override void Interact(PlayerControlled player)
@@ -26,10 +23,6 @@ public class Key : Item
         // destory key if it's not currently held
         else if (player is Player && transform.parent == null)
         {
-            key.discovered = true;
-
-            Debug.Log("Key Discovered: " + key.discovered);
-
             // remove ID from spawn manager
             if (SpawnManager.Instance == null)
             {
