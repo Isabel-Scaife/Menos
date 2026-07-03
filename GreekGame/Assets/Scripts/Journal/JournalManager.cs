@@ -72,17 +72,15 @@ public class JournalManager : MonoBehaviour
     [SerializeField]
     private GameObject p_settings;
 
-    // Store Buttons to manipulate location
+    // Store Button(Section) RectTransform to manipulate location
     [SerializeField]
-    private Button b_notes;
+    private RectTransform[] b_section_location = new RectTransform[5];
     [SerializeField]
-    private Button b_evidence;
-    [SerializeField]
-    private Button b_relationships;
-    [SerializeField]
-    private Button b_maps;
-    [SerializeField]
-    private Button b_settings;
+    private Image[] b_section_img = new Image[5];
+
+    // Color fields to change button tint
+    private Color b_default_color = new Color(205f/255f, 189f/255f, 145f/255f, 1f);
+    private Color b_notSelected_color = new Color(164f/255f, 147f/255f, 100f/255f, 1f);
 
     public PlayerInput playerInput;   // Need to switch back to player map
    
@@ -111,11 +109,17 @@ public class JournalManager : MonoBehaviour
         p_maps = GameObject.Find("Maps Section");
         p_settings = GameObject.Find("Settings Section");
 
-        b_notes = GameObject.Find("Button_Notes")?.GetComponent<Button>();
-        b_evidence = GameObject.Find("Button_Evidence")?.GetComponent<Button>();
-        b_relationships = GameObject.Find("Button_Relationships")?.GetComponent<Button>();
-        b_maps = GameObject.Find("Button_Maps")?.GetComponent<Button>();
-        b_settings = GameObject.Find("Button_Settings")?.GetComponent<Button>();
+        b_section_location[0] = GameObject.Find("Button_Notes")?.GetComponent<RectTransform>();
+        b_section_location[1] = GameObject.Find("Button_Evidence")?.GetComponent<RectTransform>();
+        b_section_location[2] = GameObject.Find("Button_Relationships")?.GetComponent<RectTransform>();
+        b_section_location[3] = GameObject.Find("Button_Maps")?.GetComponent<RectTransform>();
+        b_section_location[4] = GameObject.Find("Button_Settings")?.GetComponent<RectTransform>();
+
+        b_section_img[0] = GameObject.Find("Button_Notes")?.GetComponent<Image>();
+        b_section_img[1] = GameObject.Find("Button_Evidence")?.GetComponent<Image>();
+        b_section_img[2] = GameObject.Find("Button_Relationships")?.GetComponent<Image>();
+        b_section_img[3] = GameObject.Find("Button_Maps")?.GetComponent<Image>();
+        b_section_img[4] = GameObject.Find("Button_Settings")?.GetComponent<Image>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -245,6 +249,7 @@ public class JournalManager : MonoBehaviour
     // Manually Clicking button to change sections in journal
     public void ClickNotesButton()
     {
+        // Activate Notes Section only
         p_notes.gameObject.SetActive(true);
         p_evidence.gameObject.SetActive(false);
         p_e_popup.gameObject.SetActive(false);
@@ -253,31 +258,26 @@ public class JournalManager : MonoBehaviour
         p_maps.gameObject.SetActive(false);
         p_settings.gameObject.SetActive(false);
         
-        //Vector3 mediumPos = b_notes.transform.position;
-        //mediumPos.y = 1021;
-        //b_notes.transform.position = mediumPos;
-
-        //mediumPos = b_evidence.transform.position;
-        //mediumPos.y = 1007;
-        //b_evidence.transform.position = mediumPos;
-
-        //mediumPos = b_relationships.transform.position;
-        //mediumPos.y = 1007;
-        //b_relationships.transform.position = mediumPos;
-
-        //mediumPos = b_maps.transform.position;
-        //mediumPos.y = 1007;
-        //b_maps.transform.position = mediumPos;
-
-        //mediumPos = b_settings.transform.position;
-        //mediumPos.y = 1007;
-        //b_settings.transform.position = mediumPos;
-
+        // Update currentIndex
         currentIndex = 0;
+
+        // Adjust button position and color
+        foreach (RectTransform rectTransform in b_section_location)
+        {
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 465f);
+        }
+        b_section_location[currentIndex].anchoredPosition = new Vector2(b_section_location[currentIndex].anchoredPosition.x, 475f);
+
+        foreach (Image img in b_section_img)
+        {
+            img.color = b_notSelected_color;
+        }
+        b_section_img[currentIndex].color = b_default_color;
     }
 
     public void ClickEvidenceButton()
     {
+        // Activate Evidence Section only
         p_notes.gameObject.SetActive(false);
         p_evidence.gameObject.SetActive(true);
         p_e_popup.gameObject.SetActive(true);
@@ -288,31 +288,26 @@ public class JournalManager : MonoBehaviour
 
         p_e_popup.SetActive(false);
 
-        //Vector3 mediumPos = b_notes.transform.position;
-        //mediumPos.y = 1007;
-        //b_notes.transform.position = mediumPos;
-
-        //mediumPos = b_evidence.transform.position;
-        //mediumPos.y = 1021;
-        //b_evidence.transform.position = mediumPos;
-
-        //mediumPos = b_relationships.transform.position;
-        //mediumPos.y = 1007;
-        //b_relationships.transform.position = mediumPos;
-
-        //mediumPos = b_maps.transform.position;
-        //mediumPos.y = 1007;
-        //b_maps.transform.position = mediumPos;
-
-        //mediumPos = b_settings.transform.position;
-        //mediumPos.y = 1007;
-        //b_settings.transform.position = mediumPos;
-
+        // Update currentIndex
         currentIndex = 1;
+
+        // Adjust button position and color
+        foreach (RectTransform rectTransform in b_section_location)
+        {
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 465f);
+        }
+        b_section_location[currentIndex].anchoredPosition = new Vector2(b_section_location[currentIndex].anchoredPosition.x, 475f);
+
+        //foreach (Image img in b_section_img)
+        //{
+        //    img.color = b_notSelected_color;
+        //}
+        //b_section_img[currentIndex].color = b_default_color;
     }
 
     public void ClickRelationshipsButton()
     {
+        // Activate Relationship Section only
         p_notes.gameObject.SetActive(false);
         p_evidence.gameObject.SetActive(false);
         p_e_popup.gameObject.SetActive(false);
@@ -323,31 +318,26 @@ public class JournalManager : MonoBehaviour
 
         p_r_popup.SetActive(false);
 
-        //Vector3 mediumPos = b_notes.transform.position;
-        //mediumPos.y = 1007;
-        //b_notes.transform.position = mediumPos;
-
-        //mediumPos = b_evidence.transform.position;
-        //mediumPos.y = 1007;
-        //b_evidence.transform.position = mediumPos;
-
-        //mediumPos = b_relationships.transform.position;
-        //mediumPos.y = 1021;
-        //b_relationships.transform.position = mediumPos;
-
-        //mediumPos = b_maps.transform.position;
-        //mediumPos.y = 1007;
-        //b_maps.transform.position = mediumPos;
-
-        //mediumPos = b_settings.transform.position;
-        //mediumPos.y = 1007;
-        //b_settings.transform.position = mediumPos;
-
+        // Update currentIndex
         currentIndex = 2;
+
+        // Adjust button position and color
+        foreach (RectTransform rectTransform in b_section_location)
+        {
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 465f);
+        }
+        b_section_location[currentIndex].anchoredPosition = new Vector2(b_section_location[currentIndex].anchoredPosition.x, 475f);
+
+        foreach (Image img in b_section_img)
+        {
+            img.color = b_notSelected_color;
+        }
+        b_section_img[currentIndex].color = b_default_color;
     }
 
     public void ClickMapsButton()
     {
+        // Activate Maps Section only
         p_notes.gameObject.SetActive(false);
         p_evidence.gameObject.SetActive(false);
         p_e_popup.gameObject.SetActive(false);
@@ -356,31 +346,26 @@ public class JournalManager : MonoBehaviour
         p_maps.gameObject.SetActive(true);
         p_settings.gameObject.SetActive(false);
 
-        //Vector3 mediumPos = b_notes.transform.position;
-        //mediumPos.y = 1007;
-        //b_notes.transform.position = mediumPos;
-
-        //mediumPos = b_evidence.transform.position;
-        //mediumPos.y = 1007;
-        //b_evidence.transform.position = mediumPos;
-
-        //mediumPos = b_relationships.transform.position;
-        //mediumPos.y = 1007;
-        //b_relationships.transform.position = mediumPos;
-
-        //mediumPos = b_maps.transform.position;
-        //mediumPos.y = 1021;
-        //b_maps.transform.position = mediumPos;
-
-        //mediumPos = b_settings.transform.position;
-        //mediumPos.y = 1007;
-        //b_settings.transform.position = mediumPos;
-
+        // Update currentIndex
         currentIndex = 3;
+
+        // Adjust button position and color
+        foreach (RectTransform rectTransform in b_section_location)
+        {
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 465f);
+        }
+        b_section_location[currentIndex].anchoredPosition = new Vector2(b_section_location[currentIndex].anchoredPosition.x, 475f);
+
+        foreach (Image img in b_section_img)
+        {
+            img.color = b_notSelected_color;
+        }
+        b_section_img[currentIndex].color = b_default_color;
     }
 
     public void ClickSettingsButton()
     {
+        // Activate Settings Section only
         p_notes.gameObject.SetActive(false);
         p_evidence.gameObject.SetActive(false);
         p_e_popup.gameObject.SetActive(false);
@@ -389,27 +374,21 @@ public class JournalManager : MonoBehaviour
         p_maps.gameObject.SetActive(false);
         p_settings.gameObject.SetActive(true);
 
-        //Vector3 mediumPos = b_notes.transform.position;
-        //mediumPos.y = 1007;
-        //b_notes.transform.position = mediumPos;
-
-        //mediumPos = b_evidence.transform.position;
-        //mediumPos.y = 1007;
-        //b_evidence.transform.position = mediumPos;
-
-        //mediumPos = b_relationships.transform.position;
-        //mediumPos.y = 1007;
-        //b_relationships.transform.position = mediumPos;
-
-        //mediumPos = b_maps.transform.position;
-        //mediumPos.y = 1007;
-        //b_maps.transform.position = mediumPos;
-
-        //mediumPos = b_settings.transform.position;
-        //mediumPos.y = 1021;
-        //b_settings.transform.position = mediumPos;
-
+        // Update currentIndex
         currentIndex = 4;
+
+        // Adjust button position and color
+        foreach (RectTransform rectTransform in b_section_location)
+        {
+            rectTransform.anchoredPosition = new Vector2(rectTransform.anchoredPosition.x, 465f);
+        }
+        b_section_location[currentIndex].anchoredPosition = new Vector2(b_section_location[currentIndex].anchoredPosition.x, 475f);
+
+        foreach (Image img in b_section_img)
+        {
+            img.color = b_notSelected_color;
+        }
+        b_section_img[currentIndex].color = b_default_color;
     }
 
 
