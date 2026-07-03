@@ -23,6 +23,14 @@ public class EvidenceDatabase : ScriptableObject
 
     public EvidenceData FindEvidenceByID(string entryID)
     {
+        foreach (EvidenceData evidence in Evidences)
+        {
+            if (evidence.entryID == entryID)
+            {
+                return evidence;
+            }
+        }
 
+        return null;    // We have found nothing
     }
 }
