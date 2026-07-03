@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class JournalManager : MonoBehaviour
 {
@@ -135,7 +136,7 @@ public class JournalManager : MonoBehaviour
         // Subscribe to journal open event (MIGHT NOT BE NEEDED, but FOR OTHER COMPONENTS DISABLE EVENT TRIGGER)
         Open += OpenJournal;
 
-        ClickNotesButton();
+        ClickEvidenceButton();
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
 
@@ -498,9 +499,13 @@ public class JournalManager : MonoBehaviour
 
         playerInput.SwitchCurrentActionMap("Journal/UI");
 
+        ProgressL -= UpdateIndex_L;
+        ProgressL -= UpdateSection;
         ProgressL += UpdateIndex_L;
         ProgressL += UpdateSection;
 
+        ProgressR -= UpdateIndex_R;
+        ProgressR -= UpdateSection;
         ProgressR += UpdateIndex_R;
         ProgressR += UpdateSection;
 
@@ -509,7 +514,7 @@ public class JournalManager : MonoBehaviour
 
         // After Journal Instance has been set active and open journal was triggered, this runs
         // First section to see is notes
-        ClickNotesButton();
+        ClickEvidenceButton();
 
         // Change the action map to Journal (Not needed because Journal is in a SEPARATE scene)
         // playerInput.SwitchCurrentActionMap("Journal/UI");
@@ -555,13 +560,35 @@ public class JournalManager : MonoBehaviour
 
     
     // ** Loading saved journal data
+    //  --> DISCOVERED BOOLEAN FIELD IN DATA(EVIDENCE & RELATIONSHIP) MIGHT NOT BE NECESSARY
+
+    /// <summary>
+    /// Load all the relationship unlocked from the previous session
+    /// </summary>
+    /// <param name="relationshipData">Relationship Data that has been saved from previous session</param>
     public void LoadData(DiscoveredRelationshipData relationshipData)
     {
-
+        for(int i = 0; i < relationshipData.discoveredRelations.Length; i++)
+        {
+            unlockedRelations.Add(rDatabase.FindRelationshipByID(relationshipData.discoveredRelations[i]));
+        }
     }
 
+    /// <summary>
+    /// Load all evidence unlocked from the previous session
+    /// </summary>
+    /// <param name="evidenceData">Evidence Data that has been saved from previous session</param>
     public void LoadData(DiscoveredEvidenceData evidenceData)
     {
-
+        for(int i = 0; i < evidenceData.savedEvidence.Length; i++)
+        {
+            EvidenceDataData data = evidenceData.savedEvidence[i];
+            EvidenceData evidence = eDatabase.FindEvidenceByID(data.evidenceID);
+            
+            foreach(string relation in data.relatedRelationID)
+            {
+                evidence.possibleRelations.Add(rDatabase.FindRelationshipByID(relation));
+            }
+        }
     }
 }
