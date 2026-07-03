@@ -3,9 +3,6 @@ using UnityEngine;
 public class Key : Item
 {
     [SerializeField]
-    private Door door;
-
-    [SerializeField]
     private string collectedFlag;
 
     public override void Interact(PlayerControlled player)

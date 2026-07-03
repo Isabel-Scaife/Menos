@@ -1,40 +1,42 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class BoulderTutorial : TutorialTask
 {
     // fields
     [SerializeField]
-    private Transform boulder;
+    private Transform[] boulders;
 
     [SerializeField]
     private float distanceToMove;
 
-    private Vector2 startPos;
-    private bool ready;
+    private Vector2[] startPositions;
 
     private void Awake()
     {
-        startPos = boulder.position;
-        ready = false;
+        // get each boulders starting position
+        startPositions = new Vector2[boulders.Length];
+        for (int i = 0; i < boulders.Length; i++)
+        {
+            startPositions[i] = boulders[i].position;
+        }
     }
 
     public override bool Ready()
     {
-        return ready;
+        return true;
     }
 
     public override bool Completed()
     {
-        // returns true if boulder has moved at least target distance
-        return Vector2.Distance(startPos, (Vector2)boulder.position) >= distanceToMove;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // ready once player enters trigger zone for first time
-        if (collision.CompareTag("Player"))
+        // returns true if any boulder has moved at least target distance
+        for (int i = 0; i < boulders.Length; i++)
         {
-            ready = true;
+            if (Vector2.Distance(startPositions[i], (Vector2)boulders[i].position) >= distanceToMove)
+            {
+                return true;
+            }
         }
+        return false;
     }
 }
