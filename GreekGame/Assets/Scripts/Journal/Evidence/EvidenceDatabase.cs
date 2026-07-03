@@ -20,4 +20,9 @@ public class EvidenceDatabase : ScriptableObject
             Evidences[i].Initialize();
         }
     }
+
+    public EvidenceData FindEvidenceByID(string entryID)
+    {
+
+    }
 }
