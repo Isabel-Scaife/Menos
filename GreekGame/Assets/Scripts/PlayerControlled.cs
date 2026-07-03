@@ -88,6 +88,10 @@ public class PlayerControlled : MonoBehaviour
             CameraFollow.Instance.ResetCamera();
         }
 
+        // apply sprite diection 
+        direction = Vector2.zero;
+        AnimateDirection();
+
     }
 
     /// <summary>
@@ -134,34 +138,27 @@ public class PlayerControlled : MonoBehaviour
     {
         direction = context.ReadValue<Vector2>();
 
+        AnimateDirection();
+    }
+
+    private void AnimateDirection()
+    {
         if (PauseMovement) direction = Vector2.zero;
 
-        if( direction != Vector2.zero)
+        if (direction != Vector2.zero)
         {
             if (Mathf.Abs(direction.x) >= Mathf.Abs(direction.normalized.y))
             {
-                if (direction.x >= 0)
-                {
-                    faceDirection = MoveDirections.Right;
-                }
-                else
-                {
-                    faceDirection= MoveDirections.Right;
-                }
+                if (direction.x >= 0)  faceDirection = MoveDirections.Right;
+                else faceDirection= MoveDirections.Right;
             }
             else
             {
-                if (direction.y <= 0)
-                {
-                    faceDirection = MoveDirections.Forward;
-                }
-                else
-                {
-                    faceDirection = MoveDirections.Backward;
-                }
+                if (direction.y <= 0) faceDirection = MoveDirections.Forward;
+                else faceDirection = MoveDirections.Backward;
             }
 
-            // flip walk 
+            // flip walk temporary 
             if (direction.x > 0 && transform.localScale.x < 0 ||
                 direction.x < 0 && transform.localScale.x > 0)
             {
