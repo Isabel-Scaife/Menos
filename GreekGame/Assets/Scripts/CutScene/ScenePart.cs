@@ -10,6 +10,7 @@ public class ScenePart : MonoBehaviour
     [Header("After Scene Finishes")]
     [SerializeField] private GameObject nextScene;
     [SerializeField] private Player player;
+    [SerializeField] private Bird bird;
     [SerializeField] private GameObject disableAfter;
 
     private void Awake()
@@ -44,6 +45,7 @@ public class ScenePart : MonoBehaviour
 
             // no next scene return to player and start tutorial
             player.gameObject.SetActive(true);
+            bird.gameObject.SetActive(true);
             if (TutorialManager.Instance != null) TutorialManager.Instance.Begin();
             disableAfter.SetActive(false);
             this.gameObject.SetActive(false);

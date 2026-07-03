@@ -30,7 +30,7 @@ public class PlayerControlled : MonoBehaviour
 
     [Header("Player Input")]
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private bool pauseMovement;
+    [SerializeField] private bool pauseMovement = false;
     [SerializeField] protected bool controlBird = false;
 
     // guard detection
@@ -47,6 +47,11 @@ public class PlayerControlled : MonoBehaviour
         animator = GetComponent<Animator>();
 
         PauseMovement = false;
+    }
+
+    private void OnDisable()
+    {
+        PauseMovement = true;
     }
 
     protected virtual void FixedUpdate()
@@ -74,6 +79,8 @@ public class PlayerControlled : MonoBehaviour
 
     public void SwapControlledObject()
     {
+        if (PauseMovement) return;
+
         controlBird = !controlBird;
 
         if (CameraFollow.Instance == null) { Debug.Log("Missing camera follow"); return; }
