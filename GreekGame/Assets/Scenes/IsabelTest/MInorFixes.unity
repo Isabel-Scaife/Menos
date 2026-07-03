@@ -3839,12 +3839,12 @@ GameObject:
   - component: {fileID: 447644965}
   - component: {fileID: 447644964}
   m_Layer: 12
-  m_Name: 'Pin (inspect minigame loader) '
+  m_Name: 'NOT DONE Pin (inspect minigame loader) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &447644964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3899,7 +3899,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.4902644, y: -6.9238057}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3909,7 +3909,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 4.686864, y: 4.030938}
+  m_Size: {x: 10.17, y: 8.66}
   m_EdgeRadius: 0
 --- !u!212 &447644966
 SpriteRenderer:
@@ -49843,7 +49843,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374181204}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d699f7cb30c7d14183591838694dbcc, type: 3}
   m_Name: 
