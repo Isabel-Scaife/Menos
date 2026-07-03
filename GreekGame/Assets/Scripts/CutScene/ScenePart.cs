@@ -42,8 +42,9 @@ public class ScenePart : MonoBehaviour
                 return;
             }
 
-            // no next scene return to player
+            // no next scene return to player and start tutorial
             player.gameObject.SetActive(true);
+            if (TutorialManager.Instance != null) TutorialManager.Instance.Begin();
             disableAfter.SetActive(false);
             this.gameObject.SetActive(false);
         }

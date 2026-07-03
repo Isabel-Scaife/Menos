@@ -22,18 +22,23 @@ public class TutorialManager : MonoBehaviour
 
     private int currentTaskIndex;
     private bool taskActive;
+    private bool readyToStart;
 
     private void Awake()
     {
         Instance = this;
         currentTaskIndex = 0;
         taskActive = false;
+        readyToStart = false;
     }
 
     private void Update()
     {
+        // don't update if tutorial shouldn't start yet
+        if (!readyToStart) return;
+
         // hides popup and disables task script when task is completed
-        if (taskActive && tasks[currentTaskIndex].Completed())
+        else if (taskActive && tasks[currentTaskIndex].Completed())
         {
             tasks[currentTaskIndex].enabled = false;
             taskActive = false;
@@ -69,5 +74,13 @@ public class TutorialManager : MonoBehaviour
         // update popup position on the screen after any camera movement
         if (!taskActive) return;
         popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
+    }
+
+    /// <summary>
+    /// start checking for tutorial tasks to show
+    /// </summary>
+    public void Begin()
+    {
+        readyToStart = true;
     }
 }
