@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2765a2f68b7ab1e469e34142670d43c0
+guid: 7a815c48074a95a4ebfb8ccb364838e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1095141833252711340
-    second: key_0
+      213: -2660968328804394481
+    second: Stairs_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: key_0
+      name: Stairs_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7
-        width: 25
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 72
+        y: 38
+        width: 338
+        height: 354
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: caba2bde1b9b23f00800000000000000
-      internalID: 1095141833252711340
+      spriteID: f0a9c034767521bd0800000000000000
+      internalID: -2660968328804394481
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 489a44eba0ae70548ba64f26598e3a48
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      key_0: 1095141833252711340
+      Stairs_0: -2660968328804394481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
