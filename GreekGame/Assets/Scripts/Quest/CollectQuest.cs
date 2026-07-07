@@ -23,14 +23,13 @@ public class CollectQuest : MonoBehaviour, IQuestCompleter
     {
         foreach (Item item in itemsToCollect)
         {
-            item.OnCollect += IncreaseCount;
+            item.OnCollect -= IncreaseCount;
         }
     }
 
     private void IncreaseCount()
     {
         amountCollected++;
-
         if(amountCollected >= amountNeeded)
         {
             ((IQuestCompleter)this).OnQuestComplete();

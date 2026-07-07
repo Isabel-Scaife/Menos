@@ -8,7 +8,6 @@ public class ToggleObject : MonoBehaviour, IEvent
 
     public void OnQuestComplete()
     {
-        Debug.Log("item toggled");
         if (item != null)
         {
             item.SetActive(activate);

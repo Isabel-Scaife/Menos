@@ -27,7 +27,6 @@ public interface IQuestCompleter
         // complete quest and remove from list, if possible 
         for (int i = QuestsID.Count - 1; i >= 0; i--)
         {
-            Debug.Log(i);
             if (QuestManager.Instance.CompleteQuest(QuestsID[i]))
             {
                 QuestsID.RemoveAt(i);
