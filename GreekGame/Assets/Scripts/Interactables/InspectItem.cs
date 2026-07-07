@@ -13,6 +13,10 @@ public class InspectItem : MinigameSwapper
         await ScreenFader.Instance.FadeOut();
 
         SetUp();
+
+        InspectMinigame minigame = followObject.GetComponent<InspectMinigame>();
+        minigame.OnComplete += HandleComplete;
+
         base.Interact(player);
         SetCamera();
 
@@ -27,5 +31,21 @@ public class InspectItem : MinigameSwapper
         // update tool 
         ToolManager toolManger = FindAnyObjectByType<ToolManager>();
         magniyingGlass.SelectTool();
+    }
+
+    private async void HandleComplete()
+    {
+        await ScreenFader.Instance.FadeOut();
+
+        // destory minigame 
+        Destroy(item);
+        magniyingGlass.canDrop = true;
+        magniyingGlass.DropTool();
+        magniyingGlass.canDrop = false;
+
+        // reset camera
+        ResetCamera();
+
+        await ScreenFader.Instance.FadeIn();
     }
 }

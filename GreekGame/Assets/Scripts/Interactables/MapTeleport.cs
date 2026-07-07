@@ -44,6 +44,7 @@ public class MapTeleport : Interactable
     /// </summary>
     async void FadeTransition(PlayerControlled player)
     {
+        Debug.Log(player == null);
         player.PauseMovement = true;
         await ScreenFader.Instance.FadeOut();
 
@@ -68,7 +69,6 @@ public class MapTeleport : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
-        FadeTransition(collision.GetComponent<PlayerControlled>());
+        if(collision.CompareTag("Player")) FadeTransition(collision.GetComponent<PlayerControlled>());
     }
 }
