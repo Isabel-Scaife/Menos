@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3d5e32e6e9d6fdd4482cb988a56621ea
+guid: e91f7bdbe40d9ff4b85d096f3c7af673
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4416573915553766852
-    second: Bed_Box_0
-  - first:
-      213: 7534078333141159828
-    second: Bed_Box_1
+      213: 3758831189187482869
+    second: StairsDown 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bed_Box_0
+      name: StairsDown 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 119
-        width: 126
-        height: 188
+        x: 47
+        y: 5
+        width: 227
+        height: 111
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4cd96d08392da4d30800000000000000
-      internalID: 4416573915553766852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bed_Box_1
-      rect:
-        serializedVersion: 2
-        x: 200
-        y: 13
-        width: 150
-        height: 294
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 49f88d4a35c6e8860800000000000000
-      internalID: 7534078333141159828
+      spriteID: 5f4dd2a2d0d0a2430800000000000000
+      internalID: 3758831189187482869
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: efba1bd80d354dc49a9d26cb98d34b88
+    spriteID: 393e8f662f44a5148ae774cece101066
     internalID: 0
     vertices: []
     indices: 
@@ -160,10 +135,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Bed_Box_0: 4416573915553766852
-      Bed_Box_1: 7534078333141159828
+      StairsDown 1_0: 3758831189187482869
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

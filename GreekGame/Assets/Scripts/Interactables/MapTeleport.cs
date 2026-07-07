@@ -68,6 +68,7 @@ public class MapTeleport : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.name);
         FadeTransition(collision.GetComponent<PlayerControlled>());
     }
 }
