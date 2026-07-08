@@ -29,13 +29,6 @@ public class Bird : PlayerControlled
     [SerializeField] private float matchSpeed;
 
     private Vector2 seekForce, evadeForce;
-    public void Drop()
-    {
-        // remove item from bird
-        heldObject.transform.SetParent(null);
-        heldObject = null;
-
-    }
 
     public override void Move(InputAction.CallbackContext context)
     {
@@ -44,24 +37,10 @@ public class Bird : PlayerControlled
 
     public override void Interact(InputAction.CallbackContext context)
     {
-        if (controlBird)
-        {
+        // no interaction if not controlling bird or bird is already holding an item
+        if (!controlBird || heldObject != null) return;
 
-            if (context.performed)
-            {
-                // only interact if not holding item and in range
-                if (heldObject == null && interactObject != null)
-                {
-                    base.Interact(context);
-                    //heldObject = interactObject.gameObject;
-                }
-                // drop item that is held 
-                else if (heldObject != null)
-                {
-                    Drop();
-                }
-            }
-        }
+        base.Interact(context);
     }
 
     /// <summary>

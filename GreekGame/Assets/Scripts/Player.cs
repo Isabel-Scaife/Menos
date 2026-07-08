@@ -49,4 +49,17 @@ public class Player : PlayerControlled
     {
         if (!controlBird) base.Move(context);
     }
+
+    protected override void OnTriggerEnter2D(Collider2D collision)
+    {
+        // if colliding with bird's held item, immediately pick it up
+        Item script = collision.GetComponent<Item>();
+        if (script != null && script.HeldByBird)
+        {
+            script.Interact(this);
+            return;
+        }
+        
+        base.OnTriggerEnter2D(collision);
+    }
 }

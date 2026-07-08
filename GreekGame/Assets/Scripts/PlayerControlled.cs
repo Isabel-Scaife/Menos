@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public enum MoveDirections
 { 
@@ -20,7 +19,7 @@ public class PlayerControlled : MonoBehaviour
     protected MoveDirections faceDirection = MoveDirections.Forward;
 
     [Header("Interactions")]
-    [SerializeField] protected Interactable interactObject;
+    [SerializeField] protected List<Interactable> interactables = new List<Interactable>();
 
     [Header("Movement")]
     [SerializeField] protected float speed;
@@ -65,15 +64,10 @@ public class PlayerControlled : MonoBehaviour
 
     public virtual void Interact(InputAction.CallbackContext context)
     {
-        // interact with item if something is within range
-        if (context.performed)
+        // interact with interactable in range
+        if (context.performed && interactables.Count > 0)
         {
-            // interacts with current interactable
-            if (interactObject != null)
-            {
-                interactObject.Interact(this);
-                //Debug.Log("Interaction Occurred");
-            }
+            interactables[0].Interact(this);
         }
     }
 
@@ -187,16 +181,18 @@ public class PlayerControlled : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         // get reference to intertactable in rage
-        Interactable script = collision.gameObject.GetComponent<Interactable>();
-        if (script) interactObject = script;
+        Interactable script = collision.GetComponent<Interactable>();
+        if (script != null) interactables.Add(script);
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    protected virtual void OnTriggerExit2D(Collider2D collision)
     {
-        interactObject = null;
+        // remove interactable that goes out of range from options
+        Interactable script = collision.GetComponent<Interactable>();
+        if (script != null) interactables.Remove(script);
     }
 
     public void OpenJournalUI()
