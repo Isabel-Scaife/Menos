@@ -42440,7 +42440,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 50a750552fdb93141a973ec9fbdd8a3f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -174419,7 +174419,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1336635807}
   - component: {fileID: 1336635806}
-  m_Layer: 0
+  - component: {fileID: 1336635808}
+  m_Layer: 16
   m_Name: tree_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174471,8 +174472,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2130617411
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8667466294985060184, guid: 465a4d5904ba4334c988695304b1b13f, type: 3}
@@ -174500,6 +174501,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1336635808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336635805}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.240742, y: 3.273861, z: 0.2}
+  m_Center: {x: 0.6938692, y: -8.09535, z: 0}
 --- !u!1 &1339749182
 GameObject:
   m_ObjectHideFlags: 0
