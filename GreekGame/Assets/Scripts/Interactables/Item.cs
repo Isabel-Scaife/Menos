@@ -8,6 +8,16 @@ public class Item : Interactable
     [SerializeField] protected string itemID;
     public event Action OnCollect;
 
+    protected bool held = false;
+
+    /// <summary>
+    /// whether or not this item is currently the bird's held item
+    /// </summary>
+    public bool HeldByBird
+    {
+        get { return held; }
+    }
+
     public string ItemID { get => itemID; private set => itemID=value; }
 
     public override void Interact(PlayerControlled player)
