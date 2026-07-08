@@ -13,6 +13,8 @@ public class MagnifyingGlass : Tool
     [SerializeField]
     SpriteRenderer detectZone;
 
+    public bool canDrop = false;
+
     /// <summary>
     /// Interact with object clicked
     /// May add information to journal or cause something to move
@@ -32,7 +34,10 @@ public class MagnifyingGlass : Tool
         }
     }
 
-    public override void DropTool() { }
+    public override void DropTool()
+    {   
+        if(canDrop) base.DropTool();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7203887440160033398}
   - component: {fileID: 6382353259753564680}
   - component: {fileID: 6318873919358592611}
-  - component: {fileID: 208830815419153019}
+  - component: {fileID: 8368985138177968738}
   m_Layer: 17
   m_Name: Teleport
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -183.6, y: -1.7, z: 0}
-  m_LocalScale: {x: 2.9952798, y: 5.569484, z: 1}
+  m_LocalScale: {x: 2.9952798, y: 6.459488, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,7 +127,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.16728881}
+  m_Offset: {x: 0, y: -0.14690284}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -137,9 +137,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1.3345776}
+  m_Size: {x: 1, y: 0.9676279}
   m_EdgeRadius: 0
---- !u!114 &208830815419153019
+--- !u!114 &8368985138177968738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,10 +148,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4833346755544732464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f56cb9fabbb0794c837acb509809bd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a531e8b619e6fc468d982e2d78b1a5d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  canInteract: 1
-  player: {fileID: 0}
-  camera: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::MapTeleport
+  confiner: {fileID: 0}
   teleportTo: {fileID: 0}
+  newMapBounds: {fileID: 0}
+  direction: 1
+  offset: 5
