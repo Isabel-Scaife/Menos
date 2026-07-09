@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Vineyard.unity
     guid: 7ee55ed7152f9fe4fb39e0688eadd010
   - enabled: 1
-    path: Assets/Scenes/VasePackage.unity
+    path: Assets/Scenes/IsabelTest/VasePackage.unity
     guid: 47f51919443abed42b94cf83e6617d94
   - enabled: 1
     path: Assets/Scenes/IsabelTest/VineyardQuestTest.unity
