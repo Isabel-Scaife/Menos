@@ -11,8 +11,6 @@ public class Sigil : Interactable
     [SerializeField]
     private Sprite sprOff;
     [SerializeField]
-    private SpriteRenderer sprRenderer;
-    [SerializeField]
     private bool isOn;
 
     // properties

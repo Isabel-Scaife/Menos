@@ -1,5 +1,4 @@
 using Unity.Cinemachine;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MinigameSwapper : Item
@@ -18,8 +17,9 @@ public class MinigameSwapper : Item
 
     private PlayerControlled playerRef;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
     }
 

@@ -3,8 +3,6 @@ using UnityEngine;
 public class HideBox : Interactable
 {
     [SerializeField]
-    private SpriteRenderer spriteRenderer;
-    [SerializeField]
     private Guard guard;
     [SerializeField]
     private PlayerControlled player;
@@ -13,14 +11,6 @@ public class HideBox : Interactable
     // always defaults to player movement after exiting box..? 
     //Sometimes won't switch states if ds
     //player is in view cone
-
-
-    void Awake()
-    {
-        // Get the SpriteRenderer component attached to this GameObject
-        //we have this for debug purposes so it can change color
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
 
     void Update()
     {

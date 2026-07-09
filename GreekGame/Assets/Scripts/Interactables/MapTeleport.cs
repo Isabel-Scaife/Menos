@@ -23,8 +23,10 @@ public class MapTeleport : Interactable
 
     private Vector3 newPos;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        
         if(confiner == null) confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
 
         // determine teleport position 
