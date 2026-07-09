@@ -4,9 +4,11 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] CinemachineCamera cinemachineCamera;
+    [SerializeField] CinemachinePositionComposer positionComposer;
 
     private Transform originalTarget;
-    private float orginalFOV;
+    private float originalFOV;
+    private Vector2 originalOffset;
 
     public static CameraFollow Instance { get; private set; }
     void Awake()
@@ -21,7 +23,8 @@ public class CameraFollow : MonoBehaviour
         }
 
         originalTarget = cinemachineCamera.Follow;
-        orginalFOV = cinemachineCamera.Lens.OrthographicSize;
+        originalFOV = cinemachineCamera.Lens.OrthographicSize;
+        originalOffset = positionComposer.Composition.ScreenPosition;
     }
 
 
@@ -36,14 +39,15 @@ public class CameraFollow : MonoBehaviour
         cinemachineCamera.Lens.OrthographicSize = fov;
     }
 
-    public void SetScreenPos(Vector2 screenPos)
+    public void SetOffset(Vector2 offset)
     {
-        // cjange sreen postion need cinemachine position composer
+        positionComposer.Composition.ScreenPosition = offset;
     }
 
     public void ResetCamera()
     {
         SetTarget(originalTarget);
-        SetDistance(orginalFOV);
+        SetDistance(originalFOV);
+        SetOffset(originalOffset);
     }
 }

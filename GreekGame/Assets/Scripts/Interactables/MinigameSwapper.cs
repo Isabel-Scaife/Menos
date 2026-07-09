@@ -8,7 +8,7 @@ public class MinigameSwapper : Item
     [SerializeField] protected Transform followObject;
     [SerializeField] private Collider2D mapBounds;
     [SerializeField] private float fov = 6;
-    private Vector2 screenPostion = Vector2.zero;
+    private Vector2 offset = Vector2.zero;
 
     [Header("Minigame Canvas")]
     [SerializeField] private GameObject canvas;
@@ -28,7 +28,7 @@ public class MinigameSwapper : Item
         confiner.BoundingShape2D = mapBounds;
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
-        CameraFollow.Instance.SetScreenPos(screenPostion);
+        CameraFollow.Instance.SetOffset(offset);
         if (canvas != null) canvas.SetActive(true);
     }
 
