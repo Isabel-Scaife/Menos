@@ -15,21 +15,13 @@ public class Key : Item
             if (bird.Pickup(this.gameObject))
             {
                 this.transform.SetParent(bird.transform);
+                this.transform.SetLocalPositionAndRotation(Vector3.zero, this.transform.localRotation);
+                held = true;
             }
         }
         // destory key if it's not currently held
-        else if (player is Player && transform.parent == null)
+        else if (player is Player && held)
         {
-            // remove ID from spawn manager
-            if (SpawnManager.Instance == null)
-            {
-                Debug.Log("No SpawnManager in scene");
-            }
-            else
-            {
-                SpawnManager.Instance.RemoveItem(itemID);
-            }
-
             // set a flag to mark this has been obtained
             if (GameStateManager.Instance == null) Debug.Log("No GameStateManager in scene");
             else GameStateManager.Instance.SetFlag(collectedFlag);

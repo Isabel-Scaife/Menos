@@ -1,0 +1,60 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FishSpawnManager : MonoBehaviour
+{
+    //counts every frame to know how often to spawn fish
+    int frameCount;
+
+    //fish prefab
+    [SerializeField]
+    private GameObject PondFish;
+
+    //list of fish caught
+    public List<Fish> fishList;
+
+    //true if player is in the water
+    private bool catchingFish;
+
+    //fish prefab
+    [SerializeField]
+    private Camera camera;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        //total list of fih
+        List<Fish> fishList = new List<Fish>();
+
+        catchingFish = true;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //adds for each frame called
+        frameCount++;
+
+        //if 500 frames have passed, spawns a fish
+        if (frameCount >= 500 && catchingFish == true)
+        {
+            Debug.Log("Fish spawned");
+
+            Instantiate(PondFish);
+
+            //resets frame count
+            frameCount = 0;
+        }
+
+        //checks if 5 fish have been caught
+        if (fishList.Count>=5)
+        {
+            Debug.Log("5 fish caught");
+
+            catchingFish = false;
+
+            camera.transform.position = new Vector3(23, 0, -10);
+        }
+    }
+}
