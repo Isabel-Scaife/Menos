@@ -419634,6 +419634,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
+      propertyPath: bird
+      value: 
+      objectReference: {fileID: 1299935200}
+    - target: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 294112413}
