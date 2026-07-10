@@ -12,7 +12,7 @@ public abstract class Interactable : MonoBehaviour
     protected virtual void Awake()
     {
         sprRenderer = GetComponent<SpriteRenderer>();
-        //propBlock = new MaterialPropertyBlock();
+        propBlock = new MaterialPropertyBlock();
     }
 
     public abstract void Interact(PlayerControlled player);
@@ -21,13 +21,12 @@ public abstract class Interactable : MonoBehaviour
     /// set highlight on or off
     /// </summary>
     /// <param name="enabled">true for on, false for off</param>
-    /// <param name="thickness">outline thickness</param>
-    public void SetHighlight(bool enabled, float thickness)
+    public void SetHighlight(bool enabled)
     {
         sprRenderer.GetPropertyBlock(propBlock);
-        float lineW = 0.0f;
-        if (enabled) lineW = thickness;
-        propBlock.SetFloat("OutlineSize", lineW);
+        float val = 0.0f;
+        if (enabled) val = 1.0f;
+        propBlock.SetFloat("_OutlineEnabled", val);
         sprRenderer.SetPropertyBlock(propBlock);
     }
 }
