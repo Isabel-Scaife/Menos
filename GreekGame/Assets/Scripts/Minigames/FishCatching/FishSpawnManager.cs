@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FishSpawnManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class FishSpawnManager : MonoBehaviour
     //fish prefab
     [SerializeField]
     private GameObject PondFish;
+
+    [SerializeField]
+    private FishToSort SortFish;
 
     //list of fish caught
     public List<Fish> fishList;
@@ -48,13 +52,39 @@ public class FishSpawnManager : MonoBehaviour
         }
 
         //checks if 5 fish have been caught
-        if (fishList.Count>=5)
+        //only runs once bc catching fish turns off
+        ///runs upon switching from fish catching to fish sorting
+        if (fishList.Count>=2 && catchingFish == true)
         {
-            Debug.Log("5 fish caught");
-
             catchingFish = false;
 
             camera.transform.position = new Vector3(23, 0, -10);
+
+            //FishSort();
+            FishConvert();
+        }
+    }
+
+    /// <summary>
+    /// sorts fish by size and assigns id's in order
+    /// </summary>
+    private void FishSort()
+    {
+
+    }
+
+    /// <summary>
+    /// converts fish from fishlist into sortable fish and spwans them
+    /// </summary>
+    private void FishConvert()
+    {
+        FishToSort newFish;
+        foreach (Fish pondFish in fishList)
+        {
+            newFish = Instantiate(SortFish);
+            newFish.AddComponent<FishToSort>().color = pondFish.spriteRenderer.color;
+            newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
+            newFish.transform.position = new Vector3(22, 1, 0);
         }
     }
 }

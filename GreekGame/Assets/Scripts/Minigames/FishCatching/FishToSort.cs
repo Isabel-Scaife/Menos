@@ -3,12 +3,31 @@ using UnityEngine.InputSystem;
 
 public class FishToSort : MonoBehaviour
 {
-    private bool grabbed;
+    public bool grabbed;
     private Vector2 mousePosition;
+    public SpriteRenderer spriteRenderer;
+
+    //fish parameters
+    public float size;
+    public Color color;
+    public int id;
+
+    public FishToSort(float size, Color color)
+    {
+        this.size = size;
+        this.color = color;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Get the SpriteRenderer component attached to this GameObject
+        //we have this for debug purposes so it can change color
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        //sets fish physical appearance
+        transform.localScale = new Vector3(size/2, size/2, 1);
+        //spriteRenderer.color = color;
     }
 
     // Update is called once per frame
@@ -28,7 +47,6 @@ public class FishToSort : MonoBehaviour
     private void OnMouseDown()
     {
         grabbed = !grabbed;
-
     }
 
 }
