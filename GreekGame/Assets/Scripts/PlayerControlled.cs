@@ -20,6 +20,7 @@ public class PlayerControlled : MonoBehaviour
 
     [Header("Interactions")]
     [SerializeField] protected List<Interactable> interactables = new List<Interactable>();
+    [SerializeField] protected Interactable currentInteractable = null;
 
     [Header("Movement")]
     [SerializeField] protected float speed;
@@ -35,9 +36,17 @@ public class PlayerControlled : MonoBehaviour
     // guard detection
     public bool hidden = false;
 
+    // helper
+    protected bool ControllingThis
+    {
+        get {
+            return (!controlBird && this.CompareTag("Player"))
+                || (controlBird && this.CompareTag("Bird"));
+        }
+    }
+
     public Vector2 Direction { get { return direction; } }
     public bool PauseMovement { get => pauseMovement; set => pauseMovement = value; }
-
 
     private void Awake()
     {
@@ -65,9 +74,9 @@ public class PlayerControlled : MonoBehaviour
     public virtual void Interact(InputAction.CallbackContext context)
     {
         // interact with interactable in range
-        if (context.performed && interactables.Count > 0)
+        if (context.performed && currentInteractable != null)
         {
-            interactables[0].Interact(this);
+            currentInteractable.Interact(this);
         }
     }
 
@@ -93,6 +102,11 @@ public class PlayerControlled : MonoBehaviour
         direction = Vector2.zero;
         AnimateDirection();
 
+        // change currently highlighted interactable
+        if (currentInteractable != null)
+        {
+            currentInteractable.SetHighlight(ControllingThis);
+        }
     }
 
     /// <summary>
@@ -185,14 +199,39 @@ public class PlayerControlled : MonoBehaviour
     {
         // get reference to intertactable in rage
         Interactable script = collision.GetComponent<Interactable>();
-        if (script != null) interactables.Add(script);
+        if (script != null)
+        {
+            interactables.Add(script);
+
+            // highlight this interactable if its the first one in range
+            if (currentInteractable == null)
+            {
+                currentInteractable = script;
+                if (ControllingThis) currentInteractable.SetHighlight(true);
+            }
+        }
     }
 
     protected virtual void OnTriggerExit2D(Collider2D collision)
     {
         // remove interactable that goes out of range from options
         Interactable script = collision.GetComponent<Interactable>();
-        if (script != null) interactables.Remove(script);
+        if (script != null)
+        {
+            interactables.Remove(script);
+            
+            // highlight a different interactable in range if there is one
+            if (currentInteractable == script)
+            {
+                if (ControllingThis) script.SetHighlight(false);
+                if (interactables.Count > 0)
+                {
+                    currentInteractable = interactables[0];
+                    if (ControllingThis) currentInteractable.SetHighlight(true);
+                }
+                else currentInteractable = null;
+            }
+        }
     }
 
     public void OpenJournalUI()

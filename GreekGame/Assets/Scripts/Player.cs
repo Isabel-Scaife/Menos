@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 
 public class Player : PlayerControlled
 {
-
+    [SerializeField] public Bird bird;
     private void Start()
     {
         // makes sure input control is only given to the player at start time

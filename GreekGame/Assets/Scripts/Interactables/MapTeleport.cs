@@ -23,8 +23,10 @@ public class MapTeleport : Interactable
 
     private Vector3 newPos;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        
         if(confiner == null) confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
 
         // determine teleport position 
@@ -42,7 +44,7 @@ public class MapTeleport : Interactable
     /// <summary>
     /// fade to black, teleport, fade back in 
     /// </summary>
-    async void FadeTransition(PlayerControlled player)
+    async void FadeTransition(Player player)
     {
         Debug.Log(player == null);
         player.PauseMovement = true;
@@ -50,6 +52,8 @@ public class MapTeleport : Interactable
 
         // set position
         player.transform.position = newPos;
+        if(player.bird != null)
+        player.bird.transform.position = newPos;
 
         // apply new camera bounds
         confiner.BoundingShape2D = newMapBounds;
@@ -64,11 +68,14 @@ public class MapTeleport : Interactable
     /// <param name="player"></param>
     public override void Interact(PlayerControlled player)
     {
-        FadeTransition(player);
+        if(player is Player) FadeTransition((Player)player);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player")) FadeTransition(collision.GetComponent<PlayerControlled>());
+        if (collision.CompareTag("Player"))
+        {
+            FadeTransition(collision.GetComponent<Player>());
+        }
     }
 }
