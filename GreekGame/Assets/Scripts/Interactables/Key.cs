@@ -15,7 +15,7 @@ public class Key : Item
             if (bird.Pickup(this.gameObject))
             {
                 this.transform.SetParent(bird.transform);
-                this.transform.SetLocalPositionAndRotation(Vector3.zero, this.transform.localRotation);
+                this.transform.SetLocalPositionAndRotation(new Vector2 (0, 4), this.transform.localRotation);
                 held = true;
             }
         }
