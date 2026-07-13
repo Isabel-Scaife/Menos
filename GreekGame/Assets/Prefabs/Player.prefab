@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3399567360816744471}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.34, y: 3.44, z: 1.29}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -109,11 +109,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6863623e9436c4e45ba4f0a7b2c07769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactObject: {fileID: 0}
+  interactables: []
+  currentInteractable: {fileID: 0}
   speed: 5
   playerInput: {fileID: 0}
+  pauseMovement: 1
   controlBird: 0
   hidden: 0
+  bird: {fileID: 0}
 --- !u!50 &1709409797765568351
 Rigidbody2D:
   serializedVersion: 5
@@ -175,7 +178,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.081517816, y: 0.37}
+  m_Offset: {x: 0.081517816, y: 0.13369405}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -185,7 +188,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6467564, y: 0.6867546}
+  m_Size: {x: 1.6467564, y: 0.21414268}
   m_EdgeRadius: 0
 --- !u!95 &4701789603063443229
 Animator:
