@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c62ad2a7ba43e2f4bb0db670ff154743
+guid: ee2be48857f30f841aa84358e744c86d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5150274352344045439
-    second: jailBars_0
+      213: -1433737197372277587
+    second: jailBars 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,261 +100,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jailBars_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 550
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7795437c33797740800000000000000
-      internalID: 5150274352344045439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jailBars_1
+      name: jailBarsHole_0
       rect:
         serializedVersion: 2
         x: 50
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a816eb1ef4fc54887b45f218b7199e
-      internalID: -2016738459
+      spriteID: b644e9e265980c949afdb4a7718206f4
+      internalID: -1055794485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_2
+      name: jailBarsHole_1
       rect:
         serializedVersion: 2
         x: 100
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 7891c1e02ea8e6049a671d7eb3ee59af
-      internalID: -681660441
+      spriteID: c9d74689f1546e14ba489df511c3fad6
+      internalID: 644468573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_3
+      name: jailBarsHole_2
       rect:
         serializedVersion: 2
         x: 150
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: abb0f67f5da6f2940b7714bb95ad6fc2
-      internalID: 298942998
+      spriteID: 0b1d52fc18697f94da7e731ab328ec39
+      internalID: -1449879957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_4
+      name: jailBarsHole_3
       rect:
         serializedVersion: 2
         x: 200
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 687344dc74e123342872d0cf926d3cc0
-      internalID: 58176546
+      spriteID: a62fa1641a5fe664b99ed76b63d34734
+      internalID: -805951494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_5
+      name: jailBarsHole_4
       rect:
         serializedVersion: 2
         x: 250
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: a46e7471db5d1c84fa37294f85876f92
-      internalID: 1092936948
+      spriteID: 3582c93f76809aa488f4572a3e539927
+      internalID: 1939930075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_6
+      name: jailBarsHole_5
       rect:
         serializedVersion: 2
         x: 300
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -7, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -7, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 3a363b1314d7ac54a877376bd838dca2
-      internalID: 1632813305
+      spriteID: afb69ccc1bbd7914ebc120c16e151b9f
+      internalID: 1690547747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_7
+      name: jailBarsHole_6
       rect:
         serializedVersion: 2
         x: 350
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 94c535a304875f8448a3f709543d4253
-      internalID: 13837492
+      spriteID: eb594c7f664a1d042b142bd605ffbff8
+      internalID: -2032606566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_8
+      name: jailBarsHole_7
       rect:
         serializedVersion: 2
         x: 400
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: a82722ece3c498f4a94fb1e20827c067
-      internalID: 1156072222
+      spriteID: b514a3b693d591e47968fdc529fd50ad
+      internalID: 456092983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_9
+      name: jailBarsHole_8
       rect:
         serializedVersion: 2
         x: 450
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 3, y: -243}
-        - {x: 3, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 3, y: -178.5}
+        - {x: 3, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 10d8ccc10ec911d45aba71ab62e24267
-      internalID: -1005500262
+      spriteID: a78c6fd94b77e974bbfbd0e9dc80a58a
+      internalID: 1633848252
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_10
+      name: jailBarsHole_9
       rect:
         serializedVersion: 2
         x: 500
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +345,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d99e24414a2b954088f5b6546c10e4f
-      internalID: -539626750
+      spriteID: ac2697ec3a29b634d89a41f64a02cb3f
+      internalID: -699624380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_11
+      name: jailBarsHole_10
       rect:
         serializedVersion: 2
         x: 550
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -385,112 +367,112 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dcdd0da952b5864286701855d9d6696
-      internalID: 1701097783
+      spriteID: b1176cb850790d74e815ec856a63a4fd
+      internalID: -809336502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_12
+      name: jailBarsHole_11
       rect:
         serializedVersion: 2
         x: 600
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: 0, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: 0, y: -225}
+      - - {x: 0, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: 0, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: fd8bd52aeb4216641a656b0a0a24e530
-      internalID: 1421361704
+      spriteID: 2ae7ee5bb5b1d4f4890bd9c7f714f676
+      internalID: 507761294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_13
+      name: jailBarsHole_12
       rect:
         serializedVersion: 2
         x: 650
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 05c17de39a84b2747933803e09c79fe6
-      internalID: -744512166
+      spriteID: 70e6e5c8ee221cd42a4b97359f9257e1
+      internalID: -1991675378
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_14
+      name: jailBarsHole_13
       rect:
         serializedVersion: 2
         x: 700
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 24b47dedf3840e04db250e6c47819f57
-      internalID: 1968913944
+      spriteID: b377c550169681f40aeffd26a667c6ef
+      internalID: 1173949316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jailBars_15
+      name: jailBarsHole_14
       rect:
         serializedVersion: 2
         x: 750
-        y: 0
+        y: 32
         width: 50
-        height: 550
+        height: 357
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape:
-      - - {x: -25, y: -243}
-        - {x: 25, y: -243}
-        - {x: 25, y: -225}
-        - {x: -25, y: -225}
+      - - {x: -25, y: -178.5}
+        - {x: 25, y: -178.5}
+        - {x: 25, y: -160.5}
+        - {x: -25, y: -160.5}
       tessellationDetail: 0
       bones: []
-      spriteID: 70441ebcdbbc41842bb068f4f7c1b623
-      internalID: 305166739
+      spriteID: 60a1546ef3e0ed24ab9f47639e36e154
+      internalID: 1222972850
       vertices: []
       indices: 
       edges: []
@@ -499,7 +481,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 55f550ef72616e9499b0cac6c26f23f4
+    spriteID: 7b4c4dd5fb4588c4cabc35a033f02277
     internalID: 0
     vertices: []
     indices: 
@@ -509,24 +491,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":16.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":550.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":357.0},"gridSpriteOffset":{"x":0.0,"y":161.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      jailBars_0: 5150274352344045439
-      jailBars_1: -2016738459
-      jailBars_10: -539626750
-      jailBars_11: 1701097783
-      jailBars_12: 1421361704
-      jailBars_13: -744512166
-      jailBars_14: 1968913944
-      jailBars_15: 305166739
-      jailBars_2: -681660441
-      jailBars_3: 298942998
-      jailBars_4: 58176546
-      jailBars_5: 1092936948
-      jailBars_6: 1632813305
-      jailBars_7: 13837492
-      jailBars_8: 1156072222
-      jailBars_9: -1005500262
+      jailBarsHole_0: -1055794485
+      jailBarsHole_1: 644468573
+      jailBarsHole_10: -809336502
+      jailBarsHole_11: 507761294
+      jailBarsHole_12: -1991675378
+      jailBarsHole_13: 1173949316
+      jailBarsHole_14: 1222972850
+      jailBarsHole_2: -1449879957
+      jailBarsHole_3: -805951494
+      jailBarsHole_4: 1939930075
+      jailBarsHole_5: 1690547747
+      jailBarsHole_6: -2032606566
+      jailBarsHole_7: 456092983
+      jailBarsHole_8: 1633848252
+      jailBarsHole_9: -699624380
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
