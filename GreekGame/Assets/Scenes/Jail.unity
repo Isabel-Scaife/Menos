@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 162139898}
   - component: {fileID: 162139897}
   - component: {fileID: 162139900}
+  - component: {fileID: 162139901}
   m_Layer: 12
   m_Name: door
   m_TagString: Untagged
@@ -664,6 +665,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &162139901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162139896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b62860c023827184a86c67abe7176e3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SeeThrough
+  seeThroughAlpha: 0.8
+  sprRenderer: {fileID: 162139900}
+  objectsThatTriggerTransparency:
+  - {fileID: 2076872106}
+  - {fileID: 1963701905}
 --- !u!1 &168000771
 GameObject:
   m_ObjectHideFlags: 0
@@ -26014,6 +26032,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1685e2cd04dcebc4ba4260bb2ea3001f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &1963701905 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 956711964583138672, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
+  m_PrefabInstance: {fileID: 1540540222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &1963701908 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 5763421282529453951, guid: bf0bab1029fffa24e890ae265b8df4a3, type: 3}
@@ -26489,6 +26512,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6863623e9436c4e45ba4f0a7b2c07769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2076872106 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3818671990946820883, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
+  m_PrefabInstance: {fileID: 1896483391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2114044200
 GameObject:
   m_ObjectHideFlags: 0
