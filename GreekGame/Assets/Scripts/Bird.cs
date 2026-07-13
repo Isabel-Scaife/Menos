@@ -184,9 +184,12 @@ public class Bird : PlayerControlled
         sprite.sortingOrder = order;
     }
     public Item GetItemHeld()
-    { 
+    {
+        if (heldObject == null) return null;
+
         Item held = heldObject.GetComponent<Item>(); 
         if (held != null) return held;
+        
         return null;
     } 
 

@@ -15,6 +15,7 @@ public class SortOrderTrigger : MonoBehaviour
             Item held = bird.GetItemHeld();
             if (held != null)
             {
+                held.GetComponent<SpriteRenderer>().sortingOrder = sortOrder;
                 held.CanInteract = playerInteractOn;
             }
         }

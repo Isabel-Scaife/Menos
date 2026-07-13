@@ -6,11 +6,13 @@ public class Item : Interactable
     // might change how this works from 
     [Header("Item Info")]
     [SerializeField] protected string itemID;
+    [SerializeField] protected bool playerCanInteract = true;
+
     public event Action OnCollect;
 
     protected bool held = false;
 
-    public bool CanInteract { get; set; }
+    public bool CanInteract { get => playerCanInteract; set => playerCanInteract = value; }
 
     /// <summary>
     /// whether or not this item is currently the bird's held item
