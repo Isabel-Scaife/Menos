@@ -92,6 +92,7 @@ public class PlayerControlled : MonoBehaviour
         if (controlBird && this.CompareTag("Bird"))
         {
             CameraFollow.Instance.SetTarget(this.gameObject.transform);
+            CameraFollow.Instance.SetOffset(new Vector2(0,.5f));
         }
         else if (!controlBird && this.CompareTag("Player"))
         {

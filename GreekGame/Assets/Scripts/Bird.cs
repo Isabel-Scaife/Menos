@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Bird : PlayerControlled
 {
+    [SerializeField] private SpriteRenderer sprite;
+
     [SerializeField] private GameObject heldObject = null;
 
     private Vector2 acceleration, steeringForce;
@@ -176,6 +178,10 @@ public class Bird : PlayerControlled
         return futurePos;
     }
 
+    public void ChangeSortOrder(int order)
+    {
+        sprite.sortingOrder = order;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
