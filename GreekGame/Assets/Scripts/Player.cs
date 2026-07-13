@@ -54,7 +54,7 @@ public class Player : PlayerControlled
     {
         // if colliding with bird's held item, immediately pick it up
         Item script = collision.GetComponent<Item>();
-        if (script != null && script.HeldByBird)
+        if (script != null && script.CanInteract && script.HeldByBird)
         {
             script.Interact(this);
             return;

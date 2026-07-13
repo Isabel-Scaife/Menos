@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 209840278}
   - component: {fileID: 209840281}
   m_Layer: 12
-  m_Name: Shed (vinedrag minigame loader)
+  m_Name: Shed (vinedrag minigame loader need way to find it is complete)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

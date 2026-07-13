@@ -10,6 +10,8 @@ public class Item : Interactable
 
     protected bool held = false;
 
+    public bool CanInteract { get; set; }
+
     /// <summary>
     /// whether or not this item is currently the bird's held item
     /// </summary>

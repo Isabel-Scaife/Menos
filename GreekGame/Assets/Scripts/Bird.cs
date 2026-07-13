@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -182,6 +183,13 @@ public class Bird : PlayerControlled
     {
         sprite.sortingOrder = order;
     }
+    public Item GetItemHeld()
+    { 
+        Item held = heldObject.GetComponent<Item>(); 
+        if (held != null) return held;
+        return null;
+    } 
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
