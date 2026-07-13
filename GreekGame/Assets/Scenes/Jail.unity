@@ -3519,6 +3519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemID: 00000001
+  playerCanInteract: 0
   collectedFlag: has_jail_key
 --- !u!1 &593843932
 GameObject:
