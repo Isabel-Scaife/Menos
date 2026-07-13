@@ -84,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -948589053525025941, guid: b7a3e6f6718fa1c4dbc5aa6a530c4cb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -137,23 +137,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactables: []
   currentInteractable: {fileID: 0}
-  speed: 6
+  speed: 6.5
   playerInput: {fileID: 0}
-  pauseMovement: 0
+  pauseMovement: 1
   controlBird: 0
   hidden: 0
-  sprite: {fileID: 0}
+  sprite: {fileID: 5763421282529453951}
   heldObject: {fileID: 0}
   seekWeight: 1
   seekTarget: {fileID: 0}
-  evadeWeight: 1
+  evadeWeight: 0.8
   evadeTarget:
     serializedVersion: 2
     m_Bits: 98304
   evadeRadius: 0.1
   wanderWeight: 0.7
-  catchUpRadius: 20
-  matchSpeedRadius: 10
+  catchUpRadius: 4.5
+  matchSpeedRadius: 50
   matchSpeed: 5
 --- !u!95 &4577222157326366297
 Animator:
@@ -211,7 +211,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.02464187, y: -0.044355996}
+  m_Offset: {x: 0.02464187, y: 5.3}
   m_Size: {x: 1.6684358, y: 1.0573192}
   m_Direction: 1
 --- !u!1 &4276304353283791328
@@ -262,7 +262,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 32768
+    m_Bits: 98304
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -280,7 +280,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 2.65}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
