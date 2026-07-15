@@ -14,6 +14,7 @@ public class Bird : PlayerControlled
     [Header("Seek")]
     [SerializeField, Range(0, 1f)] private float seekWeight;
     [SerializeField] private GameObject seekTarget;
+    private float seekOffset = 1.5f;
 
     [Header("Evade")]
     [SerializeField, Range(0, 1f)] private float evadeWeight;
@@ -21,17 +22,24 @@ public class Bird : PlayerControlled
     [SerializeField] private float evadeRadius;
 
     [Header("Wander")]
-    [SerializeField, Range(0, 1f)] private float wanderWeight; 
-    protected private Vector2 wanderTarget;
+    [SerializeField, Range(0, 1f)] private float wanderWeight;
+    [SerializeField] private float wanderDuration;
+    [SerializeField] private float wanderRad;
+    [SerializeField] private float wanderDis;
+    [SerializeField] private float wanderJ;
+    private Vector2 wanderTarget;
+    private float wanderTimer;
 
-    private Vector2 totalForce;
+    [Header("Distance from Player")]
+    [SerializeField] private float seekDistance;
 
-    [SerializeField] private float catchUpRadius;
-    [SerializeField] private float matchSpeedRadius;
+    private Vector2 totalForce, seekForce, evadeForce, wanderForce;
 
-    [SerializeField] private float matchSpeed;
-
-    private Vector2 seekForce, evadeForce;
+    protected override void Awake()
+    {
+        wanderTimer = wanderDuration;
+        base.Awake();
+    }
 
     public override void Move(InputAction.CallbackContext context)
     {
@@ -87,10 +95,10 @@ public class Bird : PlayerControlled
 
     // methods that help determine bird movement when not controlled
 
-    public Vector2 Seek(Vector2 targetPos, float currentSpeed)
+    public Vector2 Seek(Vector2 targetPos)
     {
         Vector2 desiredVelocity = targetPos - (Vector2)transform.position;
-        desiredVelocity = desiredVelocity.normalized * currentSpeed;
+        desiredVelocity = desiredVelocity.normalized * speed;
 
         return desiredVelocity - velocity;
     }
@@ -101,26 +109,29 @@ public class Bird : PlayerControlled
 
         // check distance from target 
         Vector2 targetPos = seekTarget.transform.position;
+        targetPos.y -= seekOffset;
         float distance = Vector2.Distance(targetPos, transform.position);
 
-        if(distance >= catchUpRadius)
+        // seek player when far away 
+        if(distance >= seekDistance)
         {
-            seekForce += Seek(targetPos, speed) * seekWeight;
-            evadeForce += Evade(.6f, speed) * evadeWeight;
+            seekForce = Seek(targetPos) * seekWeight;
+            evadeForce = Evade(.6f) * evadeWeight;
         }
-        else if(distance >= matchSpeedRadius)
+        else
         {
-            seekForce += Seek(targetPos, matchSpeed) * seekWeight;
-            evadeForce += Evade(.6f, matchSpeed) * evadeWeight;
+            seekForce = Vector2.zero;
+            evadeForce = Vector2.zero;
         }
-        totalForce += Wander(.5f, 1.5f, 2f) * wanderWeight;
 
-        totalForce += seekForce + evadeForce;
+        // wander at all times 
+        wanderForce = Wander(wanderRad, wanderDis, wanderJ) * wanderWeight;
 
+        totalForce += seekForce + evadeForce + wanderForce;
         return totalForce;
     }
 
-    private Vector2 Evade(float timeInSeconds, float currentSpeed)
+    private Vector2 Evade(float timeInSeconds)
     {
         // evade objects that are detected in range of futuer position 
         RaycastHit2D hit;
@@ -134,7 +145,7 @@ public class Bird : PlayerControlled
         if (hit.collider != null)
         {
             Vector2 desiredVelocity = transform.position - hit.transform.position;
-            desiredVelocity = desiredVelocity.normalized * currentSpeed;
+            desiredVelocity = desiredVelocity.normalized * speed;
 
             return desiredVelocity - velocity;
         }
@@ -156,19 +167,24 @@ public class Bird : PlayerControlled
             wanderTarget = Random.insideUnitSphere.normalized * wanderRadius;
         }
 
-        wanderJitter *= Time.deltaTime;
+        wanderTimer -= Time.fixedDeltaTime;
 
-        wanderTarget += new Vector2(
-            Random.Range(-1f, 1f) * wanderJitter,
-            Random.Range(-1f, 1f) * wanderJitter
-            );
+        if(wanderTimer <= 0)
+        {
+            wanderJitter *= Time.fixedDeltaTime;
+            wanderTarget += new Vector2(
+                Random.Range(-1f, 1f) * wanderJitter,
+                Random.Range(-1f, 1f) * wanderJitter
+                );
+            wanderTarget = wanderTarget.normalized * wanderRadius;
 
-        wanderTarget = wanderTarget.normalized * wanderRadius;
+            wanderTimer = wanderDuration;
+        }
 
         Vector2 targetInWorldSpace = (Vector2)transform.position +
             (velocity.normalized * wanderDistance) + wanderTarget;
 
-        return Seek(targetInWorldSpace, speed);
+        return Seek(targetInWorldSpace);
     }
 
 
@@ -198,7 +214,8 @@ public class Bird : PlayerControlled
         Gizmos.color = Color.magenta;
         Gizmos.DrawRay(transform.position, seekForce);
 
-        Gizmos.DrawWireSphere(GetFuturePosition(.5f), 1.5f);
+        Gizmos.color = Color.aliceBlue;
+        Gizmos.DrawRay(transform.position, wanderForce);
 
         Gizmos.color = Color.cyan;
         Gizmos.DrawRay(transform.position, evadeForce);

@@ -137,24 +137,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactables: []
   currentInteractable: {fileID: 0}
-  speed: 6.5
+  speed: 8
   playerInput: {fileID: 0}
   pauseMovement: 1
   controlBird: 0
   hidden: 0
   sprite: {fileID: 5763421282529453951}
   heldObject: {fileID: 0}
-  seekWeight: 1
+  seekWeight: 0.842
   seekTarget: {fileID: 0}
-  evadeWeight: 0.8
+  evadeWeight: 1
   evadeTarget:
     serializedVersion: 2
     m_Bits: 98304
-  evadeRadius: 0.1
-  wanderWeight: 0.7
-  catchUpRadius: 4.5
-  matchSpeedRadius: 50
-  matchSpeed: 5
+  evadeRadius: 0.2
+  wanderWeight: 0.163
+  wanderDuration: 3
+  wanderRad: 5
+  wanderDis: 10
+  wanderJ: 1000
+  seekDistance: 5
 --- !u!95 &4577222157326366297
 Animator:
   serializedVersion: 7
