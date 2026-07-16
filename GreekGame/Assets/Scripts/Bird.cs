@@ -1,10 +1,11 @@
-using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class Bird : PlayerControlled
 {
-    [SerializeField] private SpriteRenderer sprite;
+    [SerializeField] private SortingGroup sortGroup;
 
     [SerializeField] private GameObject heldObject = null;
 
@@ -14,7 +15,7 @@ public class Bird : PlayerControlled
     [Header("Seek")]
     [SerializeField, Range(0, 1f)] private float seekWeight;
     [SerializeField] private GameObject seekTarget;
-    private float seekOffset = 1.5f;
+    private float offset = 1.5f;
 
     [Header("Evade")]
     [SerializeField, Range(0, 1f)] private float evadeWeight;
@@ -106,22 +107,18 @@ public class Bird : PlayerControlled
     private Vector2 CalcSteering()
     {
         totalForce = Vector2.zero;
+        seekForce = Vector2.zero;
 
         // check distance from target 
         Vector2 targetPos = seekTarget.transform.position;
-        targetPos.y -= seekOffset;
+        targetPos.y += offset;
         float distance = Vector2.Distance(targetPos, transform.position);
 
         // seek player when far away 
         if(distance >= seekDistance)
         {
             seekForce = Seek(targetPos) * seekWeight;
-            evadeForce = Evade(.6f) * evadeWeight;
-        }
-        else
-        {
-            seekForce = Vector2.zero;
-            evadeForce = Vector2.zero;
+            //evadeForce = Evade(.6f) * evadeWeight;
         }
 
         // wander at all times 
@@ -197,7 +194,7 @@ public class Bird : PlayerControlled
 
     public void ChangeSortOrder(int order)
     {
-        sprite.sortingOrder = order;
+        sortGroup.sortingOrder = order;
     }
     public Item GetItemHeld()
     {

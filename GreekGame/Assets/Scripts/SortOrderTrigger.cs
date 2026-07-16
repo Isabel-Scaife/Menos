@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SortOrderTrigger : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class SortOrderTrigger : MonoBehaviour
             Item held = bird.GetItemHeld();
             if (held != null)
             {
-                held.GetComponent<SpriteRenderer>().sortingOrder = sortOrder;
+                //held.GetComponent<SpriteRenderer>().sortingOrder = sortOrder;
                 held.CanInteract = playerInteractOn;
             }
         }

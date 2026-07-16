@@ -4049,7 +4049,7 @@ Tilemap:
       m_TileColorIndex: 35
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 0, y: -6, z: 0}
     second:
       serializedVersion: 2
@@ -4059,7 +4059,7 @@ Tilemap:
       m_TileColorIndex: 35
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+      m_AllTileFlags: 1
   - first: {x: 1, y: -6, z: 0}
     second:
       serializedVersion: 2
