@@ -15,6 +15,9 @@ public class FishSpawnManager : MonoBehaviour
     [SerializeField]
     private FishToSort SortFish;
 
+    [SerializeField]
+    private GameObject fishParent;
+
     //list of fish caught
     public List<Fish> fishList;
 
@@ -81,10 +84,10 @@ public class FishSpawnManager : MonoBehaviour
         FishToSort newFish;
         foreach (Fish pondFish in fishList)
         {
-            newFish = Instantiate(SortFish);
+            newFish = Instantiate(SortFish, fishParent.transform);
             newFish.AddComponent<FishToSort>().color = pondFish.spriteRenderer.color;
             newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
-            newFish.transform.position = new Vector3(22, 1, 0);
+            newFish.transform.position = new Vector3(22, 5, 0);
         }
     }
 }

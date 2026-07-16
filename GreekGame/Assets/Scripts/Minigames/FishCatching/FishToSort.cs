@@ -40,13 +40,15 @@ public class FishToSort : MonoBehaviour
         {
             transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
         }
+
+        //Debug.Log("Grabbed: " + grabbed);
     }
 
     //detetcs when moused over and clicked on
     //for fih pickup
     private void OnMouseDown()
     {
-        grabbed = !grabbed;
+        grabbed = true;
     }
 
 }
