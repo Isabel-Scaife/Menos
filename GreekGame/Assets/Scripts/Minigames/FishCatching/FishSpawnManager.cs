@@ -15,6 +15,9 @@ public class FishSpawnManager : MonoBehaviour
     [SerializeField]
     private FishToSort SortFish;
 
+    [SerializeField]
+    private GameObject fishParent;
+
     //list of fish caught
     public List<Fish> fishList;
 
@@ -54,7 +57,7 @@ public class FishSpawnManager : MonoBehaviour
         //checks if 5 fish have been caught
         //only runs once bc catching fish turns off
         ///runs upon switching from fish catching to fish sorting
-        if (fishList.Count>=2 && catchingFish == true)
+        if (fishList.Count>=5 && catchingFish == true)
         {
             catchingFish = false;
 
@@ -81,10 +84,12 @@ public class FishSpawnManager : MonoBehaviour
         FishToSort newFish;
         foreach (Fish pondFish in fishList)
         {
-            newFish = Instantiate(SortFish);
-            newFish.AddComponent<FishToSort>().color = pondFish.spriteRenderer.color;
+            newFish = Instantiate(SortFish, fishParent.transform);
+            newFish.AddComponent<FishToSort>().colorNumR = pondFish.colorNumR;
+            newFish.AddComponent<FishToSort>().colorNumG = pondFish.colorNumG;
+            newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
             newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
-            newFish.transform.position = new Vector3(22, 1, 0);
+            newFish.transform.position = new Vector3(22, 5, 0);
         }
     }
 }
