@@ -3,6 +3,12 @@ using UnityEngine;
 // one die in a dice game
 public class Dice : MonoBehaviour
 {
+    // fields
+    private SpriteRenderer sprRenderer;
+    private MaterialPropertyBlock propBlock;
+    [SerializeField] private Sprite[] sprites;              // 1-6 pips in order
+    
+    // properties
     /// <summary>
     /// whether or not the die is allowed to be rerolled
     /// </summary>
@@ -18,13 +24,19 @@ public class Dice : MonoBehaviour
     /// </summary>
     public bool Selected { get; private set; }
 
+    private void Awake()
+    {
+        sprRenderer = GetComponent<SpriteRenderer>();
+        propBlock = new MaterialPropertyBlock();
+    }
+
     /// <summary>
     /// randomizes this die's value 1-6
     /// </summary>
     public void Roll()
     {
         Value = Random.Range(1, 7);
-        // TODO: change visuals
+        sprRenderer.sprite = sprites[Value - 1];
     }
 
     /// <summary>
@@ -32,7 +44,11 @@ public class Dice : MonoBehaviour
     /// </summary>
     public void Select()
     {
-        if (!Locked) Selected = true;
+        if (!Locked) 
+        {
+            Selected = true;
+            SetHighlight(true);
+        }
     }
 
     /// <summary>
@@ -41,6 +57,7 @@ public class Dice : MonoBehaviour
     public void Deselect()
     {
         Selected = false;
+        SetHighlight(false);
     }
 
     /// <summary>
@@ -59,6 +76,19 @@ public class Dice : MonoBehaviour
     {
         Roll();
         Locked = false;
-        Selected = false;
+        Deselect();
+    }
+
+    /// <summary>
+    /// set highlight on or off
+    /// </summary>
+    /// <param name="enabled">true for on, false for off</param>
+    private void SetHighlight(bool enabled)
+    {
+        sprRenderer.GetPropertyBlock(propBlock);
+        float val = 0.0f;
+        if (enabled) val = 1.0f;
+        propBlock.SetFloat("_OutlineEnabled", val);
+        sprRenderer.SetPropertyBlock(propBlock);
     }
 }
