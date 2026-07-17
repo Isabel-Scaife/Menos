@@ -8,9 +8,11 @@ public class SortOrderTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        Debug.Log(collision.name + ", " + collision.tag);
         if (collision.CompareTag("Bird"))
         {
-            Bird bird = collision.GetComponent<Bird>();
+            Debug.Log("run");
+            Bird bird = collision.GetComponentInParent<Bird>();
             bird.ChangeSortOrder(sortOrder);
 
             Item held = bird.GetItemHeld();

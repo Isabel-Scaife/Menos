@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7684621112807789373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 786100558232803842, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_Name
+      value: Bird_Indoor Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496650674017284462, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.8899999
+      objectReference: {fileID: 0}
+    - target: {fileID: 2241461099715948230, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -948589053525025941, guid: 86bcec9a713dc8c408ef19b24968fad1, type: 3}
+    - target: {fileID: 2881227875708387252, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.361615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3547475311329871906, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045596188787304847, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8638424459360643988, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: m_TagString
+      value: Bird
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
