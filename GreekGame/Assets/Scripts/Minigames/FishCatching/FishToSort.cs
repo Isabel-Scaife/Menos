@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Unity.VisualScripting.StickyNote;
 
 public class FishToSort : MonoBehaviour
 {
@@ -9,13 +10,17 @@ public class FishToSort : MonoBehaviour
 
     //fish parameters
     public float size;
-    public Color color;
+    public float colorNumR;
+    public float colorNumG;
+    public float colorNumB;
     public int id;
 
-    public FishToSort(float size, Color color)
+    public FishToSort(float size, float colorNumR, float colorNumG, float colorNumB)
     {
         this.size = size;
-        this.color = color;
+        this.colorNumR = colorNumR;
+        this.colorNumG = colorNumG;
+        this.colorNumB = colorNumB;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +32,7 @@ public class FishToSort : MonoBehaviour
 
         //sets fish physical appearance
         transform.localScale = new Vector3(size/2, size/2, 1);
-        //spriteRenderer.color = color;
+        spriteRenderer.color = new UnityEngine.Color(colorNumR, colorNumG, colorNumB, 1);
     }
 
     // Update is called once per frame

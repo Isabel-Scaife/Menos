@@ -85,7 +85,9 @@ public class FishSpawnManager : MonoBehaviour
         foreach (Fish pondFish in fishList)
         {
             newFish = Instantiate(SortFish, fishParent.transform);
-            newFish.AddComponent<FishToSort>().color = pondFish.spriteRenderer.color;
+            newFish.AddComponent<FishToSort>().colorNumR = pondFish.colorNumR;
+            newFish.AddComponent<FishToSort>().colorNumG = pondFish.colorNumG;
+            newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
             newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
             newFish.transform.position = new Vector3(22, 5, 0);
         }
