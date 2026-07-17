@@ -41,7 +41,12 @@ public class FishToSort : MonoBehaviour
             transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
         }
 
-        //Debug.Log("Grabbed: " + grabbed);
+        //drops fish
+        if (grabbed && Input.GetMouseButtonDown(1))
+        {
+            grabbed = false;
+        }
+
     }
 
     //detetcs when moused over and clicked on

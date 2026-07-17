@@ -28,13 +28,23 @@ public class FishSlot : MonoBehaviour
             //sets current fish
             fishInPlace = fishHovering;
             Debug.Log("Snapped");
-        } 
+        }
 
+        //if there is a fish snapped but picked up
+        if (fishInPlace != null && fishInPlace.grabbed)
+        {
+            fishInPlace = null;
+        }
+
+        //if there is a fish snapped
         if (fishInPlace != null)
         {
             Debug.Log("fih");
+            fishInPlace.grabbed = false;
             fishInPlace.gameObject.transform.position = this.transform.position;
         }
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

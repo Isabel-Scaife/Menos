@@ -57,7 +57,7 @@ public class FishSpawnManager : MonoBehaviour
         //checks if 5 fish have been caught
         //only runs once bc catching fish turns off
         ///runs upon switching from fish catching to fish sorting
-        if (fishList.Count>=2 && catchingFish == true)
+        if (fishList.Count>=5 && catchingFish == true)
         {
             catchingFish = false;
 
