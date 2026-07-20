@@ -194,11 +194,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2114044201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &21266281 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3399567360816744471, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
-  m_PrefabInstance: {fileID: 1896483391}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &39857858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6280,7 +6275,19 @@ MonoBehaviour:
     m_ActionId: 852140f2-7766-474d-8707-702459ba45f3
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 118583158}
+        m_TargetAssemblyTypeName: Bird, Assembly-CSharp
+        m_MethodName: ToggleFollow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
@@ -30636,6 +30643,11 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 4701789603063443229, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
   m_PrefabInstance: {fileID: 1896483391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1896483393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5512970191075031693, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
+  m_PrefabInstance: {fileID: 1896483391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898864513
 GameObject:
   m_ObjectHideFlags: 0
@@ -31239,7 +31251,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 507889756683833511, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
   m_PrefabInstance: {fileID: 1896483391}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21266281}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6863623e9436c4e45ba4f0a7b2c07769, type: 3}
@@ -31294,13 +31306,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3933627264696534921, guid: fd7d9bae509e00546b6c7b98c1ba84d2, type: 3}
-      propertyPath: seekTarget
-      value: 
-      objectReference: {fileID: 21266281}
-    - target: {fileID: 3933627264696534921, guid: fd7d9bae509e00546b6c7b98c1ba84d2, type: 3}
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 715792922}
+    - target: {fileID: 3933627264696534921, guid: fd7d9bae509e00546b6c7b98c1ba84d2, type: 3}
+      propertyPath: arriveTarget
+      value: 
+      objectReference: {fileID: 1896483393}
     - target: {fileID: 6601828659058252575, guid: fd7d9bae509e00546b6c7b98c1ba84d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.361615

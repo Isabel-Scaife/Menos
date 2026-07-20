@@ -68,6 +68,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.56
       objectReference: {fileID: 0}
+    - target: {fileID: 6643459296126784692, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: slowRad
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459296126784692, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: evadeWeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459296126784692, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: arriveWeight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459296126784692, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: seekDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459296126784692, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
+      propertyPath: wanderWeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8638424459360643988, guid: f4c3577a0f1db1f4f90928c2728eabd9, type: 3}
       propertyPath: m_TagString
       value: Bird
