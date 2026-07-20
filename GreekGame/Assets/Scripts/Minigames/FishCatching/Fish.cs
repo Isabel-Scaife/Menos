@@ -27,7 +27,6 @@ public class Fish : MonoBehaviour
         colorNumG = Random.Range(0, 255)/255f;
         colorNumB = Random.Range(0, 255)/255f;
 
-        Debug.Log()
         //sets current size to a third of true size so 
         //it can appear to float to the surface
         currentSize = trueSize / 3f;

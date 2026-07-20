@@ -12,10 +12,13 @@ public class Bird : PlayerControlled
     private Vector2 acceleration, steeringForce;
 
     [Header("Non-Player control movement")]
-    [Header("Seek")]
-    [SerializeField, Range(0, 1f)] private float seekWeight;
-    [SerializeField] private GameObject seekTarget;
-    private float offset = 1.5f;
+    private bool landed = false;
+    private float offset = -6.5f;
+
+    [Header("Arrive")]
+    [SerializeField, Range(0, 1f)] private float arriveWeight;
+    [SerializeField] private GameObject arriveTarget;
+    [SerializeField] private float slowRad;
 
     [Header("Evade")]
     [SerializeField, Range(0, 1f)] private float evadeWeight;
@@ -34,7 +37,7 @@ public class Bird : PlayerControlled
     [Header("Distance from Player")]
     [SerializeField] private float seekDistance;
 
-    private Vector2 totalForce, seekForce, evadeForce, wanderForce;
+    private Vector2 totalForce, arriveForce, evadeForce, wanderForce;
 
     protected override void Awake()
     {
@@ -44,7 +47,7 @@ public class Bird : PlayerControlled
 
     public override void Move(InputAction.CallbackContext context)
     {
-        if(controlBird) base.Move(context);
+        if (controlBird) base.Move(context);
     }
 
     public override void Interact(InputAction.CallbackContext context)
@@ -76,6 +79,8 @@ public class Bird : PlayerControlled
     protected override void FixedUpdate()
     {
         // bird automoved if not controlled
+        if (landed) return;
+
         if(!controlBird)
         {
             // determine acceleration
@@ -104,29 +109,36 @@ public class Bird : PlayerControlled
         return desiredVelocity - velocity;
     }
 
+    private Vector2 Arrive(Vector2 targetPos, float slowRadius)
+    {
+        Vector2 distance = targetPos - (Vector2)transform.position;
+        float arriveSpeed = speed * (distance.magnitude / slowRadius);
+        arriveSpeed = Mathf.Min(arriveSpeed, speed);
+
+        Vector2 desiredVelocity = arriveSpeed * distance.normalized;
+
+        return desiredVelocity - velocity;
+    }
+
     private Vector2 CalcSteering()
     {
         totalForce = Vector2.zero;
-        seekForce = Vector2.zero;
+        arriveForce = Vector2.zero;
 
         // check distance from target 
-        Vector2 targetPos = seekTarget.transform.position;
+        Vector2 targetPos = arriveTarget.transform.position;
         targetPos.y += offset;
-        float distance = Vector2.Distance(targetPos, transform.position);
 
-        // seek player when far away 
-        if(distance >= seekDistance)
-        {
-            seekForce = Seek(targetPos) * seekWeight;
-            //evadeForce = Evade(.6f) * evadeWeight;
-        }
+        // move to player
+        arriveForce = Arrive(targetPos, slowRad) * arriveWeight;
 
         // wander at all times 
         wanderForce = Wander(wanderRad, wanderDis, wanderJ) * wanderWeight;
 
-        totalForce += seekForce + evadeForce + wanderForce;
+        totalForce += arriveForce + evadeForce + wanderForce;
         return totalForce;
     }
+
 
     private Vector2 Evade(float timeInSeconds)
     {
@@ -206,10 +218,25 @@ public class Bird : PlayerControlled
         return null;
     } 
 
+    public void Land()
+    {
+        landed = true;
+        
+        // stop moving
+        velocity = Vector2.zero;
+        acceleration = Vector2.zero;
+        steeringForce = Vector2.zero;
+    }
+
+    public void TakeOff()
+    {
+        landed = false;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;
-        Gizmos.DrawRay(transform.position, seekForce);
+        Gizmos.DrawRay(transform.position, arriveForce);
 
         Gizmos.color = Color.aliceBlue;
         Gizmos.DrawRay(transform.position, wanderForce);
