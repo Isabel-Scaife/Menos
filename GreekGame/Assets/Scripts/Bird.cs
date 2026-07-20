@@ -12,7 +12,7 @@ public class Bird : PlayerControlled
     private Vector2 acceleration, steeringForce;
 
     [Header("Non-Player control movement")]
-    private bool landed = false;
+    private bool follow = true;
     private float offset = -6.5f;
 
     [Header("Arrive")]
@@ -79,10 +79,13 @@ public class Bird : PlayerControlled
     protected override void FixedUpdate()
     {
         // bird automoved if not controlled
-        if (landed) return;
+        if(controlBird) base.FixedUpdate();
+
+        if (!follow) return;
 
         if(!controlBird)
         {
+
             // determine acceleration
             acceleration = Vector2.zero;
             steeringForce = CalcSteering();
@@ -96,7 +99,6 @@ public class Bird : PlayerControlled
             Vector2 nextPos = (Vector2) transform.position + velocity * Time.fixedDeltaTime;
             rb.MovePosition(nextPos);
         }
-        else base.FixedUpdate();
     }
 
     // methods that help determine bird movement when not controlled
@@ -220,17 +222,29 @@ public class Bird : PlayerControlled
 
     public void Land()
     {
-        landed = true;
+        follow = false;
         
         // stop moving
         velocity = Vector2.zero;
         acceleration = Vector2.zero;
         steeringForce = Vector2.zero;
+
+        // animation 
     }
 
     public void TakeOff()
     {
-        landed = false;
+        follow = true;
+
+        // animation
+    }
+
+    public void ToggleFollow()
+    {
+        if (PauseMovement) return;
+        follow = !follow;
+
+        // Update UI 
     }
 
     private void OnDrawGizmos()
