@@ -31,7 +31,6 @@ public class FishSlot : MonoBehaviour
 
             //sets current fish
             fishInPlace = fishHovering;
-            Debug.Log("Snapped");
         }
 
         //if there is a fish snapped but picked up
@@ -43,7 +42,6 @@ public class FishSlot : MonoBehaviour
         //if there is a fish snapped
         if (fishInPlace != null)
         {
-            Debug.Log("fih");
             hand.fishInHand = null;
             fishInPlace.gameObject.transform.position = this.transform.position;
         }
@@ -60,12 +58,10 @@ public class FishSlot : MonoBehaviour
     {
         //sets it to fish that is hoverirng
         fishHovering = collision.gameObject.GetComponent<FishToSort>();
-        Debug.Log("Fish hoveirnrgh");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         fishHovering = null;
-        Debug.Log("No longerr hovering");
     }
 }

@@ -107,7 +107,7 @@ public class FishSpawnManager : MonoBehaviour
             newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
             newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
             newFish.id = fihID;
-            newFish.transform.position = new Vector3(22, 3, 0);
+            newFish.transform.position = new Vector3(22-fihID, 3, 0);
             fihID++;
         }
     }
