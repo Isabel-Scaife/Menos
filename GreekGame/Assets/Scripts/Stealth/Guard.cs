@@ -32,6 +32,8 @@ public class Guard : MonoBehaviour
     private int distance = 10;
     [SerializeField]
     private bool horizontal = true;
+    [SerializeField]
+    private bool stationary = false;
 
     //vision cone
     [SerializeField]
@@ -99,14 +101,14 @@ public class Guard : MonoBehaviour
         oldpingPong = pingPong;
         pingPong = Mathf.PingPong(Time.time * 2, max - min);
         //moves guard back and forth
-        if (horizontal)
+        if (horizontal && !stationary)
         {
             transform.position =
                 new Vector3(pingPong + min,
                 transform.position.y,
                 0);
         }
-        else
+        else if (!stationary)
         {
             transform.position =
                 new Vector3(transform.position.x,
