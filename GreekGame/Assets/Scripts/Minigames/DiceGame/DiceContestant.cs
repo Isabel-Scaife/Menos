@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DicePlayer : MonoBehaviour
+public class DiceContestant : MonoBehaviour
 {
     // fields
     [SerializeField] private List<Dice> dice;
+    private int rolls;
 
     // properties
     /*
@@ -28,6 +29,15 @@ public class DicePlayer : MonoBehaviour
         }
     }
     */
+
+    /// <summary>
+    /// gets how many times this player rolled their dice
+    /// </summary>
+    /// <returns>number of rolls used by this player</returns>
+    public int GetRollsUsed()
+    {
+        return rolls;
+    }
 
     /// <summary>
     /// gets the sum of this player's dice's values
@@ -70,6 +80,7 @@ public class DicePlayer : MonoBehaviour
         {
             if (!dice[i].Locked) dice[i].Roll();
         }
+        rolls++;
     }
 
     /// <summary>
@@ -82,5 +93,6 @@ public class DicePlayer : MonoBehaviour
         {
             dice[i].Reset();
         }
+        rolls = 0;
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 // one die in a dice game
 public class Dice : MonoBehaviour
@@ -29,6 +30,8 @@ public class Dice : MonoBehaviour
         sprRenderer = GetComponent<SpriteRenderer>();
         propBlock = new MaterialPropertyBlock();
     }
+
+    // TODO: onclick
 
     /// <summary>
     /// randomizes this die's value 1-6
