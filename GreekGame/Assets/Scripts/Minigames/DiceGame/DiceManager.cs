@@ -32,6 +32,15 @@ public class DiceManager : MonoBehaviour
         bool firstWin = false;
 
         // if wincon met and first win flag not yet set, firstwin = true and set flag
+        if (WinConditionMet())
+        {
+
+        }
+
+        else if (true)  // loss condition
+        {
+
+        }
     }
 
     /// <summary>
@@ -61,7 +70,7 @@ public class DiceManager : MonoBehaviour
     //      plays when starting dice game, it is not triggered by interacting)
     private void RunPostGameDialogue(bool win, bool firstWin)
     {
-        if (DialogueManager.Instance != null) return;
+        if (DialogueManager.Instance == null) return;
         DialogueSO dialogue = lossDialogue;
         if (firstWin) dialogue = firstWinDialogue;
         else if (win) dialogue = winDialogue;
