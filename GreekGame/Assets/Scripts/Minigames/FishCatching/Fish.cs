@@ -9,7 +9,9 @@ public class Fish : MonoBehaviour
     //parameters
     public float trueSize;
     private float currentSize;
-    private int colorNum;
+    public float colorNumR;
+    public float colorNumG;
+    public float colorNumB;
 
     public SpriteRenderer spriteRenderer;
     private Collider2D objCollider;
@@ -21,7 +23,12 @@ public class Fish : MonoBehaviour
     {
         //sets fish parameters
         trueSize = Random.Range(0, 5);
-        colorNum = Random.Range(0, 7);
+
+        //---DECIDES FISH COLOR---
+        //this works!!
+        colorNumR = Random.Range(0, 255)/255f;
+        colorNumG = Random.Range(0, 255)/255f;
+        colorNumB = Random.Range(0, 255)/255f;
 
         //sets current size to a third of true size so 
         //it can appear to float to the surface
@@ -31,29 +38,9 @@ public class Fish : MonoBehaviour
         transform.localScale = new Vector3(currentSize, currentSize, 1);
 
         //sets fish color 
+        //this works
         spriteRenderer = GetComponent<SpriteRenderer>();
-        switch (colorNum)
-        {
-            case 0:
-                spriteRenderer.color = UnityEngine.Color.red;
-                break;
-            case 1:
-                spriteRenderer.color = UnityEngine.Color.blue;
-                break;
-            case 2:
-                spriteRenderer.color = UnityEngine.Color.orange;
-                break;
-            case 3:
-                spriteRenderer.color = UnityEngine.Color.coral;
-                break;
-            case 4:
-                spriteRenderer.color = UnityEngine.Color.antiqueWhite;
-                break;
-            default:
-                spriteRenderer.color = UnityEngine.Color.oliveDrab;
-                break;
-
-        }
+        spriteRenderer.color = new UnityEngine.Color(colorNumR, colorNumG, colorNumB, 1);
 
         //sets fish spawn location
         transform.position = new Vector3(Random.Range(0, 5), Random.Range(0, 5), 1);

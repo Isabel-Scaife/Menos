@@ -8,6 +8,8 @@ public class FishSpawnManager : MonoBehaviour
     //counts every frame to know how often to spawn fish
     int frameCount;
 
+
+
     //fish prefab
     [SerializeField]
     private GameObject PondFish;
@@ -57,23 +59,36 @@ public class FishSpawnManager : MonoBehaviour
         //checks if 5 fish have been caught
         //only runs once bc catching fish turns off
         ///runs upon switching from fish catching to fish sorting
-        if (fishList.Count>=2 && catchingFish == true)
+        if (fishList.Count>=5 && catchingFish == true)
         {
             catchingFish = false;
 
             camera.transform.position = new Vector3(23, 0, -10);
 
-            //FishSort();
+            FishSort();
             FishConvert();
         }
     }
-
     /// <summary>
     /// sorts fish by size and assigns id's in order
     /// </summary>
     private void FishSort()
     {
+        //bubble sort to put fih in the right spot
+        int n = fishList.Count;
 
+        for (int i = 0; i < n - 1; i++)
+        {
+            for (int j = 0; j < n - i - 1; j++)
+            {
+                if (fishList[j].trueSize > fishList[j + 1].trueSize)
+                {
+                    Fish temp = fishList[j];
+                    fishList[j] = fishList[j + 1];
+                    fishList[j + 1] = temp;
+                }
+            }
+        }
     }
 
     /// <summary>
@@ -82,12 +97,20 @@ public class FishSpawnManager : MonoBehaviour
     private void FishConvert()
     {
         FishToSort newFish;
+        //assigns ID in here based on its location in the array, which was already sorted
+        int fihID = 0;
         foreach (Fish pondFish in fishList)
         {
-            newFish = Instantiate(SortFish, fishParent.transform);
-            newFish.AddComponent<FishToSort>().color = pondFish.spriteRenderer.color;
+            newFish = Instantiate(SortFish);
+
+            //---THIS IS WHERE THE FIH ARE TRANSFERRED---
+            newFish.AddComponent<FishToSort>().colorNumR = pondFish.colorNumR;
+            newFish.AddComponent<FishToSort>().colorNumG = pondFish.colorNumG;
+            newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
             newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
-            newFish.transform.position = new Vector3(22, 5, 0);
+            newFish.id = fihID;
+            newFish.transform.position = new Vector3(22-fihID, 3, 0);
+            fihID++;
         }
     }
 }

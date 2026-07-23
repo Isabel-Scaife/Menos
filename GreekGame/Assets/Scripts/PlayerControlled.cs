@@ -48,11 +48,11 @@ public class PlayerControlled : MonoBehaviour
     public Vector2 Direction { get { return direction; } }
     public bool PauseMovement { get => pauseMovement; set => pauseMovement = value; }
 
-    private void Awake()
+    protected virtual void Awake()
     {
         // gets components
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
 
         PauseMovement = false;
     }
@@ -92,7 +92,8 @@ public class PlayerControlled : MonoBehaviour
         if (controlBird && this.CompareTag("Bird"))
         {
             CameraFollow.Instance.SetTarget(this.gameObject.transform);
-            CameraFollow.Instance.SetOffset(new Vector2(0,.5f));
+            CameraFollow.Instance.SetDistance(9);
+            CameraFollow.Instance.SetOffset(new Vector2(0, .3f));
         }
         else if (!controlBird && this.CompareTag("Player"))
         {

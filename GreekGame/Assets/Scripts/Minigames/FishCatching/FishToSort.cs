@@ -1,21 +1,31 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static Unity.VisualScripting.StickyNote;
 
 public class FishToSort : MonoBehaviour
 {
+    //ref to fish spawn manager
+    [SerializeField]
+    private Hand hand;
     public bool grabbed;
     private Vector2 mousePosition;
     public SpriteRenderer spriteRenderer;
 
     //fish parameters
     public float size;
-    public Color color;
+    public float colorNumR;
+    public float colorNumG;
+    public float colorNumB;
     public int id;
 
-    public FishToSort(float size, Color color)
+    public FishToSort(float size, float colorNumR, float colorNumG, float colorNumB)
     {
         this.size = size;
-        this.color = color;
+
+        //----INTAKE OF FISH COLOR----
+        this.colorNumR = colorNumR;
+        this.colorNumG = colorNumG;
+        this.colorNumB = colorNumB;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +37,12 @@ public class FishToSort : MonoBehaviour
 
         //sets fish physical appearance
         transform.localScale = new Vector3(size/2, size/2, 1);
-        //spriteRenderer.color = color;
+
+        //---SETS RENDEREER TO COLOR----
+        spriteRenderer.color = new Color(colorNumR, colorNumG, colorNumB, 1);
+
+        //calls handw
+        hand = FindFirstObjectByType<Hand>();
     }
 
     // Update is called once per frame
@@ -36,19 +51,24 @@ public class FishToSort : MonoBehaviour
         mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         //Pickks up fih
-        if (grabbed)
+        if (hand.fishInHand == this)
         {
             transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
         }
 
-        //Debug.Log("Grabbed: " + grabbed);
+        //drops fish
+        if (hand.fishInHand == this && Input.GetMouseButtonDown(1))
+        {
+            hand.fishInHand = null;
+        }
+
     }
 
     //detetcs when moused over and clicked on
     //for fih pickup
     private void OnMouseDown()
     {
-        grabbed = true;
+        hand.fishInHand = this;
     }
 
 }
