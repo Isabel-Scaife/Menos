@@ -23,6 +23,9 @@ public class Fish : MonoBehaviour
     {
         //sets fish parameters
         trueSize = Random.Range(0, 5);
+
+        //---DECIDES FISH COLOR---
+        //this works!!
         colorNumR = Random.Range(0, 255)/255f;
         colorNumG = Random.Range(0, 255)/255f;
         colorNumB = Random.Range(0, 255)/255f;
@@ -35,6 +38,7 @@ public class Fish : MonoBehaviour
         transform.localScale = new Vector3(currentSize, currentSize, 1);
 
         //sets fish color 
+        //this works
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = new UnityEngine.Color(colorNumR, colorNumG, colorNumB, 1);
 
