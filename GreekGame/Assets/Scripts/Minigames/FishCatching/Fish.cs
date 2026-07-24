@@ -38,7 +38,7 @@ public class Fish : MonoBehaviour
         //sets fish color 
         //this works
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 1);
+        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 255);
 
         //sets fish spawn location
         transform.position = new Vector3(Random.Range(0, 5), Random.Range(0, 5), 1);
