@@ -39,7 +39,7 @@ public class FishToSort : MonoBehaviour
         transform.localScale = new Vector3(size/2, size/2, 1);
 
         //---SETS RENDEREER TO COLOR----
-        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 1);
+        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 255);
 
         //calls handw
         hand = FindFirstObjectByType<Hand>();
