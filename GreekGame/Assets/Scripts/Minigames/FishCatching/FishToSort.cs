@@ -18,10 +18,11 @@ public class FishToSort : MonoBehaviour
     public byte colorNumB;
     public int id;
 
-    public FishToSort(float size, byte colorNumR, byte colorNumG, byte colorNumB)
+    // in unity you can not use traditional instantiate, so do this instead 
+    public void Initialize(float size, byte colorNumR, byte colorNumG, byte colorNumB)
     {
         this.size = size;
-
+        Debug.Log(colorNumR + ", " + colorNumG + ", " + colorNumB);
         //----INTAKE OF FISH COLOR----
         this.colorNumR = colorNumR;
         this.colorNumG = colorNumG;

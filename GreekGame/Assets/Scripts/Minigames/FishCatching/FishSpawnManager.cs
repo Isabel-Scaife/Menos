@@ -98,19 +98,20 @@ public class FishSpawnManager : MonoBehaviour
     {
         FishToSort newFish;
         //assigns ID in here based on its location in the array, which was already sorted
-        int fihID = 0;
+        int fishID = 0;
         foreach (Fish pondFish in fishList)
         {
-            newFish = Instantiate(SortFish);
 
             //---THIS IS WHERE THE FIH ARE TRANSFERRED---
-            newFish.AddComponent<FishToSort>().colorNumR = pondFish.colorNumR;
-            newFish.AddComponent<FishToSort>().colorNumG = pondFish.colorNumG;
-            newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
-            newFish.AddComponent<FishToSort>().size = pondFish.trueSize;
-            newFish.id = fihID;
-            newFish.transform.position = new Vector3(22-fihID, 3, 0);
-            fihID++;
+
+            // create fish and apply data 
+            newFish = Instantiate(SortFish);
+
+            // in unity you can not use traditional instantiate, so do this instead 
+            newFish.Initialize(pondFish.trueSize, pondFish.colorNumR, pondFish.colorNumG, pondFish.colorNumB);
+            newFish.id = fishID;
+            newFish.transform.position = new Vector3(22-fishID, 3, 0);
+            fishID++;
         }
     }
 }
