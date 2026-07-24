@@ -21,6 +21,8 @@ public class FishToSort : MonoBehaviour
     public FishToSort(float size, float colorNumR, float colorNumG, float colorNumB)
     {
         this.size = size;
+
+        //----INTAKE OF FISH COLOR----
         this.colorNumR = colorNumR;
         this.colorNumG = colorNumG;
         this.colorNumB = colorNumB;
@@ -35,6 +37,8 @@ public class FishToSort : MonoBehaviour
 
         //sets fish physical appearance
         transform.localScale = new Vector3(size/2, size/2, 1);
+
+        //---SETS RENDEREER TO COLOR----
         spriteRenderer.color = new Color(colorNumR, colorNumG, colorNumB, 1);
 
         //calls handw

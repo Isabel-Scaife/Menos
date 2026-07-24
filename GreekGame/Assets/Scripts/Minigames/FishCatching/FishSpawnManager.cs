@@ -102,6 +102,8 @@ public class FishSpawnManager : MonoBehaviour
         foreach (Fish pondFish in fishList)
         {
             newFish = Instantiate(SortFish);
+
+            //---THIS IS WHERE THE FIH ARE TRANSFERRED---
             newFish.AddComponent<FishToSort>().colorNumR = pondFish.colorNumR;
             newFish.AddComponent<FishToSort>().colorNumG = pondFish.colorNumG;
             newFish.AddComponent<FishToSort>().colorNumB = pondFish.colorNumB;
