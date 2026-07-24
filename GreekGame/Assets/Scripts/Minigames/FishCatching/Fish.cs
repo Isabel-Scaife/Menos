@@ -1,17 +1,15 @@
-using System.Drawing;
-using System.Linq;
+
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
+
 
 public class Fish : MonoBehaviour
 {
     //parameters
     public float trueSize;
     private float currentSize;
-    public float colorNumR;
-    public float colorNumG;
-    public float colorNumB;
+    public byte colorNumR;
+    public byte colorNumG;
+    public byte colorNumB;
 
     public SpriteRenderer spriteRenderer;
     private Collider2D objCollider;
@@ -26,9 +24,9 @@ public class Fish : MonoBehaviour
 
         //---DECIDES FISH COLOR---
         //this works!!
-        colorNumR = Random.Range(0, 255)/255f;
-        colorNumG = Random.Range(0, 255)/255f;
-        colorNumB = Random.Range(0, 255)/255f;
+        colorNumR = (byte)Random.Range(0, 255);
+        colorNumG = (byte)Random.Range(0, 255);
+        colorNumB = (byte)Random.Range(0, 255);
 
         //sets current size to a third of true size so 
         //it can appear to float to the surface
@@ -40,7 +38,7 @@ public class Fish : MonoBehaviour
         //sets fish color 
         //this works
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = new UnityEngine.Color(colorNumR, colorNumG, colorNumB, 1);
+        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 1);
 
         //sets fish spawn location
         transform.position = new Vector3(Random.Range(0, 5), Random.Range(0, 5), 1);

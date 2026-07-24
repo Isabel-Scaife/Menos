@@ -13,12 +13,12 @@ public class FishToSort : MonoBehaviour
 
     //fish parameters
     public float size;
-    public float colorNumR;
-    public float colorNumG;
-    public float colorNumB;
+    public byte colorNumR;
+    public byte colorNumG;
+    public byte colorNumB;
     public int id;
 
-    public FishToSort(float size, float colorNumR, float colorNumG, float colorNumB)
+    public FishToSort(float size, byte colorNumR, byte colorNumG, byte colorNumB)
     {
         this.size = size;
 
@@ -39,7 +39,7 @@ public class FishToSort : MonoBehaviour
         transform.localScale = new Vector3(size/2, size/2, 1);
 
         //---SETS RENDEREER TO COLOR----
-        spriteRenderer.color = new Color(colorNumR, colorNumG, colorNumB, 1);
+        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 1);
 
         //calls handw
         hand = FindFirstObjectByType<Hand>();
