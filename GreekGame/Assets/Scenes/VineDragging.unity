@@ -307,7 +307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VineDragMinigame
   amtToWin: 6
-  count: 0
+  count: 1
   coveredObject: {fileID: 1515883574}
   coveredCorners: []
 --- !u!1001 &408971100
@@ -624,7 +624,7 @@ Canvas:
   m_GameObject: {fileID: 644042968}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1113232387}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1783,6 +1783,10 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 670558840}
+    - target: {fileID: 8577901068762489897, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: onObject
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []

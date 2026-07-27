@@ -31,6 +31,7 @@ public class DraggableNode : MonoBehaviour, IDragHandler, IEndDragHandler
         // check collisions
         foreach (VineEdge edge in connectedEdges) 
         {
+            Debug.Log("edge");
             edge.CheckOverlap();
         }
     }
