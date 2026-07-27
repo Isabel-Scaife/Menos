@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class MinigameSwapper : Item
 {
+    private ControlsUI controlsUI;
+
     [Header("Camera Changes")]
     [SerializeField] protected Transform followObject;
     [SerializeField] private Collider2D mapBounds;
@@ -21,6 +23,7 @@ public class MinigameSwapper : Item
     {
         base.Awake();
         confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
+        controlsUI = Object.FindAnyObjectByType<ControlsUI>();
     }
 
     protected void SetCamera()
@@ -29,6 +32,7 @@ public class MinigameSwapper : Item
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
         CameraFollow.Instance.SetOffset(offset);
+        controlsUI.gameObject.SetActive(false);
         if (canvas != null) canvas.SetActive(true);
     }
 
@@ -36,15 +40,30 @@ public class MinigameSwapper : Item
     {
         confiner.BoundingShape2D = originalBounds;
         CameraFollow.Instance.ResetCamera();
+
+        // resume player and bird
         playerRef.PauseMovement = false;
+        if (playerRef is Player)
+        {
+            ((Player)playerRef).bird.PauseMovement = false;
+        }
+
         if (canvas != null) canvas.SetActive(false);
+        controlsUI.gameObject.SetActive(true);
     }
 
     public override void Interact(PlayerControlled player)
     {
         originalBounds = confiner.BoundingShape2D;
+        
+        // pause player and bird
         player.PauseMovement = true;
         playerRef = player;
+        if(playerRef is Player)
+        {
+            ((Player)playerRef).bird.PauseMovement = true;
+        }
+
         base.Interact(player);
     }
 }
