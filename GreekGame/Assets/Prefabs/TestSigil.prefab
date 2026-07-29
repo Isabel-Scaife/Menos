@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4785671229880111055}
   - component: {fileID: 4822430922533325910}
   - component: {fileID: 4177326724455958913}
-  m_Layer: 17
+  m_Layer: 14
   m_Name: TestSigil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &4822430922533325910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprOn: {fileID: 4907431795327863886, guid: 18e21f7dc99bc034985022979fdf84b5, type: 3}
   sprOff: {fileID: 4875910676821532629, guid: 2dea238648c437643a5f1e78610ed653, type: 3}
-  sprRenderer: {fileID: 4785671229880111055}
   isOn: 0
 --- !u!61 &4177326724455958913
 BoxCollider2D:
@@ -125,7 +124,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 32768
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -143,10 +142,10 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 1}
     oldSize: {x: 2.4, y: 2.4}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5

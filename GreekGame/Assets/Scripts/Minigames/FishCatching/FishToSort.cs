@@ -13,15 +13,16 @@ public class FishToSort : MonoBehaviour
 
     //fish parameters
     public float size;
-    public float colorNumR;
-    public float colorNumG;
-    public float colorNumB;
+    public byte colorNumR;
+    public byte colorNumG;
+    public byte colorNumB;
     public int id;
 
-    public FishToSort(float size, float colorNumR, float colorNumG, float colorNumB)
+    // in unity you can not use traditional instantiate, so do this instead 
+    public void Initialize(float size, byte colorNumR, byte colorNumG, byte colorNumB)
     {
         this.size = size;
-
+        Debug.Log(colorNumR + ", " + colorNumG + ", " + colorNumB);
         //----INTAKE OF FISH COLOR----
         this.colorNumR = colorNumR;
         this.colorNumG = colorNumG;
@@ -39,7 +40,7 @@ public class FishToSort : MonoBehaviour
         transform.localScale = new Vector3(size/2, size/2, 1);
 
         //---SETS RENDEREER TO COLOR----
-        spriteRenderer.color = new Color(colorNumR, colorNumG, colorNumB, 1);
+        spriteRenderer.color = new Color32(colorNumR, colorNumG, colorNumB, 255);
 
         //calls handw
         hand = FindFirstObjectByType<Hand>();

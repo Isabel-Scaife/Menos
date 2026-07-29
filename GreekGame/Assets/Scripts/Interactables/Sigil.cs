@@ -3,15 +3,13 @@ using UnityEngine;
 /// <summary>
 /// Switch that can be turned on or off when interacted with and checked by other scripts
 /// </summary>
-public class Sigil : Interactable
+public class Sigil : MonoBehaviour
 {
     // fields
-    [SerializeField]
-    private Sprite sprOn;
-    [SerializeField]
-    private Sprite sprOff;
-    [SerializeField]
-    private bool isOn;
+    private SpriteRenderer spriteRenderer;
+    [SerializeField] private Sprite sprOn;
+    [SerializeField] private Sprite sprOff;
+    [SerializeField] private bool isOn;
 
     // properties
     public bool IsOn
@@ -22,14 +20,15 @@ public class Sigil : Interactable
     // functions
     private void Start()
     {
-        if (isOn) sprRenderer.sprite = sprOn;
-        else sprRenderer.sprite = sprOff;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        if (isOn) spriteRenderer.sprite = sprOn;
+        else spriteRenderer.sprite = sprOff;
     }
 
-    public override void Interact(PlayerControlled player)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isOn) sprRenderer.sprite = sprOff;
-        else sprRenderer.sprite = sprOn;
+        if (isOn) spriteRenderer.sprite = sprOff;
+        else spriteRenderer.sprite = sprOn;
         isOn = !isOn;
     }
 }

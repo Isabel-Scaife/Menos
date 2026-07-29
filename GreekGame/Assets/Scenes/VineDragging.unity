@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -223,7 +231,8 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 1456196712}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -238,6 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171084105}
   - component: {fileID: 171084106}
+  - component: {fileID: 171084107}
   m_Layer: 5
   m_Name: VinesGraph
   m_TagString: Untagged
@@ -284,6 +294,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171084104}
   m_CullTransparentMesh: 1
+--- !u!114 &171084107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171084104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d647af2918ba0147a666aa64e9b0cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VineDragMinigame
+  amtToWin: 6
+  count: 1
+  coveredObject: {fileID: 1515883574}
+  coveredCorners: []
 --- !u!1001 &408971100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -292,6 +318,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -388,7 +422,8 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 1975623976}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -406,6 +441,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -502,7 +545,8 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 2132318445}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -580,7 +624,7 @@ Canvas:
   m_GameObject: {fileID: 644042968}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1113232387}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -665,6 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   immovable: 0
+  connectedEdges: []
 --- !u!114 &670558842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,6 +903,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -954,7 +1007,8 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 1456196712}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1089,6 +1143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   immovable: 0
+  connectedEdges: []
 --- !u!114 &1456196714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,6 +1275,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1316,7 +1379,8 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 2132318445}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1372,6 +1436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   immovable: 0
+  connectedEdges: []
 --- !u!114 &1975623978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,6 +1531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   immovable: 0
+  connectedEdges: []
 --- !u!114 &2132318447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,6 +1679,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 171084105}
     m_Modifications:
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 5157624997429541317, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1709,7 +1783,12 @@ PrefabInstance:
       propertyPath: nodeB
       value: 
       objectReference: {fileID: 670558840}
-    m_RemovedComponents: []
+    - target: {fileID: 8577901068762489897, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
+      propertyPath: onObject
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1225975716440870828, guid: a4252f58af458e84e849fce8bbf0f099, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
