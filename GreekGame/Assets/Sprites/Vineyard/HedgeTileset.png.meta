@@ -1,0 +1,1280 @@
+fileFormatVersion: 2
+guid: 10c3d30ee0b60f04580a5b2eec37a4dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6694546423416108552
+    second: HedgeTileset_0
+  - first:
+      213: 7930586420434904162
+    second: HedgeTileset_1
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HedgeTileset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9cbe34f713813a0800000000000000
+      internalID: -6694546423416108552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 21, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: 21, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2642f82d45a1f0e60800000000000000
+      internalID: 7930586420434904162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1589f6551f55c8747b5adbce263742d4
+      internalID: 1625720749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5d7db6d400a374ea6572d91862f0c8
+      internalID: 1895274539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c298e9c0488467b4ea069b880623c7fd
+      internalID: -1446191842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3bde212fbd3ac499fd4c1be549b51a
+      internalID: 54467471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c275191810f284409bcc78d8815b744
+      internalID: -1974715635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463a8bc38993e004a8f11cd033b23d22
+      internalID: 111347885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87c23f217c6e8a4393c90a01704acf9
+      internalID: 1345251491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537b2488198d3d74fb103e5b9fc5cd00
+      internalID: -1606987158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038102db635d29647b953fceeb9d878e
+      internalID: 593221595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814e5aefe571fac469e00bd54e438667
+      internalID: 1632730044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_12
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -140}
+        - {x: -18, y: -140}
+        - {x: -18, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc33320c7e3f4804383ee356764a60bd
+      internalID: 350981462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4e290a43bd2c24a8e423602ab6013b
+      internalID: -1876733668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c24c00e2c1962c40832bdba046f8d60
+      internalID: 1064938938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -175}
+        - {x: 14, y: -175}
+        - {x: 14.199951, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -18, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8c78ce4264720499766c405a82f08d
+      internalID: -1230973313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_16
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203ed62b6e734374b99df7193da5d76d
+      internalID: 899468856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_17
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505e57ebc46507e46a7817f05a1a2192
+      internalID: 2065372134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_18
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73085796d37bf1849932fa0bff916980
+      internalID: -1582198972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_19
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd64670ffd40d040942058145543ad0
+      internalID: 9887319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad484dce4c69ba849b8ddb78ab90a852
+      internalID: 1737133825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_21
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -15, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: 13.180542, y: -107}
+        - {x: 13, y: 175}
+        - {x: -15, y: 175}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43db8d953cdc3054c8cfcf14b859fea8
+      internalID: -356512320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_22
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d39f33c7d1e6e4e978ef2ae3c5eef0
+      internalID: 753309461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_23
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502d0b72c0b996348971145d654c445b
+      internalID: -1718119573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_24
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05adafcc400fadc449ec048d09beff71
+      internalID: -1269447232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_25
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe2f6efa0715be4db0d32f855d913a5
+      internalID: 335166125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_26
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb5998b4fdcc4c4cb51478046cd8f67
+      internalID: -1051412858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_27
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60abb14643e9de4c85475fb4b99c851
+      internalID: -1766984719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_28
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1edba62cdaf3bd9448ff5f37fb615466
+      internalID: 1365464907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_29
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3569035cb84a08d4fb53665a16a0ca04
+      internalID: 776457718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_30
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398d83ac394afd14f8c713a39ef0ade1
+      internalID: -466733642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_31
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b57d8ad60ada4dacc71c861c8a41f
+      internalID: -299747204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_32
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -107}
+        - {x: -25, y: -138}
+        - {x: 15, y: -138}
+        - {x: 15, y: 175}
+        - {x: -13, y: 175}
+        - {x: -13, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6faa343c5ff8b47bf6275f82f2608c
+      internalID: -1367390931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_33
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d415e691aa372469a907f417b472eb
+      internalID: 774777965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_34
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5ad2d28a31e8b4f89b31e07410ecc8
+      internalID: -540672950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_35
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 50
+        width: 50
+        height: 350
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -25, y: -138}
+        - {x: 25, y: -138}
+        - {x: 25, y: -107}
+        - {x: -25, y: -107}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed84134927b1a3549a8cff9fe0856ffe
+      internalID: -1414195417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_36
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae584f400a25e04c83a36135c4f7aac
+      internalID: 2012492832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_37
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6be72fa6b6c49e40bff5cc8405d24c6
+      internalID: -27926450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_38
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ee47354e4f28c4a850d50193c3883e
+      internalID: -658671905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_39
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a56f5892b075a46871f5d667ebca1c
+      internalID: -783167036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc506d11cb0e9c40a99f0226b1e8dd1
+      internalID: 1384338363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_41
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: -18, y: -25}
+        - {x: 14, y: -25}
+        - {x: 14, y: 25}
+        - {x: -18, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dac70f5f7f1f9e4aa3432f7b00efd92
+      internalID: 814542619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HedgeTileset_42
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce9d1bcfa7f74c4b9564b4ffbfa1d1a
+      internalID: 1919836356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9f92e0a7bd623cb47b807c99ecd59346
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":50.0,"y":350.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.15000000596046449},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":true,"isAlternate":false}'
+    nameFileIdTable:
+      HedgeTileset_0: -6694546423416108552
+      HedgeTileset_1: 7930586420434904162
+      HedgeTileset_10: 593221595
+      HedgeTileset_11: 1632730044
+      HedgeTileset_12: 350981462
+      HedgeTileset_13: -1876733668
+      HedgeTileset_14: 1064938938
+      HedgeTileset_15: -1230973313
+      HedgeTileset_16: 899468856
+      HedgeTileset_17: 2065372134
+      HedgeTileset_18: -1582198972
+      HedgeTileset_19: 9887319
+      HedgeTileset_2: 1625720749
+      HedgeTileset_20: 1737133825
+      HedgeTileset_21: -356512320
+      HedgeTileset_22: 753309461
+      HedgeTileset_23: -1718119573
+      HedgeTileset_24: -1269447232
+      HedgeTileset_25: 335166125
+      HedgeTileset_26: -1051412858
+      HedgeTileset_27: -1766984719
+      HedgeTileset_28: 1365464907
+      HedgeTileset_29: 776457718
+      HedgeTileset_3: 1895274539
+      HedgeTileset_30: -466733642
+      HedgeTileset_31: -299747204
+      HedgeTileset_32: -1367390931
+      HedgeTileset_33: 774777965
+      HedgeTileset_34: -540672950
+      HedgeTileset_35: -1414195417
+      HedgeTileset_36: 2012492832
+      HedgeTileset_37: -27926450
+      HedgeTileset_38: -658671905
+      HedgeTileset_39: -783167036
+      HedgeTileset_4: -1446191842
+      HedgeTileset_40: 1384338363
+      HedgeTileset_41: 814542619
+      HedgeTileset_42: 1919836356
+      HedgeTileset_5: 54467471
+      HedgeTileset_6: -1974715635
+      HedgeTileset_7: 111347885
+      HedgeTileset_8: 1345251491
+      HedgeTileset_9: -1606987158
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
