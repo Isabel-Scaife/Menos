@@ -45,7 +45,7 @@ public class Guard : MonoBehaviour
     [SerializeField]
     private PlayerControlled player;
     [SerializeField]
-    private Player Player;
+    private Player personPlayer;
     [SerializeField]
     private Bird Bird;
 
@@ -57,7 +57,11 @@ public class Guard : MonoBehaviour
     //animation
     private Animator animator;
 
+    //counts frames that player has been in guard circle
+    int frameCount = 0;
 
+    //if player is in sightline or not
+    bool inView;
 
     //GUARD TO DO:
 
@@ -132,6 +136,18 @@ public class Guard : MonoBehaviour
 
         VisionCheck(player);
 
+        //if player inview
+        if (inView)
+        {
+            frameCount += 1;
+        }
+
+        //counts up
+        if (frameCount >= 500)
+        {
+            //respawn at post office
+            player.Respawn(new Vector3(-13, -6, 0));
+        }
     }
 
     /// <summary>
@@ -140,9 +156,7 @@ public class Guard : MonoBehaviour
     /// <param name="player"></param>
     private void VisionCheck(PlayerControlled player)
     {
-        //need to add bird stuff in here 
-        //checks if cone renderer is enable
-        if (renderCone)
+        if (player.controlBird == true)
         {
             coneRendererL.enabled = true;
             coneRendererR.enabled = true;
@@ -161,12 +175,10 @@ public class Guard : MonoBehaviour
     /// /param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!player.hidden) //makes sure player isn't hiding
-        {
-            spriteRenderer.color = Color.red;
-            //run respawn/fail state code here
-        }
+        spriteRenderer.color = Color.red;
+        inView = true;
     }
+
 
     /// <summary>
     /// When player exits vision cone
@@ -175,6 +187,10 @@ public class Guard : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         spriteRenderer.color = Color.white;
+
+        inView = false;
+        //resets frame count
+        frameCount = 0;
     }
     
 }

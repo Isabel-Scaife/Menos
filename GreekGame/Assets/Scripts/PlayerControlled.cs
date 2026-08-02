@@ -31,7 +31,7 @@ public class PlayerControlled : MonoBehaviour
     [Header("Player Input")]
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private bool pauseMovement = false;
-    [SerializeField] protected bool controlBird = false;
+    [SerializeField] public bool controlBird = false;
 
     // guard detection
     public bool hidden = false;
@@ -149,6 +149,22 @@ public class PlayerControlled : MonoBehaviour
         {
             DialogueManager.Instance.Advance();
         }
+    }
+
+    /// <summary>
+    /// respawn player outside post office
+    /// </summary>
+    public async void Respawn(Vector3 respawnPosition)
+    {
+        PauseMovement = true;
+        await ScreenFader.Instance.FadeOut();
+
+        // set position
+        this.transform.position = respawnPosition;
+
+        await ScreenFader.Instance.FadeIn();
+        PauseMovement = false;
+        
     }
 
     public virtual void Move(InputAction.CallbackContext context)
