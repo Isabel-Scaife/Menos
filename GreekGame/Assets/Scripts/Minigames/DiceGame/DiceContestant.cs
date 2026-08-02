@@ -78,7 +78,8 @@ public class DiceContestant : MonoBehaviour
         if (dice == null || dice.Count == 0) return;
         for (int i = 0; i < dice.Count; i++)
         {
-            if (!dice[i].Locked) dice[i].Roll();
+            if (dice[i].Selected) dice[i].Locked = true;    // lock selected dice
+            else if (!dice[i].Locked) dice[i].Roll();       // roll unlocked dice
         }
         rolls++;
     }

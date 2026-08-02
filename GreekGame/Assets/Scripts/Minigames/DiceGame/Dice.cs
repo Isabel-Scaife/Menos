@@ -1,5 +1,7 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+
+// NOTE: for a die that can't be selected by player (opponent's die),
+//      set its layer to one that is not checked for mouse clicks
 
 // one die in a dice game
 public class Dice : MonoBehaviour
@@ -30,8 +32,6 @@ public class Dice : MonoBehaviour
         sprRenderer = GetComponent<SpriteRenderer>();
         propBlock = new MaterialPropertyBlock();
     }
-
-    // TODO: onclick
 
     /// <summary>
     /// randomizes this die's value 1-6
