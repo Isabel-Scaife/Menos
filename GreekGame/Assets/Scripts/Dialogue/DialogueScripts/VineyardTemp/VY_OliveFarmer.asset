@@ -12,5 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_OliveFarmer
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
-  nodes: []
+  startingNodeID: Greeting
+  nodes:
+  - isEndpoint: 0
+    id: Greeting
+    nextNodeID: 
+    text: Hey, I would love to help
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: 
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}

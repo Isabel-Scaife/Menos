@@ -2355,7 +2355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 910, y: -733.3334}
+  m_AnchoredPosition: {x: 910, y: -733.375}
   m_SizeDelta: {x: 1800, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497670024
@@ -3299,9 +3299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbeefb5f279c9f42b50be1295aa1e40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemManager
-  stampSets:
-  - {fileID: 7059252617295308528, guid: f1734a6faa5fdd44a8a6c19bbe16e437, type: 3}
-  - {fileID: 6637857691997519382, guid: 8d4648a72fa260b47b7db9fea1f63666, type: 3}
 --- !u!4 &603768839
 Transform:
   m_ObjectHideFlags: 0
@@ -3502,12 +3499,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3863,7 +3860,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 910, y: -146.66667}
+  m_AnchoredPosition: {x: 910, y: -146.625}
   m_SizeDelta: {x: 1800, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698990901

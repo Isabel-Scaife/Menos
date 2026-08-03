@@ -12,5 +12,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_Blacksmith
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
-  nodes: []
+  startingNodeID: Tired
+  nodes:
+  - isEndpoint: 0
+    id: Tired
+    nextNodeID: choices0
+    text: 'What made you come all the way here, kid? If you are here for requests,
+      come again, because the slots are full. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: 
+    choices:
+    - text: Please, I need this inscription tool fixed.
+      nextNodeID: Refuse
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Can I do anything in your favor?
+      nextNodeID: Refuse
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Refuse
+    nextNodeID: Complaint
+    text: 'No, kid. It is my job, and you can''t take care of it for me. '
+    choices:
+    - text: Please, I need this inscription tool fixed.
+      nextNodeID: Refuse
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Can I do anything in your favor?
+      nextNodeID: Refuse
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Complaint
+    nextNodeID: Hurt
+    text: Everything got delayed because of one single task... I shouldn't complain
+      about it though, because I got compensated for it.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Hurt
+    nextNodeID: Help
+    text: Now go, I can't help you this time. ...Ugh. My back injury never helps.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Help
+    nextNodeID: Receive
+    text: Clearly you need help, sir. Please, let me help you. I'm a delivery man,
+      so I can deliver something for you too.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Receive
+    nextNodeID: InReturn
+    text: '...You are a delivery man? I didn''t think you could possibly help me
+      kid, but I could use your help.  '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: InReturn
+    nextNodeID: 
+    text: 'But I don''t want to owe anyone anything. I''ll fix your inscription tool
+      in return. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
