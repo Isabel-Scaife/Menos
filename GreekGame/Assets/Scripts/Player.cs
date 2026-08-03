@@ -62,4 +62,6 @@ public class Player : PlayerControlled
         
         base.OnTriggerEnter2D(collision);
     }
+    
+
 }
