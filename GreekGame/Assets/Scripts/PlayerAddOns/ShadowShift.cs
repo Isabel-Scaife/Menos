@@ -14,7 +14,7 @@ public class ShadowShift : MonoBehaviour
     {
         // get shadows, turn on top, turn off bottom  
         shadows = collision.GetComponentsInChildren<SpriteRenderer>();
-        Debug.Log("Shadow hit");
+        Debug.Log(shadows.Length);
 
         shadows[0].enabled = false;
 
