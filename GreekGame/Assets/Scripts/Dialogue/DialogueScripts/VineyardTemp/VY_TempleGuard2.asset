@@ -12,5 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_TempleGuard2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
-  nodes: []
+  startingNodeID: Dont
+  nodes:
+  - isEndpoint: 0
+    id: Dont
+    nextNodeID: TempleIsClosed
+    text: "Don\u2019t trespass in the Gods\u2019 sacred places. The temple is closed
+      until the festival starts."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Temple Guard
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: TempleIsClosed
+    nextNodeID: AnotherWay
+    text: "The Dionysia is still being prepared. No one can come in until it\u2019s
+      ready."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Temple Guard
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 1
+    id: AnotherWay
+    nextNodeID: 
+    text: I should try and find another way to get into the temple. The wine should
+      be inside.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}

@@ -10,67 +10,56 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_WheatFarmer
+  m_Name: VY_GrapeFarmer2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: Hello
+  startingNodeID: No
   nodes:
   - isEndpoint: 0
-    id: Hello
-    nextNodeID: Struggle
-    text: "I\u2019m a delivery man from Lord Cranaus. I came to pick up some of the
-      wheat that our post office ordered. "
+    id: No
+    nextNodeID: Past0
+    text: Blast! I have cut down the vines a week ago in preparation, but it grown
+      so fast to cover up the shed again!
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Ceryx
+    speakerName: Damasos
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Struggle
-    nextNodeID: Sigh
-    text: "Here to take my crops, eh. \u2026This trading for years has been taking
-      quite a toll on me."
+    id: Past0
+    nextNodeID: Past1
+    text: 'A few years ago, a red haired girl with quite some temper helped me cut
+      this vines - she would do it in no time. '
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Lydos
+    speakerName: Damasos
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Sigh
-    nextNodeID: Empathy
-    text: "Ever since Poseidon flooded Athens, our family has been struggling. Too
-      much land has been damaged\u2026 Will it ever be recovered?"
+    id: Past1
+    nextNodeID: Help
+    text: But she disappeared suddenly... just like how she appeared to this village
+      suddenly.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Lydos
+    speakerName: Damasos
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Empathy
-    nextNodeID: Imokay
-    text: "\u2026I\u2019m sorry for the trouble you are going through. Do you need
-      me to help with anything?"
+    id: Help
+    nextNodeID: OfCourse
+    text: Can you please help me cut these down? Here, I have a spare axe for you
+      to use.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Ceryx
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 0
-    id: Imokay
-    nextNodeID: Suffer
-    text: "Ah, forget \u2018bout it. You gotta also be one ye job. It\u2019s something
-      us peasants have to pull through\u2026 "
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Lydos
+    speakerName: Damasos
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 1
-    id: Suffer
+    id: OfCourse
     nextNodeID: 
-    text: "It\u2019s always us who suffer from the acts of the higher ups, eh boy.
-      Let me guide you to the wheat farm here. "
+    text: Of couse. I'd be happy to help.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Lydos
+    speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: VY_Merchant
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: Greetings0
+  nodes:
+  - isEndpoint: 0
+    id: Greetings0
+    nextNodeID: Greetings1
+    text: 'Hey! You there, the dashing traveler! '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Greetings1
+    nextNodeID: Greetings2
+    text: Yeah, you, the one who just looked my way! Come on over here for a sec!
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Greetings2
+    nextNodeID: ImGood
+    text: "Look at some of the gorgeous and rare stuff I\u2019m selling."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: ImGood
+    nextNodeID: Disappointment
+    text: "Oh, I\u2019m not here to buy something, sorry."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Disappointment
+    nextNodeID: Flood
+    text: "How disappointing. \u2026Well, it\u2019s okay. I\u2019m not upset towards
+      you, because I\u2019m used to this at this point."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Flood
+    nextNodeID: Info0
+    text: "I don\u2019t get as many customers as I used to after the flood. God of
+      the sea was surely angry towards us Athens."
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Info0
+    nextNodeID: Info1
+    text: "You know\u2026 we used to be a small rural area with a close community."
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Info1
+    nextNodeID: Info2
+    text: However, production of crops dropped recently, and people stopped showing
+      generosity towards each other. The contract that Cranaus has with individual
+      farmers made matters worse.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Info2
+    nextNodeID: WrapUp
+    text: Lydos has been in a bad relationship with Artopoios and Aigidios because
+      Lydos broke his promise several times with Artopoios and Aigidios to keep his
+      contract with Cranaus.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: WrapUp
+    nextNodeID: ComeAgain
+    text: "\u2026Anyways, there are a lot more things going on in this town than
+      you can just see with your eyes."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: ComeAgain
+    nextNodeID: 
+    text: "Please come again whenever you\u2019d like to purchase something here."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Zenon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

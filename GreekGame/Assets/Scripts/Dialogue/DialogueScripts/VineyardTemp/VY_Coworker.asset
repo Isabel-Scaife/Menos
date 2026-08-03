@@ -12,5 +12,228 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_Coworker
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
-  nodes: []
+  startingNodeID: Intro0
+  nodes:
+  - isEndpoint: 0
+    id: Intro0
+    nextNodeID: Intro1
+    text: 'Hello, stranger. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: ???
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Intro1
+    nextNodeID: Intro2
+    text: I am the master of the messengers of borning vineyard, though the title
+      is onerous to me.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Intro2
+    nextNodeID: Intro3
+    text: Carpus is my name. I know you will be the newest member of our company.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Intro3
+    nextNodeID: Quest0
+    text: Come in, and I will tell you your tasks for the day.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Quest0
+    nextNodeID: Quest1
+    text: 'You have four tasks on hand. First, Three farmers have entrusted us with
+      their produce: '
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Quest1
+    nextNodeID: Quest2
+    text: Lydos, who farms wheat, Trophimus, who owns an olive grove, and Damasos,
+      who grows figs.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Quest2
+    nextNodeID: Quest3
+    text: You are to retrieve the food from each of them and bring it back here to
+      ship further on to Athens. They all need the coin, so be swift.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Quest3
+    nextNodeID: Quest4
+    text: 'Next, bring back the wine kept safe in the Dionysus temple located north
+      west of vineyard.  '
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Quest4
+    nextNodeID: choices0
+    text: 'This one especially shall be executed swiftly and secretively.  '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: ' '
+    choices:
+    - text: Why is it so needed?
+      nextNodeID: Warning
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Why are there so many tasks on the first day?
+      nextNodeID: Warning
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: 'Why is that so I have to be so careful? '
+      nextNodeID: Warning
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Warning
+    nextNodeID: Purpose0
+    text: 'You''re not hired to ask questions. Just do what you''re told to. You
+      are not allowed to disclose the grand purpose of Master Cranaus. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Purpose0
+    nextNodeID: Purpose1
+    text: 'And of course, the contract stands firm while Master Cranaus aims to expand
+      the business. '
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Purpose1
+    nextNodeID: Infertile?
+    text: People are desperate to sell their crops after the flood left the land
+      infertile. A good deal for us.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Infertile?
+    nextNodeID: History0
+    text: The land is infertile?
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: History0
+    nextNodeID: History1
+    text: Here is a farming village, but the anger of Poseidon who rules the salt
+      sea has made life hard for the people who work this land.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: History1
+    nextNodeID: History2
+    text: When the great city of Athens was founded, the earth-shaker fought with
+      Athena for the right to give patronage to the great city.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: History2
+    nextNodeID: History3
+    text: Athena won the contest, but in his bitter defeat, Poseidon planted his
+      trident on the rocks and called up the roaring sea to flood the lands surrounding
+      Athens.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: History3
+    nextNodeID: Empathy
+    text: Although the waters receded and the earth was baked dry by the fire of
+      purifying Helios, the crops remain weak because of the salt the flood left
+      in its wake.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Empathy
+    nextNodeID: Fate0
+    text: "It seems like it caused terrible suffering\u2026"
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: Fate0
+    nextNodeID: Fate1
+    text: Everyone is subject to the will of the gods. Our power to change our own
+      lives cannot compare to their power over us.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 1
+    id: Fate1
+    nextNodeID: 
+    text: The people here live under their will, and do not fight against it. You
+      should do the same.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
