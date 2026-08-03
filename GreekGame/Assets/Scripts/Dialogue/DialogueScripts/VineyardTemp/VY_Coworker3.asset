@@ -34,10 +34,60 @@ MonoBehaviour:
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 1
+  - isEndpoint: 0
     id: Advice2
-    nextNodeID: 
+    nextNodeID: Broken
     text: Continue in this manner, and your efforts shall not go unnoticed.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Broken
+    nextNodeID: choices0
+    text: You'll need to package up the things you've gathered, but the inscription
+      tool is broken.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: 
+    choices:
+    - text: How? I'm not a craftsman.
+      nextNodeID: Method
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Not again.
+      nextNodeID: NoComplaints
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: NoComplaints
+    nextNodeID: Method
+    text: Don't complain, rookie. You do what Master Cranaus says. It's simple.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: Method
+    nextNodeID: 
+    text: Go to the blacksmith. He might be able to help. Now start walking, you
+      are wasting your precious time.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Carpus
