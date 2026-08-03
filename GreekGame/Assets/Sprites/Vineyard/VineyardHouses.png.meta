@@ -1,0 +1,714 @@
+fileFormatVersion: 2
+guid: 8b5e8ad3becb8334b883646bd2db3558
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4915922839875254875
+    second: VineyardHouses_0
+  - first:
+      213: 6575033841789454389
+    second: VineyardHouses_1
+  - first:
+      213: 8919602147853943251
+    second: VineyardHouses_2
+  - first:
+      213: 5717531110833431842
+    second: VineyardHouses_3
+  - first:
+      213: -7513702977214149747
+    second: VineyardHouses_4
+  - first:
+      213: 2422474343632790080
+    second: VineyardHouses_5
+  - first:
+      213: 7251348943791884661
+    second: VineyardHouses_6
+  - first:
+      213: 765460607908832603
+    second: VineyardHouses_7
+  - first:
+      213: 170899509156328437
+    second: VineyardHouses_8
+  - first:
+      213: -976722405864596007
+    second: VineyardHouses_9
+  - first:
+      213: -5884154265143116780
+    second: VineyardHouses_10
+  - first:
+      213: -3143522863118584446
+    second: VineyardHouses_11
+  - first:
+      213: -6582863191982767398
+    second: VineyardHouses_12
+  - first:
+      213: 8297711085893229125
+    second: VineyardHouses_13
+  - first:
+      213: 3655533816634016102
+    second: VineyardHouses_14
+  - first:
+      213: -2157987048852382464
+    second: VineyardHouses_15
+  - first:
+      213: 3859498730027569077
+    second: VineyardHouses_16
+  - first:
+      213: 2591115527330612349
+    second: VineyardHouses_17
+  - first:
+      213: -6026170827423851981
+    second: VineyardHouses_18
+  - first:
+      213: -8334255638388007922
+    second: VineyardHouses_19
+  - first:
+      213: -4686484295644272908
+    second: VineyardHouses_20
+  - first:
+      213: 7105883198980762336
+    second: VineyardHouses_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VineyardHouses_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1077
+        width: 1289
+        height: 779
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a7ef5f6cdd83440800000000000000
+      internalID: 4915922839875254875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_1
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1560
+        width: 425
+        height: 276
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538480e61763f3b50800000000000000
+      internalID: 6575033841789454389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_2
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 813
+        width: 852
+        height: 1019
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d145a835eac8cb70800000000000000
+      internalID: 8919602147853943251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_3
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 1045
+        width: 857
+        height: 467
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225a875a040c85f40800000000000000
+      internalID: 5717531110833431842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_4
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 1045
+        width: 1062
+        height: 467
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b0b5793f6f9b790800000000000000
+      internalID: -7513702977214149747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_5
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 625
+        width: 203
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042eab9a49b5e9120800000000000000
+      internalID: 2422474343632790080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_6
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 623
+        width: 158
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.15}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5798e11f177f1a460800000000000000
+      internalID: 7251348943791884661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_7
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 625
+        width: 108
+        height: 152
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55e5f70e567f9a00800000000000000
+      internalID: 765460607908832603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_8
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 618
+        width: 208
+        height: 141
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f33d87b2382f5200800000000000000
+      internalID: 170899509156328437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_9
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 632
+        width: 171
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd9642952cf172f0800000000000000
+      internalID: -976722405864596007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_10
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 625
+        width: 313
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c7b861fd8475ea0800000000000000
+      internalID: -5884154265143116780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_11
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 647
+        width: 34
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2857f707c96ff54d0800000000000000
+      internalID: -3143522863118584446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_12
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 640
+        width: 86
+        height: 141
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad28fdcedc8f4a4a0800000000000000
+      internalID: -6582863191982767398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_13
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 650
+        width: 59
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a9c7bf444672370800000000000000
+      internalID: 8297711085893229125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_14
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 650
+        width: 56
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66106ec63a01bb230800000000000000
+      internalID: 3655533816634016102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_15
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 637
+        width: 315
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d924b663a4d02e0800000000000000
+      internalID: -2157987048852382464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_16
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 112
+        width: 1028
+        height: 621
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2890537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bf4d5e75a1bf8530800000000000000
+      internalID: 3859498730027569077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_17
+      rect:
+        serializedVersion: 2
+        x: 4519
+        y: 98
+        width: 403
+        height: 588
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d744a8208dd75f320800000000000000
+      internalID: 2591115527330612349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 98
+        width: 1062
+        height: 466
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33a549b7f8dbe5ca0800000000000000
+      internalID: -6026170827423851981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_19
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 95
+        width: 862
+        height: 469
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c169657a6c65c80800000000000000
+      internalID: -8334255638388007922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_20
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 159
+        width: 266
+        height: 483
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f62da8fc5346feb0800000000000000
+      internalID: -4686484295644272908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_21
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 149
+        width: 327
+        height: 447
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea2aa2fe1b2d9260800000000000000
+      internalID: 7105883198980762336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VineyardHouses_22
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 1836
+        width: 425
+        height: 123
+      alignment: 9
+      pivot: {x: 0.5, y: -2.2635071}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4615386fd69f31243b30535639a8f76a
+      internalID: -1340359795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 82232eb7c5ac8ed41af14ec4ee94c166
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      VineyardHouses_0: 4915922839875254875
+      VineyardHouses_1: 6575033841789454389
+      VineyardHouses_10: -5884154265143116780
+      VineyardHouses_11: -3143522863118584446
+      VineyardHouses_12: -6582863191982767398
+      VineyardHouses_13: 8297711085893229125
+      VineyardHouses_14: 3655533816634016102
+      VineyardHouses_15: -2157987048852382464
+      VineyardHouses_16: 3859498730027569077
+      VineyardHouses_17: 2591115527330612349
+      VineyardHouses_18: -6026170827423851981
+      VineyardHouses_19: -8334255638388007922
+      VineyardHouses_2: 8919602147853943251
+      VineyardHouses_20: -4686484295644272908
+      VineyardHouses_21: 7105883198980762336
+      VineyardHouses_22: -1340359795
+      VineyardHouses_3: 5717531110833431842
+      VineyardHouses_4: -7513702977214149747
+      VineyardHouses_5: 2422474343632790080
+      VineyardHouses_6: 7251348943791884661
+      VineyardHouses_7: 765460607908832603
+      VineyardHouses_8: 170899509156328437
+      VineyardHouses_9: -976722405864596007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
