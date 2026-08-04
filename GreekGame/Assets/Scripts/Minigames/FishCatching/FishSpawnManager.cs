@@ -119,7 +119,7 @@ public class FishSpawnManager : MonoBehaviour
             // in unity you can not use traditional instantiate, so do this instead 
             newFish.Initialize(pondFish.trueSize, pondFish.colorNumR, pondFish.colorNumG, pondFish.colorNumB);
             newFish.id = fishID;
-            newFish.transform.position = new Vector3(22-fishID, 3, 0);
+            newFish.transform.position = new Vector3(Random.Range(22, 27), 3, 0);
             fishID++;
         }
     }
