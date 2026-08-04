@@ -107,7 +107,7 @@ public class QuestManager : MonoBehaviour
             // quest active and prerequisites met and 
             if(allQuests[questID].QuestComplete())
             {
-                Debug.Log("Completed:" + questID);
+                Debug.Log("Completed: " + questID);
                 completedQuests.Add(questID);
                 return true;
             }

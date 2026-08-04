@@ -12,5 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_END_Escape
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
-  nodes: []
+  startingNodeID: 0
+  nodes:
+  - isEndpoint: 0
+    id: 0
+    nextNodeID: 1
+    text: He must be here! Search every corner until you find him! How could he murder
+      our mother? I will never forgive him for such a vile sin. I never trusted him...
+      and now he's proven me right.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Alcippe
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  - isEndpoint: 0
+    id: 1
+    nextNodeID: 2
+    text: 'Alcippe...? She thinks I killed Mother... '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}
+  - isEndpoint: 0
+    id: 2
+    nextNodeID: 3
+    text: 'No... she''d never believe me. Not after everything... and not while I''m
+      holding Mother''s brooch. '
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}
+  - isEndpoint: 1
+    id: 3
+    nextNodeID: 
+    text: 'I need to escape before they find me. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}

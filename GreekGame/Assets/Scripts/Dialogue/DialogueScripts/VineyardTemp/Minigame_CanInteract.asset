@@ -10,24 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_CS_Bion
+  m_Name: Minigame_CanInteract
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 0
+  startingNodeID: Start
   nodes:
-  - isEndpoint: 0
-    id: 0
-    nextNodeID: 1
-    text: Bion got arrested. He is the one who stole it.
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Ceryx
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 0}
   - isEndpoint: 1
-    id: 1
+    id: Start
     nextNodeID: 
-    text: 'It is for me to keep my relationship with Cranaus safe. ...I know you''ll
-      understand, Bion. '
+    text: I need something to help remove these vines.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
