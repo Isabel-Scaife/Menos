@@ -10,7 +10,7 @@ public class ChangeDialogue : MonoBehaviour, IEvent
     {
         if(npc != null && dialogue != null) 
         {
-            Debug.Log("Running");
+            Debug.Log("Dialogue Swapped: " + npc.name);
             npc.ReplaceDialogue(dialogue, 0);
         }
     }
