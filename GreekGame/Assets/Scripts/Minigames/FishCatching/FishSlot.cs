@@ -36,14 +36,9 @@ public class FishSlot : MonoBehaviour
         }
 
         //if there is a fish snapped but picked up
-        if (fishInPlace != null && hand.fishInHand != null)
+        if (fishInPlace != null && hand.fishInHand != null )
         {
             fishInPlace = null;
-            if (this.correct == true)
-            {
-                fishSpawn.correctCount -= 1;
-            }
-            this.correct = false;
         }
 
         //if there is a fish snapped
@@ -62,6 +57,7 @@ public class FishSlot : MonoBehaviour
                 fishSpawn.correctCount += 1;
             }
             this.correct = true;
+            fishInPlace.correct = true;
         }
 
     }
