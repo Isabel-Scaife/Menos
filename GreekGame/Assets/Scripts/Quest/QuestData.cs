@@ -18,6 +18,7 @@ public class QuestData : MonoBehaviour
         {
             completionEvents.Add(e);
         }
+        Debug.Log(questID + ": " + completionEvents.Count);
     }
 
     /// <summary>
@@ -29,9 +30,10 @@ public class QuestData : MonoBehaviour
         { 
             foreach (IEvent currentEvent in completionEvents)
             {
+                Debug.Log(currentEvent);
                 currentEvent.OnQuestComplete();
-                return true;
             }
+            return true;
         }
         return false;
     }

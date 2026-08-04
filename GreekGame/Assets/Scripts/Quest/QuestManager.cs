@@ -54,6 +54,8 @@ public class QuestManager : MonoBehaviour
         else
         {
             Instance = this;
+            completedQuests.Clear();
+            allQuests.Clear();
         }
 
         DontDestroyOnLoad(gameObject);
