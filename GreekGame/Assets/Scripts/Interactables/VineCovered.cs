@@ -1,18 +1,29 @@
+
 using UnityEngine;
 
 public class VineCovered : MinigameSwapper
 {
+    [SerializeField] private DialogueSO dialogue;
+
     public async override void Interact(PlayerControlled player)
     {
-        await ScreenFader.Instance.FadeOut();
+        if (CanInteract)
+        {
+            await ScreenFader.Instance.FadeOut();
 
-        VineDragMinigame minigame = followObject.GetComponent<VineDragMinigame>();
-        minigame.OnComplete += HandleComplete;
+            VineDragMinigame minigame = followObject.GetComponent<VineDragMinigame>();
+            minigame.OnComplete += HandleComplete;
 
-        base.Interact(player);
-        SetCamera();
+            base.Interact(player);
+            SetCamera();
 
-        await ScreenFader.Instance.FadeIn();
+            await ScreenFader.Instance.FadeIn();
+        }
+        else
+        {
+            if (DialogueManager.Instance == null) Debug.Log("No DialogueManager in scene");
+            else DialogueManager.Instance.BeginDialogue(dialogue, player);
+        }
     }
 
     private async void HandleComplete()
