@@ -9,6 +9,14 @@ public class NPC : Interactable
     // fields
     [SerializeField]
     protected List<DialogueSO> dialogues;
+    
+    public void ReplaceDialogue(DialogueSO newDialogue, int index)
+    {
+        if (index < dialogues.Count)
+        {
+            dialogues[index] = newDialogue;
+        }
+    }
 
     // for connecting NPCs to dialogue, storing save data and states, etc.
     // [SerializeField] protected string npcID;     // might need in the future
