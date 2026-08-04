@@ -18,7 +18,7 @@ MonoBehaviour:
     id: ThankYou
     nextNodeID: 
     text: Thank you for cutting down the vines. You remind me of the red hair girl
-      who also helped me. Until later, then.
+      who also helped me. You both have a good heart. Until later, then.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Damasos

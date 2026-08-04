@@ -17,7 +17,7 @@ MonoBehaviour:
   - isEndpoint: 0
     id: Success
     nextNodeID: WhatIsThis
-    text: 'I succeeded in getting through! I should retrieve the grape stored here. '
+    text: 'I succeeded in getting through! I can now retrieve the grape stored here. '
     choices: []
     updateSpeakerInfo: 1
     speakerName: Ceryx

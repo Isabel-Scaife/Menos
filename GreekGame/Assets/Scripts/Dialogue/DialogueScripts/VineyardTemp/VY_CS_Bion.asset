@@ -13,4 +13,23 @@ MonoBehaviour:
   m_Name: VY_CS_Bion
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
   startingNodeID: 0
-  nodes: []
+  nodes:
+  - isEndpoint: 0
+    id: 0
+    nextNodeID: 1
+    text: Bion got arrested. He is the one who stole it.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}
+  - isEndpoint: 1
+    id: 1
+    nextNodeID: 
+    text: 'It is for me to keep my relationship with Cranaus safe. ...I know you''ll
+      understand, Bion. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}
