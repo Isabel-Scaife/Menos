@@ -4,7 +4,8 @@ using UnityEngine;
 public class QuestData : MonoBehaviour
 {
     [SerializeField] private string questID;
-    [SerializeField] private List<string> requiredPrerequisites; // quests needed to start this one
+    [SerializeField] private List<string> questPrerequisites; // quests needed to start this one
+    [SerializeField] private List<string> flagPrerequisites;
 
     // events that run when quest completed
     private List<IEvent> completionEvents = new List<IEvent>();
@@ -54,7 +55,7 @@ public class QuestData : MonoBehaviour
     /// <param name="questID"></param>
     public void AddPrerequisite(string questID)
     {
-        requiredPrerequisites.Add(questID);
+        questPrerequisites.Add(questID);
     }
 
     /// <summary>
@@ -63,7 +64,7 @@ public class QuestData : MonoBehaviour
     /// <param name="questID"></param>
     public void RemovePrerequisite(string questID)
     {
-        requiredPrerequisites.Remove(questID);
+        questPrerequisites.Remove(questID);
     }
 
     /// <summary>
@@ -97,13 +98,26 @@ public class QuestData : MonoBehaviour
             return false;
         }
 
-        foreach (string questID in requiredPrerequisites)
+        // check quest prereqs
+        foreach (string questID in questPrerequisites)
         {
             if (!QuestManager.Instance.IsQuestComplete(questID))
             {
                 return false;
             }
         }
+
+        // check flag prereqs
+        if (GameStateManager.Instance != null) {
+            foreach (string flag in flagPrerequisites)
+            {
+                if (!GameStateManager.Instance.HasFlag(flag))
+                {
+                    return false;
+                }
+            }
+        }
+
         return true;
     }
 } 

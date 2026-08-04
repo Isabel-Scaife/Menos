@@ -15,6 +15,8 @@ public class MapTeleport : Interactable
 
     [SerializeField] private CinemachineConfiner2D confiner;
 
+    [SerializeField] private bool interactTrigger = false;
+
     [Header("Teloport Location")]
     [SerializeField] private Transform teleportTo;
     [SerializeField] private Collider2D newMapBounds;
@@ -73,6 +75,10 @@ public class MapTeleport : Interactable
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // transitions by interacting
+        if (interactTrigger) return;
+
+        // transistions by walking 
         if (collision.CompareTag("Player"))
         {
             FadeTransition(collision.GetComponent<Player>());
