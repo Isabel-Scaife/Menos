@@ -20,7 +20,7 @@ public class Fish : MonoBehaviour
     void Start()
     {
         //sets fish parameters
-        trueSize = Random.Range(0, 5);
+        trueSize = Random.Range(25, 100);
 
         //---DECIDES FISH COLOR---
         //this works!!
@@ -28,10 +28,13 @@ public class Fish : MonoBehaviour
         colorNumG = (byte)Random.Range(0, 255);
         colorNumB = (byte)Random.Range(0, 255);
 
+        //makes it smaller
+        trueSize = trueSize / 50f;
+
         //sets current size to a third of true size so 
         //it can appear to float to the surface
         currentSize = trueSize / 3f;
-
+        
         //sets fish physical appearance
         transform.localScale = new Vector3(currentSize, currentSize, 1);
 

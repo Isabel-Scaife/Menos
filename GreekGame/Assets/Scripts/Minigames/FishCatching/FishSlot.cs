@@ -12,6 +12,7 @@ public class FishSlot : MonoBehaviour
     [SerializeField]
     private int id;
     public Hand hand;
+    public FishSpawnManager fishSpawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,7 @@ public class FishSlot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         //snapping into place mechanic
         if (Input.GetMouseButtonDown(1) && fishHovering != null)
         {
@@ -37,6 +39,11 @@ public class FishSlot : MonoBehaviour
         if (fishInPlace != null && hand.fishInHand != null)
         {
             fishInPlace = null;
+            if (this.correct == true)
+            {
+                fishSpawn.correctCount -= 1;
+            }
+            this.correct = false;
         }
 
         //if there is a fish snapped
@@ -50,6 +57,11 @@ public class FishSlot : MonoBehaviour
         if (fishInPlace != null && fishInPlace.id == this.id)
         {
             this.spriteRenderer.color = Color.antiqueWhite;
+            if (this.correct == false)
+            {
+                fishSpawn.correctCount += 1;
+            }
+            this.correct = true;
         }
 
     }
