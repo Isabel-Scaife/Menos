@@ -155,6 +155,21 @@ public class DialogueManager : MonoBehaviour
         nodes = dialogue.nodes.ToDictionary(n => n.id);
         currentNode = nodes[currentDialogue.startingNodeID];
 
+        // trigger flag if that applies to dialogue
+        if (currentDialogue.flag != null && GameStateManager.Instance != null)
+        {
+            // set flag
+            if (currentDialogue.toggleFlagOnTalk)
+            {
+                GameStateManager.Instance.SetFlag(currentDialogue.flag);
+            }
+            // disable flag
+            else
+            {
+                GameStateManager.Instance.ClearFlag(currentDialogue.flag);
+            }
+        }
+
         // displays dialogue in UI
         dialoguePanel.SetActive(true);
         DisplayDialogue();

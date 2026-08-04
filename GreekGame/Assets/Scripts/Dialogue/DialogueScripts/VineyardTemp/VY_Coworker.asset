@@ -237,3 +237,5 @@ MonoBehaviour:
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+  toggleFlagOnTalk: 1
+  flag: met_Coworker

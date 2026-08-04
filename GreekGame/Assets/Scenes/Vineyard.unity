@@ -2774,6 +2774,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb6826dfdcf945e4891fe3c1ae9a4e9d, type: 2}
   - {fileID: 11400000, guid: 74c2e73b9de5114439922f25f80bb66b, type: 2}
   - {fileID: 11400000, guid: 5239f52bed38d774bbefe81c4d058408, type: 2}
+  flagDialogueChecks: []
+  flaggedDialogueIndex: 
   prerequisiteQuestIDs:
   - TalkToCoworker
   - WheatGather
@@ -3381,6 +3383,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 6a0c9496bdb33d148a679cf93d574ac0, type: 2}
+  - {fileID: 11400000, guid: d8dbb6ad64a9e1d4aa0eca41536a5f73, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &218020884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68827,7 +68833,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 9809ad3fe3789934ab5024c7b9b99a3f, type: 2}
+  - {fileID: 11400000, guid: f8c522cfddfc7e640b30c21f5e8fae12, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &259361596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -68981,6 +68992,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 51e9b7634ce15094588c1c4ab3a1d57c, type: 2}
+  - {fileID: 11400000, guid: 788b0082606a38d439b37755faaad060, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &263297787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69715,6 +69730,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &295996304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295996305}
+  - component: {fileID: 295996307}
+  - component: {fileID: 295996306}
+  m_Layer: 19
+  m_Name: TalkToGrapeFarmerAfter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &295996305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295996304}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.1, y: -11.6, z: 0}
+  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070970936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &295996306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295996304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
+  item: {fileID: 482231686}
+  activate: 1
+--- !u!114 &295996307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295996304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: TalkToGrapeFarmerAfter
+  requiredPrerequisites:
+  - UncoverShed
 --- !u!1 &298882974
 GameObject:
   m_ObjectHideFlags: 0
@@ -71110,7 +71187,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 482231687}
   - {fileID: 1222123078}
   m_Father: {fileID: 1875145761}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -71863,6 +71939,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 9eebd643516e5b3469a9ad81b4f5ffab, type: 2}
+  - {fileID: 11400000, guid: bb2ee2fc86ba7ab43bc28b50eec735aa, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &415301169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73014,7 +73094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &482231687
 Transform:
   m_ObjectHideFlags: 0
@@ -73023,12 +73103,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 482231686}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.699997, y: -5.799999, z: -0.06882286}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 157.16908, y: -10.60844, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 379097051}
+  m_Father: {fileID: 732381161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &482231688
 PolygonCollider2D:
@@ -74076,7 +74156,7 @@ GameObject:
   - component: {fileID: 556856317}
   - component: {fileID: 556856316}
   m_Layer: 19
-  m_Name: TalkToOliveFarmer
+  m_Name: TalkToGrapeFarmer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74123,7 +74203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
-  questID: TalkToOliveFarmer
+  questID: TalkToGrapeFarmer
   requiredPrerequisites:
   - TalkToCoworker
 --- !u!1 &563388199
@@ -74282,6 +74362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: f564dd8bfe8e1224482282b94343c8e4, type: 2}
+  flagDialogueChecks: []
+  flaggedDialogueIndex: 
   questsID:
   - v-003
 --- !u!1 &571392564
@@ -74386,7 +74468,6 @@ GameObject:
   - component: {fileID: 600513555}
   - component: {fileID: 600513558}
   - component: {fileID: 600513557}
-  - component: {fileID: 600513556}
   m_Layer: 9
   m_Name: YoungCouple
   m_TagString: Untagged
@@ -74409,19 +74490,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1880975576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &600513556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600513554}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPC
-  dialogues: []
 --- !u!61 &600513557
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76791,7 +76859,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 482231687}
   m_Father: {fileID: 2070970936}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &732381163
@@ -105517,6 +105586,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: a4d4a7ccebdaeff4cb9bbddc1c815251, type: 2}
+  - {fileID: 11400000, guid: 44d0f1d177ffa984da08b255cd8ebad0, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &826213352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106275,9 +106348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: WheatGather
-  requiredPrerequisites:
-  - TalkToCoworker
-  - CorrectCulprit
+  requiredPrerequisites: []
 --- !u!4 &877622995
 Transform:
   m_ObjectHideFlags: 0
@@ -106825,100 +106896,6 @@ Transform:
   - {fileID: 1116317628}
   m_Father: {fileID: 1843756955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &902559012
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 902559015}
-  - component: {fileID: 902559014}
-  - component: {fileID: 902559016}
-  - component: {fileID: 902559018}
-  - component: {fileID: 902559017}
-  m_Layer: 19
-  m_Name: TalkToCoworker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &902559014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902559012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuestData
-  questID: TalkToCoworker
-  requiredPrerequisites: []
---- !u!4 &902559015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902559012}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.11995, y: 1.3115597, z: 0}
-  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2070970936}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &902559016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902559012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 1883358430}
-  dialogue: {fileID: 11400000, guid: 255744f344b60494eb911db5b81b5d72, type: 2}
-  index: 0
---- !u!114 &902559017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902559012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 1735457141}
-  dialogue: {fileID: 11400000, guid: 7f110ca29d9cb0741929132d9a343c51, type: 2}
-  index: 0
---- !u!114 &902559018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902559012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 1143271650}
-  dialogue: {fileID: 11400000, guid: f7be9ce71649c154d92ed00b69e7a1d3, type: 2}
-  index: 0
 --- !u!1 &910273832
 GameObject:
   m_ObjectHideFlags: 0
@@ -107509,6 +107486,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: fc6521a0a93ff8a468c54ddcf114fb4a, type: 2}
+  flagDialogueChecks: []
+  flaggedDialogueIndex: 
   questsID:
   - v-004
 --- !u!1 &950604396
@@ -108112,6 +108091,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: e383934838a13424298d023bcaea5f8e, type: 2}
+  - {fileID: 11400000, guid: 070b5861d08cf164a87e58d08c97cdac, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &973935010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108265,6 +108248,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 8aaee38d665ebb2499cf08e1a11366e9, type: 2}
+  - {fileID: 11400000, guid: fc0f75e1842c7ed4c8cb8b3e2b265f2c, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &975718903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111745,7 +111732,7 @@ Transform:
   m_GameObject: {fileID: 1143271645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -84.3, y: 14, z: 0}
+  m_LocalPosition: {x: -83.4, y: 14.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111765,8 +111752,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: eb229a980f8d59c48959fc817a63261d, type: 2}
+  - {fileID: 11400000, guid: f7be9ce71649c154d92ed00b69e7a1d3, type: 2}
+  flagDialogueChecks:
+  - met_Coworker
+  flaggedDialogueIndex: 01000000
   questsID:
-  - TalkToOliveFarmer
+  - TalkToGrapeFarmer
 --- !u!1001 &1144817736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112010,243 +112001,6 @@ Transform:
   - {fileID: 1687974404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1149213415
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1149213416}
-  - component: {fileID: 1149213418}
-  - component: {fileID: 1149213428}
-  - component: {fileID: 1149213427}
-  - component: {fileID: 1149213426}
-  - component: {fileID: 1149213425}
-  - component: {fileID: 1149213424}
-  - component: {fileID: 1149213423}
-  - component: {fileID: 1149213422}
-  - component: {fileID: 1149213421}
-  - component: {fileID: 1149213420}
-  - component: {fileID: 1149213419}
-  - component: {fileID: 1149213430}
-  - component: {fileID: 1149213429}
-  m_Layer: 19
-  m_Name: TalkToWheatFarmer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1149213416
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.61995, y: -45.59844, z: 0}
-  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2070970936}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1149213418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuestData
-  questID: TalkToWheatFarmer
-  requiredPrerequisites:
-  - TalkToCoworker
---- !u!114 &1149213419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 2007898642}
-  dialogue: {fileID: 11400000, guid: 1f7a4433372b5264ebaa222cdbc42444, type: 2}
-  index: 0
---- !u!114 &1149213420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 218020883}
-  dialogue: {fileID: 11400000, guid: d8dbb6ad64a9e1d4aa0eca41536a5f73, type: 2}
-  index: 0
---- !u!114 &1149213421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 263297786}
-  dialogue: {fileID: 11400000, guid: 788b0082606a38d439b37755faaad060, type: 2}
-  index: 0
---- !u!114 &1149213422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 259361595}
-  dialogue: {fileID: 11400000, guid: f8c522cfddfc7e640b30c21f5e8fae12, type: 2}
-  index: 0
---- !u!114 &1149213423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 1630000917}
-  dialogue: {fileID: 11400000, guid: d0f9b9ea23e6cb940b1dac3431fd1134, type: 2}
-  index: 0
---- !u!114 &1149213424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 973935009}
-  dialogue: {fileID: 11400000, guid: 070b5861d08cf164a87e58d08c97cdac, type: 2}
-  index: 0
---- !u!114 &1149213425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 1874795301}
-  dialogue: {fileID: 11400000, guid: 2c64893dc0927d1458d6393b667ce7ad, type: 2}
-  index: 0
---- !u!114 &1149213426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 975718902}
-  dialogue: {fileID: 11400000, guid: fc0f75e1842c7ed4c8cb8b3e2b265f2c, type: 2}
-  index: 0
---- !u!114 &1149213427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 826213351}
-  dialogue: {fileID: 11400000, guid: 44d0f1d177ffa984da08b255cd8ebad0, type: 2}
-  index: 0
---- !u!114 &1149213428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
-  npc: {fileID: 415301168}
-  dialogue: {fileID: 11400000, guid: bb2ee2fc86ba7ab43bc28b50eec735aa, type: 2}
-  index: 0
---- !u!114 &1149213429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
-  item: {fileID: 1883358425}
-  activate: 0
---- !u!114 &1149213430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149213415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
-  item: {fileID: 1362715783}
-  activate: 1
 --- !u!1 &1150561599
 GameObject:
   m_ObjectHideFlags: 0
@@ -113992,6 +113746,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 379097051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1227408377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1227408378}
+  - component: {fileID: 1227408380}
+  - component: {fileID: 1227408379}
+  - component: {fileID: 1227408381}
+  m_Layer: 19
+  m_Name: UncoverShed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227408378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227408377}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.119934, y: 1.3115602, z: 0}
+  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070970936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1227408379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227408377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c10a19e17e637b4c8db521773d73ce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectQuest
+  itemsToCollect:
+  - {fileID: 1151935516}
+  amountNeeded: 1
+  questsID:
+  - UncoverShed
+--- !u!114 &1227408380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227408377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: UncoveredShed
+  requiredPrerequisites: []
+--- !u!114 &1227408381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227408377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8290581d25329740ba7cf38af38e682, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ChangeDialogue
+  npc: {fileID: 1143271650}
+  dialogue: {fileID: 0}
+  index: 0
 --- !u!1 &1228306965
 GameObject:
   m_ObjectHideFlags: 0
@@ -116812,160 +116646,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362016983}
   m_CullTransparentMesh: 1
---- !u!1 &1362715783
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1362715784}
-  - component: {fileID: 1362715787}
-  - component: {fileID: 1362715786}
-  - component: {fileID: 1362715785}
-  m_Layer: 9
-  m_Name: WheatFarmer_After
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1362715784
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362715783}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 42.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1880975576}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1362715785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362715783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fb8c6e33375924b950a9216b5b1a30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
-  dialogues:
-  - {fileID: 11400000, guid: 556b8640dcfbe8544bb772bd731aa3dc, type: 2}
-  questsID: []
---- !u!61 &1362715786
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362715783}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 2.50625}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.625, y: 5.0125}
-    newSize: {x: 2.625, y: 5.0125}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 2.625, y: 5.0125}
-  m_EdgeRadius: 0
---- !u!212 &1362715787
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362715783}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 19068663466fff342b9b6415b306ce53, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.625, y: 5.0125}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 1
 --- !u!1 &1368466997
 GameObject:
   m_ObjectHideFlags: 0
@@ -117618,6 +117298,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: ad9cd87cb1bba154785062450fa976c8, type: 2}
+  flagDialogueChecks: []
+  flaggedDialogueIndex: 
   questsID:
   - v-001
 --- !u!1 &1424975121
@@ -490931,6 +490613,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: 92f10dd88b481bf458bc7bc28364b199, type: 2}
+  flagDialogueChecks: []
+  flaggedDialogueIndex: 
   questsID:
   - v-002
 --- !u!1 &1503996182 stripped
@@ -493117,6 +492801,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: a2eda84c586811946a1e5f32da6130db, type: 2}
+  - {fileID: 11400000, guid: d0f9b9ea23e6cb940b1dac3431fd1134, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &1630000918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -494143,7 +493831,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
-  dialogues: []
+  dialogues:
+  - {fileID: 11400000, guid: 6a0c9496bdb33d148a679cf93d574ac0, type: 2}
+  - {fileID: 11400000, guid: d8dbb6ad64a9e1d4aa0eca41536a5f73, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &1706758103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -495108,7 +494801,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
+  - {fileID: 11400000, guid: a07e0efc56c648b4c8e056892650a174, type: 2}
   - {fileID: 11400000, guid: 7f110ca29d9cb0741929132d9a343c51, type: 2}
+  flagDialogueChecks:
+  - met_Coworker
+  flaggedDialogueIndex: 01000000
 --- !u!61 &1735457142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497078,6 +496775,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 3fbb6a6ff7dc457418508325cad919da, type: 2}
+  - {fileID: 11400000, guid: 2c64893dc0927d1458d6393b667ce7ad, type: 2}
+  - {fileID: 11400000, guid: 18fb977ac789f1e45b80ab7a83559a16, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  - TalkedToOldLady
+  flaggedDialogueIndex: 0100000002000000
 --- !u!61 &1874795302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497355,7 +497058,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1883358429}
-  - {fileID: 1362715784}
   - {fileID: 1706758101}
   - {fileID: 1735457140}
   - {fileID: 1143271649}
@@ -497506,7 +497208,7 @@ Transform:
   m_GameObject: {fileID: 1883358425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 42.8, z: 0}
+  m_LocalPosition: {x: 8.36, y: 43.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497526,6 +497228,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: 435140abeace85446a096dfc3f0b23ab, type: 2}
+  - {fileID: 11400000, guid: 255744f344b60494eb911db5b81b5d72, type: 2}
+  - {fileID: 11400000, guid: 556b8640dcfbe8544bb772bd731aa3dc, type: 2}
+  flagDialogueChecks:
+  - met_Coworker
+  - StartWheatQuest
+  flaggedDialogueIndex: 0100000002000000
   questsID:
   - TalkToWheatFarmer
 --- !u!1 &1885166214
@@ -498923,6 +498631,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: de20bbe35bfe9a641b54790afc48c072, type: 2}
+  - {fileID: 11400000, guid: 1f7a4433372b5264ebaa222cdbc42444, type: 2}
+  flagDialogueChecks:
+  - StartWheatQuest
+  flaggedDialogueIndex: 01000000
 --- !u!61 &2007898643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -499822,10 +499534,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 902559015}
-  - {fileID: 1149213416}
   - {fileID: 877622995}
   - {fileID: 556856315}
+  - {fileID: 1227408378}
+  - {fileID: 295996305}
   - {fileID: 1017494524}
   - {fileID: 207555377}
   - {fileID: 732381161}
