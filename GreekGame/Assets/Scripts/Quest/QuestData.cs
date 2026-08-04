@@ -18,7 +18,6 @@ public class QuestData : MonoBehaviour
         {
             completionEvents.Add(e);
         }
-        Debug.Log(questID + ": " + completionEvents.Count);
     }
 
     /// <summary>

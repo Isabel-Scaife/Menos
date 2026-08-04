@@ -31,7 +31,6 @@ public class NPCCoworker : NPC, IQuestCompleter
                 while (count < lengthOfPrereq[i])
                 {
                     allPrerequisitesComplete = QuestManager.Instance.IsQuestComplete(prerequisiteQuestIDs[index + count]);
-                    Debug.Log("Quest  " + prerequisiteQuestIDs[index] + index + ": "+ allPrerequisitesComplete);
 
                     // increase index to match start of next prerequiste location
                     if (!allPrerequisitesComplete) { index += lengthOfPrereq[i]; break; }

@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 15672749}
   - component: {fileID: 15672751}
   - component: {fileID: 15672750}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 30350160}
   - component: {fileID: 30350159}
   - component: {fileID: 30350158}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,8 +803,6 @@ GameObject:
   m_Component:
   - component: {fileID: 35676282}
   - component: {fileID: 35676285}
-  - component: {fileID: 35676284}
-  - component: {fileID: 35676283}
   m_Layer: 0
   m_Name: HouseShadow
   m_TagString: Untagged
@@ -827,65 +825,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 75798312}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &35676283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35676281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &35676284
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35676281}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &35676285
 SpriteRenderer:
   serializedVersion: 2
@@ -1957,7 +1896,7 @@ GameObject:
   - component: {fileID: 111689840}
   - component: {fileID: 111689839}
   - component: {fileID: 111689838}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4083,8 +4022,6 @@ GameObject:
   m_Component:
   - component: {fileID: 236097277}
   - component: {fileID: 236097279}
-  - component: {fileID: 236097278}
-  - component: {fileID: 236097280}
   m_Layer: 0
   m_Name: HouseShadow
   m_TagString: Untagged
@@ -4107,52 +4044,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 307071529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &236097278
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236097276}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &236097279
 SpriteRenderer:
   serializedVersion: 2
@@ -4212,19 +4103,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &236097280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236097276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
 --- !u!1 &236892449
 GameObject:
   m_ObjectHideFlags: 0
@@ -70633,8 +70511,6 @@ GameObject:
   m_Component:
   - component: {fileID: 325630625}
   - component: {fileID: 325630628}
-  - component: {fileID: 325630627}
-  - component: {fileID: 325630626}
   m_Layer: 0
   m_Name: HouseShadow (4)
   m_TagString: Untagged
@@ -70657,65 +70533,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 940467927}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &325630626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325630624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &325630627
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325630624}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &325630628
 SpriteRenderer:
   serializedVersion: 2
@@ -71294,7 +71111,7 @@ GameObject:
   - component: {fileID: 377443267}
   - component: {fileID: 377443266}
   - component: {fileID: 377443268}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72320,7 +72137,7 @@ GameObject:
   - component: {fileID: 427643963}
   - component: {fileID: 427643962}
   - component: {fileID: 427643961}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106167,38 +105984,6 @@ Transform:
   - {fileID: 1116317628}
   m_Father: {fileID: 1843756955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &898714569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 898714571}
-  m_Layer: 0
-  m_Name: shadows
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &898714571
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 898714569}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1614434504}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &902559012
 GameObject:
   m_ObjectHideFlags: 0
@@ -107079,8 +106864,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963746476}
   - component: {fileID: 963746479}
-  - component: {fileID: 963746478}
-  - component: {fileID: 963746477}
   m_Layer: 0
   m_Name: HouseShadow (4)
   m_TagString: Untagged
@@ -107103,65 +106886,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 359574550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963746477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963746475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &963746478
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963746475}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &963746479
 SpriteRenderer:
   serializedVersion: 2
@@ -107232,7 +106956,7 @@ GameObject:
   - component: {fileID: 966351268}
   - component: {fileID: 966351270}
   - component: {fileID: 966351269}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109982,7 +109706,7 @@ Transform:
   m_GameObject: {fileID: 1109892418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9, y: -33.800003, z: -10}
+  m_LocalPosition: {x: 0, y: -9.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -110107,7 +109831,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -111690,8 +111414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1150561600}
   - component: {fileID: 1150561603}
-  - component: {fileID: 1150561602}
-  - component: {fileID: 1150561601}
   m_Layer: 0
   m_Name: HouseShadow
   m_TagString: Untagged
@@ -111714,65 +111436,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 673818550}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1150561601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150561599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1150561602
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150561599}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1150561603
 SpriteRenderer:
   serializedVersion: 2
@@ -111982,7 +111645,7 @@ GameObject:
   - component: {fileID: 1156829601}
   - component: {fileID: 1156829603}
   - component: {fileID: 1156829602}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116176,7 +115839,7 @@ Transform:
   m_GameObject: {fileID: 1362715783}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: -4.3, z: 0}
+  m_LocalPosition: {x: 8.5, y: 42.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -117141,8 +116804,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1428391004}
   - component: {fileID: 1428391007}
-  - component: {fileID: 1428391006}
-  - component: {fileID: 1428391005}
   m_Layer: 0
   m_Name: HouseShadow
   m_TagString: Untagged
@@ -117165,65 +116826,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1078617646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1428391005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428391003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1428391006
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428391003}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1428391007
 SpriteRenderer:
   serializedVersion: 2
@@ -117294,7 +116896,7 @@ GameObject:
   - component: {fileID: 1440939542}
   - component: {fileID: 1440939541}
   - component: {fileID: 1440939540}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117672,8 +117274,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1474302963}
   - component: {fileID: 1474302966}
-  - component: {fileID: 1474302965}
-  - component: {fileID: 1474302964}
   m_Layer: 0
   m_Name: HouseShadow (1)
   m_TagString: Untagged
@@ -117696,65 +117296,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1406611999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1474302964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474302962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1474302965
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474302962}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1474302966
 SpriteRenderer:
   serializedVersion: 2
@@ -492101,158 +491642,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1614434503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1614434504}
-  - component: {fileID: 1614434507}
-  - component: {fileID: 1614434506}
-  - component: {fileID: 1614434505}
-  m_Layer: 0
-  m_Name: OliveShadow
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1614434504
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614434503}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.51, y: 13.55, z: 0}
-  m_LocalScale: {x: 131.01553, y: 57.691383, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 898714571}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1614434505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614434503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 4}
---- !u!61 &1614434506
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614434503}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.18}
-  m_EdgeRadius: 0
---- !u!212 &1614434507
-SpriteRenderer:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614434503}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: -1
-  m_MaskInteraction: 0
-  m_Sprite: {fileID: -5312835784770638986, guid: 7c9e05eecef8c2342b080bb1957c401f, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.5019608}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
 --- !u!1 &1617743142
 GameObject:
   m_ObjectHideFlags: 0
@@ -492889,7 +492278,7 @@ GameObject:
   - component: {fileID: 1640835029}
   - component: {fileID: 1640835031}
   - component: {fileID: 1640835030}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493579,7 +492968,7 @@ GameObject:
   - component: {fileID: 1700357464}
   - component: {fileID: 1700357466}
   - component: {fileID: 1700357465}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494098,7 +493487,7 @@ GameObject:
   - component: {fileID: 1712944192}
   - component: {fileID: 1712944194}
   - component: {fileID: 1712944193}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494499,8 +493888,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1731744885}
   - component: {fileID: 1731744888}
-  - component: {fileID: 1731744887}
-  - component: {fileID: 1731744886}
   m_Layer: 0
   m_Name: HouseShadow (4)
   m_TagString: Untagged
@@ -494523,65 +493910,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1245878863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1731744886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731744884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1731744887
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731744884}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1731744888
 SpriteRenderer:
   serializedVersion: 2
@@ -495172,7 +494500,7 @@ GameObject:
   - component: {fileID: 1783146268}
   - component: {fileID: 1783146267}
   - component: {fileID: 1783146266}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -495547,8 +494875,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1801735852}
   - component: {fileID: 1801735855}
-  - component: {fileID: 1801735854}
-  - component: {fileID: 1801735853}
   m_Layer: 0
   m_Name: HouseShadow (1)
   m_TagString: Untagged
@@ -495571,65 +494897,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 532256798}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1801735853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801735851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1801735854
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801735851}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1801735855
 SpriteRenderer:
   serializedVersion: 2
@@ -496482,7 +495749,7 @@ GameObject:
   - component: {fileID: 1844069728}
   - component: {fileID: 1844069727}
   - component: {fileID: 1844069726}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Tree2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497238,7 +496505,7 @@ Transform:
   m_GameObject: {fileID: 1883358425}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.9, y: -4.3, z: 0}
+  m_LocalPosition: {x: 8.5, y: 42.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -497544,8 +496811,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1917898916}
   - component: {fileID: 1917898919}
-  - component: {fileID: 1917898918}
-  - component: {fileID: 1917898917}
   m_Layer: 0
   m_Name: HouseShadow (3)
   m_TagString: Untagged
@@ -497568,65 +496833,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1483901083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1917898917
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917898915}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c63135239a8a5347b1fa96183088817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
-  shiftAmt: {x: 0, y: 6}
---- !u!61 &1917898918
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917898915}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 2097152
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.2015832, y: 0.14786154}
-  m_EdgeRadius: 0
 --- !u!212 &1917898919
 SpriteRenderer:
   serializedVersion: 2
@@ -500581,7 +499787,6 @@ SceneRoots:
   - {fileID: 1319713613}
   - {fileID: 1880975576}
   - {fileID: 1146663224}
-  - {fileID: 898714571}
   - {fileID: 2055628381}
   - {fileID: 766078965}
   - {fileID: 1843756955}
