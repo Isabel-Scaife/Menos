@@ -69,8 +69,8 @@ MonoBehaviour:
   - isEndpoint: 0
     id: Complaint
     nextNodeID: Hurt
-    text: Everything got delayed because of one single task... I shouldn't complain
-      about it though, because I got compensated for it.
+    text: Everything got delayed because of a repair task from King Cecrops... I
+      shouldn't complain about it though, because I got compensated for it.
     choices: []
     updateSpeakerInfo: 0
     speakerName: Blacksmith
