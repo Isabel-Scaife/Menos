@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_D_OldCouple
+  m_Name: VY_D_OldLady
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
   startingNodeID: 0
   nodes:
   - isEndpoint: 1
     id: 0
     nextNodeID: 
-    text: We would gladly aid you, child, but our doors remain closed until later.
-      Return then, and we shall tend to you.
+    text: If only I could bear this burden for them... May the gods have mercy on
+      my little ones.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Phila & Zenon
+    speakerName: Aikaterini
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
