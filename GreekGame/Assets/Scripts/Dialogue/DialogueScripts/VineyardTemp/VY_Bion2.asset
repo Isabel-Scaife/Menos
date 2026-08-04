@@ -10,17 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_OldCouple
+  m_Name: VY_Bion2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: Welcome
+  startingNodeID: LunchBox
   nodes:
   - isEndpoint: 0
-    id: Welcome
-    nextNodeID: choices0
-    text: Hello dear! Sozon, we have a guest here!
+    id: LunchBox
+    nextNodeID: Whimper
+    text: "Where did you get this? \u2026Did my grandma give you this? ..I told her
+      to eat it. She never listens to me."
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Phila
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Whimper
+    nextNodeID: choices0
+    text: ..Ow. It still hurts. Why... why is everything... so hard?
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
@@ -28,14 +38,14 @@ MonoBehaviour:
     nextNodeID: 
     text: 
     choices:
-    - text: "Oh sorry. I\u2019m not here for service."
-      nextNodeID: NoRush
+    - text: 'You''re crying, kid. Are you alright? '
+      nextNodeID: No
       outcome:
         flagsToSet: []
         statChanges: 
         questsID: []
-    - text: "No, I\u2019m here to talk."
-      nextNodeID: NoRush
+    - text: It hurts me to see you cry. Anything I can do to help?
+      nextNodeID: No
       outcome:
         flagsToSet: []
         statChanges: 
@@ -45,22 +55,31 @@ MonoBehaviour:
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: NoRush
-    nextNodeID: Tea
-    text: "No need to rush. We don\u2019t have anything to take care of at the moment."
+    id: No
+    nextNodeID: Thanks
+    text: "I\u2019m fine! You\u2019re weird, talking to everyone in this village.
+      I don\u2019t trust you."
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Sozon
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Tea
+    id: Thanks
+    nextNodeID: Job
+    text: "\u2026But thanks for helping my grandma."
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Job
     nextNodeID: choices1
-    text: Here, take a sip of tea made with herbs from the mountain. It will ease
-      your mind.
+    text: I just need a stable job to support my family.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Phila
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
@@ -68,14 +87,15 @@ MonoBehaviour:
     nextNodeID: 
     text: 
     choices:
-    - text: Thank you.
-      nextNodeID: YourWelcome
+    - text: How did you get hurt?
+      nextNodeID: Clue1
       outcome:
         flagsToSet: []
         statChanges: 
         questsID: []
-    - text: I appreciate your kindness.
-      nextNodeID: YourWelcome
+    - text: "No problem. You should have lunch. Your wound isn\u2019t going to heal
+        soon if you don\u2019t eat well."
+      nextNodeID: Clue2
       outcome:
         flagsToSet: []
         statChanges: 
@@ -85,40 +105,43 @@ MonoBehaviour:
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: YourWelcome
-    nextNodeID: Visitors
-    text: 'No worries dear. We do this all the time. '
+    id: Clue1
+    nextNodeID: choices2
+    text: "I just got bitten by a dog. \u2026Nothing special."
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Phila
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Visitors
-    nextNodeID: CryingChild
-    text: 'It was a pretty easy day so far. Only Bion and Artopoios paid a visit
-      today. '
+    id: Clue2
+    nextNodeID: choices2
+    text: "I don\u2019t want to. I should share this with my family. Besides, I don\u2019t
+      need that much food to recover from a dog bite. I got bitten quite a few times."
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Sozon
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: CryingChild
-    nextNodeID: EndOfConvo
-    text: Oh dear, I think one of our patients need our attention, Sozon. We'd love
-      to help you more, dear, but I'm sorry.
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Phila
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 1
-    id: EndOfConvo
+    id: choices2
     nextNodeID: 
-    text: It was nice meeting you. May god bless you, young man. I'm coming, Phila!
-    choices: []
+    text: 
+    choices:
+    - text: Okay. Take care, kid.
+      nextNodeID: 
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: "But your grandma specifically asked me to give it to you. \u2026I\u2019ll
+        leave it with you here."
+      nextNodeID: 
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
     updateSpeakerInfo: 1
-    speakerName: Sozon
+    speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
