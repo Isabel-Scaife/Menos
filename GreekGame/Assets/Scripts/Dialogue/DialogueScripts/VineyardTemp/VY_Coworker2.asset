@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: VY_Coworker2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: Failure
+  nodes:
+  - isEndpoint: 0
+    id: Failure
+    nextNodeID: Foreshadow
+    text: It is none of my concern, but Master Cranaus would not be pleased with
+      the outcome.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Foreshadow
+    nextNodeID: Broken
+    text: He is not one to forgive twice. See that there is no second mistake.
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Broken
+    nextNodeID: choices0
+    text: 'You''ll need to package up the things you''ve gathered, but the inscription
+      tool is broken. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: ' '
+    choices:
+    - text: How? I'm not a craftsman.
+      nextNodeID: Method
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Not again.
+      nextNodeID: NoComplaints
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: NoComplaints
+    nextNodeID: Method
+    text: Don't complain, rookie. You do what Master Cranaus says. It's simple.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: Method
+    nextNodeID: 
+    text: Go to the blacksmith. He might be able to help. Now start walking, you
+      are wasting your precious time.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Carpus
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

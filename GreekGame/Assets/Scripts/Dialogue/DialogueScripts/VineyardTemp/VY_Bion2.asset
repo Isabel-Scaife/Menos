@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: VY_Bion2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: LunchBox
+  nodes:
+  - isEndpoint: 0
+    id: LunchBox
+    nextNodeID: Whimper
+    text: "Where did you get this? \u2026Did my grandma give you this? ..I told her
+      to eat it. She never listens to me."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Whimper
+    nextNodeID: choices0
+    text: ..Ow. It still hurts. Why... why is everything... so hard?
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: 
+    choices:
+    - text: 'You''re crying, kid. Are you alright? '
+      nextNodeID: No
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: It hurts me to see you cry. Anything I can do to help?
+      nextNodeID: No
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: No
+    nextNodeID: Thanks
+    text: "I\u2019m fine! You\u2019re weird, talking to everyone in this village.
+      I don\u2019t trust you."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Thanks
+    nextNodeID: Job
+    text: "\u2026But thanks for helping my grandma."
+    choices: []
+    updateSpeakerInfo: 0
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Job
+    nextNodeID: choices1
+    text: I just need a stable job to support my family.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices1
+    nextNodeID: 
+    text: 
+    choices:
+    - text: How did you get hurt?
+      nextNodeID: Clue1
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: "No problem. You should have lunch. Your wound isn\u2019t going to heal
+        soon if you don\u2019t eat well."
+      nextNodeID: Clue2
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Clue1
+    nextNodeID: choices2
+    text: "I just got bitten by a dog. \u2026Nothing special."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Clue2
+    nextNodeID: choices2
+    text: "I don\u2019t want to. I should share this with my family. Besides, I don\u2019t
+      need that much food to recover from a dog bite. I got bitten quite a few times."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices2
+    nextNodeID: 
+    text: 
+    choices:
+    - text: Okay. Take care, kid.
+      nextNodeID: 
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: "But your grandma specifically asked me to give it to you. \u2026I\u2019ll
+        leave it with you here."
+      nextNodeID: 
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

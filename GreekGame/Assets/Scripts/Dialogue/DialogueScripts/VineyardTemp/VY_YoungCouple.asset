@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: VY_YoungCouple
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: StartClass
+  nodes:
+  - isEndpoint: 0
+    id: StartClass
+    nextNodeID: Wait
+    text: "Now kids, let\u2019s start our classes."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Thaleia
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Wait
+    nextNodeID: choices0
+    text: "Wait Thaleia, this young man seems like he\u2019s lost."
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Sophon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: choices0
+    nextNodeID: 
+    text: 
+    choices:
+    - text: "No, I\u2019m not lost. Please continue your class."
+      nextNodeID: Join
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: I was just walking by. Do not worry.
+      nextNodeID: Join
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Join
+    nextNodeID: Bion1
+    text: Okay. But feel free to join the classroom. It is open to everyone.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Sophon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Bion1
+    nextNodeID: Bion2
+    text: "Honey, Bion is not here again. I\u2019m worried that he might be getting
+      into trouble\u2026"
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Thaleia
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Bion2
+    nextNodeID: Dw
+    text: " He has not been showing up to class lately\u2026"
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Thaleia
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: Dw
+    nextNodeID: 
+    text: "Don\u2019t worry. We can go look for him after our class, okay?"
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Sophon
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}

@@ -29,9 +29,10 @@ public class QuestData : MonoBehaviour
         { 
             foreach (IEvent currentEvent in completionEvents)
             {
+                Debug.Log(currentEvent);
                 currentEvent.OnQuestComplete();
-                return true;
             }
+            return true;
         }
         return false;
     }

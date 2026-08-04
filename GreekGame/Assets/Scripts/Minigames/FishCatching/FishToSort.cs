@@ -10,6 +10,7 @@ public class FishToSort : MonoBehaviour
     public bool grabbed;
     private Vector2 mousePosition;
     public SpriteRenderer spriteRenderer;
+    public bool correct = false;
 
     //fish parameters
     public float size;
@@ -52,7 +53,7 @@ public class FishToSort : MonoBehaviour
         mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         //Pickks up fih
-        if (hand.fishInHand == this)
+        if (hand.fishInHand == this && correct == false)
         {
             transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
         }

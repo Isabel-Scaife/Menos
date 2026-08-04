@@ -26,6 +26,8 @@ public class FishSpawnManager : MonoBehaviour
     //true if player is in the water
     private bool catchingFish;
 
+    public int correctCount;
+
     //fish prefab
     [SerializeField]
     private Camera camera;
@@ -67,6 +69,13 @@ public class FishSpawnManager : MonoBehaviour
 
             FishSort();
             FishConvert();
+        }
+
+        //checks if game has been won (all fish correct)
+        if (correctCount >= 5)
+        {
+            //game win or whatever
+            Debug.Log("Game win~!");
         }
     }
     /// <summary>
@@ -110,7 +119,7 @@ public class FishSpawnManager : MonoBehaviour
             // in unity you can not use traditional instantiate, so do this instead 
             newFish.Initialize(pondFish.trueSize, pondFish.colorNumR, pondFish.colorNumG, pondFish.colorNumB);
             newFish.id = fishID;
-            newFish.transform.position = new Vector3(22-fishID, 3, 0);
+            newFish.transform.position = new Vector3(Random.Range(22, 27), 3, 0);
             fishID++;
         }
     }
