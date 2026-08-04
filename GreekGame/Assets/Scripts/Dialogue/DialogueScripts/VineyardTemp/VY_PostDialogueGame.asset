@@ -101,7 +101,7 @@ MonoBehaviour:
         flagsToSet: []
         statChanges: 
         questsID: []
-    - text: 
+    - text: He didn't have a choice. I should cover his doing.
       nextNodeID: 
       outcome:
         flagsToSet: []
