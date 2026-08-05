@@ -7,11 +7,12 @@ using System.Collections.Generic;
 public class NPC : Interactable
 {
     // fields
-    [SerializeField]
-    protected List<DialogueSO> dialogues;
-    [SerializeField] List<string> flagDialogueChecks; // higher index higher priority
-    [SerializeField] List<int> flaggedDialogueIndex;
+    [SerializeField] protected List<DialogueSO> dialogues;
     
+    [Header("Playing Flagged Dialogue")]
+    [SerializeField] protected List<string> flagChecks; // higher index higher priority
+    [SerializeField] protected List<int> flagDialogueIndex;
+
     public void ReplaceDialogue(DialogueSO newDialogue, int index)
     {
         if (index < dialogues.Count)
@@ -37,7 +38,7 @@ public class NPC : Interactable
             if (DialogueManager.Instance == null) { Debug.Log("No DialogueManager in scene"); return; }
 
             // run default dialogue if there are no flags 
-            if(flagDialogueChecks == null)
+            if(flagChecks == null)
             {
                 DialogueManager.Instance.BeginDialogue(dialogues[0], player);
                 return;
@@ -46,12 +47,12 @@ public class NPC : Interactable
             if(GameStateManager.Instance == null) { Debug.Log("No Gamestate manager in scene"); return; }
 
             // check flags starting from highest index 
-            for (int i = flagDialogueChecks.Count - 1; i >= 0; i--)
+            for (int i = flagChecks.Count - 1; i >= 0; i--)
             {
                 // flag exists run corresponding dialogue
-                if (GameStateManager.Instance.HasFlag(flagDialogueChecks[i]))
+                if (GameStateManager.Instance.HasFlag(flagChecks[i]))
                 {
-                    int dialogueNum = flaggedDialogueIndex[i];
+                    int dialogueNum = flagDialogueIndex[i];
                     DialogueManager.Instance.BeginDialogue(dialogues[dialogueNum], player);
                     return;
                 }
