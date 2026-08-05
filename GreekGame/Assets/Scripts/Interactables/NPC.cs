@@ -72,7 +72,7 @@ public class NPC : Interactable
             if (GameStateManager.Instance.HasFlag(flagChecks[i]))
             {
                 // check for out of bounds index
-                if(i < flagDialogueIndex.Count)
+                if(i >= flagDialogueIndex.Count)
                 {
                     Debug.Log($"NPC {this.name}: has missing dialogue index for flag {flagChecks[i]}");
                     return false;

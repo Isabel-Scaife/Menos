@@ -28,7 +28,9 @@ public class MinigameSwapper : Item
 
     protected void SetCamera()
     {
+        Debug.Log("Before Confiner: " + confiner.name);
         confiner.BoundingShape2D = mapBounds;
+        Debug.Log("After Confiner: " + confiner.name);
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
         CameraFollow.Instance.SetOffset(offset);

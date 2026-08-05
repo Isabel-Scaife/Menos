@@ -3,7 +3,6 @@ using UnityEngine;
 public class OliveTree : MinigameSwapper
 {
     [SerializeField] private DialogueSO dialogue;
-    [SerializeField] private GameObject cutsceneParent;
     public async override void Interact(PlayerControlled player)
     {
         if (CanInteract)
@@ -35,7 +34,5 @@ public class OliveTree : MinigameSwapper
         ResetCamera();
 
         await ScreenFader.Instance.FadeIn();
-
-        cutsceneParent.SetActive(true);
     }
 }
