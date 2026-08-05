@@ -258,6 +258,7 @@ public class DialogueManager : MonoBehaviour
                 choiceTMPs[i].text = currentNode.choices[i].text;
                 choiceBoxes[i].SetActive(true);                
             }
+            RebuildButtonNavigation();
             EventSystem.current.SetSelectedGameObject(choiceBoxes[0]);
             previousSelectedChoiceBox = choiceBoxes[0];
             choicesShowing = true;
@@ -324,6 +325,27 @@ public class DialogueManager : MonoBehaviour
         if(outcome.QuestsID != null)
         {
             ((IQuestCompleter)outcome).OnQuestComplete();
+        }
+    }
+
+    /// <summary>
+    /// Rebuilds navigation between buttons to include only active buttons
+    /// </summary>
+    private void RebuildButtonNavigation()
+    {
+        // get array of active buttons
+        Button[] buttons = new Button[choiceBoxes.Count];
+        for (int i = 0; i < buttons.Length; i++) buttons[i] = choiceBoxes[i].GetComponent<Button>();
+        Button[] activeButtons = buttons.Where(b => b.gameObject.activeSelf).ToArray();
+
+        // rebuild navigation
+        for (int i = 0; i < activeButtons.Length; i++)
+        {
+            Navigation nav = activeButtons[i].navigation;
+            nav.mode = Navigation.Mode.Explicit;
+            nav.selectOnDown = i > 0 ? activeButtons[i - 1] : null;
+            nav.selectOnUp = i < activeButtons.Length - 1 ? activeButtons[i + 1] : null;
+            activeButtons[i].navigation = nav;
         }
     }
 }
