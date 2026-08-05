@@ -65,7 +65,7 @@ MonoBehaviour:
   - m_Version: 1
     m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: -371823531318102519}
+    m_Asset: {fileID: -1120660261036685460}
     m_Duration: 300
     m_TimeScale: 1
     m_ParentTrack: {fileID: -6578136484541397008}
@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
---- !u!114 &-371823531318102519
+--- !u!114 &-1120660261036685460
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineShot
   DisplayName: 
   VirtualCamera:
-    exposedName: 5deffcf99a01b734aaf8fab7ad0456e9
+    exposedName: e157d21e84f190e47b90df545449fb49
     defaultValue: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
