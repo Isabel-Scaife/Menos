@@ -26,10 +26,12 @@ MonoBehaviour:
   - isEndpoint: 1
     id: 1
     nextNodeID: 
-    text: 'It is for me to keep my relationship with Cranaus safe. ...I know you''ll
-      understand, Bion. '
+    text: It is for me to keep my relationship with Cranaus safe. ...I know you'll
+      understand, Bion. No one can save you from your sins.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 0}
+  toggleFlagOnTalk: 0
+  flag: 
