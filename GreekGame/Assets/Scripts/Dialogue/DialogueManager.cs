@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using System;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -48,6 +49,8 @@ public class DialogueManager : MonoBehaviour
     private Image speakerRight;
 
     public bool DialogueIsHappening { get; private set; }
+
+    public event Action OnDialogueEnd;
 
     // functions
     private void Awake()
@@ -105,6 +108,13 @@ public class DialogueManager : MonoBehaviour
                 dialoguePanel.SetActive(false);
                 dialogueTMP.text = "";
                 player.SwitchActionMaps(false);
+
+                // play any events that were applied
+                if (OnDialogueEnd !=  null)
+                {
+                    OnDialogueEnd.Invoke();
+                    OnDialogueEnd = null;
+                }
             }
             else
             {
