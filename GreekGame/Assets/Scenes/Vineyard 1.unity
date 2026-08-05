@@ -2922,8 +2922,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb6826dfdcf945e4891fe3c1ae9a4e9d, type: 2}
   - {fileID: 11400000, guid: 74c2e73b9de5114439922f25f80bb66b, type: 2}
   - {fileID: 11400000, guid: 5239f52bed38d774bbefe81c4d058408, type: 2}
-  flagDialogueChecks: []
-  flaggedDialogueIndex: 
+  flagChecks: []
+  flagDialogueIndex: 
   prerequisiteQuestIDs:
   - TalkToCoworker
   - WheatGather
@@ -3589,9 +3589,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 6a0c9496bdb33d148a679cf93d574ac0, type: 2}
   - {fileID: 11400000, guid: d8dbb6ad64a9e1d4aa0eca41536a5f73, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &218020884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69132,9 +69131,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 9809ad3fe3789934ab5024c7b9b99a3f, type: 2}
   - {fileID: 11400000, guid: f8c522cfddfc7e640b30c21f5e8fae12, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &259361596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -69289,9 +69287,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 51e9b7634ce15094588c1c4ab3a1d57c, type: 2}
   - {fileID: 11400000, guid: 788b0082606a38d439b37755faaad060, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &263297787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -72271,9 +72268,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 9eebd643516e5b3469a9ad81b4f5ffab, type: 2}
   - {fileID: 11400000, guid: bb2ee2fc86ba7ab43bc28b50eec735aa, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &415301169
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -75084,8 +75080,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: f564dd8bfe8e1224482282b94343c8e4, type: 2}
-  flagDialogueChecks: []
-  flaggedDialogueIndex: 
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - v-003
 --- !u!1 &571392564
@@ -76236,6 +76232,120 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
+--- !u!1 &662189103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662189104}
+  - component: {fileID: 662189106}
+  - component: {fileID: 662189105}
+  m_Layer: 0
+  m_Name: cs_bion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &662189104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662189103}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1814096857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &662189105
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662189103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &662189106
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662189103}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: 21300000, guid: 19068663466fff342b9b6415b306ce53, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.625, y: 5.0125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -77847,6 +77957,120 @@ MonoBehaviour:
   questID: IngredientGather
   questPrerequisites: []
   flagPrerequisites: []
+--- !u!1 &735402632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735402633}
+  - component: {fileID: 735402635}
+  - component: {fileID: 735402634}
+  m_Layer: 0
+  m_Name: cs_ceryx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &735402633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735402632}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1814096857}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &735402634
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735402632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &735402635
+SpriteRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735402632}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_Sprite: {fileID: -211451390074536312, guid: f41ec06624ab17d4ab866d3802442dcc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.4, y: 4.5375}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_SpriteSortPoint: 0
 --- !u!4 &737477248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6463698728043559870, guid: 72b3996521922884e8220bfb2411fc21, type: 3}
@@ -106651,9 +106875,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: a4d4a7ccebdaeff4cb9bbddc1c815251, type: 2}
   - {fileID: 11400000, guid: 44d0f1d177ffa984da08b255cd8ebad0, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &826213352
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108767,8 +108990,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: fc6521a0a93ff8a468c54ddcf114fb4a, type: 2}
-  flagDialogueChecks: []
-  flaggedDialogueIndex: 
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - v-004
 --- !u!1 &950604396
@@ -109373,9 +109596,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: e383934838a13424298d023bcaea5f8e, type: 2}
   - {fileID: 11400000, guid: 070b5861d08cf164a87e58d08c97cdac, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &973935010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -109530,9 +109752,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 8aaee38d665ebb2499cf08e1a11366e9, type: 2}
   - {fileID: 11400000, guid: fc0f75e1842c7ed4c8cb8b3e2b265f2c, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &975718903
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -113034,9 +113255,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: eb229a980f8d59c48959fc817a63261d, type: 2}
   - {fileID: 11400000, guid: f7be9ce71649c154d92ed00b69e7a1d3, type: 2}
-  flagDialogueChecks:
-  - met_Coworker
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - TalkToGrapeFarmer
 --- !u!1001 &1144817736
@@ -114112,6 +114332,39 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165797717}
   m_CullTransparentMesh: 1
+--- !u!1 &1186550531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1186550532}
+  m_Layer: 0
+  m_Name: CS_Bion_HappyED_Components
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1186550532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186550531}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1814096857}
+  - {fileID: 1760295498}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1186940055
 GameObject:
   m_ObjectHideFlags: 0
@@ -116122,6 +116375,83 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1300104805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300104806}
+  - component: {fileID: 1300104807}
+  - component: {fileID: 1300104808}
+  m_Layer: 0
+  m_Name: Scene_Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1300104806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300104805}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1760295498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1300104807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300104805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7698cc61de231094591d77fa3fb19890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScenePart
+  thisCutscene: {fileID: 1300104808}
+  thisDialogue: {fileID: 11400000, guid: b3440eb007a2ee841a3783543cedbf23, type: 2}
+  nextScene: {fileID: 0}
+  player: {fileID: 1854854078}
+  bird: {fileID: 951122902}
+  disableAfter: {fileID: 1814096856}
+--- !u!320 &1300104808
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300104805}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 4f8159defe8740d48bfb631a2d6cc74e, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6343932972468742009, guid: 4f8159defe8740d48bfb631a2d6cc74e, type: 2}
+    value: {fileID: 1109892421}
+  - key: {fileID: 2505858146768770569, guid: 4f8159defe8740d48bfb631a2d6cc74e, type: 2}
+    value: {fileID: 216010441}
+  - key: {fileID: -4350357230079309820, guid: 4f8159defe8740d48bfb631a2d6cc74e, type: 2}
+    value: {fileID: 735402634}
+  - key: {fileID: 7497024314798316951, guid: 4f8159defe8740d48bfb631a2d6cc74e, type: 2}
+    value: {fileID: 662189105}
+  m_ExposedReferences:
+    m_References:
+    - b37ad4b444da566408f051181af9a061: {fileID: 216010439}
 --- !u!1 &1302761614
 GameObject:
   m_ObjectHideFlags: 0
@@ -117707,6 +118037,7 @@ MonoBehaviour:
   mapBounds: {fileID: 623004179}
   fov: 6
   canvas: {fileID: 0}
+  cutsceneParent: {fileID: 0}
 --- !u!61 &1340025779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -118899,8 +119230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: ad9cd87cb1bba154785062450fa976c8, type: 2}
-  flagDialogueChecks: []
-  flaggedDialogueIndex: 
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - v-001
 --- !u!1 &1424975121
@@ -492214,8 +492545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
   dialogues:
   - {fileID: 11400000, guid: 92f10dd88b481bf458bc7bc28364b199, type: 2}
-  flagDialogueChecks: []
-  flaggedDialogueIndex: 
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - v-002
 --- !u!1 &1503996182 stripped
@@ -494527,9 +494858,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: a2eda84c586811946a1e5f32da6130db, type: 2}
   - {fileID: 11400000, guid: d0f9b9ea23e6cb940b1dac3431fd1134, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &1630000918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -494957,6 +495287,83 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &1670708311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1670708312}
+  - component: {fileID: 1670708313}
+  - component: {fileID: 1670708314}
+  m_Layer: 0
+  m_Name: Scene_Forgiveness
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1670708312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670708311}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1760295498}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1670708313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670708311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7698cc61de231094591d77fa3fb19890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScenePart
+  thisCutscene: {fileID: 1670708314}
+  thisDialogue: {fileID: 0}
+  nextScene: {fileID: 1300104805}
+  player: {fileID: 1854854078}
+  bird: {fileID: 0}
+  disableAfter: {fileID: 0}
+--- !u!320 &1670708314
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670708311}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0273917573ee372418264e38667c70ce, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -6343932972468742009, guid: 0273917573ee372418264e38667c70ce, type: 2}
+    value: {fileID: 1109892421}
+  - key: {fileID: 2505858146768770569, guid: 0273917573ee372418264e38667c70ce, type: 2}
+    value: {fileID: 216010441}
+  - key: {fileID: -2458611901678548291, guid: 0273917573ee372418264e38667c70ce, type: 2}
+    value: {fileID: 735402634}
+  - key: {fileID: -4203964677842623196, guid: 0273917573ee372418264e38667c70ce, type: 2}
+    value: {fileID: 662189105}
+  m_ExposedReferences:
+    m_References:
+    - b521c8abea97b0448b3008fbe8386e53: {fileID: 216010439}
 --- !u!1 &1678472845
 GameObject:
   m_ObjectHideFlags: 0
@@ -495559,9 +495966,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: 6a0c9496bdb33d148a679cf93d574ac0, type: 2}
   - {fileID: 11400000, guid: d8dbb6ad64a9e1d4aa0eca41536a5f73, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &1706758103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -496756,9 +497162,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: a07e0efc56c648b4c8e056892650a174, type: 2}
   - {fileID: 11400000, guid: 7f110ca29d9cb0741929132d9a343c51, type: 2}
-  flagDialogueChecks:
-  - met_Coworker
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &1735457142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -497001,6 +497406,39 @@ RectTransform:
   m_AnchoredPosition: {x: 290, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1760295497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760295498}
+  m_Layer: 0
+  m_Name: Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760295498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760295497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1670708312}
+  - {fileID: 1300104806}
+  m_Father: {fileID: 1186550532}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781566993
 GameObject:
   m_ObjectHideFlags: 0
@@ -497950,6 +498388,39 @@ Transform:
   - {fileID: 441566524}
   - {fileID: 1575489564}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1814096856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1814096857}
+  m_Layer: 0
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814096857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814096856}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 735402633}
+  - {fileID: 662189104}
+  m_Father: {fileID: 1186550532}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1816126812
 GameObject:
@@ -498914,10 +499385,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3fbb6a6ff7dc457418508325cad919da, type: 2}
   - {fileID: 11400000, guid: 2c64893dc0927d1458d6393b667ce7ad, type: 2}
   - {fileID: 11400000, guid: 18fb977ac789f1e45b80ab7a83559a16, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  - TalkedToOldLady
-  flaggedDialogueIndex: 0100000002000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &1874795302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -499367,10 +499836,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 435140abeace85446a096dfc3f0b23ab, type: 2}
   - {fileID: 11400000, guid: 255744f344b60494eb911db5b81b5d72, type: 2}
   - {fileID: 11400000, guid: 556b8640dcfbe8544bb772bd731aa3dc, type: 2}
-  flagDialogueChecks:
-  - met_Coworker
-  - StartWheatQuest
-  flaggedDialogueIndex: 0100000002000000
+  flagChecks: []
+  flagDialogueIndex: 
   questsID:
   - TalkToWheatFarmer
 --- !u!1 &1885166214
@@ -500769,9 +501236,8 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: de20bbe35bfe9a641b54790afc48c072, type: 2}
   - {fileID: 11400000, guid: 1f7a4433372b5264ebaa222cdbc42444, type: 2}
-  flagDialogueChecks:
-  - StartWheatQuest
-  flaggedDialogueIndex: 01000000
+  flagChecks: []
+  flagDialogueIndex: 
 --- !u!61 &2007898643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -502861,3 +503327,4 @@ SceneRoots:
   - {fileID: 1811901238}
   - {fileID: 828978188}
   - {fileID: 155974230}
+  - {fileID: 1186550532}
