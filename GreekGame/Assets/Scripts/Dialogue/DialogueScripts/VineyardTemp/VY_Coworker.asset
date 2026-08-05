@@ -17,7 +17,7 @@ MonoBehaviour:
   - isEndpoint: 0
     id: Intro0
     nextNodeID: Intro1
-    text: 'Hello, stranger. '
+    text: 'Hello, rookie. '
     choices: []
     updateSpeakerInfo: 1
     speakerName: ???
