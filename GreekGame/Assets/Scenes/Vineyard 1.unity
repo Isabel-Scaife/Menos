@@ -3259,7 +3259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: v-004
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &216010438
 GameObject:
   m_ObjectHideFlags: 0
@@ -69790,8 +69791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: TalkToGrapeFarmerAfter
-  requiredPrerequisites:
-  - UncoverShed
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &298882974
 GameObject:
   m_ObjectHideFlags: 0
@@ -70939,6 +70940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapTeleport
   confiner: {fileID: 0}
+  interactTrigger: 0
   teleportTo: {fileID: 5019196196964083211}
   newMapBounds: {fileID: 1033001963}
   direction: 1
@@ -74235,8 +74237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: TalkToGrapeFarmer
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &563388199
 GameObject:
   m_ObjectHideFlags: 0
@@ -76926,8 +76928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: IngredientGather
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!4 &737477248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6463698728043559870, guid: 72b3996521922884e8220bfb2411fc21, type: 3}
@@ -106379,7 +106381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: WheatGather
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!4 &877622995
 Transform:
   m_ObjectHideFlags: 0
@@ -108969,8 +108972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: WheatFailure
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1001 &1019135567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113841,7 +113844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: UncoveredShed
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!114 &1227408381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495938,7 +495942,7 @@ Transform:
   m_GameObject: {fileID: 1811901237}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 36, y: 15.7, z: 0}
+  m_LocalPosition: {x: 29.5, y: 15.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
