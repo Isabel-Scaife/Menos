@@ -18,6 +18,7 @@ MonoBehaviour:
     id: 0
     nextNodeID: 
     text: You came back in no time! I guess the blacksmith took a liking in you.
+      Now, back to packaging!
     choices: []
     updateSpeakerInfo: 1
     speakerName: Coworker
