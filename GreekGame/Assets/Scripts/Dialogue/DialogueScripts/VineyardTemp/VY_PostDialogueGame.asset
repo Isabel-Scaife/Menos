@@ -55,19 +55,18 @@ MonoBehaviour:
       outcome:
         flagsToSet:
         - ArrestArtopoios
+        - WheatFailure
         statChanges: 
         questsID:
         - BakerCS
-        - WheatFailure
     - text: Aigidios
       nextNodeID: TheBarnOwner
       outcome:
         flagsToSet:
         - ArrestAigidios
-        statChanges: 
-        questsID:
-        - BarnOwnerCS
         - WheatFailure
+        statChanges: 
+        questsID: []
     - text: Bion
       nextNodeID: Reconsider
       outcome:
@@ -106,10 +105,9 @@ MonoBehaviour:
       outcome:
         flagsToSet:
         - ArrestBion
-        statChanges: 
-        questsID:
-        - BionCS
         - WheatGather
+        statChanges: 
+        questsID: []
     - text: He didn't have a choice. I should cover his doing.
       nextNodeID: ForBion
       outcome:

@@ -11,10 +11,25 @@ public class NPC : Interactable
 
     // fields
     [SerializeField] protected List<DialogueSO> dialogues;
-    
+
     [Header("Playing Flagged Dialogue")]
     [SerializeField] protected List<string> flagChecks; // higher index higher priority
+    protected List<string[]> flagSets;
+
     [SerializeField] protected List<int> flagDialogueIndex;
+
+    private void Start()
+    {
+        flagSets = new List<string[]>();
+
+        for (int i = 0; i < flagChecks.Count; i++)
+        {
+            // seperate flag set by '," into individual strings
+            // and place into new list
+            string currentFlagSet = flagChecks[i];
+            flagSets.Add(currentFlagSet.Split(','));
+        }
+    }
 
     public void ReplaceDialogue(DialogueSO newDialogue, int index)
     {
@@ -43,7 +58,7 @@ public class NPC : Interactable
             if (TalkedTo != null) TalkedTo.Invoke(this);
 
             // run default dialogue if there are no flags 
-            if (flagChecks == null)
+            if (flagSets == null)
             {
                 DialogueManager.Instance.BeginDialogue(dialogues[0], player);
                 return;
@@ -60,29 +75,44 @@ public class NPC : Interactable
     /// <summary>
     /// Checks dialogue flags and runs corresponding dialogue
     /// </summary>
-    /// <returns>Return true if flag found and ran dialogue</returns>
+    /// <returns>
+    /// Return true if dialogue begins,
+    /// false if dialogue does not begin
+    /// </returns>
     protected bool CheckFlagDialogue(PlayerControlled player)
     {
         if (GameStateManager.Instance == null) { Debug.Log("No Gamestate manager in scene"); return false; }
 
-        // check flags starting from highest index 
-        for (int i = flagChecks.Count - 1; i >= 0; i--)
+        // check rows of prerequisites at a time
+        for (int i = flagSets.Count - 1; i >= 0; i--)
         {
-            // flag exists run corresponding dialogue
-            if (GameStateManager.Instance.HasFlag(flagChecks[i]))
+            bool allPrereqMet = true;
+
+            foreach (string flag in flagSets[i])
+            {
+                // break early in prerequisite not met 
+                if (!GameStateManager.Instance.HasFlag(flag))
+                {
+                    allPrereqMet = false;
+                    break;
+                }
+            }
+
+            // if all prerquisites met run dilogue
+            if (allPrereqMet)
             {
                 // check for out of bounds index
-                if(i >= flagDialogueIndex.Count)
+                if (i >= flagDialogueIndex.Count)
                 {
-                    Debug.Log($"NPC {this.name}: has missing dialogue index for flag {flagChecks[i]}");
+                    Debug.Log($"NPC {this.name}: has missing dialogue index for flag prerequisite set");
                     return false;
                 }
 
-                int dialogueNum = flagDialogueIndex[i];
-                DialogueManager.Instance.BeginDialogue(dialogues[dialogueNum], player);
+                // run dialogue
+                int index = flagDialogueIndex[i];
+                DialogueManager.Instance.BeginDialogue(dialogues[index], player);
                 return true;
             }
-
         }
         return false;
     }
