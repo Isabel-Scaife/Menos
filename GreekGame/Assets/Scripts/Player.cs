@@ -18,7 +18,10 @@ public class Player : PlayerControlled
         // set player's position to proper location 
         else
         {
-            transform.position = SpawnManager.Instance.PlayerPosition;
+            if (SpawnManager.Instance.PlayerPosition != Vector3.zero)
+            {
+                transform.position = SpawnManager.Instance.PlayerPosition;
+            }
         }
     }
     protected override void FixedUpdate()
