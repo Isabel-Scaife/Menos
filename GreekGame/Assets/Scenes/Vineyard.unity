@@ -69130,6 +69130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutSceneVase
   itemID: JewerlyVase
   playerCanInteract: 1
+  collectedFlag: 
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5
@@ -72471,6 +72472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InspectItem
   itemID: inspect-1
   playerCanInteract: 1
+  collectedFlag: 
   followObject: {fileID: 1012697044}
   mapBounds: {fileID: 459680294}
   fov: 6
@@ -73301,6 +73303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemID: Fig
   playerCanInteract: 1
+  collectedFlag: 
 --- !u!1 &484381184
 GameObject:
   m_ObjectHideFlags: 0
@@ -74499,6 +74502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemID: GrapeVase
   playerCanInteract: 1
+  collectedFlag: 
 --- !u!61 &560977128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76062,6 +76066,7 @@ GameObject:
   m_Component:
   - component: {fileID: 674276212}
   - component: {fileID: 674276213}
+  - component: {fileID: 674276214}
   m_Layer: 0
   m_Name: Olives
   m_TagString: Untagged
@@ -76143,6 +76148,26 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &674276214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674276211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98e4b678be00a634298825002c363fd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OliveTree
+  itemID: olives
+  playerCanInteract: 0
+  collectedFlag: 
+  followObject: {fileID: 1054560227}
+  mapBounds: {fileID: 623004179}
+  fov: 6
+  canvas: {fileID: 0}
+  dialogue: {fileID: 0}
 --- !u!1001 &679920696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77591,7 +77616,7 @@ MonoBehaviour:
   itemsToCollect:
   - {fileID: 560977127}
   - {fileID: 482231690}
-  - {fileID: 0}
+  - {fileID: 674276214}
   amountNeeded: 3
   questsID:
   - IngredientGather
@@ -118759,6 +118784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VineCovered
   itemID: Covered
   playerCanInteract: 0
+  collectedFlag: 
   followObject: {fileID: 127797700}
   mapBounds: {fileID: 399758729}
   fov: 6
@@ -525320,7 +525346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CollectQuest
   itemsToCollect:
-  - {fileID: 0}
+  - {fileID: 674276214}
   amountNeeded: 1
   questsID:
   - CollectedOlives
@@ -531281,6 +531307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Vase
   itemID: vase-2
   playerCanInteract: 1
+  collectedFlag: 
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5
