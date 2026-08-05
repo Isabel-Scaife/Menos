@@ -2269,6 +2269,63 @@ MonoBehaviour:
   count: 1
   coveredObject: {fileID: 1159417751}
   coveredCorners: []
+--- !u!1 &131570670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 131570671}
+  - component: {fileID: 131570672}
+  m_Layer: 19
+  m_Name: TalkToQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &131570671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131570670}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1695796471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &131570672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131570670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d52c27a5368fd64db1d3c130f2d35e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TalkToQuest
+  npcTalkTo:
+  - {fileID: 1630000917}
+  - {fileID: 415301168}
+  - {fileID: 826213351}
+  - {fileID: 263297786}
+  - {fileID: 1874795301}
+  - {fileID: 2007898642}
+  - {fileID: 975718902}
+  - {fileID: 218020883}
+  - {fileID: 259361595}
+  amountNeeded: 3
+  questsID:
+  - BakerTalkToOthers
 --- !u!1 &136611937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,8 +2831,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb6826dfdcf945e4891fe3c1ae9a4e9d, type: 2}
   - {fileID: 11400000, guid: 74c2e73b9de5114439922f25f80bb66b, type: 2}
   - {fileID: 11400000, guid: 5239f52bed38d774bbefe81c4d058408, type: 2}
-  flagChecks: []
-  flagDialogueIndex: 
+  flagChecks:
+  - met_Coworker
+  flagDialogueIndex: 01000000
   prerequisiteQuestIDs:
   - WheatGather
   - IngredientGather
@@ -67704,68 +67762,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &295996304
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 295996305}
-  - component: {fileID: 295996307}
-  - component: {fileID: 295996306}
-  m_Layer: 19
-  m_Name: TalkToGrapeFarmerAfter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &295996305
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295996304}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.1, y: -11.6, z: 0}
-  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2070970936}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &295996306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295996304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
-  item: {fileID: 482231686}
-  activate: 1
---- !u!114 &295996307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295996304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuestData
-  questID: TalkToGrapeFarmerAfter
-  questPrerequisites: []
-  flagPrerequisites: []
 --- !u!1 &298882974
 GameObject:
   m_ObjectHideFlags: 0
@@ -68517,10 +68513,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -110343,7 +110339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -111397,8 +111393,11 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: e383934838a13424298d023bcaea5f8e, type: 2}
   - {fileID: 11400000, guid: 070b5861d08cf164a87e58d08c97cdac, type: 2}
-  flagChecks: []
-  flagDialogueIndex: 
+  - {fileID: 11400000, guid: d3955025f836d4a42a86ddd778cbb38c, type: 2}
+  flagChecks:
+  - StartWheatQuest
+  - TalkToOthers
+  flagDialogueIndex: 0100000002000000
 --- !u!61 &973935010
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -520479,6 +520478,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1146663224}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1695796470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1695796471}
+  - component: {fileID: 1695796473}
+  - component: {fileID: 1695796474}
+  m_Layer: 19
+  m_Name: BakerTalkToOthers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1695796471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695796470}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.119934, y: 1.3115602, z: 0}
+  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 131570671}
+  m_Father: {fileID: 2070970936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1695796473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695796470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: BakerTalkToOthers
+  questPrerequisites: []
+  flagPrerequisites: []
+--- !u!114 &1695796474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695796470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e053a6416cbf74cbd13821bb678e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddFlag
+  flagToAdd: TalkToOthers
 --- !u!1 &1700357463
 GameObject:
   m_ObjectHideFlags: 0
@@ -523893,9 +523954,9 @@ Transform:
   - {fileID: 263297785}
   - {fileID: 2007898641}
   - {fileID: 218020882}
+  - {fileID: 975718901}
   - {fileID: 1874795300}
   - {fileID: 826213350}
-  - {fileID: 975718901}
   - {fileID: 973935008}
   - {fileID: 259361594}
   - {fileID: 600513555}
@@ -524057,8 +524118,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 435140abeace85446a096dfc3f0b23ab, type: 2}
   - {fileID: 11400000, guid: 255744f344b60494eb911db5b81b5d72, type: 2}
   - {fileID: 11400000, guid: 556b8640dcfbe8544bb772bd731aa3dc, type: 2}
-  flagChecks: []
-  flagDialogueIndex: 
+  flagChecks:
+  - met_Coworker
+  flagDialogueIndex: 01000000
   questsID:
   - TalkToWheatFarmer
 --- !u!1 &1885166214
@@ -524274,6 +524336,69 @@ Transform:
   - {fileID: 2146394675}
   m_Father: {fileID: 1054560227}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1913358880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913358881}
+  - component: {fileID: 1913358883}
+  - component: {fileID: 1913358882}
+  m_Layer: 19
+  m_Name: TalkToWheatFarmer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913358881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913358880}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -23.119934, y: 1.3115602, z: 0}
+  m_LocalScale: {x: 1.393935, y: 1.393935, z: 1.393935}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070970936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913358882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913358880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c26a31b39109bc42804c4692496c3c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToggleObject
+  item: {fileID: 131570670}
+  activate: 1
+--- !u!114 &1913358883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913358880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: TalkToWheatFarmer
+  questPrerequisites: []
+  flagPrerequisites:
+  - met_Coworker
 --- !u!1 &1917898915
 GameObject:
   m_ObjectHideFlags: 0
@@ -525995,7 +526120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2055628381
 Transform:
   m_ObjectHideFlags: 0
@@ -526298,9 +526423,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 877622995}
+  - {fileID: 1913358881}
+  - {fileID: 1695796471}
   - {fileID: 556856315}
   - {fileID: 1227408378}
-  - {fileID: 295996305}
   - {fileID: 1017494524}
   - {fileID: 207555377}
   - {fileID: 732381161}

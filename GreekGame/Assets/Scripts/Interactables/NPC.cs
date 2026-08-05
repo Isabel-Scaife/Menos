@@ -1,11 +1,14 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 /// <summary>
 /// Person that can be talked to by the player when interacted with in the overworld
 /// </summary>
 public class NPC : Interactable
 {
+    public Action<NPC> TalkedTo;
+
     // fields
     [SerializeField] protected List<DialogueSO> dialogues;
     
@@ -37,30 +40,43 @@ public class NPC : Interactable
         {
             if (DialogueManager.Instance == null) { Debug.Log("No DialogueManager in scene"); return; }
 
+            if (TalkedTo != null) TalkedTo.Invoke(this);
+
             // run default dialogue if there are no flags 
-            if(flagChecks == null)
+            if (flagChecks == null)
             {
                 DialogueManager.Instance.BeginDialogue(dialogues[0], player);
                 return;
             }
 
-            if(GameStateManager.Instance == null) { Debug.Log("No Gamestate manager in scene"); return; }
-
-            // check flags starting from highest index 
-            for (int i = flagChecks.Count - 1; i >= 0; i--)
-            {
-                // flag exists run corresponding dialogue
-                if (GameStateManager.Instance.HasFlag(flagChecks[i]))
-                {
-                    int dialogueNum = flagDialogueIndex[i];
-                    DialogueManager.Instance.BeginDialogue(dialogues[dialogueNum], player);
-                    return;
-                }
-
-            }
+            // found and ran flag dialgoue 
+            if (CheckFlagDialogue(player)) return;
 
             // no flags set play default dialogue
             DialogueManager.Instance.BeginDialogue(dialogues[0], player);
         }
+    }
+
+    /// <summary>
+    /// Checks dialogue flags and runs corresponding dialogue
+    /// </summary>
+    /// <returns>Return true if flag found and ran dialogue</returns>
+    protected bool CheckFlagDialogue(PlayerControlled player)
+    {
+        if (GameStateManager.Instance == null) { Debug.Log("No Gamestate manager in scene"); return false; }
+
+        // check flags starting from highest index 
+        for (int i = flagChecks.Count - 1; i >= 0; i--)
+        {
+            // flag exists run corresponding dialogue
+            if (GameStateManager.Instance.HasFlag(flagChecks[i]))
+            {
+                int dialogueNum = flagDialogueIndex[i];
+                DialogueManager.Instance.BeginDialogue(dialogues[dialogueNum], player);
+                return true;
+            }
+
+        }
+        return false;
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NPCBaker : MonoBehaviour
+public class NPCBaker : NPC
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
