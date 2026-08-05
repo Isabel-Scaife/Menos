@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_Brooch
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 0
+  startingNodeID: Start
   nodes:
+  - isEndpoint: 0
+    id: Start
+    nextNodeID: 0
+    text: There are a lot of accessories here. This is the last one...
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 0}
   - isEndpoint: 0
     id: 0
     nextNodeID: 1
