@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     private List<TextMeshProUGUI> choiceTMPs;
     [SerializeField]
     private List<GameObject> choiceBoxes;
+    private GameObject previousSelectedChoiceBox;
     private bool choicesShowing;
     private DialogueChoice chosen;
 
@@ -145,6 +146,21 @@ public class DialogueManager : MonoBehaviour
             chosen = null;
             DisplayDialogue();
         }
+
+        // ensure a choice is always selected
+        if (choicesShowing)
+        {
+            // track selected choice
+            if (EventSystem.current.currentSelectedGameObject != null)
+            {
+                previousSelectedChoiceBox = EventSystem.current.currentSelectedGameObject;
+            }
+            // reselect if missing selection
+            else if (previousSelectedChoiceBox != null)
+            {
+                EventSystem.current.SetSelectedGameObject(previousSelectedChoiceBox);
+            }
+        }
     }
 
     /// <summary>
@@ -243,6 +259,7 @@ public class DialogueManager : MonoBehaviour
                 choiceBoxes[i].SetActive(true);                
             }
             EventSystem.current.SetSelectedGameObject(choiceBoxes[0]);
+            previousSelectedChoiceBox = choiceBoxes[0];
             choicesShowing = true;
         }
     }

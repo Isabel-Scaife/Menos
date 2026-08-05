@@ -85,8 +85,8 @@ MonoBehaviour:
   - isEndpoint: 0
     id: Help
     nextNodeID: OfCourse
-    text: Can you please help me cut these down? Here, I have a spare axe for you
-      to use.
+    text: Can you please help me cut those vines down? Walk down the pebble path
+      to find my shed. Here, I have a spare axe for you to use.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Damasos

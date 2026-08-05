@@ -71222,6 +71222,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &439813549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 439813550}
+  - component: {fileID: 439813551}
+  - component: {fileID: 439813553}
+  - component: {fileID: 439813552}
+  m_Layer: 0
+  m_Name: CollectedGrapes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &439813550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439813549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2070970936}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &439813551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439813549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: CollectedGrapes
+  questPrerequisites: []
+  flagPrerequisites: []
+--- !u!114 &439813552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439813549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e053a6416cbf74cbd13821bb678e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddFlag
+  flagToAdd: GrapeCollected
+--- !u!114 &439813553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439813549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c10a19e17e637b4c8db521773d73ce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CollectQuest
+  itemsToCollect:
+  - {fileID: 560977127}
+  amountNeeded: 1
+  questsID:
+  - CollectedGrapes
 --- !u!1 &442053070
 GameObject:
   m_ObjectHideFlags: 0
@@ -117691,9 +117770,11 @@ MonoBehaviour:
   dialogues:
   - {fileID: 11400000, guid: eb229a980f8d59c48959fc817a63261d, type: 2}
   - {fileID: 11400000, guid: f7be9ce71649c154d92ed00b69e7a1d3, type: 2}
+  - {fileID: 11400000, guid: cde7e0563240d464a89099f9b051bc8d, type: 2}
   flagChecks:
   - met_Coworker
-  flagDialogueIndex: 01000000
+  - GrapeCollected
+  flagDialogueIndex: 0100000002000000
   questsID:
   - StartGrapeGather
 --- !u!1001 &1144817736
@@ -528056,7 +528137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3399567360816744471, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5815523106719086777, guid: 9adfc1c3e4d6d5845b86e7cbb4553092, type: 3}
       propertyPath: m_LocalPosition.x
@@ -531564,6 +531645,7 @@ Transform:
   - {fileID: 1022572769}
   - {fileID: 1187545642}
   - {fileID: 217112115}
+  - {fileID: 439813550}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2077569728
