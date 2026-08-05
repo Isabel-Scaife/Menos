@@ -10,58 +10,78 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_OliveFarmer
+  m_Name: VY_Happy_ED_BIon
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: Greeting
+  startingNodeID: 0
   nodes:
   - isEndpoint: 0
-    id: Greeting
-    nextNodeID: Job
-    text: Greetings, fair traveler. If I had time to spare, I would engage in a conversation
-      with you, but I don't.
+    id: 0
+    nextNodeID: 1
+    text: What again? Did my yaya ask you a favor? You can say no.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Trophimus
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
-    id: Job
-    nextNodeID: NotDone
-    text: 'Oh, I''m not here to bother you. I''m here to fullfil my duty of picking
-      up olives on behalf of Master Cranaus. '
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Ceryx
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 0
-    id: NotDone
-    nextNodeID: Offer
-    text: 'You must be from the post office. I''m sorry, but you''ll have to wait
-      - I''m not done harvesting them. '
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Trophimus
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 0
-    id: Offer
+    id: 1
     nextNodeID: 
-    text: 'I''d like to help you harvest because that way we can get work done quicker
-      together. Besides, I would be wasting my time if I were to sit down and wait. '
-    choices: []
+    text: 
+    choices:
+    - text: I couldn't say no. Besides... you are a young boy who needs care.
+      nextNodeID: 2
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
+    - text: Take care, okay?
+      nextNodeID: 3
+      outcome:
+        flagsToSet: []
+        statChanges: 
+        questsID: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: 2
+    nextNodeID: 4
+    text: Humph. I don't need care. ...But I admit that I'm still a kid who needs
+      help to protect my family.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: 3
+    nextNodeID: 4
+    text: Wait are you leaving? ...Hey...so...
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: 4
+    nextNodeID: Smile
+    text: Thank you for helping me, and giving me another chance. I couldn't see
+      another solution, but now I know that there are good adults like you.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 1
-    id: Appreciated
+    id: Smile
     nextNodeID: 
-    text: 'You have such a kind heart. You have my utmost gratitude. '
+    text: I'm glad I could help you see the world in a different light, kid. May
+      the gods bless you and your family.
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Trophimus
+    speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  toggleFlagOnTalk: 1
-  flag: TalkToOliveFarmer
+  toggleFlagOnTalk: 0
+  flag: 

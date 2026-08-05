@@ -10,39 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_Brooch
+  m_Name: VY_A1_Merchant
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
   startingNodeID: 0
   nodes:
   - isEndpoint: 0
     id: 0
     nextNodeID: 1
-    text: 'Wait. This is... Mother''s brooch. The very brooch Father gave her, the
-      one she held most dear. '
+    text: 'What could I say - fate sometimes forces people into decisions based off
+      of desperation... May god bless Bion. '
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Ceryx
+    speakerName: Zenon
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 0}
-  - isEndpoint: 0
-    id: 1
-    nextNodeID: 2
-    text: The smith spoke earlier of a commission from the King... Was it Mother's
-      brooch that required mending?
-    choices: []
-    updateSpeakerInfo: 1
-    speakerName: Ceryx
-    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 0}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 1
-    id: 2
+    id: 1
     nextNodeID: 
-    text: When the time comes, I shall discover the truth. Mother... By the gods,
-      I swear I shall unveil the one who wrought this crime and avenge your death.
+    text: '...Well, enough of the gloomy talk. Would you like to buy or sell something? '
     choices: []
     updateSpeakerInfo: 1
-    speakerName: Ceryx
+    speakerName: Zenon
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 0}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   toggleFlagOnTalk: 0
   flag: 
