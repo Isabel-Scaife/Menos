@@ -57,7 +57,8 @@ MonoBehaviour:
   - isEndpoint: 1
     id: Appreciated
     nextNodeID: 
-    text: 'You have such a kind heart. You have my utmost gratitude. '
+    text: 'You have such a kind heart. If you go over to the olive tree and start
+      helping me bring in the harvest, you would have my utmost gratitude. '
     choices: []
     updateSpeakerInfo: 1
     speakerName: Trophimus
