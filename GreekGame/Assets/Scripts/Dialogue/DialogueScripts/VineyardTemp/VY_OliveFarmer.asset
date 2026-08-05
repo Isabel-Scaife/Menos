@@ -57,9 +57,12 @@ MonoBehaviour:
   - isEndpoint: 1
     id: Appreciated
     nextNodeID: 
-    text: 'You have such a kind heart. You have my utmost gratitude. '
+    text: 'You have such a kind heart. If you go over to the olive tree and start
+      helping me bring in the harvest, you would have my utmost gratitude. '
     choices: []
     updateSpeakerInfo: 1
     speakerName: Trophimus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  toggleFlagOnTalk: 1
+  flag: TalkToOliveFarmer

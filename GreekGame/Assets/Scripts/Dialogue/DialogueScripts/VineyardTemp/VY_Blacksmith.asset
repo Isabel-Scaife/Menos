@@ -105,9 +105,9 @@ MonoBehaviour:
     speakerName: Blacksmith
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  - isEndpoint: 1
+  - isEndpoint: 0
     id: InReturn
-    nextNodeID: 
+    nextNodeID: Here
     text: 'But I don''t want to owe anyone anything. I''ll fix your inscription tool
       in return. '
     choices: []
@@ -115,3 +115,42 @@ MonoBehaviour:
     speakerName: Blacksmith
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Here
+    nextNodeID: Trust
+    text: 'Here you go, kid. I fixed your tool. This is the vase which has all the
+      accessories that need to be delivered. '
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: Trust
+    nextNodeID: BackToTask
+    text: You somehow remind me of Hermes... I trust you. Until later, then.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Blacksmith
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 0
+    id: BackToTask
+    nextNodeID: Packaging
+    text: Thank you for helping me. I'll make sure to deliver these safe.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  - isEndpoint: 1
+    id: Packaging
+    nextNodeID: 
+    text: With the inscription tool restored, I may continue my task of packing them.
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Ceryx
+    leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  toggleFlagOnTalk: 1
+  flag: TalkToBlacksmith

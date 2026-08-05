@@ -40,14 +40,14 @@ public class NPCCoworker : NPC, IQuestCompleter
                 // does not run if one prerequiste not met
                 if(allPrerequisitesComplete)
                 {
-                    DialogueManager.Instance.BeginDialogue(dialogues[i+1], player);
+                    DialogueManager.Instance.BeginDialogue(dialogues[i+2], player);
                     return;
                 }
             }
 
             // run default dialogue
             ((IQuestCompleter)this).OnQuestComplete();
-            DialogueManager.Instance.BeginDialogue(dialogues[0], player);
+            base.Interact(player);
         }
     }
 

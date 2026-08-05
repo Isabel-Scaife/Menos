@@ -3259,7 +3259,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: v-004
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &216010438
 GameObject:
   m_ObjectHideFlags: 0
@@ -69790,8 +69791,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: TalkToGrapeFarmerAfter
-  requiredPrerequisites:
-  - UncoverShed
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &298882974
 GameObject:
   m_ObjectHideFlags: 0
@@ -70939,6 +70940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MapTeleport
   confiner: {fileID: 0}
+  interactTrigger: 0
   teleportTo: {fileID: 5019196196964083211}
   newMapBounds: {fileID: 1033001963}
   direction: 1
@@ -72230,6 +72232,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &441566523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441566524}
+  m_Layer: 0
+  m_Name: Objects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441566524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441566523}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1811901238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442053070
 GameObject:
@@ -74204,8 +74237,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: TalkToGrapeFarmer
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1 &563388199
 GameObject:
   m_ObjectHideFlags: 0
@@ -76895,8 +76928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: IngredientGather
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!4 &737477248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6463698728043559870, guid: 72b3996521922884e8220bfb2411fc21, type: 3}
@@ -106348,7 +106381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: WheatGather
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!4 &877622995
 Transform:
   m_ObjectHideFlags: 0
@@ -108938,8 +108972,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: WheatFailure
-  requiredPrerequisites:
-  - TalkToCoworker
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!1001 &1019135567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113810,7 +113844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestData
   questID: UncoveredShed
-  requiredPrerequisites: []
+  questPrerequisites: []
+  flagPrerequisites: []
 --- !u!114 &1227408381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -491357,6 +491392,37 @@ Transform:
   - {fileID: 160680153}
   m_Father: {fileID: 1843756955}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1575489563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575489564}
+  m_Layer: 0
+  m_Name: Sequence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575489564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575489563}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1811901238}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1580305632
 GameObject:
   m_ObjectHideFlags: 0
@@ -495851,6 +495917,39 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1811901237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1811901238}
+  m_Layer: 0
+  m_Name: Cutscene_Components
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1811901238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811901237}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 29.5, y: 15.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 441566524}
+  - {fileID: 1575489564}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1820729642
 GameObject:
   m_ObjectHideFlags: 0
@@ -500506,3 +500605,4 @@ SceneRoots:
   - {fileID: 766078965}
   - {fileID: 1843756955}
   - {fileID: 1368466998}
+  - {fileID: 1811901238}
