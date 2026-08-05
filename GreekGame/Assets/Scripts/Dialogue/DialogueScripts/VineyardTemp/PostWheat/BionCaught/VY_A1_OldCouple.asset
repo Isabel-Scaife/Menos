@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
+  m_Name: VY_A1_OldCouple
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  startingNodeID: 0
+  nodes:
+  - isEndpoint: 1
+    id: 0
+    nextNodeID: 
+    text: Oh dear... Bion could have asked us for help, and we could have helped
+      him...
+    choices: []
+    updateSpeakerInfo: 1
+    speakerName: Phila & Sozon
+    leftSprite: {fileID: 0}
+    rightSprite: {fileID: 0}
+  toggleFlagOnTalk: 0
+  flag: 
