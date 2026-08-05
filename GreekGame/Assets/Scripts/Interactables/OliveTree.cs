@@ -2,17 +2,25 @@ using UnityEngine;
 
 public class OliveTree : MinigameSwapper
 {
+    [SerializeField] private DialogueSO dialogue;
     public async override void Interact(PlayerControlled player)
     {
-        await ScreenFader.Instance.FadeOut();
+        if (CanInteract)
+        {
+            await ScreenFader.Instance.FadeOut();
 
-        OliveMinigame minigame = followObject.GetComponent<OliveMinigame>();
-        minigame.OnComplete += HandleComplete;
+            OliveMinigame minigame = followObject.GetComponent<OliveMinigame>();
+            minigame.OnComplete += HandleComplete;
 
-        base.Interact(player);
-        SetCamera();
+            base.Interact(player);
+            SetCamera();
 
-        await ScreenFader.Instance.FadeIn();
+            await ScreenFader.Instance.FadeIn();
+        }
+        else
+        {
+            DialogueManager.Instance.BeginDialogue(dialogue, player);
+        }
     }
 
     private async void HandleComplete()

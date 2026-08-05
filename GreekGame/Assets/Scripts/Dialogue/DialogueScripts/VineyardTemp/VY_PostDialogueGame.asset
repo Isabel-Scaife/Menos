@@ -53,17 +53,20 @@ MonoBehaviour:
     - text: Artopoios
       nextNodeID: TheBaker
       outcome:
-        flagsToSet: []
+        flagsToSet:
+        - ArrestArtopoios
+        - WheatFailure
         statChanges: 
         questsID:
         - BakerCS
     - text: Aigidios
       nextNodeID: TheBarnOwner
       outcome:
-        flagsToSet: []
+        flagsToSet:
+        - ArrestAigidios
+        - WheatFailure
         statChanges: 
-        questsID:
-        - BarnOwnerCS
+        questsID: []
     - text: Bion
       nextNodeID: Reconsider
       outcome:
@@ -100,14 +103,17 @@ MonoBehaviour:
     - text: It's for my sake. I don't have a choice.
       nextNodeID: TheBoy
       outcome:
-        flagsToSet: []
+        flagsToSet:
+        - ArrestBion
+        - WheatGather
         statChanges: 
-        questsID:
-        - BionCS
+        questsID: []
     - text: He didn't have a choice. I should cover his doing.
       nextNodeID: ForBion
       outcome:
-        flagsToSet: []
+        flagsToSet:
+        - ForgiveBion
+        - WheatFailure
         statChanges: 
         questsID:
         - BionHappyED

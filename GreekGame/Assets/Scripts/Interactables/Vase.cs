@@ -32,7 +32,7 @@ public class Vase : MinigameSwapper
         minigame.OnComplete += HandleComplete;
     }
 
-    private async void HandleComplete()
+    protected virtual async void HandleComplete()
     {
         await ScreenFader.Instance.FadeOut();
 

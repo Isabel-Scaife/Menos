@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
   m_Name: VY_Bion
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: 
+  startingNodeID: GoAway
   nodes:
   - isEndpoint: 1
     id: GoAway
@@ -23,3 +23,5 @@ MonoBehaviour:
     speakerName: Bion
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
+  toggleFlagOnTalk: 0
+  flag: 

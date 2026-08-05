@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8cea624aa6e51a74d85663bcdeb0ee41, type: 3}
-  m_Name: VY_Mission_Wheat
+  m_Name: VY_OliveTree
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
-  startingNodeID: Mission
+  startingNodeID: 0
   nodes:
   - isEndpoint: 1
-    id: Mission
+    id: 0
     nextNodeID: 
-    text: I need to go back to the village and gather information. Let's start by
-      talking to everyone.
+    text: I shouldn't touch someone's property without permission...
     choices: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 0}
+  toggleFlagOnTalk: 0
+  flag: 
