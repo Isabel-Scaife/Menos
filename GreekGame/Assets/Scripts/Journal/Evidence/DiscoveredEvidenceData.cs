@@ -7,11 +7,21 @@ public class DiscoveredEvidenceData : ISaveData<JournalManager>
 
     public void CreateSaveData(JournalManager journal)
     {
-        savedEvidence = new EvidenceDataData[journal.DiscoveredEvidence.Count];
+        Debug.Log("Amount of Evidence to save: " + journal.DiscoveredEvidence.Count);
 
-        for(int i = 0; i < journal.DiscoveredEvidence.Count; i++)
+        if (journal.DiscoveredEvidence.Count != 0)
         {
-            savedEvidence[i].CreateSaveData(journal.DiscoveredEvidence[i]);
+            savedEvidence = new EvidenceDataData[journal.DiscoveredEvidence.Count];
+
+            for (int i = 0; i < journal.DiscoveredEvidence.Count; i++)
+            {
+                Debug.Log(journal.DiscoveredEvidence[i]);
+                savedEvidence[i].CreateSaveData(journal.DiscoveredEvidence[i]);
+
+                //SaveSystem.SaveData<EvidenceData, EvidenceDataData>
+                //    (journal.DiscoveredEvidence[i], ID, "Evidence.json");
+            }
         }
+        
     }
 }

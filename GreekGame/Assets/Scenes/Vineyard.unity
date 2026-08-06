@@ -69500,7 +69500,7 @@ MonoBehaviour:
     m_ActionName: 'Dialogue/AdvanceDialogue[/Keyboard/numpad0,/Keyboard/e,/Keyboard/enter,/Keyboard/space,/Mouse/leftButton]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 460634175}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: InvokeProgressL
         m_Mode: 0
@@ -69516,7 +69516,7 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/SectionProgressL[/Keyboard/q]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 460634175}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: InvokeProgressR
         m_Mode: 0
@@ -69532,7 +69532,7 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/SectionProgressR[/Keyboard/e]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 460634175}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: CloseJournal
         m_Mode: 1
@@ -69548,7 +69548,7 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/Exit[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2060064615}
         m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
         m_MethodName: PreviousPage
         m_Mode: 1
@@ -69560,7 +69560,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 671867903}
         m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
         m_MethodName: PreviousPage
         m_Mode: 1
@@ -69576,7 +69576,7 @@ MonoBehaviour:
     m_ActionName: 'Journal/UI/PageProgressL[/Keyboard/a]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2060064615}
         m_TargetAssemblyTypeName: EvidenceTabController, Assembly-CSharp
         m_MethodName: NextPage
         m_Mode: 1
@@ -69588,7 +69588,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 671867903}
         m_TargetAssemblyTypeName: RelationshipsTabController, Assembly-CSharp
         m_MethodName: NextPage
         m_Mode: 1
@@ -69664,7 +69664,7 @@ MonoBehaviour:
     m_ActionName: Player/JournalExit
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 460634175}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: CloseEvidencePopup
         m_Mode: 1
@@ -69676,7 +69676,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 460634175}
         m_TargetAssemblyTypeName: JournalManager, Assembly-CSharp
         m_MethodName: CloseRelationshipsPopup
         m_Mode: 1
@@ -72823,6 +72823,17 @@ PolygonCollider2D:
       - {x: 20, y: -14}
       - {x: 20, y: 14}
   m_UseDelaunayMesh: 0
+--- !u!114 &460634175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6990950424645656757, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1483735660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d35b425aacd2bc428c9da1b89358678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JournalManager
 --- !u!1 &463090196
 GameObject:
   m_ObjectHideFlags: 0
@@ -76252,6 +76263,17 @@ MonoBehaviour:
   canvasGroup: {fileID: 49438233}
   fadeDuration: 0.5
   cinemachinePositionComposer: {fileID: 1228306968}
+--- !u!114 &671867903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5363838321660817236, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1483735660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aaf0d380ab042c458d3162bb0aa9582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RelationshipsTabController
 --- !u!1 &673818547 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8782094676577982115, guid: e8f2e25ea0af48943986202a7085cce6, type: 3}
@@ -516480,11 +516502,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6990950424645656757, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 294112413}
     - target: {fileID: 7648336404477211632, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
       propertyPath: m_Name
       value: FixedJournal
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 475639597447274292, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -527273,6 +527300,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2060064615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2085398879148913437, guid: b86cc7d597fa53f4c864a8e20f3b642b, type: 3}
+  m_PrefabInstance: {fileID: 1483735660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9af47d6661eeae43ba5dd649b71f40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EvidenceTabController
 --- !u!1 &2070970935
 GameObject:
   m_ObjectHideFlags: 0
@@ -528546,6 +528584,7 @@ SceneRoots:
   - {fileID: 294112414}
   - {fileID: 177713460}
   - {fileID: 1820729643}
+  - {fileID: 1483735660}
   - {fileID: 320279103}
   - {fileID: 1004656690}
   - {fileID: 1386644571}
@@ -528557,7 +528596,6 @@ SceneRoots:
   - {fileID: 2024073230}
   - {fileID: 1340025781}
   - {fileID: 1374443599}
-  - {fileID: 1483735660}
   - {fileID: 2070970936}
   - {fileID: 2101315507}
   - {fileID: 305968814}

@@ -13,13 +13,42 @@ public class EvidenceDataData : ISaveData<EvidenceData>
         // Save evidence ID
         evidenceID = data.entryID;
 
-        // Set count of relations array
-        relatedRelationID = new string[data.possibleRelations.Count];
 
-        for(int i = 0; i < data.possibleRelations.Count; i++)
+        if(data.possibleRelations.Count != 0)
         {
-            relatedRelationID[i] = data.possibleRelations[i].entryID;
+            // Set count of relations array
+            relatedRelationID = new string[data.possibleRelations.Count];
+
+            for (int i = 0; i < data.possibleRelations.Count; i++)
+            {
+                relatedRelationID[i] = data.possibleRelations[i].entryID;
+            }
         }
+
+        // * I don't think save boolean discovered value is necessarily needed
+        //   bc we are only saving discovered evidence and reloading it (same logic for relationship saving)
+    }
+
+    public EvidenceDataData NewCreateSaveData(EvidenceData data)
+    {
+        EvidenceDataData eData = new EvidenceDataData();
+
+        // Save evidence ID
+        eData.evidenceID = data.entryID;
+
+
+        if (data.possibleRelations.Count != 0)
+        {
+            // Set count of relations array
+            eData.relatedRelationID = new string[data.possibleRelations.Count];
+
+            for (int i = 0; i < data.possibleRelations.Count; i++)
+            {
+                eData.relatedRelationID[i] = data.possibleRelations[i].entryID;
+            }
+        }
+
+        return eData;
 
         // * I don't think save boolean discovered value is necessarily needed
         //   bc we are only saving discovered evidence and reloading it (same logic for relationship saving)
