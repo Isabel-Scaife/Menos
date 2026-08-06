@@ -10,6 +10,16 @@ public class ChoiceHighlight : MonoBehaviour,
     [SerializeField]
     private GameObject highlight;
 
+    private void OnEnable()
+    {
+        highlight.SetActive(false);
+    }
+
+    private void OnDisable()
+    {
+        highlight.SetActive(false);
+    }
+
     public void OnSelect(BaseEventData eventData)
     {
         highlight.SetActive(true);
