@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MinigameSwapper : Item
 {
-    //private ControlsUI controlsUI;        TODO: uncomment
+    private ControlsUI controlsUI;
 
     [Header("Camera Changes")]
     [SerializeField] protected Transform followObject;
@@ -23,7 +23,7 @@ public class MinigameSwapper : Item
     {
         base.Awake();
         confiner = Object.FindAnyObjectByType<CinemachineConfiner2D>();
-        //controlsUI = Object.FindAnyObjectByType<ControlsUI>();        TODO: uncomment
+        controlsUI = Object.FindAnyObjectByType<ControlsUI>();
     }
 
     protected void SetCamera()
@@ -34,7 +34,7 @@ public class MinigameSwapper : Item
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
         CameraFollow.Instance.SetOffset(offset);
-        //controlsUI.gameObject.SetActive(false);        TODO: uncomment
+        controlsUI.gameObject.SetActive(false);
         if (canvas != null) canvas.SetActive(true);
     }
 
@@ -51,7 +51,7 @@ public class MinigameSwapper : Item
         }
 
         if (canvas != null) canvas.SetActive(false);
-        //controlsUI.gameObject.SetActive(true);        TODO: uncomment
+        controlsUI.gameObject.SetActive(true);
     }
 
     public override void Interact(PlayerControlled player)
