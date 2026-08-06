@@ -47,7 +47,7 @@ MonoBehaviour:
   - isEndpoint: 0
     id: 3
     nextNodeID: 4
-    text: 'I need to escape before they find me..   '
+    text: 'I need to escape carefully before they find me, without getting caught... '
     choices: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
@@ -66,7 +66,7 @@ MonoBehaviour:
   - isEndpoint: 0
     id: 5
     nextNodeID: choices0
-    text: 'I don''t have time to deliver all of this, but if I don''t, it will affect
+    text: 'It will slow me down to carry all of this, but if I don''t, it will affect
       my relationship with Cranaus. What should I do? '
     choices: []
     updateSpeakerInfo: 1
