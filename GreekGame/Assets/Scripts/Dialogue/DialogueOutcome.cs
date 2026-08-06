@@ -11,7 +11,27 @@ public class DialogueOutcome : IQuestCompleter
     public List<string> flagsToSet;
     public int[] statChanges;
     public List<string> questsID;
+    private List<string> copyQuestID;
+    private bool calledBefore = false;
 
-    public List<string> QuestsID { get => questsID; set => questsID = value; }
+    public List<string> QuestsID { get => QuestID(); set => questsID = value; }
+
+
+    public List<string> QuestID()
+    {
+        if (calledBefore) return copyQuestID;
+        else
+        {
+            calledBefore = true;
+            
+            copyQuestID = new List<string>();
+            foreach(string id in questsID)
+            {
+                copyQuestID.Add(id);
+            }
+
+            return copyQuestID;
+        }
+    }
 
 }
