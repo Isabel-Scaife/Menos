@@ -56,8 +56,8 @@ MonoBehaviour:
   - isEndpoint: 0
     id: 4
     nextNodeID: 5
-    text: Rookie! If you're done packing, you need to deliver this to Piraus. Walk
-      north and climb the mountain.
+    text: Rookie! If you're done packing, you need to deliver this to Piraus. Head
+      north of the olive farm and climb the mountain.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Carpus

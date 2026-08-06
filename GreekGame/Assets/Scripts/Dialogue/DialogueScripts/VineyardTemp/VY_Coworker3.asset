@@ -46,8 +46,8 @@ MonoBehaviour:
   - isEndpoint: 0
     id: Broken
     nextNodeID: choices0
-    text: You'll need to package up the things you've gathered, but the inscription
-      tool is broken.
+    text: You'll need to package up the things you've gathered inside the postoffice,
+      but the inscription tool is broken.
     choices: []
     updateSpeakerInfo: 1
     speakerName: Carpus
