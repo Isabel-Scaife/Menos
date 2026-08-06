@@ -9386,7 +9386,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 553045182}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ActivateMenu
+        m_MethodName: OnControlsClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
