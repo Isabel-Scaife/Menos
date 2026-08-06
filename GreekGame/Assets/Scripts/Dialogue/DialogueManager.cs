@@ -104,18 +104,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (currentNode.isEndpoint)
             {
-                // close dialogue and switch input controls back to player
-                DialogueIsHappening = false;
-                dialoguePanel.SetActive(false);
-                dialogueTMP.text = "";
-                player.SwitchActionMaps(false);
-
-                // play any events that were applied
-                if (OnDialogueEnd !=  null)
-                {
-                    OnDialogueEnd.Invoke();
-                    OnDialogueEnd = null;
-                }
+                CloseDialogue();
             }
             else
             {
@@ -134,7 +123,7 @@ public class DialogueManager : MonoBehaviour
                 ApplyOutcome(chosen.outcome);
             }
             
-            // hides choice boxes then displays next piece
+            // hides choice boxes
             choicesShowing = false;
             int len = currentNode.choices.Count;
             for (int i = 0; i < len; i++)
@@ -142,9 +131,20 @@ public class DialogueManager : MonoBehaviour
                 choiceBoxes[i].SetActive(false);
                 choiceTMPs[i].text = "";
             }
-            currentNode = nodes[chosen.nextNodeID];
+            string nextID = chosen.nextNodeID;
             chosen = null;
-            DisplayDialogue();
+
+            // close dialogue if choice leads nowhere
+            if (nextID == null || nextID.Length < 1)
+            {
+                CloseDialogue();
+            }
+            // otherwise display next dialogue
+            else
+            {
+                currentNode = nodes[nextID];
+                DisplayDialogue();
+            }
         }
 
         // ensure a choice is always selected
@@ -346,6 +346,25 @@ public class DialogueManager : MonoBehaviour
             nav.selectOnDown = i > 0 ? activeButtons[i - 1] : null;
             nav.selectOnUp = i < activeButtons.Length - 1 ? activeButtons[i + 1] : null;
             activeButtons[i].navigation = nav;
+        }
+    }
+
+    /// <summary>
+    /// Hides dialogue box, runs any given events, and hides dialogue UI
+    /// </summary>
+    private void CloseDialogue()
+    {
+        // close dialogue and switch input controls back to player
+        DialogueIsHappening = false;
+        dialoguePanel.SetActive(false);
+        dialogueTMP.text = "";
+        player.SwitchActionMaps(false);
+
+        // play any events that were applied
+        if (OnDialogueEnd != null)
+        {
+            OnDialogueEnd.Invoke();
+            OnDialogueEnd = null;
         }
     }
 }
