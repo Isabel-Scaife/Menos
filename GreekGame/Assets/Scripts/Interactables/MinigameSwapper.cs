@@ -34,7 +34,7 @@ public class MinigameSwapper : Item
         CameraFollow.Instance.SetTarget(followObject);
         CameraFollow.Instance.SetDistance(fov);
         CameraFollow.Instance.SetOffset(offset);
-        controlsUI.gameObject.SetActive(false);
+        if(controlsUI != null) controlsUI.gameObject.SetActive(false);
         if (canvas != null) canvas.SetActive(true);
     }
 
@@ -51,7 +51,7 @@ public class MinigameSwapper : Item
         }
 
         if (canvas != null) canvas.SetActive(false);
-        controlsUI.gameObject.SetActive(true);
+        if (controlsUI != null) controlsUI.gameObject.SetActive(true);
     }
 
     public override void Interact(PlayerControlled player)
