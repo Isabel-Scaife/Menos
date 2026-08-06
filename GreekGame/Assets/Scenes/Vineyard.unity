@@ -69131,14 +69131,13 @@ MonoBehaviour:
   itemID: JewerlyVase
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 11400000, guid: f27f9d723e5be944bb9f80c928f92822, type: 2}
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5
   canvas: {fileID: 826564306}
   vasePrefab: {fileID: 8133844023627013813, guid: f66f13819df99f84abda8b69071412ee, type: 3}
   stampSetPrefab: {fileID: 6637857691997519382, guid: 8d4648a72fa260b47b7db9fea1f63666, type: 3}
-  evidence: {fileID: 0}
   cutSceneParent: {fileID: 0}
 --- !u!212 &293374799
 SpriteRenderer:
@@ -72474,7 +72473,7 @@ MonoBehaviour:
   itemID: Brooch
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
   followObject: {fileID: 1012697044}
   mapBounds: {fileID: 459680294}
   fov: 6
@@ -73218,7 +73217,7 @@ MonoBehaviour:
   itemID: inspect-1
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 11400000, guid: 8d28e951e61c3094ba4a6f47a09d0108, type: 2}
+  evidenceSO: {fileID: 11400000, guid: 8d28e951e61c3094ba4a6f47a09d0108, type: 2}
   followObject: {fileID: 1012697044}
   mapBounds: {fileID: 459680294}
   fov: 6
@@ -73457,7 +73456,7 @@ MonoBehaviour:
   itemID: Fig
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
 --- !u!1 &484381184
 GameObject:
   m_ObjectHideFlags: 0
@@ -74657,7 +74656,7 @@ MonoBehaviour:
   itemID: GrapeVase
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
 --- !u!61 &560977128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76222,7 +76221,8 @@ GameObject:
   - component: {fileID: 674276212}
   - component: {fileID: 674276213}
   - component: {fileID: 674276214}
-  m_Layer: 0
+  - component: {fileID: 674276215}
+  m_Layer: 12
   m_Name: Olives
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76318,12 +76318,58 @@ MonoBehaviour:
   itemID: olives
   playerCanInteract: 0
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
   followObject: {fileID: 1054560227}
   mapBounds: {fileID: 623004179}
   fov: 6
   canvas: {fileID: 0}
   dialogue: {fileID: 0}
+--- !u!61 &674276215
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674276211}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.550652, y: -1.2244129}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20.8, y: 20.8}
+    newSize: {x: 20.8, y: 20.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 14.572055, y: 19.019035}
+  m_EdgeRadius: 0
 --- !u!1001 &679920696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118945,7 +118991,7 @@ MonoBehaviour:
   itemID: Covered
   playerCanInteract: 0
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
   followObject: {fileID: 127797700}
   mapBounds: {fileID: 399758729}
   fov: 6
@@ -123431,7 +123477,7 @@ GameObject:
   - component: {fileID: 1340025781}
   - component: {fileID: 1340025780}
   - component: {fileID: 1340025779}
-  m_Layer: 12
+  m_Layer: 14
   m_Name: OliveTree (olive minigame loader)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -526820,7 +526866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5565ae3cdd88bba45944ac20ec257e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleItemInteract
-  item: {fileID: 0}
+  item: {fileID: 674276214}
   activate: 1
 --- !u!114 &1774483575
 MonoBehaviour:
@@ -529790,7 +529836,6 @@ GameObject:
   - component: {fileID: 1929635717}
   - component: {fileID: 1929635720}
   - component: {fileID: 1929635719}
-  - component: {fileID: 1929635718}
   m_Layer: 0
   m_Name: Camera_FollowPlayerCutscene
   m_TagString: Untagged
@@ -529813,26 +529858,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1820729643}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1929635718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1929635716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BoundingShape2D: {fileID: 1875145762}
-  Damping: 0.5
-  SlowingDistance: 0
-  OversizeWindow:
-    Enabled: 0
-    MaxWindowSize: 0
-    Padding: 0
-  m_LegacyMaxWindowSize: -2
 --- !u!114 &1929635719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531471,7 +531496,7 @@ MonoBehaviour:
   itemID: vase-2
   playerCanInteract: 1
   collectedFlag: 
-  evidence: {fileID: 0}
+  evidenceSO: {fileID: 0}
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5

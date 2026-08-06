@@ -49,19 +49,7 @@ MonoBehaviour:
     id: Refuse
     nextNodeID: Complaint
     text: 'No, kid. It is my job, and you can''t take care of it for me. '
-    choices:
-    - text: Please, I need this inscription tool fixed.
-      nextNodeID: Refuse
-      outcome:
-        flagsToSet: []
-        statChanges: 
-        questsID: []
-    - text: Can I do anything in your favor?
-      nextNodeID: Refuse
-      outcome:
-        flagsToSet: []
-        statChanges: 
-        questsID: []
+    choices: []
     updateSpeakerInfo: 1
     speakerName: Blacksmith
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}

@@ -8,7 +8,7 @@ public class Item : Interactable
     [SerializeField] protected string itemID;
     [SerializeField] protected bool playerCanInteract = true;
     [SerializeField] private string collectedFlag;
-    [SerializeField] private EvidenceData evidence;
+    [SerializeField] private EvidenceData evidenceSO;
 
     public event Action OnCollect;
 
@@ -64,9 +64,9 @@ public class Item : Interactable
 
             // collect attached evidence if exists
             if (JournalManager.Instance == null ) { Debug.Log("Missing Journal Manager"); return; }
-            if (evidence != null)
+            if (evidenceSO != null)
             {
-                JournalManager.Instance.UnlockEvidence(evidence);
+                JournalManager.Instance.UnlockEvidence(evidenceSO);
             }
 
             Destroy(this.gameObject);

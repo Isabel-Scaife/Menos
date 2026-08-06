@@ -22,7 +22,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: ???
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Intro1
     nextNodeID: Intro2
@@ -32,7 +32,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Intro2
     nextNodeID: Intro3
@@ -41,7 +41,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Intro3
     nextNodeID: Quest0
@@ -50,7 +50,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Quest0
     nextNodeID: Quest1
@@ -60,7 +60,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Quest1
     nextNodeID: Quest2
@@ -70,7 +70,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Quest2
     nextNodeID: Quest3
@@ -80,7 +80,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Quest3
     nextNodeID: Quest4
@@ -90,7 +90,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Quest4
     nextNodeID: choices0
@@ -99,7 +99,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: choices0
     nextNodeID: 
@@ -126,7 +126,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Warning
     nextNodeID: Purpose0
@@ -136,7 +136,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Purpose0
     nextNodeID: Purpose1
@@ -146,7 +146,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Purpose1
     nextNodeID: Infertile?
@@ -156,7 +156,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Infertile?
     nextNodeID: History0
@@ -165,7 +165,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: History0
     nextNodeID: History1
@@ -175,7 +175,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: History1
     nextNodeID: History2
@@ -185,7 +185,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: History2
     nextNodeID: History3
@@ -196,7 +196,7 @@ MonoBehaviour:
     updateSpeakerInfo: 0
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: History3
     nextNodeID: Empathy
@@ -207,7 +207,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Empathy
     nextNodeID: Fate0
@@ -216,7 +216,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 0
     id: Fate0
     nextNodeID: Fate1
@@ -226,7 +226,7 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   - isEndpoint: 1
     id: Fate1
     nextNodeID: 
@@ -236,6 +236,6 @@ MonoBehaviour:
     updateSpeakerInfo: 1
     speakerName: Carpus
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
-    rightSprite: {fileID: 21300000, guid: 8bcf3012f0fe85743a688c311b9f52c7, type: 3}
+    rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
   toggleFlagOnTalk: 1
   flag: met_Coworker

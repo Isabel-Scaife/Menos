@@ -66,7 +66,8 @@ MonoBehaviour:
         - ArrestAigidios
         - WheatFailure
         statChanges: 
-        questsID: []
+        questsID:
+        - BarnOwnerCS
     - text: Bion
       nextNodeID: Reconsider
       outcome:
@@ -107,7 +108,8 @@ MonoBehaviour:
         - ArrestBion
         - WheatGather
         statChanges: 
-        questsID: []
+        questsID:
+        - BionCS
     - text: He didn't have a choice. I should cover his doing.
       nextNodeID: ForBion
       outcome:
