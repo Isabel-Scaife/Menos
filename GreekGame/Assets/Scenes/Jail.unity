@@ -1085,27 +1085,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_Size.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
-      propertyPath: m_Size.y
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
-      propertyPath: m_Offset.y
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
+      propertyPath: m_Size.y
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 12.8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7408691784417143413, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 7.2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7647481897541746121, guid: f8022d62a1be9cc42896da4cbaede807, type: 3}
       propertyPath: nextScene
@@ -7923,14 +7923,6 @@ PrefabInstance:
     - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_Name
       value: Boulder
-      objectReference: {fileID: 0}
-    - target: {fileID: 1219644144107954220, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
-      propertyPath: m_Layer
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 6741135821548590275, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7343457986840291697, guid: 547850c0a3d0a264899786cb22263a4d, type: 3}
       propertyPath: m_LocalPosition.x
