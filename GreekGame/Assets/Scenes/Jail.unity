@@ -457,37 +457,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (7)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.860001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7100005
+      value: -3.030001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -665,37 +641,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (5)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.790001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08999944
+      value: 0.5900004
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3789,37 +3741,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.860001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4400003
+      value: 4.1200004
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6780,6 +6708,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2020563687}
+        m_TargetAssemblyTypeName: ControlsUI, Assembly-CSharp
+        m_MethodName: ToggleFollow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
@@ -6815,6 +6755,18 @@ MonoBehaviour:
       - m_Target: {fileID: 118583158}
         m_TargetAssemblyTypeName: Bird, Assembly-CSharp
         m_MethodName: SwapControlledObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2020563687}
+        m_TargetAssemblyTypeName: ControlsUI, Assembly-CSharp
+        m_MethodName: ToggleSwitch
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7433,33 +7385,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil
       objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.66
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.44
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8925,37 +8857,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.659998
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08999944
+      value: 0.5900004
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9647,37 +9555,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (4)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.860001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.08999944
+      value: 0.5900004
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26825,37 +26709,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.79
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4400003
+      value: 4.1200004
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27380,37 +27240,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (6)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.659996
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.71
+      value: -3.03
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32011,37 +31847,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sigil (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 4169339615300778648, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.x
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Size.y
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4177326724455958913, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_Offset.y
-      value: -1.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: m_SpriteSortPoint
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4785671229880111055, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 74433e6cb1dee1f41804cd13aca3ff5d, type: 2}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.789998
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.7100005
+      value: -3.030001
       objectReference: {fileID: 0}
     - target: {fileID: 5299018828597836759, guid: 27b8fbb0312eda942bbaeeeaf0c700b9, type: 3}
       propertyPath: m_LocalPosition.z
