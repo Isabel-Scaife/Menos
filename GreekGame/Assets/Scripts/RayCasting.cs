@@ -20,11 +20,11 @@ public class RayCasting : MonoBehaviour
         Collider2D hit;
         hit = Physics2D.Raycast(worldPos, Vector2.zero, 10.0f, clickable).collider;
 
-        // return if nothing was hit
-        if (hit == null) return;
-
         // run methods on hit collider
         ToolClicks(hit);
+
+        // return if nothing was hit
+        if (hit == null) return;
         DiceClicks(hit);
     }
 
