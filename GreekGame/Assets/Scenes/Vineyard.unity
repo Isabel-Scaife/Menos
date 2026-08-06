@@ -3413,11 +3413,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb6826dfdcf945e4891fe3c1ae9a4e9d, type: 2}
   - {fileID: 11400000, guid: 5239f52bed38d774bbefe81c4d058408, type: 2}
   - {fileID: 11400000, guid: 74c2e73b9de5114439922f25f80bb66b, type: 2}
+  - {fileID: 11400000, guid: 8b8fb3cb72bfc1e4a8b4e35138e5d7d4, type: 2}
   flagChecks:
   - met_Coworker
   - f_ingredientGather,WheatFailure
   - f_ingredientGather,WheatGather
-  flagDialogueIndex: 010000000200000003000000
+  - TalkToBlacksmith
+  flagDialogueIndex: 01000000020000000300000004000000
 --- !u!1 &160680152
 GameObject:
   m_ObjectHideFlags: 0
@@ -74024,8 +74026,6 @@ PlayableDirector:
     value: {fileID: 1109892421}
   - key: {fileID: 8868149339141969365, guid: 480ba0f2d1d52d34fb7838dc90c7a702, type: 2}
     value: {fileID: 216010441}
-  - key: {fileID: 5108919239892279096, guid: 480ba0f2d1d52d34fb7838dc90c7a702, type: 2}
-    value: {fileID: 1239218830}
   m_ExposedReferences:
     m_References:
     - 905e4cca-8b01-41a0-854d-8d23b5a900ec: {fileID: 0}
@@ -76318,7 +76318,7 @@ MonoBehaviour:
   mapBounds: {fileID: 623004179}
   fov: 6
   canvas: {fileID: 0}
-  dialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: f4972bc92fa568c48895a230b38b0d22, type: 2}
 --- !u!61 &674276215
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111710,8 +111710,6 @@ PlayableDirector:
     value: {fileID: 1109892421}
   - key: {fileID: -4723462063978998530, guid: ef945d30897129c45a0e581f2d75367c, type: 2}
     value: {fileID: 216010441}
-  - key: {fileID: 1279611467622713588, guid: ef945d30897129c45a0e581f2d75367c, type: 2}
-    value: {fileID: 1239218830}
   m_ExposedReferences:
     m_References:
     - 239698d2-10ec-4a3f-be52-599e52b60358: {fileID: 216010439}
@@ -525057,8 +525055,6 @@ PlayableDirector:
     value: {fileID: 1109892421}
   - key: {fileID: 9091347275140739131, guid: 85897453069183845b4efe2a538ab1d9, type: 2}
     value: {fileID: 216010441}
-  - key: {fileID: -1114938940547890144, guid: 85897453069183845b4efe2a538ab1d9, type: 2}
-    value: {fileID: 1239218830}
   - key: {fileID: 3136859331255612511, guid: 85897453069183845b4efe2a538ab1d9, type: 2}
     value: {fileID: 2101315506}
   m_ExposedReferences:
