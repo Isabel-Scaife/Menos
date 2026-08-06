@@ -69131,6 +69131,7 @@ MonoBehaviour:
   itemID: JewerlyVase
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 0}
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5
@@ -72473,6 +72474,7 @@ MonoBehaviour:
   itemID: Brooch
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 0}
   followObject: {fileID: 1012697044}
   mapBounds: {fileID: 459680294}
   fov: 6
@@ -73216,6 +73218,7 @@ MonoBehaviour:
   itemID: inspect-1
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 11400000, guid: 8d28e951e61c3094ba4a6f47a09d0108, type: 2}
   followObject: {fileID: 1012697044}
   mapBounds: {fileID: 459680294}
   fov: 6
@@ -73290,7 +73293,7 @@ Transform:
   m_GameObject: {fileID: 474001711}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -269.14, y: -68.61, z: 0}
+  m_LocalPosition: {x: -268.94, y: -68.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -73454,6 +73457,7 @@ MonoBehaviour:
   itemID: Fig
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 0}
 --- !u!1 &484381184
 GameObject:
   m_ObjectHideFlags: 0
@@ -74653,6 +74657,7 @@ MonoBehaviour:
   itemID: GrapeVase
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 0}
 --- !u!61 &560977128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -76313,6 +76318,7 @@ MonoBehaviour:
   itemID: olives
   playerCanInteract: 0
   collectedFlag: 
+  evidence: {fileID: 0}
   followObject: {fileID: 1054560227}
   mapBounds: {fileID: 623004179}
   fov: 6
@@ -78229,6 +78235,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8368985138177968738, guid: c301caf8ee618c84797a50e608cc7e68, type: 3}
+      propertyPath: confiner
+      value: 
+      objectReference: {fileID: 1228306967}
     - target: {fileID: 8368985138177968738, guid: c301caf8ee618c84797a50e608cc7e68, type: 3}
       propertyPath: teleportTo
       value: 
@@ -118935,6 +118945,7 @@ MonoBehaviour:
   itemID: Covered
   playerCanInteract: 0
   collectedFlag: 
+  evidence: {fileID: 0}
   followObject: {fileID: 127797700}
   mapBounds: {fileID: 399758729}
   fov: 6
@@ -531460,6 +531471,7 @@ MonoBehaviour:
   itemID: vase-2
   playerCanInteract: 1
   collectedFlag: 
+  evidence: {fileID: 0}
   followObject: {fileID: 1985152449}
   mapBounds: {fileID: 976988511}
   fov: 5
@@ -531744,7 +531756,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

@@ -8,6 +8,7 @@ public class Item : Interactable
     [SerializeField] protected string itemID;
     [SerializeField] protected bool playerCanInteract = true;
     [SerializeField] private string collectedFlag;
+    [SerializeField] private EvidenceData evidence;
 
     public event Action OnCollect;
 
@@ -59,8 +60,15 @@ public class Item : Interactable
             if (OnCollect != null) OnCollect.Invoke();
 
             if (SpawnManager.Instance == null) { Debug.Log("Missing Spawn Manger"); return; }
-
             SpawnManager.Instance.RemoveItem(itemID);
+
+            // collect attached evidence if exists
+            if (JournalManager.Instance == null ) { Debug.Log("Missing Journal Manager"); return; }
+            if (evidence != null)
+            {
+                JournalManager.Instance.UnlockEvidence(evidence);
+            }
+
             Destroy(this.gameObject);
         }
     }
