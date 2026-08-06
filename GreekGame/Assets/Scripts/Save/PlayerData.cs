@@ -1,4 +1,3 @@
-using UnityEditor.U2D.Tooling.Analyzer;
 using UnityEngine;
 
 // copy format when you have an object with advance variable types 
