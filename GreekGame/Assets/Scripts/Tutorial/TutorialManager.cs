@@ -64,17 +64,20 @@ public class TutorialManager : MonoBehaviour
         {
             taskActive = true;
             popupTMP.text = tasks[currentTaskIndex].text;
-            popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
+            //popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
             popupRect.gameObject.SetActive(true);
         }
     }
 
+    // only needed for world space popup
+    /*
     private void LateUpdate()
     {
         // update popup position on the screen after any camera movement
         if (!taskActive) return;
         popupRect.position = Camera.main.WorldToScreenPoint(tasks[currentTaskIndex].anchor.position);
     }
+    */
 
     /// <summary>
     /// start checking for tutorial tasks to show
