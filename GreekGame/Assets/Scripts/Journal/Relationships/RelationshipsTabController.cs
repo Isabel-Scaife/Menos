@@ -35,11 +35,11 @@ public class RelationshipsTabController : MonoBehaviour
     private void Update()
     {
         // FOR TESTING
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            var random = database.Relationships[Random.Range(10, database.Relationships.Length)];
-            JournalManager.Instance.UnlockRelation(random);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    var random = database.Relationships[Random.Range(10, database.Relationships.Length)];
+        //    JournalManager.Instance.UnlockRelation(random);
+        //}
     }
 
     // Refresh page when user flips between pages. Doesn't instantiate new UI elements

@@ -44,13 +44,13 @@ public class EvidenceTabController : MonoBehaviour
     private void Update()
     {
         // FOR TESTING
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            // int index = Random.Range(0, database.Evidences.Length);
-            var random = database.Evidences[Random.Range(0, database.Evidences.Length)];
-            JournalManager.Instance.UnlockEvidence(random);
-            // random.buttonNum = index;
-        }
+        //if(Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    // int index = Random.Range(0, database.Evidences.Length);
+        //    var random = database.Evidences[Random.Range(0, database.Evidences.Length)];
+        //    JournalManager.Instance.UnlockEvidence(random);
+        //    // random.buttonNum = index;
+        //}
     }
 
     private void OnEnable()
