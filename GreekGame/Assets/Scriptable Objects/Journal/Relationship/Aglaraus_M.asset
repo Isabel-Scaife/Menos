@@ -15,4 +15,5 @@ MonoBehaviour:
   entryID: Family007
   entryName: Aglaraus
   description: Ceryx's Mom. Always was kind and caring towards Ceryx.
-  icon: {fileID: 9079337409279235414, guid: 702cd942461d24942b111a501cf8b674, type: 3}
+  icon: {fileID: 21300000, guid: 624c873bd16fe994883b4afe617180c6, type: 3}
+  discovered: 0

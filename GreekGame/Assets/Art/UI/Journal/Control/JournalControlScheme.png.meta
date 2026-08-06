@@ -1,0 +1,2314 @@
+fileFormatVersion: 2
+guid: b56e3225f965c084a913113c0f181b76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1688888735705436691
+    second: JournalControlScheme_0
+  - first:
+      213: 5329212006030206132
+    second: JournalControlScheme_1
+  - first:
+      213: -2540627109765488704
+    second: JournalControlScheme_2
+  - first:
+      213: 9041574127879240413
+    second: JournalControlScheme_3
+  - first:
+      213: 4364502047846306741
+    second: JournalControlScheme_4
+  - first:
+      213: -8649767096132779326
+    second: JournalControlScheme_5
+  - first:
+      213: -3490763061165777543
+    second: JournalControlScheme_6
+  - first:
+      213: 6189976993466786837
+    second: JournalControlScheme_7
+  - first:
+      213: -1206720155277848133
+    second: JournalControlScheme_8
+  - first:
+      213: 730268698249150315
+    second: JournalControlScheme_9
+  - first:
+      213: -1517570383561489046
+    second: JournalControlScheme_10
+  - first:
+      213: -1194180248943542672
+    second: JournalControlScheme_11
+  - first:
+      213: 2424584779993187341
+    second: JournalControlScheme_12
+  - first:
+      213: 1623564350298836736
+    second: JournalControlScheme_13
+  - first:
+      213: -146302093766090352
+    second: JournalControlScheme_14
+  - first:
+      213: 1326737687974073349
+    second: JournalControlScheme_15
+  - first:
+      213: 5437078395363686752
+    second: JournalControlScheme_16
+  - first:
+      213: 54410146692682949
+    second: JournalControlScheme_17
+  - first:
+      213: 7902683882995126236
+    second: JournalControlScheme_18
+  - first:
+      213: -2479251924533740462
+    second: JournalControlScheme_19
+  - first:
+      213: 5865303423460242616
+    second: JournalControlScheme_20
+  - first:
+      213: 6701062039675554237
+    second: JournalControlScheme_21
+  - first:
+      213: -6977220614659465322
+    second: JournalControlScheme_22
+  - first:
+      213: -8561379130517051536
+    second: JournalControlScheme_23
+  - first:
+      213: -7755344820811691833
+    second: JournalControlScheme_24
+  - first:
+      213: 2077483860826199493
+    second: JournalControlScheme_25
+  - first:
+      213: 367592590360745187
+    second: JournalControlScheme_26
+  - first:
+      213: 1551398944904769170
+    second: JournalControlScheme_27
+  - first:
+      213: 5934463674874909758
+    second: JournalControlScheme_28
+  - first:
+      213: 4174210173468826820
+    second: JournalControlScheme_29
+  - first:
+      213: -3359393932018429248
+    second: JournalControlScheme_30
+  - first:
+      213: -2292534658802508215
+    second: JournalControlScheme_31
+  - first:
+      213: 7161793153670639679
+    second: JournalControlScheme_32
+  - first:
+      213: 7781925321372600090
+    second: JournalControlScheme_33
+  - first:
+      213: -5778238428617673684
+    second: JournalControlScheme_34
+  - first:
+      213: 221600524245124301
+    second: JournalControlScheme_35
+  - first:
+      213: 7762954818543027289
+    second: JournalControlScheme_36
+  - first:
+      213: 8372969005146894954
+    second: JournalControlScheme_37
+  - first:
+      213: -7543335263778063589
+    second: JournalControlScheme_38
+  - first:
+      213: 1755536092665269777
+    second: JournalControlScheme_39
+  - first:
+      213: 2948352820904087689
+    second: JournalControlScheme_40
+  - first:
+      213: -5176670223066834001
+    second: JournalControlScheme_41
+  - first:
+      213: 3679225692946160695
+    second: JournalControlScheme_42
+  - first:
+      213: -6767961955936153728
+    second: JournalControlScheme_43
+  - first:
+      213: -664913008983053144
+    second: JournalControlScheme_44
+  - first:
+      213: -900024377463188514
+    second: JournalControlScheme_45
+  - first:
+      213: 6926293246473740824
+    second: JournalControlScheme_46
+  - first:
+      213: 6748579985320547011
+    second: JournalControlScheme_47
+  - first:
+      213: -4562653353888502845
+    second: JournalControlScheme_48
+  - first:
+      213: 8220923148553517569
+    second: JournalControlScheme_49
+  - first:
+      213: 3841404688113971287
+    second: JournalControlScheme_50
+  - first:
+      213: 8919637303510889094
+    second: JournalControlScheme_51
+  - first:
+      213: 183643676628347639
+    second: JournalControlScheme_52
+  - first:
+      213: -8979093643894745841
+    second: JournalControlScheme_53
+  - first:
+      213: -7329683870135342920
+    second: JournalControlScheme_54
+  - first:
+      213: -4224545576876701532
+    second: JournalControlScheme_55
+  - first:
+      213: -8896820641797719979
+    second: JournalControlScheme_56
+  - first:
+      213: -5679697125419091094
+    second: JournalControlScheme_57
+  - first:
+      213: 2762337459400515727
+    second: JournalControlScheme_58
+  - first:
+      213: 7917015416136592736
+    second: JournalControlScheme_59
+  - first:
+      213: -5826585983279272941
+    second: JournalControlScheme_60
+  - first:
+      213: -5050976077909271984
+    second: JournalControlScheme_61
+  - first:
+      213: 8763126587568208848
+    second: JournalControlScheme_62
+  - first:
+      213: -1256381571753454983
+    second: JournalControlScheme_63
+  - first:
+      213: -9096811704917014558
+    second: JournalControlScheme_64
+  - first:
+      213: 5343013544200831979
+    second: JournalControlScheme_65
+  - first:
+      213: -6184851319706970876
+    second: JournalControlScheme_66
+  - first:
+      213: 2442058814294286715
+    second: JournalControlScheme_67
+  - first:
+      213: 2589605391638613023
+    second: JournalControlScheme_68
+  - first:
+      213: 7271200104100344950
+    second: JournalControlScheme_69
+  - first:
+      213: -2919715228477430382
+    second: JournalControlScheme_70
+  - first:
+      213: 3417928034165392803
+    second: JournalControlScheme_71
+  - first:
+      213: -3875857180747384835
+    second: JournalControlScheme_72
+  - first:
+      213: -8835169092081396559
+    second: JournalControlScheme_73
+  - first:
+      213: -8199494872812490115
+    second: JournalControlScheme_74
+  - first:
+      213: 6012186584962023070
+    second: JournalControlScheme_75
+  - first:
+      213: -2783717968876665797
+    second: JournalControlScheme_76
+  - first:
+      213: 4784213016996874688
+    second: JournalControlScheme_77
+  - first:
+      213: -5951586589610821197
+    second: JournalControlScheme_78
+  - first:
+      213: -510172115734448619
+    second: JournalControlScheme_79
+  - first:
+      213: 6727808665968460553
+    second: JournalControlScheme_80
+  - first:
+      213: -4324193550083263837
+    second: JournalControlScheme_81
+  - first:
+      213: 3916718969689823603
+    second: JournalControlScheme_82
+  - first:
+      213: -2608447348711327241
+    second: JournalControlScheme_83
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JournalControlScheme_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 9
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded6e1b94acdf88e0800000000000000
+      internalID: -1688888735705436691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 17
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b46d28851a25f940800000000000000
+      internalID: 5329212006030206132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 17
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf53bfba11edbcd0800000000000000
+      internalID: -2540627109765488704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddaba96d3cf1a7d70800000000000000
+      internalID: 9041574127879240413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_4
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 18
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b318570d73d19c30800000000000000
+      internalID: 4364502047846306741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 34
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2c42d87aad5f780800000000000000
+      internalID: -8649767096132779326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_6
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 17
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d9820ad715e8fc0800000000000000
+      internalID: -3490763061165777543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514ad67974737e550800000000000000
+      internalID: 6189976993466786837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_8
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 18
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb11c59896ed04fe0800000000000000
+      internalID: -1206720155277848133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_9
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 16
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f3abd038f622a00800000000000000
+      internalID: 730268698249150315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_10
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 17
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a650a2ec6c180fae0800000000000000
+      internalID: -1517570383561489046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 16
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ebeeff36b6d6fe0800000000000000
+      internalID: -1194180248943542672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_12
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 15
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04005be20bd5a120800000000000000
+      internalID: 2424584779993187341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_13
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 15
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fcc81bc2f088610800000000000000
+      internalID: 1623564350298836736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_14
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 14
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0912d27550b38fdf0800000000000000
+      internalID: -146302093766090352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_15
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 13
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50451d9d5e4896210800000000000000
+      internalID: 1326737687974073349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_16
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 7
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0697a936ef1647b40800000000000000
+      internalID: 5437078395363686752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_17
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 10
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c45bc97dbd41c000800000000000000
+      internalID: 54410146692682949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_18
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 10
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf01221f19fbad60800000000000000
+      internalID: 7902683882995126236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_19
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 10
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c7671a28de79dd0800000000000000
+      internalID: -2479251924533740462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_20
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 11
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4fa3f436eb56150800000000000000
+      internalID: 5865303423460242616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_21
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 8
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db947bcdb64fefc50800000000000000
+      internalID: 6701062039675554237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_22
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 7
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f90bf51deeb2f90800000000000000
+      internalID: -6977220614659465322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_23
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 7
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077a61a7a0fdf2980800000000000000
+      internalID: -8561379130517051536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_24
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 9
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c88adc99fa7f5490800000000000000
+      internalID: -7755344820811691833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_25
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 10
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5172f7094b4dc10800000000000000
+      internalID: 2077483860826199493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_26
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 11
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4948a6383f91500800000000000000
+      internalID: 367592590360745187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_27
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 12
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ee6f7ee1da78510800000000000000
+      internalID: 1551398944904769170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_28
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 11
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34d06925437b5250800000000000000
+      internalID: 5934463674874909758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_29
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 12
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc5e6f6906cde930800000000000000
+      internalID: 4174210173468826820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_30
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 9
+        width: 32
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2507584090161d0800000000000000
+      internalID: -3359393932018429248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_31
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 12
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e1ecacfd74f20e0800000000000000
+      internalID: -2292534658802508215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_32
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 14
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30fc5fadecc36360800000000000000
+      internalID: 7161793153670639679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_33
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 14
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a17080179d3fefb60800000000000000
+      internalID: 7781925321372600090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_34
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 13
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c247bba73c29fcfa0800000000000000
+      internalID: -5778238428617673684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_35
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 13
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4cba1b088431300800000000000000
+      internalID: 221600524245124301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_36
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 14
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9540aae074e8bbb60800000000000000
+      internalID: 7762954818543027289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_37
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 6
+        width: 18
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62f223c2f2c23470800000000000000
+      internalID: 8372969005146894954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_38
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 14
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1bb4dc3b80b05790800000000000000
+      internalID: -7543335263778063589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_39
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 14
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ec0b966caec5810800000000000000
+      internalID: 1755536092665269777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_40
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 33
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98052820547aae820800000000000000
+      internalID: 2948352820904087689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_41
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 6
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab52cafbd5c828b0800000000000000
+      internalID: -5176670223066834001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_42
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 14
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73cdb8c364c3f0330800000000000000
+      internalID: 3679225692946160695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_43
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 14
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f4113957e5312a0800000000000000
+      internalID: -6767961955936153728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_44
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 0
+        width: 46
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac67052421c5c6f0800000000000000
+      internalID: -664913008983053144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_45
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 10
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed35d14e8987283f0800000000000000
+      internalID: -900024377463188514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_46
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 9
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8122146b2032f1060800000000000000
+      internalID: 6926293246473740824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_47
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 13
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2975bbdb5c7ad50800000000000000
+      internalID: 6748579985320547011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_48
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 13
+        width: 10
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cb2b38d2f23ea0c0800000000000000
+      internalID: -4562653353888502845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_49
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 14
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a715b1c06961270800000000000000
+      internalID: 8220923148553517569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_50
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 10
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750bd8116396f4530800000000000000
+      internalID: 3841404688113971287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_51
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 13
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682f6198edae8cb70800000000000000
+      internalID: 8919637303510889094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_52
+      rect:
+        serializedVersion: 2
+        x: 1617
+        y: 5
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faedae63fe6c8200800000000000000
+      internalID: 183643676628347639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_53
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 16
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f059fa677e9d36380800000000000000
+      internalID: -8979093643894745841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_54
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 6
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b82cacba5bb74a90800000000000000
+      internalID: -7329683870135342920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_55
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 14
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a801d03e266f55c0800000000000000
+      internalID: -4224545576876701532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_56
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 2
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558b84f73c4288480800000000000000
+      internalID: -8896820641797719979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_57
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 10
+        width: 57
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b76978e89ad21b0800000000000000
+      internalID: -5679697125419091094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_58
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 9
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f80a259a84bc55620800000000000000
+      internalID: 2762337459400515727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_59
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 7
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06dec182393eedd60800000000000000
+      internalID: 7917015416136592736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_60
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 7
+        width: 13
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c6e553beec32fa0800000000000000
+      internalID: -5826585983279272941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_61
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 7
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ad833b40457e9b0800000000000000
+      internalID: -5050976077909271984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_62
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 17
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbb8cdc331ec9970800000000000000
+      internalID: 8763126587568208848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_63
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 17
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972d949fd9f609ee0800000000000000
+      internalID: -1256381571753454983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_64
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 7
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e74ecb83f1a1c180800000000000000
+      internalID: -9096811704917014558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_65
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 10
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3013c8282362a40800000000000000
+      internalID: 5343013544200831979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_66
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 10
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40592445e7efa2aa0800000000000000
+      internalID: -6184851319706970876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_67
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 9
+        width: 7
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b716f929d8fe3e120800000000000000
+      internalID: 2442058814294286715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_68
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 10
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c4e05226020f320800000000000000
+      internalID: 2589605391638613023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_69
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 9
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6743faf58fd78e460800000000000000
+      internalID: 7271200104100344950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_70
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 10
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 295ed4118761b77d0800000000000000
+      internalID: -2919715228477430382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_71
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 0
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a50748207bee6f20800000000000000
+      internalID: 3417928034165392803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_72
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 10
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7b765ed60363ac0800000000000000
+      internalID: -3875857180747384835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_73
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 26
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b45aff758c236580800000000000000
+      internalID: -8835169092081396559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_74
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 12
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72ff502bda853e80800000000000000
+      internalID: -8199494872812490115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_75
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 10
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9eb70858d39f6350800000000000000
+      internalID: 6012186584962023070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_76
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 10
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b340c3e814f3e59d0800000000000000
+      internalID: -2783717968876665797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_77
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 12
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c906ef1460f46240800000000000000
+      internalID: 4784213016996874688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_78
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 6
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b9b4449787b76da0800000000000000
+      internalID: -5951586589610821197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_79
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 12
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516b65be9218be8f0800000000000000
+      internalID: -510172115734448619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_80
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 14
+        width: 8
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90348d3165afd5d50800000000000000
+      internalID: 6727808665968460553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_81
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 14
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2704370e06df3c0800000000000000
+      internalID: -4324193550083263837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_82
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 7
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3795569b62bfa5630800000000000000
+      internalID: 3916718969689823603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JournalControlScheme_83
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f970ccd4feeccbd0800000000000000
+      internalID: -2608447348711327241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      JournalControlScheme_0: -1688888735705436691
+      JournalControlScheme_1: 5329212006030206132
+      JournalControlScheme_10: -1517570383561489046
+      JournalControlScheme_11: -1194180248943542672
+      JournalControlScheme_12: 2424584779993187341
+      JournalControlScheme_13: 1623564350298836736
+      JournalControlScheme_14: -146302093766090352
+      JournalControlScheme_15: 1326737687974073349
+      JournalControlScheme_16: 5437078395363686752
+      JournalControlScheme_17: 54410146692682949
+      JournalControlScheme_18: 7902683882995126236
+      JournalControlScheme_19: -2479251924533740462
+      JournalControlScheme_2: -2540627109765488704
+      JournalControlScheme_20: 5865303423460242616
+      JournalControlScheme_21: 6701062039675554237
+      JournalControlScheme_22: -6977220614659465322
+      JournalControlScheme_23: -8561379130517051536
+      JournalControlScheme_24: -7755344820811691833
+      JournalControlScheme_25: 2077483860826199493
+      JournalControlScheme_26: 367592590360745187
+      JournalControlScheme_27: 1551398944904769170
+      JournalControlScheme_28: 5934463674874909758
+      JournalControlScheme_29: 4174210173468826820
+      JournalControlScheme_3: 9041574127879240413
+      JournalControlScheme_30: -3359393932018429248
+      JournalControlScheme_31: -2292534658802508215
+      JournalControlScheme_32: 7161793153670639679
+      JournalControlScheme_33: 7781925321372600090
+      JournalControlScheme_34: -5778238428617673684
+      JournalControlScheme_35: 221600524245124301
+      JournalControlScheme_36: 7762954818543027289
+      JournalControlScheme_37: 8372969005146894954
+      JournalControlScheme_38: -7543335263778063589
+      JournalControlScheme_39: 1755536092665269777
+      JournalControlScheme_4: 4364502047846306741
+      JournalControlScheme_40: 2948352820904087689
+      JournalControlScheme_41: -5176670223066834001
+      JournalControlScheme_42: 3679225692946160695
+      JournalControlScheme_43: -6767961955936153728
+      JournalControlScheme_44: -664913008983053144
+      JournalControlScheme_45: -900024377463188514
+      JournalControlScheme_46: 6926293246473740824
+      JournalControlScheme_47: 6748579985320547011
+      JournalControlScheme_48: -4562653353888502845
+      JournalControlScheme_49: 8220923148553517569
+      JournalControlScheme_5: -8649767096132779326
+      JournalControlScheme_50: 3841404688113971287
+      JournalControlScheme_51: 8919637303510889094
+      JournalControlScheme_52: 183643676628347639
+      JournalControlScheme_53: -8979093643894745841
+      JournalControlScheme_54: -7329683870135342920
+      JournalControlScheme_55: -4224545576876701532
+      JournalControlScheme_56: -8896820641797719979
+      JournalControlScheme_57: -5679697125419091094
+      JournalControlScheme_58: 2762337459400515727
+      JournalControlScheme_59: 7917015416136592736
+      JournalControlScheme_6: -3490763061165777543
+      JournalControlScheme_60: -5826585983279272941
+      JournalControlScheme_61: -5050976077909271984
+      JournalControlScheme_62: 8763126587568208848
+      JournalControlScheme_63: -1256381571753454983
+      JournalControlScheme_64: -9096811704917014558
+      JournalControlScheme_65: 5343013544200831979
+      JournalControlScheme_66: -6184851319706970876
+      JournalControlScheme_67: 2442058814294286715
+      JournalControlScheme_68: 2589605391638613023
+      JournalControlScheme_69: 7271200104100344950
+      JournalControlScheme_7: 6189976993466786837
+      JournalControlScheme_70: -2919715228477430382
+      JournalControlScheme_71: 3417928034165392803
+      JournalControlScheme_72: -3875857180747384835
+      JournalControlScheme_73: -8835169092081396559
+      JournalControlScheme_74: -8199494872812490115
+      JournalControlScheme_75: 6012186584962023070
+      JournalControlScheme_76: -2783717968876665797
+      JournalControlScheme_77: 4784213016996874688
+      JournalControlScheme_78: -5951586589610821197
+      JournalControlScheme_79: -510172115734448619
+      JournalControlScheme_8: -1206720155277848133
+      JournalControlScheme_80: 6727808665968460553
+      JournalControlScheme_81: -4324193550083263837
+      JournalControlScheme_82: 3916718969689823603
+      JournalControlScheme_83: -2608447348711327241
+      JournalControlScheme_9: 730268698249150315
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

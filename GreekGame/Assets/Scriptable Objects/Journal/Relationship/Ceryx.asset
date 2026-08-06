@@ -16,4 +16,5 @@ MonoBehaviour:
   entryName: Ceryx
   description: Myself. Like cooking and like to spend most of the time outside of
     the castle.
-  icon: {fileID: 9079337409279235414, guid: 702cd942461d24942b111a501cf8b674, type: 3}
+  icon: {fileID: 21300000, guid: d1d2a2e3eebb819429c04cfdda4b3354, type: 3}
+  discovered: 0

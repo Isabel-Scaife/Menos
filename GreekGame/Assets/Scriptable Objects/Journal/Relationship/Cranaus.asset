@@ -15,5 +15,5 @@ MonoBehaviour:
   entryID: Other001
   entryName: Cranaus
   description: Ceryx's Boss. Suspicious and a cunning Individual.
-  icon: {fileID: 21300000, guid: 8ccdac4710df5c448b70b67da0365794, type: 3}
+  icon: {fileID: 21300000, guid: 66266dd8d88e4c340aecf9988976b9b2, type: 3}
   discovered: 0

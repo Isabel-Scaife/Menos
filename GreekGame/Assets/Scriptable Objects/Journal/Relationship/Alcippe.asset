@@ -15,5 +15,5 @@ MonoBehaviour:
   entryID: Family009
   entryName: Alcippe
   description: Ceryx's half-sister. Very competitive towards Ceryx.
-  icon: {fileID: 21300000, guid: a7b0ba87faca63241836502e90b1267e, type: 3}
+  icon: {fileID: 21300000, guid: 3d5138b1389e99745be7d8305c1c9966, type: 3}
   discovered: 0
