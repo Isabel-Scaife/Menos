@@ -14,4 +14,12 @@ public class ToggleObject : MonoBehaviour, IEvent
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (item != null)
+        {
+            item.SetActive(activate);
+        }
+    }
+
 }
