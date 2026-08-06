@@ -6,6 +6,9 @@ public class NPCTriggerZone : MonoBehaviour
     public DialogueSO dialogue;
 
     [SerializeField]
+    public bool disableAfter = false;
+
+    [SerializeField]
     public Vector2 offset;
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -20,6 +23,12 @@ public class NPCTriggerZone : MonoBehaviour
             Vector2 currentLocation = player.transform.position;
             currentLocation += offset;
             player.transform.position = currentLocation;
+
+            // disable after 
+            if (disableAfter)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 

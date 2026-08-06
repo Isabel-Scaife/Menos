@@ -54,6 +54,15 @@ public class Item : Interactable
             SpawnManager.Instance.RemoveItem(itemID);
             Destroy(this.gameObject);
         }
+        else if (player is Player)
+        {
+            if (OnCollect != null) OnCollect.Invoke();
+
+            if (SpawnManager.Instance == null) { Debug.Log("Missing Spawn Manger"); return; }
+
+            SpawnManager.Instance.RemoveItem(itemID);
+            Destroy(this.gameObject);
+        }
     }
 
 }
