@@ -254,6 +254,7 @@ public class PlayerControlled : MonoBehaviour
 
     public void OpenJournalUI()
     {
+        if (JournalManager.Instance == null) return;
         JournalManager.Instance.OpenJournal();
     }
 }
