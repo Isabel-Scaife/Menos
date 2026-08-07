@@ -1,27 +1,25 @@
 using UnityEngine;
 
 /// <summary>
-/// Anything or anyone the player can interact with in the overworld
+/// highlight that can be turned on for an interactable without a proper sprite
 /// </summary>
-public abstract class Interactable : MonoBehaviour
+public class OutlineHelper : MonoBehaviour
 {
     // fields
-    protected SpriteRenderer sprRenderer;
+    private SpriteRenderer sprRenderer;
     private MaterialPropertyBlock propBlock;
-    
-    protected virtual void Awake()
+
+    private void Awake()
     {
         sprRenderer = GetComponent<SpriteRenderer>();
         propBlock = new MaterialPropertyBlock();
     }
 
-    public abstract void Interact(PlayerControlled player);
-
     /// <summary>
     /// set highlight on or off
     /// </summary>
     /// <param name="enabled">true for on, false for off</param>
-    public virtual void SetHighlight(bool enabled)
+    public void SetHighlight(bool enabled)
     {
         sprRenderer.GetPropertyBlock(propBlock);
         float val = 0.0f;

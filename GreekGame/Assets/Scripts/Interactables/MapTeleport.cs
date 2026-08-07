@@ -15,6 +15,8 @@ public class MapTeleport : Interactable
 
     [SerializeField] private CinemachineConfiner2D confiner;
 
+    [SerializeField] private OutlineHelper outlineHelper;
+
     [SerializeField] private bool interactTrigger = false;
 
     [Header("Teloport Location")]
@@ -83,5 +85,15 @@ public class MapTeleport : Interactable
         {
             FadeTransition(collision.GetComponent<Player>());
         }
+    }
+
+    // highlight the helper instead of this object's sprite if there is one
+    public override void SetHighlight(bool enabled)
+    {
+        if (outlineHelper != null)
+        {
+            outlineHelper.SetHighlight(enabled);
+        }
+        else base.SetHighlight(enabled);
     }
 }
