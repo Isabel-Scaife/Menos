@@ -146,7 +146,7 @@ public class Guard : MonoBehaviour
         if (frameCount >= 500)
         {
             //respawn at post office
-            player.Respawn(new Vector3(-13, -6, 0));
+            player.Respawn(new Vector3(34, -35, 0));
         }
     }
 
