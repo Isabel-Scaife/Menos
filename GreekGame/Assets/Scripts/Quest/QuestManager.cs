@@ -35,11 +35,7 @@ public interface IQuestCompleter
         // complete quest and remove from list, if possible 
         for (int i = QuestsID.Count - 1; i >= 0; i--)
         {
-            // removed because quests no longer completed this way
-            //if (QuestManager.Instance.CompleteQuest(QuestsID[i]))
-            //{
-            //    QuestsID.RemoveAt(i);
-            //}
+            // this whole method needs to be removed 
         }
     }
 }
@@ -47,6 +43,8 @@ public interface IQuestCompleter
 
 public class QuestManager : MonoBehaviour
 {
+    private QuestLog currentQuestLog;
+
     public static QuestManager Instance { get; private set; }
 
     private HashSet<string> completedQuests = new HashSet<string>();
@@ -82,24 +80,37 @@ public class QuestManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // 1. Find all quests in scene
-        QuestData[] questsInScene = FindObjectsByType<QuestData>(
-            FindObjectsInactive.Include,
-            FindObjectsSortMode.None);
+        // find the quest log 
+        currentQuestLog = FindFirstObjectByType<QuestLog>(FindObjectsInactive.Include);
 
-        // 2. add quests to all quest list, if any quest already in list end early
-        foreach (QuestData quest in questsInScene)
-        {
-            if (allQuests.ContainsKey(quest.QuestID))
-            {
-                return;
-            }
-            else
-            {
-                allQuests.Add(quest.QuestID, quest);
-            }
+        // === obsolete quest data find manager when they are turned on 
+        //// 1. Find all quests in scene
+        //QuestData[] questsInScene = FindObjectsByType<QuestData>(
+        //    FindObjectsInactive.Include,
+        //    FindObjectsSortMode.None);
 
-        }
+        //// 2. add quests to all quest list, if any quest already in list end early
+        //foreach (QuestData quest in questsInScene)
+        //{
+        //    if (allQuests.ContainsKey(quest.QuestID))
+        //    {
+        //        return;
+        //    }
+        //    else
+        //    {
+        //        allQuests.Add(quest.QuestID, quest);
+        //    }
+
+        //}
+    }
+
+    /// <summary>
+    /// Adds new quest
+    /// </summary>
+    /// <param name="newQuest"></param>
+    public void AddQuest(QuestData newQuest)
+    {
+        allQuests[newQuest.QuestID] = newQuest;
     }
 
 
@@ -113,6 +124,10 @@ public class QuestManager : MonoBehaviour
         if (allQuests.ContainsKey(questID) && !completedQuests.Contains(questID))
         {
             completedQuests.Add(questID);
+            
+            // update quest log
+            currentQuestLog.UpdateQuestSlot(questID);
+
             return;
         }
 

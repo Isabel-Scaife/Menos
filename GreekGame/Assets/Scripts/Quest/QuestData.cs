@@ -7,8 +7,9 @@ public class QuestData : MonoBehaviour
     [SerializeField] private string questID;
 
     [Header("Information displayed about Quest")]
-    [SerializeField] private string questName;
-    [SerializeField] [TextArea] public string questDescription;
+    [SerializeField] public string questName;
+    [SerializeField, TextArea] public string questDescription;
+    public string status;
 
     [Header("Quest Parts")]
     [SerializeField] private List<QuestObjective> questObjectives;
@@ -17,11 +18,6 @@ public class QuestData : MonoBehaviour
 
     [Header("Quest Complete Events")]
     [SerializeField] private List<QuestEvent> completionEvents;
-
-    //// i do not think we need these anymore
-    //[Header("Prerequisites for Quest")]
-    //[SerializeField] private List<string> questPrerequisites; // quests needed to start this one
-    //[SerializeField] private List<string> flagPrerequisites;
 
     public string QuestID { get => questID; set => questID=value; }
 
@@ -39,16 +35,31 @@ public class QuestData : MonoBehaviour
     }
 
     /// <summary>
+    /// When object turned on adds quest to quest list
+    /// </summary>
+    private void Start()
+    {
+        // create pop up 
+        // TODO: 
+
+        // add to quest manager
+        if(QuestManager.Instance != null) QuestManager.Instance.AddQuest(this);
+    }
+
+    /// <summary>
     /// Increase complete objective amount, 
     /// when required amount met run completion events 
     /// </summary>
     private void ObjectiveCompleted()
     {
+        // update quest status
         currentAmount++;
+        status = "In progress";
 
         // complete quest if enough parts are complete
         if(currentAmount >= requiredAmount)
         {
+            status = "Complete";
             QuestManager.Instance.CompleteQuest(questID);
 
             foreach (QuestEvent @event in completionEvents)
@@ -57,24 +68,6 @@ public class QuestData : MonoBehaviour
             }
         }
     }
-
-    ///// <summary>
-    ///// Adds a new quest prerequisites
-    ///// </summary>
-    ///// <param name="questID"></param>
-    //public void AddPrerequisite(string questID)
-    //{
-    //    questPrerequisites.Add(questID);
-    //}
-
-    ///// <summary>
-    ///// Removes quest prerequisite if found in list 
-    ///// </summary>
-    ///// <param name="questID"></param>
-    //public void RemovePrerequisite(string questID)
-    //{
-    //    questPrerequisites.Remove(questID);
-    //}
 
     /// <summary>
     /// Adds a new event upon quest completion
@@ -93,42 +86,6 @@ public class QuestData : MonoBehaviour
     {
         completionEvents.Remove(newEvent);
     }
-
-    //    /// <summary>
-    //    /// Check if all prerequisites are complete
-    //    /// </summary>
-    //    /// <returns>return true if all prerequisites are complete, false otherwise</returns>
-    //    public bool AllPrerequisitesComplete()
-    //    {
-    //        // check if quest manager exists
-    //        if (QuestManager.Instance == null)
-    //        {
-    //            Debug.Log("Missing quest manager");
-    //            return false;
-    //        }
-
-    //        // check quest prereqs
-    //        foreach (string questID in questPrerequisites)
-    //        {
-    //            if (!QuestManager.Instance.IsQuestComplete(questID))
-    //            {
-    //                return false;
-    //            }
-    //        }
-
-    //        // check flag prereqs
-    //        if (GameStateManager.Instance != null) {
-    //            foreach (string flag in flagPrerequisites)
-    //            {
-    //                if (!GameStateManager.Instance.HasFlag(flag))
-    //                {
-    //                    return false;
-    //                }
-    //            }
-    //        }
-
-    //        return true;
-    //    }
 }
 
 
