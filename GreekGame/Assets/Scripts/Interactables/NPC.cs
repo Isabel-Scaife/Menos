@@ -7,7 +7,7 @@ using System;
 /// </summary>
 public class NPC : Interactable
 {
-    public Action<NPC> TalkedTo;
+    public Action TalkedTo;
 
     // fields
     [SerializeField] protected List<DialogueSO> dialogues;
@@ -55,7 +55,7 @@ public class NPC : Interactable
         {
             if (DialogueManager.Instance == null) { Debug.Log("No DialogueManager in scene"); return; }
 
-            if (TalkedTo != null) TalkedTo.Invoke(this);
+            if (TalkedTo != null) TalkedTo.Invoke();
 
             // run default dialogue if there are no flags 
             if (flagSets == null)

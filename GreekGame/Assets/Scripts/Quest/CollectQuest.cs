@@ -1,36 +1,30 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class CollectQuest : MonoBehaviour, IQuestCompleter
+[CreateAssetMenu(fileName = "Collect", menuName = "Quest/Type")]
+public class CollectQuest : IQuestCompleter
 {
     [SerializeField] private List<Item> itemsToCollect;
-    [SerializeField] private int amountNeeded;
-    private int amountCollected;
+    [SerializeField] public int requiredAmount;
+    [SerializeField] public int currentAmount;
 
     [SerializeField] private List<string> questsID;
     public List<string> QuestsID { get => questsID; set => questsID = value; }
 
-
-    private void OnEnable()
+    public void Begin()
     {
-        foreach(Item item in itemsToCollect)
+        currentAmount = 0;
+
+        foreach (Item item in itemsToCollect)
         {
             item.OnCollect += IncreaseCount;
         }
     }
 
-    private void OnDisable()
-    {
-        foreach (Item item in itemsToCollect)
-        {
-            item.OnCollect -= IncreaseCount;
-        }
-    }
-
     private void IncreaseCount()
     {
-        amountCollected++;
-        if(amountCollected >= amountNeeded)
+        currentAmount++;
+        if(currentAmount >= requiredAmount)
         {
             ((IQuestCompleter)this).OnQuestComplete();
         }

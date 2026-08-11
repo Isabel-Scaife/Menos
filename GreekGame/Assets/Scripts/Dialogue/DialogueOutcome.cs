@@ -13,11 +13,10 @@ public class DialogueOutcome : IQuestCompleter
     public List<string> questsID;
     private List<string> copyQuestID;
     private bool calledBefore = false;
-
     public List<string> QuestsID { get => QuestID(); set => questsID = value; }
 
 
-    public List<string> QuestID()
+    private List<string> QuestID()
     {
         if (calledBefore) return copyQuestID;
         else
@@ -33,5 +32,7 @@ public class DialogueOutcome : IQuestCompleter
             return copyQuestID;
         }
     }
+
+
 
 }

@@ -1,23 +1,57 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class QuestData : MonoBehaviour
 {
     [SerializeField] private string questID;
+
+    [Header("Information displayed about Quest")]
+    [SerializeField] private string questName;
+    [SerializeField] [TextArea] public string questDescription;
+
+    [Header("Quest Parts")]
+    [SerializeField] private List<QuestObjective> questObjectives;
+    private int requiredAmount;
+    private int currentAmount;
+
+    [Header("Quest Complete Events")]
+    [SerializeField] private List<QuestEvent> completionEvents;
+
+    // i do not think we need these anymore
+    [Header("Prerequisites for Quest")]
     [SerializeField] private List<string> questPrerequisites; // quests needed to start this one
     [SerializeField] private List<string> flagPrerequisites;
-
-    // events that run when quest completed
-    private List<IEvent> completionEvents = new List<IEvent>();
 
     public string QuestID { get => questID; set => questID=value; }
 
     private void Awake()
     {
-        IEvent[] temp = this.GetComponents<IEvent>();
-        foreach(IEvent e in temp)
+        // start all objectives
+        foreach (QuestObjective objective in questObjectives)
         {
-            completionEvents.Add(e);
+            objective.Begin();
+            objective.Complete += ObjectiveCompleted;
+        }
+        
+        requiredAmount = questObjectives.Count;
+        currentAmount = 0;
+    }
+
+    /// <summary>
+    /// Increase complete objective amount, 
+    /// when required amount met run completion events 
+    /// </summary>
+    private void ObjectiveCompleted()
+    {
+        currentAmount++;
+
+        if(currentAmount >= requiredAmount)
+        {
+            foreach (QuestEvent @event in completionEvents)
+            {
+                @event.PlayEvent();
+            }
         }
     }
 
@@ -28,25 +62,13 @@ public class QuestData : MonoBehaviour
     {
         if (AllPrerequisitesComplete() && this.enabled)
         { 
-            foreach (IEvent currentEvent in completionEvents)
+            foreach (QuestEvent currentEvent in completionEvents)
             {
-                Debug.Log(currentEvent);
-                currentEvent.OnQuestComplete();
+                currentEvent.PlayEvent();
             }
             return true;
         }
         return false;
-    }
-
-    /// <summary>
-    /// Completes quest without checking prerequisites
-    /// </summary>
-    public void OverrideComplete()
-    {
-        foreach (IEvent currentEvent in completionEvents)
-        {
-            currentEvent.OnQuestComplete();
-        }
     }
 
     /// <summary>
@@ -71,7 +93,7 @@ public class QuestData : MonoBehaviour
     /// Adds a new event upon quest completion
     /// </summary>
     /// <param name="newEvent"></param>
-    public void AddEvent(IEvent newEvent)
+    public void AddEvent(QuestEvent newEvent)
     {
         completionEvents.Add(newEvent);
     }
@@ -80,7 +102,7 @@ public class QuestData : MonoBehaviour
     /// Removes event if found in list 
     /// </summary>
     /// <param name="newEvent"></param>
-    public void RevomeEvent(IEvent newEvent)
+    public void RevomeEvent(QuestEvent newEvent)
     {
         completionEvents.Remove(newEvent);
     }
@@ -120,4 +142,53 @@ public class QuestData : MonoBehaviour
 
         return true;
     }
-} 
+}
+
+
+[System.Serializable]
+public class QuestObjective
+{
+    public event Action Complete;
+
+    public string description;
+    public bool isComplete = false;
+
+    [SerializeField] private UnityEngine.Object target;
+
+    public Item targetItem => target as Item;
+    public NPC targetNPC => target as NPC;
+
+    [SerializeField] public int requiredAmount;
+    [SerializeField] public int currentAmount;
+
+    /// <summary>
+    /// Adds listeners to events so when 
+    /// interacting with item increase current count
+    /// </summary>
+    public void Begin()
+    {
+        if (targetItem != null)
+        {
+            targetItem.OnCollect += IncreaseCount;
+        }
+
+        if (targetNPC != null)
+        {
+            targetNPC.TalkedTo += IncreaseCount;
+        }
+    }
+
+    /// <summary>
+    /// Increase current amount 
+    /// </summary>
+    private void IncreaseCount()
+    {
+        currentAmount++;
+        if (currentAmount >= requiredAmount)
+        {
+            isComplete = true;
+            
+            if(Complete != null) Complete.Invoke();
+        }
+    }
+}

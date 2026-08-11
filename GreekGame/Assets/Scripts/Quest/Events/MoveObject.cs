@@ -1,16 +1,18 @@
 using UnityEngine;
 
 [System.Serializable]
-public class MoveObject : MonoBehaviour, IEvent
+public class MoveObject : QuestEvent
 {
-    [SerializeField] Vector2 moveTo;
-    [SerializeField] GameObject target;
+    [SerializeField] private Vector2 newLocation;
+    
+    // add scriptable to object that needs to be moved 
+    public GameObject target;
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if(target != null)
         {
-            target.transform.position = moveTo;
+            target.transform.position = newLocation;
         }
     }
 }

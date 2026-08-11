@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class ToggleItemInteract : MonoBehaviour, IEvent
+[System.Serializable]
+public class ToggleItemInteract : QuestEvent
 {
+    // need a way to get the item
     [SerializeField] private Item item;
     [SerializeField] private bool activate;
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (item != null)
         {

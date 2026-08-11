@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
-public class ChangeScene : MonoBehaviour, IEvent
+public class ChangeScene : QuestEvent
 {
     [SerializeField] private string sceneName;
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (sceneName != null)
         {

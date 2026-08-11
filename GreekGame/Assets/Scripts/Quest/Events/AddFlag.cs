@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class AddFlag : MonoBehaviour, IEvent
+[System.Serializable]
+public class AddFlag : QuestEvent
 {
     [SerializeField] private string flagToAdd;
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (flagToAdd != null)
         {

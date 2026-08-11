@@ -1,12 +1,12 @@
 using UnityEngine;
 
-[System.Serializable]
-public class AddEvidence : MonoBehaviour, IEvent
+[System.Serializable, CreateAssetMenu(fileName = "Evidence", menuName = "Events/Evidence")]
+public class AddEvidence : QuestEvent
 {
     [SerializeField]
     public EvidenceData evidenve;
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (evidenve != null)
         {

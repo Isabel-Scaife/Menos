@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class ToggleInteractable : MonoBehaviour, IEvent
+[System.Serializable]
+public class ToggleInteractable : QuestEvent
 {
     [SerializeField] private Interactable interactable;
     [SerializeField] private bool activate;
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (interactable != null)
         {

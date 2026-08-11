@@ -2,9 +2,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public interface IEvent
+[System.Serializable]
+public abstract class QuestEvent : ScriptableObject
 {
-    void OnQuestComplete();
+    public abstract void PlayEvent();
 }
 
 public interface IQuestCompleter
@@ -113,19 +114,6 @@ public class QuestManager : MonoBehaviour
             }
         }
         return false;
-    }
-
-    /// <summary>
-    /// Completes quest without checking if it is already complete or met prerequisites
-    /// </summary>
-    /// <param name="questID"></param>
-    public void OverrideQuest(string questID)
-    {
-        if(allQuests.ContainsKey(questID))
-        {
-            completedQuests.Add(questID);
-            allQuests[questID].OverrideComplete();
-        }    
     }
 
     /// <summary>

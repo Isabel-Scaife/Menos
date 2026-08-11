@@ -1,11 +1,11 @@
 using UnityEngine;
 
 [System.Serializable]
-public class ModifyStat : MonoBehaviour, IEvent
+public class ModifyStat : QuestEvent
 {
     [SerializeField] private int[] statChanges; 
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if(GameStateManager.Instance == null)
         {

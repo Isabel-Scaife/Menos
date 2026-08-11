@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class ModifyQuest : MonoBehaviour, IEvent
+public class ModifyQuest : QuestEvent
 {
     [SerializeField] private QuestData questToModify;
     [SerializeField] private List<string> prerequisiteQuestIDs;
     [SerializeField] private bool add; // true = add, false = remove
 
-    public void OnQuestComplete()
+    public override void PlayEvent()
     {
         if (questToModify != null && prerequisiteQuestIDs.Count != 0)
         {
