@@ -13,7 +13,7 @@ public class UpdateStats : QuestEvent
         }
         else
         {
-            GameStateManager.Instance.ChangeStats(statChanges);
+            GameStateManager.Instance.ChangeStats(changeBy);
         }
     }
 }
