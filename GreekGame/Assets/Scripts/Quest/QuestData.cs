@@ -18,10 +18,10 @@ public class QuestData : MonoBehaviour
     [Header("Quest Complete Events")]
     [SerializeField] private List<QuestEvent> completionEvents;
 
-    // i do not think we need these anymore
-    [Header("Prerequisites for Quest")]
-    [SerializeField] private List<string> questPrerequisites; // quests needed to start this one
-    [SerializeField] private List<string> flagPrerequisites;
+    //// i do not think we need these anymore
+    //[Header("Prerequisites for Quest")]
+    //[SerializeField] private List<string> questPrerequisites; // quests needed to start this one
+    //[SerializeField] private List<string> flagPrerequisites;
 
     public string QuestID { get => questID; set => questID=value; }
 
@@ -46,8 +46,11 @@ public class QuestData : MonoBehaviour
     {
         currentAmount++;
 
+        // complete quest if enough parts are complete
         if(currentAmount >= requiredAmount)
         {
+            QuestManager.Instance.CompleteQuest(questID);
+
             foreach (QuestEvent @event in completionEvents)
             {
                 @event.PlayEvent();
@@ -55,39 +58,23 @@ public class QuestData : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Completes quest if prerequisites met and active
-    /// </summary>
-    public bool QuestComplete()
-    {
-        if (AllPrerequisitesComplete() && this.enabled)
-        { 
-            foreach (QuestEvent currentEvent in completionEvents)
-            {
-                currentEvent.PlayEvent();
-            }
-            return true;
-        }
-        return false;
-    }
+    ///// <summary>
+    ///// Adds a new quest prerequisites
+    ///// </summary>
+    ///// <param name="questID"></param>
+    //public void AddPrerequisite(string questID)
+    //{
+    //    questPrerequisites.Add(questID);
+    //}
 
-    /// <summary>
-    /// Adds a new quest prerequisites
-    /// </summary>
-    /// <param name="questID"></param>
-    public void AddPrerequisite(string questID)
-    {
-        questPrerequisites.Add(questID);
-    }
-
-    /// <summary>
-    /// Removes quest prerequisite if found in list 
-    /// </summary>
-    /// <param name="questID"></param>
-    public void RemovePrerequisite(string questID)
-    {
-        questPrerequisites.Remove(questID);
-    }
+    ///// <summary>
+    ///// Removes quest prerequisite if found in list 
+    ///// </summary>
+    ///// <param name="questID"></param>
+    //public void RemovePrerequisite(string questID)
+    //{
+    //    questPrerequisites.Remove(questID);
+    //}
 
     /// <summary>
     /// Adds a new event upon quest completion
@@ -107,41 +94,41 @@ public class QuestData : MonoBehaviour
         completionEvents.Remove(newEvent);
     }
 
-    /// <summary>
-    /// Check if all prerequisites are complete
-    /// </summary>
-    /// <returns>return true if all prerequisites are complete, false otherwise</returns>
-    public bool AllPrerequisitesComplete()
-    {
-        // check if quest manager exists
-        if (QuestManager.Instance == null)
-        {
-            Debug.Log("Missing quest manager");
-            return false;
-        }
+    //    /// <summary>
+    //    /// Check if all prerequisites are complete
+    //    /// </summary>
+    //    /// <returns>return true if all prerequisites are complete, false otherwise</returns>
+    //    public bool AllPrerequisitesComplete()
+    //    {
+    //        // check if quest manager exists
+    //        if (QuestManager.Instance == null)
+    //        {
+    //            Debug.Log("Missing quest manager");
+    //            return false;
+    //        }
 
-        // check quest prereqs
-        foreach (string questID in questPrerequisites)
-        {
-            if (!QuestManager.Instance.IsQuestComplete(questID))
-            {
-                return false;
-            }
-        }
+    //        // check quest prereqs
+    //        foreach (string questID in questPrerequisites)
+    //        {
+    //            if (!QuestManager.Instance.IsQuestComplete(questID))
+    //            {
+    //                return false;
+    //            }
+    //        }
 
-        // check flag prereqs
-        if (GameStateManager.Instance != null) {
-            foreach (string flag in flagPrerequisites)
-            {
-                if (!GameStateManager.Instance.HasFlag(flag))
-                {
-                    return false;
-                }
-            }
-        }
+    //        // check flag prereqs
+    //        if (GameStateManager.Instance != null) {
+    //            foreach (string flag in flagPrerequisites)
+    //            {
+    //                if (!GameStateManager.Instance.HasFlag(flag))
+    //                {
+    //                    return false;
+    //                }
+    //            }
+    //        }
 
-        return true;
-    }
+    //        return true;
+    //    }
 }
 
 

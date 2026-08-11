@@ -5,7 +5,14 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public abstract class QuestEvent : ScriptableObject
 {
+    public GameObject gameObject;
+
     public abstract void PlayEvent();
+
+    public void AddReference(GameObject gameObject)
+    {
+        this.gameObject = gameObject;
+    }
 }
 
 public interface IQuestCompleter
@@ -28,10 +35,11 @@ public interface IQuestCompleter
         // complete quest and remove from list, if possible 
         for (int i = QuestsID.Count - 1; i >= 0; i--)
         {
-            if (QuestManager.Instance.CompleteQuest(QuestsID[i]))
-            {
-                QuestsID.RemoveAt(i);
-            }
+            // removed because quests no longer completed this way
+            //if (QuestManager.Instance.CompleteQuest(QuestsID[i]))
+            //{
+            //    QuestsID.RemoveAt(i);
+            //}
         }
     }
 }
@@ -96,24 +104,19 @@ public class QuestManager : MonoBehaviour
 
 
     /// <summary>
-    /// Complete quest if requirments are met
+    /// Add given quest to complete list
     /// </summary>
-    /// <param name="questID"></param>
-    /// <returns>true if quest could be completed, false otherwise</returns>
-    public bool CompleteQuest(string questID)
+    /// <param name="questID">completed quest</param>
+    public void CompleteQuest(string questID)
     {
         // quest exists and not already complete
         if (allQuests.ContainsKey(questID) && !completedQuests.Contains(questID))
         {
-            // quest active and prerequisites met and 
-            if(allQuests[questID].QuestComplete())
-            {
-                Debug.Log("Completed: " + questID);
-                completedQuests.Add(questID);
-                return true;
-            }
+            completedQuests.Add(questID);
+            return;
         }
-        return false;
+
+        Debug.Log("quest already completed");
     }
 
     /// <summary>
