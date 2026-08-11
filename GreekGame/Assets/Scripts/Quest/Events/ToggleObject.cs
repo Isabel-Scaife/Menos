@@ -1,16 +1,15 @@
 using UnityEngine;
 
-[System.Serializable, CreateAssetMenu(fileName = "Toggle", menuName = "Events/Toggle")]
+[System.Serializable, CreateAssetMenu(fileName = "ToggleObject", menuName = "Events/Toggle/Object")]
 public class ToggleObject : QuestEvent
 {
-    [SerializeField] private GameObject item;
     [SerializeField] private bool activate; // be inactive/active
 
     public override void PlayEvent()
     {
-        if (item != null)
+        if (gameObject != null)
         {
-            item.SetActive(activate);
+            gameObject.SetActive(activate);
         }
     }
 

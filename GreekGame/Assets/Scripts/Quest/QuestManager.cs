@@ -9,9 +9,9 @@ public abstract class QuestEvent : ScriptableObject
 
     public abstract void PlayEvent();
 
-    public void AddReference(GameObject gameObject)
+    public void AddReference(GameObject anchor)
     {
-        this.gameObject = gameObject;
+        this.gameObject = anchor;
     }
 }
 

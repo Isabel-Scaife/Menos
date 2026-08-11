@@ -1,18 +1,15 @@
 using UnityEngine;
 
-[System.Serializable]
+[System.Serializable, CreateAssetMenu(fileName = "Move", menuName = "Events/Move")]
 public class MoveObject : QuestEvent
 {
     [SerializeField] private Vector2 newLocation;
-    
-    // add scriptable to object that needs to be moved 
-    public GameObject target;
 
     public override void PlayEvent()
     {
-        if(target != null)
+        if(gameObject != null)
         {
-            target.transform.position = newLocation;
+            gameObject.transform.position = newLocation;
         }
     }
 }

@@ -1,14 +1,15 @@
 using UnityEngine;
 
-[System.Serializable]
+[System.Serializable, CreateAssetMenu(fileName = "ToggleItemInteract", menuName = "Events/Toggle/ItemInteract")]
 public class ToggleItemInteract : QuestEvent
 {
-    // need a way to get the item
-    [SerializeField] private Item item;
     [SerializeField] private bool activate;
 
     public override void PlayEvent()
     {
+        // get item script on object 
+        Item item = gameObject.GetComponent<Item>();
+
         if (item != null)
         {
             item.CanInteract = activate;

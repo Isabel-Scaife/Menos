@@ -1,15 +1,15 @@
 using UnityEngine;
 
-[System.Serializable]
+[System.Serializable, CreateAssetMenu(fileName = "AddFlag", menuName = "Events/AddFlag")]
 public class AddFlag : QuestEvent
 {
-    [SerializeField] private string flagToAdd;
+    [SerializeField] private string flag;
     public override void PlayEvent()
     {
-        if (flagToAdd != null)
+        if (flag != null)
         {
             if(GameStateManager.Instance == null) { Debug.Log("No game state manager"); return; }
-            GameStateManager.Instance.SetFlag(flagToAdd);
+            GameStateManager.Instance.SetFlag(flag);
         }
     }
 }

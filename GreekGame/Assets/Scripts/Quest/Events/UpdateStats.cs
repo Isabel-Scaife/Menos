@@ -1,9 +1,9 @@
 using UnityEngine;
 
-[System.Serializable]
-public class ModifyStat : QuestEvent
+[System.Serializable, CreateAssetMenu(fileName = "UpdateStats", menuName = "Events/UpdateStats")]
+public class UpdateStats : QuestEvent
 {
-    [SerializeField] private int[] statChanges; 
+    [SerializeField] private int[] changeBy; 
 
     public override void PlayEvent()
     {

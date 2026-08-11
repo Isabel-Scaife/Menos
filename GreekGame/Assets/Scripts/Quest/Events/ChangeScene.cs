@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[System.Serializable]
+[System.Serializable, CreateAssetMenu(fileName = "ChangeScene", menuName = "Events/ChangeScene")]
 public class ChangeScene : QuestEvent
 {
     [SerializeField] private string sceneName;

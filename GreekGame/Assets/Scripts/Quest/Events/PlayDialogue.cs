@@ -1,12 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
-[System.Serializable]
-public class StartDialogue : QuestEvent
+
+[System.Serializable, CreateAssetMenu(fileName = "PlayDialogue", menuName = "Events/PlayDialogue")]
+public class PlayDialogue : QuestEvent
 {
-    [SerializeField] private DialogueSO dialogue;
-    [SerializeField] private PlayerControlled player; // bring up to ayvin about modifiying 
+    [SerializeField] private DialogueSO dialogue; 
 
     public override void PlayEvent()
     {
+        Player player = gameObject.GetComponent<Player>();
+
         if(dialogue != null && player != null)
         {
             if (DialogueManager.Instance == null) Debug.Log("No DialogueManager in scene");
