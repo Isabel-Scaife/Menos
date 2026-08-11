@@ -293,38 +293,10 @@ public class DialogueManager : MonoBehaviour
     /// <param name="outcome">outcome data object</param>
     private void ApplyOutcome(DialogueOutcome outcome)
     {
-        // make sure GameStateManager exists
-        if (GameStateManager.Instance == null)
+        // runs events
+        foreach (QuestEvent e in outcome.completionEvents)
         {
-            Debug.Log("No GameStateManager in scene");
-            return;
-        }
-
-        if (QuestManager.Instance == null)
-        {
-            Debug.Log("No QuestManager in scene");
-            return;
-        }
-
-        // set flags
-        if (outcome.flagsToSet != null)
-        {
-            for (int i = 0; i < outcome.flagsToSet.Count; i++)
-            {
-                GameStateManager.Instance.SetFlag(outcome.flagsToSet[i]);
-            }
-        }
-
-        // change stats
-        if (outcome.statChanges != null)
-        {
-            GameStateManager.Instance.ChangeStats(outcome.statChanges);
-        }
-
-        // complete quest
-        if(outcome.QuestsID != null)
-        {
-            ((IQuestCompleter)outcome).OnQuestComplete();
+            e.PlayEvent();
         }
     }
 
