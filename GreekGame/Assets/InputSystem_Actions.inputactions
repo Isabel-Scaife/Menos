@@ -113,6 +113,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "QuestOpen",
+                    "type": "Button",
+                    "id": "a2fe70ab-24f5-4f7f-aff2-29c6aba0e456",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -504,7 +513,7 @@
                 {
                     "name": "",
                     "id": "5820a459-8e1d-45af-a767-825aca9ad2ce",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/x",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -531,6 +540,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "JournalExit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cba9a8ce-7995-467f-845a-16485a4b2b05",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "QuestOpen",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
