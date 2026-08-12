@@ -10,7 +10,7 @@ public class AddEvidence : QuestEvent
     {
         if (evidenve != null)
         {
-            evidenve.discovered = true;
+            JournalManager.Instance.UnlockEvidence(evidenve);
         }
     }
 }
