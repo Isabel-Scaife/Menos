@@ -32,15 +32,11 @@ MonoBehaviour:
     - text: I'm confident that I've figured it out.
       nextNodeID: Culprit
       outcome:
-        flagsToSet: []
-        statChanges: 
-        questsID: []
+        completionEvents: []
     - text: Actually, I would appreciate more time to think.
       nextNodeID: End
       outcome:
-        flagsToSet: []
-        statChanges: 
-        questsID: []
+        completionEvents: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
@@ -53,27 +49,21 @@ MonoBehaviour:
     - text: Artopoios
       nextNodeID: TheBaker
       outcome:
-        flagsToSet:
-        - ArrestArtopoios
-        - WheatFailure
-        statChanges: 
-        questsID:
-        - BakerCS
+        completionEvents:
+        - {fileID: 11400000, guid: bb348ba72c05b2049bd60d367fd05610, type: 2}
+        - {fileID: 11400000, guid: ce386d50545fcea4fb5ebd8c556c51c8, type: 2}
+        - {fileID: 11400000, guid: b6ea4515c0673ee48a22fe74b7db00f5, type: 2}
     - text: Aigidios
       nextNodeID: TheBarnOwner
       outcome:
-        flagsToSet:
-        - ArrestAigidios
-        - WheatFailure
-        statChanges: 
-        questsID:
-        - BarnOwnerCS
+        completionEvents:
+        - {fileID: 11400000, guid: 9869bbcd4f31efe4f89312b7fa4ad8a9, type: 2}
+        - {fileID: 11400000, guid: ef3c88ce14194bc4f95c49945f656083, type: 2}
+        - {fileID: 11400000, guid: 7f32d68384fc71541975b002a3ae5a29, type: 2}
     - text: Bion
       nextNodeID: Reconsider
       outcome:
-        flagsToSet: []
-        statChanges: 
-        questsID: []
+        completionEvents: []
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
@@ -104,21 +94,16 @@ MonoBehaviour:
     - text: It's for my sake. I don't have a choice.
       nextNodeID: TheBoy
       outcome:
-        flagsToSet:
-        - ArrestBion
-        - WheatGather
-        statChanges: 
-        questsID:
-        - BionCS
+        completionEvents:
+        - {fileID: 11400000, guid: 6f202b0875ee0664c9f0ce15032d5eab, type: 2}
+        - {fileID: 11400000, guid: a86fe1d68845e244e889dc9744b8a5c2, type: 2}
+        - {fileID: 11400000, guid: 6d06c52e233db2141b8e5cf195d6c6ea, type: 2}
     - text: He didn't have a choice. I should cover his doing.
       nextNodeID: ForBion
       outcome:
-        flagsToSet:
-        - ForgiveBion
-        - WheatFailure
-        statChanges: 
-        questsID:
-        - BionHappyED
+        completionEvents:
+        - {fileID: 11400000, guid: b3930373a750c1c4f9699ff06b67e99e, type: 2}
+        - {fileID: 11400000, guid: 85b8d64a5cfa52d429a9cf75e2c85d05, type: 2}
     updateSpeakerInfo: 1
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
@@ -160,5 +145,4 @@ MonoBehaviour:
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 7150802143551903488, guid: bee79c88ac91e9e46bbb3243aa07f3f0, type: 3}
-  toggleFlagOnTalk: 0
-  flag: 
+  events: []

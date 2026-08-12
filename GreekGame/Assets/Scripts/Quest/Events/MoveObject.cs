@@ -7,9 +7,9 @@ public class MoveObject : QuestEvent
 
     public override void PlayEvent()
     {
-        if(gameObject != null)
+        if(targetObject != null)
         {
-            gameObject.transform.position = newLocation;
+            targetObject.transform.position = newLocation;
         }
     }
 }

@@ -8,7 +8,7 @@ public class PlayDialogue : QuestEvent
 
     public override void PlayEvent()
     {
-        Player player = gameObject.GetComponent<Player>();
+        Player player = targetObject.GetComponent<Player>();
 
         if(dialogue != null && player != null)
         {

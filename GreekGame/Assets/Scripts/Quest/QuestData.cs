@@ -114,9 +114,11 @@ public class QuestObjective
     public void Begin()
     {
         // convert object to correct type
-        targetItem = ((GameObject)target).GetComponent<Item>();
-        targetNPC = ((GameObject)target).GetComponent<NPC>();
-
+        if (target != null)
+        {
+            targetItem = ((GameObject)target).GetComponent<Item>();
+            targetNPC = ((GameObject)target).GetComponent<NPC>();
+        }
         // add listener to object 
         if (targetItem != null)
         {
