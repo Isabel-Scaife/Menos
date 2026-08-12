@@ -12,7 +12,7 @@ public class QuestData : MonoBehaviour
     public string status;
 
     [Header("Quest Parts")]
-    [SerializeField] private List<QuestObjective> questObjectives;
+    [SerializeField] public List<QuestObjective> questObjectives;
     private int requiredAmount;
     private int currentAmount;
 

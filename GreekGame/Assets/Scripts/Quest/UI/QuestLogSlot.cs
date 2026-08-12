@@ -1,12 +1,14 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class QuestLogSlot : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI txt_questName;
     [SerializeField] private TextMeshProUGUI txt_questStatus;
+    [SerializeField] public Button btn_questButton;
 
-    private QuestData currentQuest;
+    public QuestData currentQuest;
 
     public void SetQuest(QuestData quest)
     {
