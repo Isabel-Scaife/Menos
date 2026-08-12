@@ -8,12 +8,17 @@ public class QuestLog : MonoBehaviour
     [SerializeField] private GameObject prefab_questLogSlot;
 
     [Header("Quest Information Section")]
+    [SerializeField] private GameObject questInfo;
     [SerializeField] private TextMeshProUGUI txt_questName;
     [SerializeField] private TextMeshProUGUI txt_questDescription;
     [SerializeField] private QuestObjectiveSlot[] objectiveSlots;
 
     private Dictionary<string, QuestLogSlot> questSlots;
 
+    /// <summary>
+    /// Creates a new quest slot in quest log
+    /// </summary>
+    /// <param name="quest"></param>
     public void CreateNewSlot(QuestData quest)
     {
         if (questSlots == null)
@@ -34,6 +39,10 @@ public class QuestLog : MonoBehaviour
         button.onClick.AddListener(() => OnQuestClicked(quest));
     }
 
+    /// <summary>
+    /// Updates status on designated quest slot
+    /// </summary>
+    /// <param name="questID"></param>
     public void UpdateQuestSlot(string questID)
     {
         if (questSlots != null && questSlots.ContainsKey(questID))
@@ -42,8 +51,14 @@ public class QuestLog : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Displays quest information 
+    /// </summary>
+    /// <param name="quest"></param>
     public void OnQuestClicked(QuestData quest)
     {
+        questInfo.SetActive(true);
+
         txt_questName.text = quest.questName;
         txt_questDescription.text = quest.questDescription;
 
@@ -74,5 +89,12 @@ public class QuestLog : MonoBehaviour
                 objectiveSlots[i].gameObject.SetActive(false);
             }
         }
+    }
+
+
+    private void OnDisable()
+    {
+        // disable quest information so when reopened nothing appears
+        questInfo.SetActive(false);
     }
 }
