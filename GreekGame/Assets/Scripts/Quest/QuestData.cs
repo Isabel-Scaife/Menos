@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Unity.VisualScripting;
 
 public class QuestData : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class QuestData : MonoBehaviour
     [Header("Information displayed about Quest")]
     [SerializeField] public string questName;
     [SerializeField, TextArea] public string questDescription;
-    public string status;
+    public string status = "In Progress";
 
     [Header("Quest Parts")]
     [SerializeField] public List<QuestObjective> questObjectives;
@@ -26,6 +27,7 @@ public class QuestData : MonoBehaviour
         // start all objectives
         foreach (QuestObjective objective in questObjectives)
         {
+            Debug.Log("begin");
             objective.Begin();
             objective.Complete += ObjectiveCompleted;
         }
@@ -99,8 +101,8 @@ public class QuestObjective
 
     [SerializeField] private UnityEngine.Object target;
 
-    public Item targetItem => target as Item;
-    public NPC targetNPC => target as NPC;
+    private Item targetItem;
+    private NPC targetNPC;
 
     [SerializeField] public int requiredAmount;
     [SerializeField] public int currentAmount;
@@ -111,6 +113,11 @@ public class QuestObjective
     /// </summary>
     public void Begin()
     {
+        // convert object to correct type
+        targetItem = ((GameObject)target).GetComponent<Item>();
+        targetNPC = ((GameObject)target).GetComponent<NPC>();
+
+        // add listener to object 
         if (targetItem != null)
         {
             targetItem.OnCollect += IncreaseCount;

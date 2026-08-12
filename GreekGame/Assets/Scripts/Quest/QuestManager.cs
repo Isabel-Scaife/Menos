@@ -83,6 +83,11 @@ public class QuestManager : MonoBehaviour
         // find the quest log 
         currentQuestLog = FindFirstObjectByType<QuestLog>(FindObjectsInactive.Include);
 
+        if(currentQuestLog == null)
+        {
+            Debug.Log("Quest Log not found");
+        }
+
         // === obsolete quest data find manager when they are turned on 
         //// 1. Find all quests in scene
         //QuestData[] questsInScene = FindObjectsByType<QuestData>(
@@ -111,6 +116,7 @@ public class QuestManager : MonoBehaviour
     public void AddQuest(QuestData newQuest)
     {
         allQuests[newQuest.QuestID] = newQuest;
+        currentQuestLog.CreateNewSlot(newQuest);
     }
 
 

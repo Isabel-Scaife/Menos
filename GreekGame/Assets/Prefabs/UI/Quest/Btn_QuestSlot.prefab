@@ -138,6 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestLogSlot
   txt_questName: {fileID: 4317839326483130623}
   txt_questStatus: {fileID: 7088382764211301903}
+  btn_questButton: {fileID: 1418068459167906698}
+  currentQuest: {fileID: 0}
 --- !u!114 &43033921113005968
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,15 +11,10 @@ public class ToggleObject : QuestEvent
         {
             gameObject.SetActive(activate);
         }
+        else
+        {
+            Debug.Log("object null");
+        }
     }
-
-    // create new script
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (item != null)
-    //    {
-    //        item.SetActive(activate);
-    //    }
-    //}
 
 }
