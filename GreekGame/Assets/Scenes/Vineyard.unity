@@ -3286,7 +3286,6 @@ GameObject:
   - component: {fileID: 151177918}
   - component: {fileID: 151177916}
   - component: {fileID: 151177921}
-  - component: {fileID: 151177922}
   m_Layer: 9
   m_Name: Coworker
   m_TagString: Untagged
@@ -3433,25 +3432,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 74c2e73b9de5114439922f25f80bb66b, type: 2}
   - {fileID: 11400000, guid: 8b8fb3cb72bfc1e4a8b4e35138e5d7d4, type: 2}
   flagChecks:
-  - met_Coworker
+  - f_TalkToCoworker
   - f_ingredientGather,WheatFailure
   - f_ingredientGather,WheatGather
   - TalkToBlacksmith
   flagDialogueIndex: 01000000020000000300000004000000
---- !u!114 &151177922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151177915}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
-  event: {fileID: 0}
-  anchor: {fileID: 151177915}
 --- !u!1 &160680152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3749,7 +3734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &199456237
 Transform:
   m_ObjectHideFlags: 0
@@ -3772,7 +3757,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199456236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a531e8b619e6fc468d982e2d78b1a5d, type: 3}
   m_Name: 
@@ -4335,11 +4320,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2546818cf93114b4b9a948479a26a940, type: 2}
   - {fileID: 11400000, guid: 6260f73caa03cc74091df75c25690e87, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &218020884
 BoxCollider2D:
@@ -89754,11 +89739,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8d76226d11833584082d18898eade9f9, type: 2}
   - {fileID: 11400000, guid: 8cad93efb891b1d4db685b8dd1d6f4ce, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 0100000002000000030000000200000003000000
 --- !u!61 &259361596
 BoxCollider2D:
@@ -89877,6 +89862,7 @@ GameObject:
   - component: {fileID: 263297788}
   - component: {fileID: 263297787}
   - component: {fileID: 263297786}
+  - component: {fileID: 263297789}
   m_Layer: 9
   m_Name: Rancher
   m_TagString: Untagged
@@ -89917,10 +89903,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 597b4d71cfd67c74e9e4c1e235dbf6c0, type: 2}
   - {fileID: 11400000, guid: eb7fb249aec5d624f9eb002996c7cd81, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &263297787
 BoxCollider2D:
@@ -90027,6 +90013,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &263297789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263297784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 7f32d68384fc71541975b002a3ae5a29, type: 2}
+  anchor: {fileID: 263297784}
 --- !u!4 &267870691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3621190983457843458, guid: 5ac38ebc36acfff4f8ff7a2ae11794a2, type: 3}
@@ -90177,6 +90177,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2919203078227181596, guid: 109457f5c7893684a9cc84a626909a1b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.25073242
+      objectReference: {fileID: 0}
     - target: {fileID: 3905922892955551315, guid: 109457f5c7893684a9cc84a626909a1b, type: 3}
       propertyPath: m_Name
       value: Canvas_Quest
@@ -90281,11 +90285,87 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8625209305588645734, guid: 109457f5c7893684a9cc84a626909a1b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0009765625
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 109457f5c7893684a9cc84a626909a1b, type: 3}
+--- !u!1 &284541917
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284541918}
+  - component: {fileID: 284541920}
+  - component: {fileID: 284541919}
+  m_Layer: 0
+  m_Name: q_RemoveVines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &284541918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284541917}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361485760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &284541919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284541917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: ecdd1617feda2eb4093e96e8daa784d3, type: 2}
+  anchor: {fileID: 199456236}
+--- !u!114 &284541920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284541917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: q_RemoveVines
+  questName: Remove Vines
+  questDescription: 'The grapes are inside the grape farmer''s shed, but it is blocked
+    by vines. Remove the vines to collect the grapes.  '
+  status: In Progress
+  questObjectives:
+  - description: Remove vines from shed.
+    isComplete: 0
+    target: {fileID: 1151935515}
+    requiredAmount: 1
+    currentAmount: 0
+  completionEvents:
+  - {fileID: 11400000, guid: ecdd1617feda2eb4093e96e8daa784d3, type: 2}
 --- !u!1001 &287365136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92060,6 +92140,9 @@ Transform:
   m_Children:
   - {fileID: 38379658}
   - {fileID: 1294753230}
+  - {fileID: 1942475740}
+  - {fileID: 284541918}
+  - {fileID: 1539596569}
   - {fileID: 882219793}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -93089,11 +93172,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e3734c372dc3fa2459a4d65bb3601989, type: 2}
   - {fileID: 11400000, guid: 69e01256d00813e45aedd5ef5d456389, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &415301169
 BoxCollider2D:
@@ -95364,7 +95447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemID: GrapeVase
   playerCanInteract: 1
-  collectedFlag: 
+  collectedFlag: f_CollectGrapes
   evidenceSO: {fileID: 0}
 --- !u!61 &560977128
 BoxCollider2D:
@@ -132640,11 +132723,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1a9d0448eb1f75841b3c4ea226566fbe, type: 2}
   - {fileID: 11400000, guid: 34567572d6f67fb4eb80c40885abba03, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &826213352
 BoxCollider2D:
@@ -135378,6 +135461,7 @@ GameObject:
   - component: {fileID: 973935011}
   - component: {fileID: 973935010}
   - component: {fileID: 973935009}
+  - component: {fileID: 973935012}
   m_Layer: 9
   m_Name: Baker
   m_TagString: Untagged
@@ -135419,11 +135503,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d616fc858312a01419a0c9245fd6f792, type: 2}
   - {fileID: 11400000, guid: f57bd57f1d46eb24aaa8bf618a7eb2ea, type: 2}
   flagChecks:
-  - StartWheatQuest
+  - f_FindStolenWheat
   - TalkToOthers
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
   flagDialogueIndex: 01000000020000000300000004000000
 --- !u!61 &973935010
 BoxCollider2D:
@@ -135530,6 +135614,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &973935012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973935007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: b6ea4515c0673ee48a22fe74b7db00f5, type: 2}
+  anchor: {fileID: 973935007}
 --- !u!1 &975718900
 GameObject:
   m_ObjectHideFlags: 0
@@ -139240,7 +139338,9 @@ GameObject:
   - component: {fileID: 1143271649}
   - component: {fileID: 1143271648}
   - component: {fileID: 1143271647}
-  - component: {fileID: 1143271650}
+  - component: {fileID: 1143271652}
+  - component: {fileID: 1143271651}
+  - component: {fileID: 1143271653}
   m_Layer: 9
   m_Name: GrapeFarmer
   m_TagString: Untagged
@@ -139368,7 +139468,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1880975576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1143271650
+--- !u!114 &1143271651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139377,19 +139477,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 1143271645}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fb8c6e33375924b950a9216b5b1a30, type: 3}
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: c918257b3e1c6f742b2429668ed85a97, type: 2}
+  anchor: {fileID: 1151935515}
+--- !u!114 &1143271652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143271645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: eb229a980f8d59c48959fc817a63261d, type: 2}
   - {fileID: 11400000, guid: f7be9ce71649c154d92ed00b69e7a1d3, type: 2}
   - {fileID: 11400000, guid: cde7e0563240d464a89099f9b051bc8d, type: 2}
   flagChecks:
-  - met_Coworker
-  - GrapeCollected
+  - f_TalkToCoworker
+  - f_CollectGrapes
   flagDialogueIndex: 0100000002000000
-  questsID:
-  - StartGrapeGather
+--- !u!114 &1143271653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143271645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 358cf1fdea4ad0346bee61460a390039, type: 2}
+  anchor: {fileID: 284541917}
 --- !u!1 &1143844703
 GameObject:
   m_ObjectHideFlags: 0
@@ -142791,7 +142917,7 @@ MonoBehaviour:
   questObjectives:
   - description: Collect Wheat
     isComplete: 0
-    target: {fileID: 151177915}
+    target: {fileID: 0}
     requiredAmount: 1
     currentAmount: 0
   - description: Collect Olives
@@ -538311,6 +538437,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1539596568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1539596569}
+  - component: {fileID: 1539596571}
+  m_Layer: 0
+  m_Name: q_HarvestOlives
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1539596569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539596568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361485760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1539596571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539596568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: q_HarvestOlives
+  questName: Havest Olives
+  questDescription: 'The olive farmer said you can take the olives you harvest at
+    the top of the tall tree. With your bird that task would be easy.   '
+  status: In Progress
+  questObjectives:
+  - description: Collect Olives
+    isComplete: 0
+    target: {fileID: 674276211}
+    requiredAmount: 1
+    currentAmount: 0
+  completionEvents:
+  - {fileID: 11400000, guid: 50cae74376e21df4aa2715474868edd9, type: 2}
 --- !u!1 &1549394280
 GameObject:
   m_ObjectHideFlags: 0
@@ -540372,11 +540555,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bb506d9fda000a84a978e58aab09c0b7, type: 2}
   - {fileID: 11400000, guid: 47c75b7366837784b9329f73d02f183e, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &1630000918
 BoxCollider2D:
@@ -542769,7 +542952,9 @@ GameObject:
   - component: {fileID: 1735457140}
   - component: {fileID: 1735457143}
   - component: {fileID: 1735457142}
-  - component: {fileID: 1735457144}
+  - component: {fileID: 1735457145}
+  - component: {fileID: 1735457146}
+  - component: {fileID: 1735457147}
   m_Layer: 9
   m_Name: OliveFarmer
   m_TagString: Untagged
@@ -542897,7 +543082,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
---- !u!114 &1735457144
+--- !u!114 &1735457145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -542906,19 +543091,45 @@ MonoBehaviour:
   m_GameObject: {fileID: 1735457139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fb8c6e33375924b950a9216b5b1a30, type: 3}
+  m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: a07e0efc56c648b4c8e056892650a174, type: 2}
   - {fileID: 11400000, guid: 7f110ca29d9cb0741929132d9a343c51, type: 2}
   - {fileID: 11400000, guid: 61b4077354add934b8f38a6a1d417bfe, type: 2}
   flagChecks:
-  - met_Coworker
-  - OliveCollected
+  - f_TalkToCoworker
+  - f_CollectOlives
   flagDialogueIndex: 0100000002000000
-  questsID:
-  - StartOliveGather
+--- !u!114 &1735457146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735457139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: f3264345a2f44d847a09e060121e5193, type: 2}
+  anchor: {fileID: 1539596568}
+--- !u!114 &1735457147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735457139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 05f773b8f147e3a40b8f471d442a6bfb, type: 2}
+  anchor: {fileID: 674276211}
 --- !u!1 &1742900956
 GameObject:
   m_ObjectHideFlags: 0
@@ -544913,6 +545124,7 @@ GameObject:
   - component: {fileID: 1874795303}
   - component: {fileID: 1874795302}
   - component: {fileID: 1874795301}
+  - component: {fileID: 1874795304}
   m_Layer: 9
   m_Name: LittleBoy
   m_TagString: Untagged
@@ -544953,11 +545165,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 18fb977ac789f1e45b80ab7a83559a16, type: 2}
   - {fileID: 11400000, guid: b4634db0ba894af4ea07457ef4be793b, type: 2}
   flagChecks:
-  - StartWheatQuest
+  - f_FindStolenWheat
   - TalkedToOldLady
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &1874795302
 BoxCollider2D:
@@ -545064,6 +545276,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
+--- !u!114 &1874795304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874795299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 6d06c52e233db2141b8e5cf195d6c6ea, type: 2}
+  anchor: {fileID: 1874795299}
 --- !u!1 &1875145757
 GameObject:
   m_ObjectHideFlags: 0
@@ -545453,7 +545679,12 @@ GameObject:
   - component: {fileID: 1883358429}
   - component: {fileID: 1883358428}
   - component: {fileID: 1883358426}
-  - component: {fileID: 1883358430}
+  - component: {fileID: 1883358432}
+  - component: {fileID: 1883358431}
+  - component: {fileID: 1883358436}
+  - component: {fileID: 1883358435}
+  - component: {fileID: 1883358434}
+  - component: {fileID: 1883358433}
   m_Layer: 9
   m_Name: WheatFarmer
   m_TagString: Untagged
@@ -545581,7 +545812,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1880975576}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1883358430
+--- !u!114 &1883358431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -545590,9 +545821,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1883358425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fb8c6e33375924b950a9216b5b1a30, type: 3}
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCQuest
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 999e63174aaf3a944a0ade61fd752525, type: 2}
+  anchor: {fileID: 1942475737}
+--- !u!114 &1883358432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883358425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ccb965fa68009479ef9751dba2c985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPC
   dialogues:
   - {fileID: 11400000, guid: 435140abeace85446a096dfc3f0b23ab, type: 2}
   - {fileID: 11400000, guid: 255744f344b60494eb911db5b81b5d72, type: 2}
@@ -545600,15 +545845,69 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 374d79ddd00695c4dade55af048a000f, type: 2}
   - {fileID: 11400000, guid: 32b710abf6b3045448e50fdc66b33eea, type: 2}
   flagChecks:
-  - met_Coworker
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_TalkToCoworker
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 0100000002000000030000000400000004000000
-  questsID:
-  - TalkToWheatFarmer
+--- !u!114 &1883358433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883358425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: ef3c88ce14194bc4f95c49945f656083, type: 2}
+  anchor: {fileID: 1903110957}
+--- !u!114 &1883358434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883358425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: ce386d50545fcea4fb5ebd8c556c51c8, type: 2}
+  anchor: {fileID: 1634153605}
+--- !u!114 &1883358435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883358425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: a86fe1d68845e244e889dc9744b8a5c2, type: 2}
+  anchor: {fileID: 1260727540}
+--- !u!114 &1883358436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883358425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e26129aed6e04a912d812ccbb5da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectAnchor
+  event: {fileID: 11400000, guid: 85b8d64a5cfa52d429a9cf75e2c85d05, type: 2}
+  anchor: {fileID: 1643815289}
 --- !u!1 &1885166214
 GameObject:
   m_ObjectHideFlags: 0
@@ -546416,6 +546715,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShadowShift
   shiftAmt: {x: 0, y: 3}
+--- !u!1 &1942475737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942475740}
+  - component: {fileID: 1942475739}
+  m_Layer: 0
+  m_Name: q_FindStolenWheat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1942475739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942475737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea62dd8d4fe12f3428ae64144c3d160d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestData
+  questID: q_FindStolenWheat
+  questName: Find Stolen Wheat
+  questDescription: 'Someone in town stole the wheat farmers stoke. I need to talk
+    to the townspeople to deduce who the culprit is. '
+  status: In Progress
+  questObjectives:
+  - description: Return to wheat farmer and declare culprit.
+    isComplete: 0
+    target: {fileID: 1883358425}
+    requiredAmount: 1
+    currentAmount: 0
+  completionEvents:
+  - {fileID: 11400000, guid: 56f69857ab000d84eb67a3b979f75bb0, type: 2}
+--- !u!4 &1942475740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942475737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 361485760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1943557111
 GameObject:
   m_ObjectHideFlags: 0
@@ -547300,11 +547656,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4836e8cf2714f174c8be2837251e5b21, type: 2}
   - {fileID: 11400000, guid: 1eee3a2c3e2c9be4b8d101b349d6a8f0, type: 2}
   flagChecks:
-  - StartWheatQuest
-  - ArrestBion
-  - ForgiveBion
-  - ArrestAigidios
-  - ArrestArtopoios
+  - f_FindStolenWheat
+  - f_ArrestBion
+  - f_ForgiveBion
+  - f_ArrestAigidios
+  - f_ArrestArtopoios
   flagDialogueIndex: 010000000200000003000000
 --- !u!61 &2007898643
 BoxCollider2D:

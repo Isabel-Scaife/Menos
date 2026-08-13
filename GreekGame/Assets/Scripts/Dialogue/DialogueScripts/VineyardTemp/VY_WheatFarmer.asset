@@ -134,5 +134,6 @@ MonoBehaviour:
     speakerName: Ceryx
     leftSprite: {fileID: 21300000, guid: 65d50137d10f0444c82703dc57f2fdd2, type: 3}
     rightSprite: {fileID: 0}
-  toggleFlagOnTalk: 1
-  flag: StartWheatQuest
+  events:
+  - {fileID: 11400000, guid: 999e63174aaf3a944a0ade61fd752525, type: 2}
+  - {fileID: 11400000, guid: 9d21bc974f6fba94882814ffb15e95ad, type: 2}

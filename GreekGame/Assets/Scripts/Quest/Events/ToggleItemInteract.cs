@@ -8,7 +8,7 @@ public class ToggleItemInteract : QuestEvent
     public override void PlayEvent()
     {
         // get item script on object 
-        Item item = gameObject.GetComponent<Item>();
+        Item item = targetObject.GetComponent<Item>();
 
         if (item != null)
         {

@@ -31,14 +31,6 @@ public class NPC : Interactable
         }
     }
 
-    public void ReplaceDialogue(DialogueSO newDialogue, int index)
-    {
-        if (index < dialogues.Count)
-        {
-            dialogues[index] = newDialogue;
-        }
-    }
-
     // for connecting NPCs to dialogue, storing save data and states, etc.
     // [SerializeField] protected string npcID;     // might need in the future
 
@@ -55,7 +47,7 @@ public class NPC : Interactable
         {
             if (DialogueManager.Instance == null) { Debug.Log("No DialogueManager in scene"); return; }
 
-            if (TalkedTo != null) TalkedTo.Invoke();
+            AfterTalkInvoke();
 
             // run default dialogue if there are no flags 
             if (flagSets == null)
@@ -69,6 +61,15 @@ public class NPC : Interactable
 
             // no flags set play default dialogue
             DialogueManager.Instance.BeginDialogue(dialogues[0], player);
+        }
+    }
+
+    private void AfterTalkInvoke()
+    {
+        if (TalkedTo != null) 
+        {
+            DialogueManager.Instance.OnDialogueEnd += TalkedTo;
+            TalkedTo = null;
         }
     }
 

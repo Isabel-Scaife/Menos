@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 [System.Serializable]
 public abstract class QuestEvent : ScriptableObject
 {
-    public GameObject gameObject;
+    public GameObject targetObject;
 
     public abstract void PlayEvent();
 
     public void AddReference(GameObject anchor)
     {
-        this.gameObject = anchor;
+        this.targetObject = anchor;
     }
 }
 
@@ -87,26 +87,6 @@ public class QuestManager : MonoBehaviour
         {
             Debug.Log("Quest Log not found");
         }
-
-        // === obsolete quest data find manager when they are turned on 
-        //// 1. Find all quests in scene
-        //QuestData[] questsInScene = FindObjectsByType<QuestData>(
-        //    FindObjectsInactive.Include,
-        //    FindObjectsSortMode.None);
-
-        //// 2. add quests to all quest list, if any quest already in list end early
-        //foreach (QuestData quest in questsInScene)
-        //{
-        //    if (allQuests.ContainsKey(quest.QuestID))
-        //    {
-        //        return;
-        //    }
-        //    else
-        //    {
-        //        allQuests.Add(quest.QuestID, quest);
-        //    }
-
-        //}
     }
 
     /// <summary>

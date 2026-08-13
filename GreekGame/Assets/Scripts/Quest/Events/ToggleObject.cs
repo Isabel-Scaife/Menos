@@ -7,9 +7,9 @@ public class ToggleObject : QuestEvent
 
     public override void PlayEvent()
     {
-        if (gameObject != null)
+        if (targetObject != null)
         {
-            gameObject.SetActive(activate);
+            targetObject.SetActive(activate);
         }
         else
         {

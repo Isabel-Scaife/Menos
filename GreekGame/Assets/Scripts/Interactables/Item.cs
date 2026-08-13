@@ -57,7 +57,7 @@ public class Item : Interactable
         }
         else if (player is Player)
         {
-            if (OnCollect != null) OnCollect.Invoke();
+            if (OnCollect != null) { OnCollect.Invoke(); OnCollect = null; }
 
             if (SpawnManager.Instance == null) { Debug.Log("Missing Spawn Manger"); return; }
             SpawnManager.Instance.RemoveItem(itemID);
