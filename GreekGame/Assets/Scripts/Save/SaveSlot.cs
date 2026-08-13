@@ -93,11 +93,11 @@ public class SaveSlot : MonoBehaviour
         GameStateManagerData stateData = SaveSystem.LoadData<GameStateManagerData>(ID, "GameStateManager.json");
         GameStateManager.Instance.LoadData(stateData);
 
-        DiscoveredEvidenceData evidenceData = SaveSystem.LoadData<DiscoveredEvidenceData>(ID, "Evidence.json");
-        JournalManager.Instance.LoadData(evidenceData);
+        //DiscoveredEvidenceData evidenceData = SaveSystem.LoadData<DiscoveredEvidenceData>(ID, "Evidence.json");
+        //JournalManager.Instance.LoadData(evidenceData);
 
-        DiscoveredRelationshipData relationshipData = SaveSystem.LoadData<DiscoveredRelationshipData>(ID, "Relationships.json");
-        JournalManager.Instance.LoadData(relationshipData);
+        //DiscoveredRelationshipData relationshipData = SaveSystem.LoadData<DiscoveredRelationshipData>(ID, "Relationships.json");
+        //JournalManager.Instance.LoadData(relationshipData);
 
         // switch to scene
         SceneManager.LoadScene(ProgressionManager.Instance.SceneName);
