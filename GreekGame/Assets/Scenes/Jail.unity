@@ -3717,6 +3717,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e943d7a299a0654bbb2f428657daf05, type: 3}
+--- !u!114 &458751460 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1027611470454171198, guid: 4e943d7a299a0654bbb2f428657daf05, type: 3}
+  m_PrefabInstance: {fileID: 458751459}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce968021b11ebc41acb20094af75891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlsUI
 --- !u!1001 &472239386
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6961,7 +6972,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 458751460}
         m_TargetAssemblyTypeName: ControlsUI, Assembly-CSharp
         m_MethodName: ToggleFollow
         m_Mode: 1
@@ -7017,7 +7028,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 458751460}
         m_TargetAssemblyTypeName: ControlsUI, Assembly-CSharp
         m_MethodName: ToggleSwitch
         m_Mode: 1
@@ -7131,6 +7142,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 5f2c27ee-8d17-46fe-ad5d-6fbdc0504c93
     m_ActionName: 'Journal/UI/ClosePopup[/Keyboard/tab]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a2fe70ab-24f5-4f7f-aff2-29c6aba0e456
+    m_ActionName: 'Player/QuestOpen[/Keyboard/q]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
